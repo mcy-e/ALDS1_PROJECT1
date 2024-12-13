@@ -1,6 +1,7 @@
 #include<stdbool.h>
 #include<math.h>
 #include<stdio.h>
+#include"numbers.h"
 
 int sumOfDigits(int num){
 
@@ -89,7 +90,7 @@ bool isPrime(int num){
 int gcd(int a,int b){
   int i,gcd;
   gcd=1;
-  for (i = 2; i <= max(a,b); i++){
+  for (i = 2; i <= Max(a,b); i++){
     if (a%i ==0 && b%i == 0)
     {
       return gcd=i;//*updates until it gets to the lasts one 
@@ -104,7 +105,7 @@ int gcd(int a,int b){
 }
 
 
-int max(int a,int b){
+int Max(int a,int b){
   if (a>b)
   {
     return a;//* max(a,b) = a
@@ -202,3 +203,12 @@ bool isArmstrong(int num){
   }
 
 }
+
+unsigned long long int fibonacci(int num){
+  if (num>1){
+    return fibonacci(num-1)+fibonacci(num -2);
+  }else{
+    return 1;
+  }
+}
+

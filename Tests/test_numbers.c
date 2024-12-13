@@ -1,13 +1,15 @@
 #include<stdio.h>
 #include<stdbool.h>
-#include "numbers.h"
+#include "../1-Numbers/numbers.h"
+
 
 int main(){
-    int s;
-    bool ok;
-   s = factorial(5) ;
-   ok = isArmstrong(41);
-  printf("%d",ok); 
+  int s;
+  //bool ok;
+  s = fibonacci(5);
+  //ok = ismagic(415);
+  //printf("%d",ok);
+  printf("%d",s); 
   //primeFactors(850);
 
 

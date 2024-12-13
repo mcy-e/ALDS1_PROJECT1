@@ -11,7 +11,7 @@ bool isPrime(int num);
 
 int gcd(int a,int b);
 
-int max(int a,int b);
+int Max(int a,int b);
 
 int lcm(int a,int b);
 
@@ -22,5 +22,7 @@ bool isEven(int num);
 void primeFactors(int num);
 
 bool isArmstrong(int num);
+
+unsigned long long int fibonacci(int num);
 
 #endif

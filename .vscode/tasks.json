@@ -2,23 +2,19 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build and Run Program",
+      "label": "Build and Run Tests",
       "type": "shell",
       "command": "cmd",
       "args": [
-        "-I",
-        "ALSD_Project1/1-Numbers",
-        "Tests/test_numbers.c",
-        "numbers.h",
-        "-o",
-        "test_numbers.exe"
+        "/c", 
+        "gcc -I ${workspaceFolder}/1-Numbers ${workspaceFolder}/1-Numbers/numbers.c ${workspaceFolder}/Tests/test_numbers.c -o ${workspaceFolder}/Tests/output/test_numbers && \"${workspaceFolder}/Tests/output/test_numbers\""
       ],
+      "problemMatcher": [],
       "group": {
         "kind": "build",
         "isDefault": true
-      },
-      "problemMatcher": [],
-      "detail": "Compiles and runs the program automatically"
+      }
     }
   ]
 }
+
