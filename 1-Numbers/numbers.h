@@ -25,4 +25,19 @@ bool isArmstrong(int num);
 
 unsigned long long int fibonacci(int num);
 
+int numberOfDivisors(int num);
+
+int reverse_negative(int num , bool check);
+
+bool isNegative(int num);
+
+bool isDivisor(int num,int divisor);
+
+int sumDivisors(int num);
+
+bool isPerfect(int num);
+bool isMagic(int num);
+
+int numberOfDigits(int num);
+
 #endif

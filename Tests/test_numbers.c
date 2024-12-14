@@ -6,7 +6,7 @@
 int main(){
   int s;
   //bool ok;
-  s = fibonacci(5);
+  s = isMagic(416);
   //ok = ismagic(415);
   //printf("%d",ok);
   printf("%d",s); 

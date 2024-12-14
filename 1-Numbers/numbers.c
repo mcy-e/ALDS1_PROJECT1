@@ -6,9 +6,11 @@
 int sumOfDigits(int num){
 
  
-  int sum,digit,check; //*declare variables
-  sum = 0;check=1;  //*initialize sum of digits
-
+  int sum=0,digit; //*declare variables //*initialize sum of digits
+  bool check;
+  check = isNegative(num);
+  num =reverse_negative(num, check);
+  
   if (num < 0)
   {
     num =-num;
@@ -22,33 +24,25 @@ int sumOfDigits(int num){
      num = num / 10;//*divide the num by 10 to reduce the number of digits
   }
  
-  if (check == 1)
-  {
-    sum = -sum; //*if the number was negative then convert it back to negative
-  }
-  
+  sum = reverse_negative(sum, check);
 
  return sum;
 }
 
 int reverseNumber(int num){
 
-  int reverse_num=0,check=0;
-  if (num < 0){
-    num = -num; //*if the number is negative then convert it to positive
-    check=1; //*need it in order to return with negative value 
-  }
+  int reverse_num=0;
+  bool check;
+  check = isNegative(num);
+  num =reverse_negative(num, check);
+  
 
   while (num > 0){
     reverse_num = reverse_num * 10 + num % 10;//*efficient way rather than m=num%10 then reverse_num =reversenum*10 + m 
     num = num / 10;
   }
   
-  if (check == 1)
-  {
-    reverse_num = -reverse_num; //*if the number was negative then convert it back to negative
-  }
-  
+ reverse_num= reverse_negative(reverse_num,check);
 
 
   return reverse_num ;
@@ -211,4 +205,164 @@ unsigned long long int fibonacci(int num){
     return 1;
   }
 }
+
+int numberOfDivisors(int num){
+  int divisor,num_divisors=0;
+  bool check;
+  check = isNegative(num);
+  num =reverse_negative(num, check);
+  
+ for ( divisor = 1; divisor<= num ; divisor++)
+ {
+   if (num%divisor==0)
+   {
+     num_divisors++;
+   }
+  }
+ 
+  return num_divisors;
+
+
+}
+bool isNegative(int num){
+  if (num>0)
+  {
+    return false;
+  }else{
+    return true;
+  }
+  
+}
+
+int reverse_negative(int num , bool check){
+  
+  if (check)
+  {
+    return num = num*-1;
+  }else{
+    return num = num;
+  }
+  
+}
+
+bool isDivisor(int num,int divisor){
+  if (num%divisor==0){
+    return true;
+    
+  } else{return false;}
+}
+int sumDivisors(int num){
+  int sum = 0,divisor;
+
+  bool check;
+  check = isNegative(num);
+  num =reverse_negative(num, check);
+
+  for ( divisor= 1; divisor <= num; divisor++)
+  {
+    if (isDivisor(num,divisor))
+    {
+      sum = sum +divisor;
+    }
+    
+  }
+  
+  return reverse_negative(sum, check);
+
+
+
+}
+
+bool isPerfect(int num){
+  int i,sum = 0;
+  bool check;
+  check = isNegative(num);
+  num =reverse_negative(num, check);
+  for ( i = 1; i <= num/2; i++)
+ {
+   if (isDivisor(num,i))
+    {
+     sum= i+sum;   
+   }
+        
+  }
+    
+  if (num == sum)
+  {
+    return true;
+
+  }else{
+    return false;
+  }
+  
+
+}
+
+bool isMagic(int num){
+  int i,j,k,num_digits,digit,temp;
+  bool check;
+  check = isNegative(num);
+  num =reverse_negative(num, check);
+  num_digits=numberOfDigits(num);
+  for ( i = 0; i < num_digits; i++)
+  {
+    temp = 0;
+    for (j = 0; j < num_digits; j++)
+    {
+      
+      digit = num%10;
+      num = num/10;
+      temp = temp +digit;
+    }
+    
+    num =0;
+    for ( k = 0; k < num_digits; k++){
+      
+      digit = temp%10;
+      temp = temp / 10;
+      num = num +digit;
+
+    }
+
+    if (temp <=9)
+    {
+      break;
+    }
+    
+   
+  }
+  if (temp == 1 || num == 1)
+  {
+    return true;
+  }else{return false;}
+  
+  
+
+}
+
+int numberOfDigits(int num){
+  int number_digits = 0,verify =1;
+  bool check;
+  check = isNegative(num);
+  num = reverse_negative(num,check);
+  if (num == 0)
+  {
+    return 1;
+  }
+  
+ while (num>=verify)
+ {
+   verify = verify*10;
+   number_digits++;
+   
+ }
+ 
+ 
+  return number_digits;
+
+}
+
+
+
+
 
