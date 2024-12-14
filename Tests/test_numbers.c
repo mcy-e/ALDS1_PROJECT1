@@ -4,15 +4,16 @@
 
 
 int main(){
-  //int s;
-  bool ok= isDeficient(12);
-  printf("%d",ok);
+  //int   s= sumOfPrimes(10);
+  //printf("%d",s);
+  //bool ok= isSmith(202);
+  //printf("%d",ok);
   //double e=power(5,2);
  // printf("%lf ",e);
   
-  //printf("%d",s); 
-  //primeFactors(850);
+  
+  
 
 
-    return 0;
+  return 0;
 }

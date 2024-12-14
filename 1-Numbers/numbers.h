@@ -4,6 +4,8 @@
 
 #ifndef NUMBERS_H
 #define NUMBERS_H
+
+//!Basic Functions
 int sumOfDigits(int num);
 int reverseNumber(int num);
 bool isPalindrome(int num);
@@ -16,9 +18,11 @@ int Max(int a,int b);
 
 int lcm(int a,int b);
 
-unsigned long long int factorial(int num);
+unsigned long long  factorial(int num);
 
 bool isEven(int num);
+
+//!Intermediate Functions
 
 void primeFactors(int num);
 
@@ -47,6 +51,8 @@ bool isAutomorphic(int num);
 
 void toBinary(int num);
 
+//!Advanced Functions
+
 bool isNarcissistic(int num);
 
  double sqrtApprox(int num,double approx);
@@ -60,5 +66,28 @@ bool isHappy(int num);
 bool isAbundant(int num);
 
 bool isDeficient(int num);
+
+unsigned long long int sumEvenFibonacci(int num);
+
+bool isHarshad(int num);
+
+unsigned long long catalanNumber(int num);
+
+void pascalTriangle(int num);
+
+unsigned long long nCk(int num,int k);
+
+unsigned long long bellNumber(int num);
+
+void divideNumDigits(int *num,int num_digits,int *num1);
+
+bool isKaprekar(int num);
+
+bool isSmith(int num);
+
+int primefactors(int num);
+
+int sumOfPrimes(int num);
+
 
 #endif

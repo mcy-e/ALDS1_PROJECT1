@@ -3,7 +3,7 @@
 #include<stdio.h>
 #include"numbers.h"
 
-//?Basic Functions
+//!Basic Functions
 int sumOfDigits(int num){
 
  
@@ -114,7 +114,7 @@ int lcm(int a ,int b){
   return (a*b)/gcd(a,b);//*by applying the mathematical formula
 }
 
-unsigned long long int factorial(int num){
+unsigned long long  factorial(int num){
 
   if (num < 0)
   {
@@ -146,7 +146,7 @@ bool isEven(int num){
   
 }
 
-//?Intermediate Functions
+//!Intermediate Functions
 void primeFactors(int num){
   int i,j=num;//*j is to store the value of num because its changes every time
   printf("%d =", num);
@@ -197,7 +197,7 @@ bool isArmstrong(int num){
 }
 
 unsigned long long int fibonacci(int num){
-  if (num>1){
+  if (num>2){
     return fibonacci(num-1)+fibonacci(num -2);
   }else{
     return 1;
@@ -405,7 +405,7 @@ bool isAutomorphic(int num){
 
 }
 
-//?Advanced Functions
+//!Advanced Functions
 
 void toBinary(int num){
  int binary_digit,binary_num=0,pos =0,negative_binary=0;
@@ -574,4 +574,170 @@ bool isDeficient(int num){
   }
   
 }
+
+unsigned long long int sumEvenFibonacci(int num){
+  
+  int i,sum=0;
+  for (i = 1; i <= num; i++){
+    
+    sum = fibonacci(3*i)+sum;
+  }
+  
+  return sum;
+
+
+}
+
+bool isHarshad(int num){
+  if (num%sumOfDigits(num) == 0)
+  {
+    return true;
+  }else{
+    return false;
+  }
+
+}
+
+unsigned long long  catalanNumber(int num){
+if (num<0)
+{
+ return 0;//*Negative number....
+}
+else if (num >10){
+  int d=2*(2*num -1);
+  return (d*catalanNumber(num -1))/(num+1);//*but it still very limited when we go with large numbers in case of 30 we depaces the %llu range
+}else{
+  return factorial(2*num)/(factorial(num +1)*factorial(num)); 
+  /* i noticed a problem where my number depaces ten i can't 
+  calculate the n-th catalan so i used the recursion used below */
+}
+
+}
+
+void pascalTriangle(int num){
+
+  int k,nCr;
+  printf("Row [%d] : [",num);
+  for ( k = 0; k <= num; k++)
+  {
+    nCr = nCk(num,k);
+    printf("%d",nCr);
+    if (k!=num)
+    {
+      printf(",");
+    }
+    
+
+  }
+  
+  printf("]");
+
+
+
+}
+
+unsigned long long nCk(int num,int k){
+  return factorial(num)/(factorial(k)*factorial(num-k));
+}
+
+unsigned long long bellNumber(int num){
+  unsigned long long  bell=0;
+  if (num>1){
+    for ( int k = 0; k < num; k++)
+    {
+      bell =bellNumber(k)*nCk(num-1,k) +bell;
+    }
+   return bell; 
+  }
+  if (num ==1 || num == 0)
+  {
+    return 1;
+  }
+  
+}
+
+bool isKaprekar(int num){
+  int num1,sum;
+  int square_num=num*num;
+  int num_digits = numberOfDigits(square_num);
+  divideNumDigits(&square_num,num_digits,&num1);
+  sum = num1 +square_num;
+  if (sum == num)
+  {
+    return true;
+  }else{
+    return false;
+  }
+
+}
+
+
+void divideNumDigits(int *num,int num_digits,int *num1){
+  int p1;
+  
+  if (isEven(num_digits))
+  {
+    p1 = pow(10,num_digits/2); 
+    *num1 = *num%p1;
+    *num= *num/p1;
+    
+
+  }else{
+    p1 = pow(10,(num_digits+1)/2);
+    *num1 = *num%p1;
+    *num= *num/p1;
+    
+  }
+  
+}
+
+bool isSmith(int num){
+  if (isPrime(num))
+  {
+    return false;
+  }else{
+    int sum_digits = sumOfDigits(num);
+    int sum_PrimeFactors = sumOfDigits(primefactors(num));
+    if (sum_digits == sum_PrimeFactors)
+    {
+      return true;
+    }else{
+      return false;
+    }
+    
+
+  }
+  
+}
+int primefactors(int num){
+  int i,j,factor=0;
+  for ( i =2; i <=num; i++)
+  {
+    if (isPrime(i))
+    {
+      while (num % i == 0)//*when i divides more than one times the num
+      {
+        
+        num = num / i;//*to reduce the num for efficient and fast operation
+        factor = factor*10 +i;
+      } 
+    } 
+  }
+  return factor;
+}
+
+int sumOfPrimes(int num){
+  int sum=0;
+  for (int  i = 2; i <= num; i++)
+  {
+    if (isPrime(i))
+    {
+      sum = sum+i;
+    }
+    
+  }
+  
+  return sum;
+}
+
 
