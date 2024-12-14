@@ -1,4 +1,5 @@
 #include<stdbool.h>
+#include<math.h>
 
 
 #ifndef NUMBERS_H
@@ -35,9 +36,29 @@ bool isDivisor(int num,int divisor);
 
 int sumDivisors(int num);
 
+int sumDivisors_out_num(int num);
+
 bool isPerfect(int num);
 bool isMagic(int num);
 
 int numberOfDigits(int num);
+
+bool isAutomorphic(int num);
+
+void toBinary(int num);
+
+bool isNarcissistic(int num);
+
+ double sqrtApprox(int num,double approx);
+
+#define sqrtApproxDefault(num) sqrtApprox(num,2.220446*pow(10,-16))//*Default approximation
+
+double power(int base,int exp);
+
+bool isHappy(int num);
+
+bool isAbundant(int num);
+
+bool isDeficient(int num);
 
 #endif

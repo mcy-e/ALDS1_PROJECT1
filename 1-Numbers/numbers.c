@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include"numbers.h"
 
+//?Basic Functions
 int sumOfDigits(int num){
 
  
@@ -145,6 +146,7 @@ bool isEven(int num){
   
 }
 
+//?Intermediate Functions
 void primeFactors(int num){
   int i,j=num;//*j is to store the value of num because its changes every time
   printf("%d =", num);
@@ -168,23 +170,19 @@ void primeFactors(int num){
 }
 
 bool isArmstrong(int num){
-  int digit_num=0,digit,sum =0,log=1,i,num1;
+  int digit_num=0,digit,sum =0,temp = num,i;
  
   if (num <0)
   {
     return false;//*negative numbers are not armstrong numbers
   }else{
-    num1 = num;
-    while (log < num)
-    {
-      log = log * 10;
-      digit_num++;
-    }
+    
+    digit_num = numberOfDigits(num);
     for ( i = 1; i <= digit_num; i++)
     {
-      digit = num1%10;
+      digit = temp%10;
       sum = sum + pow(digit, digit_num);//*pow function is used to get the power of a number we can't use ^ ....
-      num1 = num1 / 10;
+      temp= temp / 10;
 
     }
     if (sum == num)
@@ -251,6 +249,28 @@ bool isDivisor(int num,int divisor){
     
   } else{return false;}
 }
+int sumDivisors_out_num(int num){
+  int sum = 0,divisor;
+
+  bool check;
+  check = isNegative(num);
+  num =reverse_negative(num, check);
+
+  for ( divisor= 1; divisor < num; divisor++)
+  {
+    if (isDivisor(num,divisor))
+    {
+      sum = sum +divisor;
+    }
+    
+  }
+  
+  return reverse_negative(sum, check);
+
+
+
+}
+
 int sumDivisors(int num){
   int sum = 0,divisor;
 
@@ -324,7 +344,7 @@ bool isMagic(int num){
 
     }
 
-    if (temp <=9)
+    if (temp <=9&&num<=9)
     {
       break;
     }
@@ -362,7 +382,196 @@ int numberOfDigits(int num){
 
 }
 
+bool isAutomorphic(int num){
+  int square_num,digits,digits_num,power;
+  bool check;
+  check = isNegative(num);
+  num = reverse_negative(num,check);
+  digits_num = numberOfDigits(num); 
+  square_num = num*num;
+  
+  power = pow(10,digits_num);
+  
+  digits=square_num%power;
+  if (num == digits)
+  {
+    return true;
+  }else{
+    return false;
+  }
+  
+  
+
+
+}
+
+//?Advanced Functions
+
+void toBinary(int num){
+ int binary_digit,binary_num=0,pos =0,negative_binary=0;
+ bool check;
+ check = isNegative(num);
+ num = reverse_negative(num,check);///*To extand it
+ int temp=num;//*used to make print statement good
+
+  
+
+ while (temp>0)
+ {//*converting the number to its equivalent binary with taking in mind that every binary digit that construct a number we can consider it as a decimal digit (they won't add together)
+  binary_digit = temp%2;
+  temp = temp/2;
+  binary_num = binary_num + binary_digit*pow(10,pos);
+  pos++;
+   
+ }
+ 
+ int pos2 = 0;
+ if (!check){printf("(%d)10 =(%d)2",num,binary_num);//*case the number isn't negative
+ }else{
+    //*1's complement method
+     //!(i may extend it to 2's complement method)
+    int num_digit1 = numberOfDigits(binary_num);
+
+    while (binary_num>0)
+    {
+      binary_digit =binary_num%10;
+      if (binary_digit == 1)
+      {
+        binary_digit =0;
+         
+      }else{
+       binary_digit =1;
+      }
+     
+     negative_binary = negative_binary + binary_digit*pow(10,pos2);
+      binary_num=binary_num/10;
+
+      pos2 ++;
+      
+
+    }
+    int num_digit2 = numberOfDigits(negative_binary);
+    
+    printf("(-%d)10 = ",num); printf("(");
+    while (num_digit1 != num_digit2)
+    {
+      printf("0");
+      num_digit2++;
+
+
+    }
+    printf("%d)2",negative_binary); 
+
+    
+    
+    
+
+  }
+ 
 
 
 
+}
+
+bool isNarcissistic(int num){
+  //*The same as armstrong number (same approach different names )
+  return isArmstrong(num);
+}
+ double sqrtApprox(int num,double approx){
+//TODO expand to reel numbers
+double root1,root,root2,initial_guess;
+initial_guess = num/2.0L;
+root1 = (initial_guess+(num)/initial_guess)/2.0L;
+root2 = (root1+(num)/root1)/2.0L;
+
+
+while (fabs(root2-root1)>=approx)
+{
+  root1=(root2+(num)/root2)/2.0L;
+  root2=(root1+(num)/root1)/2.0L;
+}
+
+
+
+
+return root2;
+
+}
+
+double power(int base,int exp){
+ /* int i,power=1;
+  for ( i = 1; i <=exp; i++)
+  {
+    power=power*base;
+  }
+  return power;*/
+  if (exp == 0)
+  {
+    return 1;
+  }else{
+    return power(base,exp-1)*base;
+  }
+  
+}
+
+bool isHappy(int num){
+  int i,j,k,num_digits,digit,temp;
+  bool check;
+  check = isNegative(num);
+  num =reverse_negative(num, check);
+  num_digits=numberOfDigits(num);
+  for ( i = 0; i <= num_digits*num_digits; i++)
+  {
+    temp = 0;
+    for (j = 0; j <num_digits; j++)
+    {
+      
+      digit = num%10;
+      num = num/10;
+      temp = temp +(digit*digit);
+    }
+    
+    num =0;
+    for ( k = 0; k < num_digits; k++){
+      
+      digit = temp%10;
+      temp = temp / 10;
+      num = num +(digit*digit);
+
+    }
+
+    if (temp <=9&&num<=9)
+    {
+      break;
+    }
+    
+   
+  }
+  if (temp == 1 || num == 1)
+  {
+    return true;
+  }else{return false;}
+  
+  
+
+}
+
+bool isAbundant(int num){
+  int sum ;
+  sum = sumDivisors_out_num(num);
+  if (sum > num )
+  {
+    return true;
+  }else{return false;}
+  
+}
+bool isDeficient(int num){
+  if (!isAbundant(num))
+  {
+    return true;
+  }else{
+    return false;
+  }
+  
+}
 

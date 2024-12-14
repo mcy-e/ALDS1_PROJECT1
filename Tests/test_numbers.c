@@ -4,12 +4,13 @@
 
 
 int main(){
-  int s;
-  //bool ok;
-  s = isMagic(416);
-  //ok = ismagic(415);
-  //printf("%d",ok);
-  printf("%d",s); 
+  //int s;
+  bool ok= isDeficient(12);
+  printf("%d",ok);
+  //double e=power(5,2);
+ // printf("%lf ",e);
+  
+  //printf("%d",s); 
   //primeFactors(850);
 
 
