@@ -3,6 +3,8 @@
 #include<stdio.h>
 #include"numbers.h"
 
+//& MAKE SURE TO INSTALL BETTER COMMENTS EXTENSION IF YOU ARE IN VS CODE FOR BETTER READABILITY 
+
 //!Basic Functions
 int sumOfDigits(int num){
 
@@ -198,7 +200,7 @@ bool isArmstrong(int num){
 
 unsigned long long int fibonacci(int num){
   if (num>2){
-    return fibonacci(num-1)+fibonacci(num -2);
+    return fibonacci(num-1)+fibonacci(num -2);//*recursion function retrun to calculate previous function until it hits 0 1 which has 1 ,1
   }else{
     return 1;
   }
@@ -206,15 +208,16 @@ unsigned long long int fibonacci(int num){
 
 int numberOfDivisors(int num){
   int divisor,num_divisors=0;
+  //*to expand it to even negative integers
   bool check;
   check = isNegative(num);
   num =reverse_negative(num, check);
   
  for ( divisor = 1; divisor<= num ; divisor++)
  {
-   if (num%divisor==0)
+   if (num%divisor==0)//*the integer is a divisor
    {
-     num_divisors++;
+     num_divisors++;//*so we a have a divisor
    }
   }
  
@@ -225,69 +228,72 @@ int numberOfDivisors(int num){
 bool isNegative(int num){
   if (num>0)
   {
-    return false;
+    return false; //* num is positive
   }else{
-    return true;
+    return true;//* num is negative
   }
   
 }
 
 int reverse_negative(int num , bool check){
   
-  if (check)
+  if (check)//*true when the num is negative we get it using the isNegative function
   {
-    return num = num*-1;
+    return num = num*-1;//*make the number positive to make it easier to deal with conditions
   }else{
-    return num = num;
+    return num;//*don't change nothing
   }
   
 }
 
 bool isDivisor(int num,int divisor){
+  //*modularity purposes what made me make this function
   if (num%divisor==0){
     return true;
     
   } else{return false;}
 }
 int sumDivisors_out_num(int num){
+  //*calculate the sum of the divisors without the number itself used in cases to find a type of numbers like perfect numbers
   int sum = 0,divisor;
 
   bool check;
   check = isNegative(num);
-  num =reverse_negative(num, check);
+  num =reverse_negative(num, check);//*to make it work with negatives
 
   for ( divisor= 1; divisor < num; divisor++)
   {
     if (isDivisor(num,divisor))
-    {
+    {//*when i find the divisor i add it to the sum
       sum = sum +divisor;
     }
     
   }
   
-  return reverse_negative(sum, check);
+  return reverse_negative(sum, check);//*returns the sum of the divisors negative in case of negative numbers or positive in case of positive numbers
 
 
 
 }
 
 int sumDivisors(int num){
+  //*calculate the sum of the divisors with the number itself 
   int sum = 0,divisor;
 
   bool check;
   check = isNegative(num);
-  num =reverse_negative(num, check);
+  num =reverse_negative(num, check);//*to make it work with negatives
 
   for ( divisor= 1; divisor <= num; divisor++)
   {
     if (isDivisor(num,divisor))
-    {
+    {//*when I find the divisor I add it to the sum
       sum = sum +divisor;
     }
     
   }
   
-  return reverse_negative(sum, check);
+  return reverse_negative(sum, check);//*returns the sum of the divisors negative in case of negative numbers or positive in case of positive numbers
 
 
 
@@ -296,16 +302,17 @@ int sumDivisors(int num){
 bool isPerfect(int num){
   int i,sum = 0;
   bool check;
-  check = isNegative(num);
+  check = isNegative(num);//*to extended from natural number to integers
   num =reverse_negative(num, check);
-  for ( i = 1; i <= num/2; i++)
+ /* for ( i = 1; i <= num/2; i++)
  {
    if (isDivisor(num,i))
     {
      sum= i+sum;   
    }
         
-  }
+  }*/
+ sum = sumDivisors_out_num(num);
     
   if (num == sum)
   {
@@ -322,11 +329,11 @@ bool isMagic(int num){
   int i,j,k,num_digits,digit,temp;
   bool check;
   check = isNegative(num);
-  num =reverse_negative(num, check);
-  num_digits=numberOfDigits(num);
+  num =reverse_negative(num, check);//*extend it from natural number to integers
+  num_digits=numberOfDigits(num);//*to make a 'for' loop that iterates number of known times
   for ( i = 0; i < num_digits; i++)
   {
-    temp = 0;
+    temp = 0;//*temp to calculate the sum of digits then use it to divide it into digits and asign their sum to the num  
     for (j = 0; j < num_digits; j++)
     {
       
@@ -336,7 +343,11 @@ bool isMagic(int num){
     }
     
     num =0;
-    for ( k = 0; k < num_digits; k++){
+    for ( k = 0; k < num_digits; k++){//*i don't really know why i did it to iterates until the number of digits but i had a remark that 
+    //* in worst cases like if the num contains.. 999 if we add them we will get 2 digit number and so one so every number when we add its
+    //*digits we will get a number that has number of digits -1 yeah like i can make it in the two loops (num_digits -i) but
+    //* i don't really want to change it this is my method wether it's the best or not but at least it work 
+    //* they say 'if it works leave it working'
       
       digit = temp%10;
       temp = temp / 10;
@@ -344,16 +355,16 @@ bool isMagic(int num){
 
     }
 
-    if (temp <=9&&num<=9)
+    if (temp <=9&&num<=9)//*stop the loop when both of them is smaller then or equal  9 because that's it decimal digits alone can't depace 10 
     {
-      break;
+      break;//*we perform break to exit the loop
     }
     
    
   }
   if (temp == 1 || num == 1)
   {
-    return true;
+    return true;//* one of them is one means the when the number of digits add it together we eventually get 1
   }else{return false;}
   
   
@@ -363,16 +374,16 @@ bool isMagic(int num){
 int numberOfDigits(int num){
   int number_digits = 0,verify =1;
   bool check;
-  check = isNegative(num);
-  num = reverse_negative(num,check);
+  check = isNegative(num);//* to extand it to integers
+  num = reverse_negative(num,check);//*reverse the sign
   if (num == 0)
   {
-    return 1;
+    return 1;//*special case
   }
   
  while (num>=verify)
  {
-   verify = verify*10;
+   verify = verify*10;//*imagin it as log10 function but takes only the integer part of a the log10(x)
    number_digits++;
    
  }
@@ -386,14 +397,14 @@ bool isAutomorphic(int num){
   int square_num,digits,digits_num,power;
   bool check;
   check = isNegative(num);
-  num = reverse_negative(num,check);
-  digits_num = numberOfDigits(num); 
-  square_num = num*num;
+  num = reverse_negative(num,check);//*extand it to integers
+  digits_num = numberOfDigits(num); //*calculate the number of digits
+  square_num = num*num;//*calculate the square
   
-  power = pow(10,digits_num);
+  power = pow(10,digits_num);//*i created it because i dont know why pow function doesn't work with modulo 
   
-  digits=square_num%power;
-  if (num == digits)
+  digits=square_num%power;//*find the last digits of the square number according to the number of digits ofvthe number
+  if (num == digits)//*compare in order to see if it holds
   {
     return true;
   }else{
@@ -478,7 +489,7 @@ bool isNarcissistic(int num){
   return isArmstrong(num);
 }
  double sqrtApprox(int num,double approx){
-//TODO expand to reel numbers
+//TODO expand to reel numbers....
 double root1,root,root2,initial_guess;
 initial_guess = num/2.0L;
 root1 = (initial_guess+(num)/initial_guess)/2.0L;

@@ -4,10 +4,10 @@
 
 
 int main(){
-  //int   s= sumOfPrimes(10);
-  //printf("%d",s);
-  //bool ok= isSmith(202);
-  //printf("%d",ok);
+  int   test_num= sumOfPrimes(10);
+  printf("%d",test_num);
+  //bool test_bool= isDivisor(-15,-5);
+  //printf("%d",test_bool);
   //double e=power(5,2);
  // printf("%lf ",e);
   
