@@ -419,7 +419,7 @@ bool isAutomorphic(int num){
 //!Advanced Functions
 
 void toBinary(int num){
- int binary_digit,binary_num=0,pos =0,negative_binary=0;
+ int binary_digit,binary_num=0,pos =0,negative_binary=0,negative_binary2=0;
  bool check;
  check = isNegative(num);
  num = reverse_negative(num,check);///*To extand it
@@ -461,7 +461,42 @@ void toBinary(int num){
       
 
     }
-    int num_digit2 = numberOfDigits(negative_binary);
+    negative_binary = negative_binary +1;
+    int carry = 1;
+    while (negative_binary >0)
+    {
+      binary_digit =negative_binary%10;
+     switch (binary_digit)
+     {
+     case 2:
+      negative_binary2 = negative_binary2*10+0;
+      negative_binary=negative_binary+pow(10,carry);
+      negative_binary=negative_binary/10;
+      break;
+      case 3:
+        negative_binary2 = negative_binary2*10 +1;
+        negative_binary=negative_binary+pow(10,carry);
+        negative_binary=negative_binary/10;
+      break;
+      case 0:
+       negative_binary2 = negative_binary;
+        negative_binary =0;
+      break;
+      case 1:
+        negative_binary2 = negative_binary;
+        negative_binary =0;
+      break;
+      carry ++;
+  
+     }
+      
+     
+      
+      
+    }
+    
+
+    int num_digit2 = numberOfDigits(negative_binary2);
     
     printf("(-%d)10 = ",num); printf("(");
     while (num_digit1 != num_digit2)
@@ -471,7 +506,7 @@ void toBinary(int num){
 
 
     }
-    printf("%d)2",negative_binary); 
+    printf("%d)2",negative_binary2); 
 
     
     
@@ -627,21 +662,38 @@ else if (num >10){
 
 void pascalTriangle(int num){
 
-  int k,nCr;
-  printf("Row [%d] : [",num);
-  for ( k = 0; k <= num; k++)
+  int k,nCr,space;
+  printf("----------------------------------------------------------------------------------------------------------\n");
+  
+  for ( int temp = 0; temp <= num; temp++)
   {
-    nCr = nCk(num,k);
+    printf("Row [%d]: ",temp);
+    space = num-1;
+    while (space >= temp)
+    {
+      printf(" ");
+      space--;
+    }
+    
+
+    
+    printf("[");
+    for ( k = 0; k <= temp; k++)
+   {
+    nCr = nCk(temp,k);
     printf("%d",nCr);
-    if (k!=num)
+    if (k!=temp)
     {
       printf(",");
     }
     
 
+   }
+    
+   printf("]\n");
   }
+  printf("----------------------------------------------------------------------------------------------------------");
   
-  printf("]");
 
 
 
