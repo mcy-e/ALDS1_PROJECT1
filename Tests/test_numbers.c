@@ -25,8 +25,9 @@ int main(){
   // printf("%d ",isHappy(num));
  // printf("%d ",isAbundant(num));
   // printf("%d ",isPrime(num));
- pascalTriangle(13);
+ //pascalTriangle(65);
  //toBinary(-25);
+ pascalTriangleRow(5);
   
   
   

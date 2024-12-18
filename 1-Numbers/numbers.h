@@ -75,6 +75,8 @@ unsigned long long catalanNumber(int num);
 
 void pascalTriangle(int num);
 
+void pascalTriangleRow(int row);
+
 unsigned long long nCk(int num,int k);
 
 unsigned long long bellNumber(int num);

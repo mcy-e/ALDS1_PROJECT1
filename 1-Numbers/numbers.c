@@ -660,16 +660,69 @@ else if (num >10){
 
 }
 
-void pascalTriangle(int num){
+void pascalTriangle(int row){
 
   int k,nCr,space;
-  printf("----------------------------------------------------------------------------------------------------------\n");
+
+  printf("------------------------------------------------------------------------------\n");
   
-  for ( int temp = 0; temp <= num; temp++)
-  {
-    printf("Row [%d]: ",temp);
-    space = num-1;
-    while (space >= temp)
+  
+    for ( int temp = 0; temp <=row; temp++)
+    {
+      
+    
+      
+      printf("Row [%d]: ",temp);
+      space = row-1;
+      while (space >= temp)
+      {
+        printf(" ");
+        space--;
+      }
+    
+
+    
+     printf("[");
+      for ( k = 0; k <= temp; k++)
+      {
+        nCr = nCk(temp,k);
+        printf("%llu",nCr);
+        if (k!=temp)
+        {
+         printf(",");
+        }
+    
+
+      }
+    
+     printf("]\n");
+    }
+    printf("-------------------------------------------------------------------------------\n");
+    
+  
+  
+ 
+  
+  
+
+
+
+}
+
+void pascalTriangleRow(int row){
+  int k,nCr,space;
+
+  printf("------------------------------------------------------------------------------\n");
+  
+  
+    
+    
+      
+    
+      
+   printf("Row [%d]: ",row);
+    space = row-1;
+    while (space >= row)
     {
       printf(" ");
       space--;
@@ -678,27 +731,26 @@ void pascalTriangle(int num){
 
     
     printf("[");
-    for ( k = 0; k <= temp; k++)
-   {
-    nCr = nCk(temp,k);
-    printf("%d",nCr);
-    if (k!=temp)
+    for ( k = 0; k <= row; k++)
     {
-      printf(",");
-    }
+      nCr = nCk(row,k);
+      printf("%llu",nCr);
+      if (k!=row)
+      {
+        printf(",");
+      }
     
 
-   }
+    }
     
-   printf("]\n");
-  }
-  printf("----------------------------------------------------------------------------------------------------------");
-  
+    printf("]\n");
+    
+  printf("-------------------------------------------------------------------------------\n");
+    
 
 
 
 }
-
 unsigned long long nCk(int num,int k){
   return factorial(num)/(factorial(k)*factorial(num-k));
 }
