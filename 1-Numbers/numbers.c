@@ -419,7 +419,8 @@ bool isAutomorphic(int num){
 //!Advanced Functions
 
 void toBinary(int num){
- int binary_digit,binary_num=0,pos =0,negative_binary=0,negative_binary2=0;
+  //! you may see that i overcomplicated it and i can simplify it using functions which what i will do someday...
+ int binary_digit,binary_num=0,pos =0,negative_binary=0;
  bool check;
  check = isNegative(num);
  num = reverse_negative(num,check);///*To extand it
@@ -440,73 +441,69 @@ void toBinary(int num){
  if (!check){printf("(%d)10 =(%d)2",num,binary_num);//*case the number isn't negative
  }else{
     //*1's complement method
-     //!(i may extend it to 2's complement method)
+    //!(i may extend it to 2's complement method)
+    //?great news i did it
     int num_digit1 = numberOfDigits(binary_num);
 
-    while (binary_num>0)
+    while (binary_num>0)//*we switch 0 by 1 and 1 by 0
     {
       binary_digit =binary_num%10;
       if (binary_digit == 1)
       {
-        binary_digit =0;
+        binary_digit =0;//*1 by 0
          
       }else{
-       binary_digit =1;
+       binary_digit =1;//*0 by 1
       }
      
-     negative_binary = negative_binary + binary_digit*pow(10,pos2);
-      binary_num=binary_num/10;
+     negative_binary = negative_binary + binary_digit*pow(10,pos2);//*we add it to previous digits on it's same position
+      binary_num=binary_num/10;//*decrease the binary number
 
       pos2 ++;
       
 
     }
-    negative_binary = negative_binary +1;
-    int carry = 1;
-    while (negative_binary >0)
+    negative_binary = negative_binary +1;//*two complement's method
+    
+    int carry = 1;//*carry to perform addition
+    
+    int verification=0,temp= negative_binary,calc_var;//*some var used in the 2's complement method
+    
+    while ( verification==0)
     {
-      binary_digit =negative_binary%10;
-     switch (binary_digit)
-     {
-     case 2:
-      negative_binary2 = negative_binary2*10+0;
-      negative_binary=negative_binary+pow(10,carry);
-      negative_binary=negative_binary/10;
-      break;
-      case 3:
-        negative_binary2 = negative_binary2*10 +1;
-        negative_binary=negative_binary+pow(10,carry);
-        negative_binary=negative_binary/10;
-      break;
-      case 0:
-       negative_binary2 = negative_binary;
-        negative_binary =0;
-      break;
-      case 1:
-        negative_binary2 = negative_binary;
-        negative_binary =0;
-      break;
-      carry ++;
-  
-     }
-      
      
-      
-      
+      binary_digit=temp%10;//*take the digit
+     //* printf("binary digit : %d\n",binary_digit);
+     //!above statement used to debug because of some problems
+      if (binary_digit == 1||binary_digit == 0)
+      {
+        verification=1;//*exit the loop when the last digit isn't bigger than two
+      }else{
+        calc_var=negative_binary/pow(10,carry);//*was created because the division over multiplication will logically cancel
+        //* each other which is forbidden when we want to take that 2 and replace it by 0
+        negative_binary=calc_var*pow(10,carry) + pow(10,carry);//*here where we update our negative number by removing that two and replace it by 0
+        //*printf("negative binary :%d \n",negative_binary);
+        //!above statement used to debug because of some problems
+      }
+      temp = negative_binary/pow(10,carry);//*decrease the temp variable to check the next digit
+      //*printf("temp :%d\n",temp);
+      //!above statement used to debug because of some problems
+      carry++;//*to add the power of the carry like we add a carry in the n-th position
     }
     
 
-    int num_digit2 = numberOfDigits(negative_binary2);
+    int num_digit2 = numberOfDigits(negative_binary);//*calculate the number of digits of that negative number (used below)
     
-    printf("(-%d)10 = ",num); printf("(");
-    while (num_digit1 != num_digit2)
+    printf("(-%d)10 = ",num); printf("(");//* i saw like it's a good way to display the conversion
+    while (num_digit1 != num_digit2)//* a loop that adds  0 to the left until they have the same number of digits the negative number and the binary number 
     {
       printf("0");
       num_digit2++;
-
+      //*0's are added because the 1's when are reversed on the left they wont count and they'll br ignored
+      //*hope it's good explanation
 
     }
-    printf("%d)2",negative_binary2); 
+    printf("%d)2",negative_binary); 
 
     
     
@@ -524,23 +521,24 @@ bool isNarcissistic(int num){
   return isArmstrong(num);
 }
  double sqrtApprox(int num,double approx){
-//TODO expand to reel numbers....
+
+//*it has  a default approx in the header file
 double root1,root,root2,initial_guess;
 initial_guess = num/2.0L;
 root1 = (initial_guess+(num)/initial_guess)/2.0L;
 root2 = (root1+(num)/root1)/2.0L;
+//*to start the approximation i need at least two numbers the x1(root1) and x2(root2) 
 
-
-while (fabs(root2-root1)>=approx)
+while (fabs(root2-root1)>=approx/*the absolute value to get the distance (math say that's how you calculate distance) */)
 {
-  root1=(root2+(num)/root2)/2.0L;
-  root2=(root1+(num)/root1)/2.0L;
+  root1=(root2+(num)/root2)/2.0L;//*like it's root3 then in the 2nd iteration it's root5
+  root2=(root1+(num)/root1)/2.0L;//*like it's root 4 then in the 2nd iteration it's root6
 }
 
 
 
 
-return root2;
+return root2;//*the last approximation
 
 }
 
@@ -556,7 +554,7 @@ double power(int base,int exp){
     return 1;
   }else{
     return power(base,exp-1)*base;
-  }
+  }//*recursive function call 
   
 }
 
@@ -564,10 +562,10 @@ bool isHappy(int num){
   int i,j,k,num_digits,digit,temp;
   bool check;
   check = isNegative(num);
-  num =reverse_negative(num, check);
-  num_digits=numberOfDigits(num);
-  for ( i = 0; i <= num_digits*num_digits; i++)
-  {
+  num =reverse_negative(num, check);//*to extend it over the negative numbers
+  num_digits=numberOfDigits(num);//*calculate the number of digits
+  for ( i = 0; i <= num_digits*num_digits; i++)//*the main loop iterates that number of time to ensure that on of temp or num are less than 10
+  {//* it wont affect therun time because if one of the them get less than 10 it will break the loop
     temp = 0;
     for (j = 0; j <num_digits; j++)
     {
@@ -598,21 +596,20 @@ bool isHappy(int num){
     return true;
   }else{return false;}
   
-  
+  //*it works like Magic number but we calculate the sum of square of its digits
 
 }
 
 bool isAbundant(int num){
-  int sum ;
-  sum = sumDivisors_out_num(num);
-  if (sum > num )
+  //*using the function that calculate the sum of divisors without the number (it will always be true ) and comparing with number 
+  if (sumDivisors_out_num(num) > num )
   {
     return true;
   }else{return false;}
   
 }
 bool isDeficient(int num){
-  if (!isAbundant(num))
+  if (!isAbundant(num))//*the complement of isAbundant so i will make it easy and link it with the above function
   {
     return true;
   }else{
@@ -622,11 +619,11 @@ bool isDeficient(int num){
 }
 
 unsigned long long int sumEvenFibonacci(int num){
-  
+  //*i can use the recursive function but i don't have time for debuging in case of some problems like i faced before (THIS IS THE TRUTH)
   int i,sum=0;
   for (i = 1; i <= num; i++){
     
-    sum = fibonacci(3*i)+sum;
+    sum = fibonacci(3*i)+sum;//*the even fibonacci numbers are always the number that are divisible by three like 3,6,9,12,15...
   }
   
   return sum;
@@ -635,7 +632,7 @@ unsigned long long int sumEvenFibonacci(int num){
 }
 
 bool isHarshad(int num){
-  if (num%sumOfDigits(num) == 0)
+  if (num%sumOfDigits(num) == 0)//*the definition of a harshad number or niven number
   {
     return true;
   }else{
@@ -660,34 +657,35 @@ else if (num >10){
 
 }
 
-void pascalTriangle(int row){
-
+void pascalPyramid(int row){
+//! its maximum number is 66 so be careful playing with it...
   int k,nCr,space;
 
   printf("------------------------------------------------------------------------------\n");
   
   
-    for ( int temp = 0; temp <=row; temp++)
+    for ( int temp = 0; temp <=row; temp++)//*iterates unlit it gets to the row that i||you entered
     {
       
     
       
-      printf("Row [%d]: ",temp);
-      space = row-1;
+      printf("Row [%d]: ",temp);//*to make it look good on terminal
+      space = row-1;//*space to make the pyramid shape such that it will renew every iteration because it changes below
+      //* there is a better way using for loop but i didn't include it because i prefer my methods only \_(ツ)_/¯
       while (space >= temp)
       {
-        printf(" ");
+        printf(" ");//*spacing
         space--;
       }
     
 
     
-     printf("[");
+     printf("[");//*a way to make it look decent
       for ( k = 0; k <= temp; k++)
       {
-        nCr = nCk(temp,k);
-        printf("%llu",nCr);
-        if (k!=temp)
+        nCr = nCk(temp,k);//*Modularity using other functions
+        printf("%d",nCr);
+        if (k!=temp)//*to separate the nck from each other
         {
          printf(",");
         }
@@ -695,23 +693,55 @@ void pascalTriangle(int row){
 
       }
     
-     printf("]\n");
+     printf("]\n");//* close the brackets and skip the line to the other row
     }
     printf("-------------------------------------------------------------------------------\n");
+
+//! when debuging  i found a problem not in the code but in the numbers when it goes to row 10 the nck gets larger that make the list 
+//!gets large which corrupt the pyramid shape i didn't find any helpful solution in c or i was blind to find a solution...
+}
+
+void pascalTriangle(int row){
+
+ //*same like his older brother but prints perpendicular triangle shape
+  int k,nCr;
+
+  printf("------------------------------------------------------------------------------\n");
+  
+  
+    for ( int temp = 0; temp <=row; temp++)//*iterates unlit it gets to the row that i||you entered
+    {
+      
     
-  
-  
- 
-  
-  
+      
+      printf("Row [%d]: ",temp);//*to make it look good on terminal
+      
+    
 
+    
+     printf("[");//*a way to make it look decent
+      for ( k = 0; k <= temp; k++)
+      {
+        nCr = nCk(temp,k);//*Modularity using other functions
+        printf("%d",nCr);
+        if (k!=temp)//*to separate the nck from each other
+        {
+         printf(",");
+        }
+    
 
+      }
+    
+     printf("]\n");//* close the brackets and skip the line to the other row
+    }
+    printf("-------------------------------------------------------------------------------\n");
 
 }
+    
 
 void pascalTriangleRow(int row){
   int k,nCr,space;
-
+//*same like his older brother but prints only the row in case you just want the row
   printf("------------------------------------------------------------------------------\n");
   
   
@@ -752,7 +782,7 @@ void pascalTriangleRow(int row){
 
 }
 unsigned long long nCk(int num,int k){
-  return factorial(num)/(factorial(k)*factorial(num-k));
+  return factorial(num)/(factorial(k)*factorial(num-k));//*it's like factorial so i used its mathematical defintion
 }
 
 unsigned long long bellNumber(int num){
@@ -760,13 +790,14 @@ unsigned long long bellNumber(int num){
   if (num>1){
     for ( int k = 0; k < num; k++)
     {
-      bell =bellNumber(k)*nCk(num-1,k) +bell;
+      bell =bellNumber(k)*nCk(num-1,k) +bell;//*the relation between the previous bell number (recursive relation ) 
+      //*it's a sum that's why we added the previous calc of bell 
     }
    return bell; 
   }
   if (num ==1 || num == 0)
   {
-    return 1;
+    return 1;//*base case (starting point)
   }
   
 }
@@ -774,10 +805,10 @@ unsigned long long bellNumber(int num){
 bool isKaprekar(int num){
   int num1,sum;
   int square_num=num*num;
-  int num_digits = numberOfDigits(square_num);
-  divideNumDigits(&square_num,num_digits,&num1);
-  sum = num1 +square_num;
-  if (sum == num)
+  int num_digits = numberOfDigits(square_num);//*calculate the number of digits need it in the procedure
+  divideNumDigits(&square_num,num_digits,&num1);//* & is used to give the memory address of those vars to the procedure so that it can return the changed results in the same address 
+  sum = num1 +square_num;//* calculate the sum (the 3rd step)
+  if (sum == num)//*compare
   {
     return true;
   }else{
@@ -788,19 +819,19 @@ bool isKaprekar(int num){
 
 
 void divideNumDigits(int *num,int num_digits,int *num1){
-  int p1;
+  int Power;
   
-  if (isEven(num_digits))
+  if (isEven(num_digits))//*to divide it evenly i.e equally
   {
-    p1 = pow(10,num_digits/2); 
-    *num1 = *num%p1;
-    *num= *num/p1;
+    Power = pow(10,num_digits/2); 
+    *num1 = *num%Power;
+    *num= *num/Power;
     
 
-  }else{
-    p1 = pow(10,(num_digits+1)/2);
-    *num1 = *num%p1;
-    *num= *num/p1;
+  }else{//*give the priority the number from the right
+    Power = pow(10,(num_digits+1)/2);
+    *num1 = *num%Power;
+    *num= *num/Power;
     
   }
   
@@ -808,14 +839,14 @@ void divideNumDigits(int *num,int num_digits,int *num1){
 
 bool isSmith(int num){
   if (isPrime(num))
-  {
+  {//*exclude prime numbers because the don't have prime factors
     return false;
   }else{
-    int sum_digits = sumOfDigits(num);
-    int sum_PrimeFactors = sumOfDigits(primefactors(num));
-    if (sum_digits == sum_PrimeFactors)
+    int sum_digits = sumOfDigits(num);//*calculate the sum of digits of the number
+    int sum_PrimeFactors = sumOfDigits(primeFactorsSum(num));//*calculate the sum of digits of the prime factors of the number like 10 calculate the function will calc 2+5
+    if (sum_digits == sum_PrimeFactors)//*compare
     {
-      return true;
+      return true;//*result
     }else{
       return false;
     }
@@ -824,7 +855,7 @@ bool isSmith(int num){
   }
   
 }
-int primefactors(int num){
+int primeFactorsSum(int num){//*i know the name is bad but i want to avoid the "_" to make it easy to write although it will be auto completed if you're using vs code
   int i,j,factor=0;
   for ( i =2; i <=num; i++)
   {
@@ -834,7 +865,7 @@ int primefactors(int num){
       {
         
         num = num / i;//*to reduce the num for efficient and fast operation
-        factor = factor*10 +i;
+        factor = factor*10 +i;//*the sum of the factors 
       } 
     } 
   }
@@ -845,9 +876,9 @@ int sumOfPrimes(int num){
   int sum=0;
   for (int  i = 2; i <= num; i++)
   {
-    if (isPrime(i))
+    if (isPrime(i))//*check if it's prime
     {
-      sum = sum+i;
+      sum = sum+i;//*if tru it will be added to the sum 
     }
     
   }

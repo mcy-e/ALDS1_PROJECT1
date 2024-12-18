@@ -49,9 +49,8 @@ int numberOfDigits(int num);
 
 bool isAutomorphic(int num);
 
-void toBinary(int num);
-
 //!Advanced Functions
+void toBinary(int num);
 
 bool isNarcissistic(int num);
 
@@ -73,6 +72,7 @@ bool isHarshad(int num);
 
 unsigned long long catalanNumber(int num);
 
+void pascalPyramid(int row);
 void pascalTriangle(int num);
 
 void pascalTriangleRow(int row);
@@ -87,7 +87,7 @@ bool isKaprekar(int num);
 
 bool isSmith(int num);
 
-int primefactors(int num);
+int primeFactorsSum(int num);
 
 int sumOfPrimes(int num);
 
