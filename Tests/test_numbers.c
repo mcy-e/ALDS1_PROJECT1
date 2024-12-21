@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdbool.h>
-#include "../1-Numbers/numbers.h"
+#include "../lib/mainlib.h"
 
 
 int main(){
@@ -57,7 +57,8 @@ int main(){
   printf("%d\n",isKaprekar(569));
   printf("%d\n",isSmith(142));
   printf("%d\n",primeFactorsSum(19));
-  printf("%d\n",sumOfPrimes(9));*/  
+  printf("%d\n",sumOfPrimes(9));*/
+
   
   return 0;
 }
