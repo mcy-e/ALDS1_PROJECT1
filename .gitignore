@@ -1,0 +1,9 @@
+# Ignore output directory and object files
+/output/
+*.o
+
+# Ignore build artifacts
+main_program
+test_program
+#ignore some assets 
+*.jpg
