@@ -18,6 +18,7 @@ int main(){
 
 //& Testing intermediate functions 
 /*primeFactors(125);
+  printf("\n");
   printf("%d\n",isArmstrong(19));
   printf("%llu\n",fibonacci(12));
   printf("%d\n",numberOfDivisors(15));

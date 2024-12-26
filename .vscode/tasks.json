@@ -2,19 +2,60 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build and Run Tests",
+      "label": "Build and Run tests_numbers",
       "type": "shell",
       "command": "cmd",
       "args": [
         "/c", 
-        "gcc -I ${workspaceFolder}/1-Numbers ${workspaceFolder}/1-Numbers/numbers.c ${workspaceFolder}/Tests/test_numbers.c -o ${workspaceFolder}/Tests/output/test_numbers && \"${workspaceFolder}/Tests/output/test_numbers\""
+        "gcc -I ${workspaceFolder}/1-Numbers -I ${workspaceFolder}/lib ${workspaceFolder}/1-Numbers/numbers.c ${workspaceFolder}/Tests/test_numbers.c -o ${workspaceFolder}/Tests/output/test_numbers && \"${workspaceFolder}/Tests/output/test_numbers\""
       ],
       "problemMatcher": [],
       "group": {
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "Build and Run tests_strings",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c", 
+        "gcc -I ${workspaceFolder}/2-Strings -I ${workspaceFolder}/lib ${workspaceFolder}/2-Strings/strings.c ${workspaceFolder}/Tests/test_strings.c -o ${workspaceFolder}/Tests/output/test_strings && \"${workspaceFolder}/Tests/output/test_strings\""
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Build and Run tests_arrays",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c", 
+        "gcc -I ${workspaceFolder}/3-Arrays -I ${workspaceFolder}/lib ${workspaceFolder}/3-Arrays/arrays.c ${workspaceFolder}/Tests/test_arrays.c -o ${workspaceFolder}/Tests/output/test_arrays && \"${workspaceFolder}/Tests/output/test_arrays\""
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Build and Run tests_matrices",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c", 
+        "gcc -I ${workspaceFolder}/4-Matrices -I ${workspaceFolder}/lib ${workspaceFolder}/4-Matrices/matrices.c ${workspaceFolder}/Tests/test_matrices.c -o ${workspaceFolder}/Tests/output/test_matrices && \"${workspaceFolder}/Tests/output/test_matrices\""
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
     }
   ]
 }
-
