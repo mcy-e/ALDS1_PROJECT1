@@ -7,3 +7,4 @@ main_program
 test_program
 #ignore some assets 
 *.jpg
+*.pdf

@@ -1,12 +1,14 @@
 #include<stdio.h>
 #include<stdbool.h>
-#include "../lib/mainlib.h"
+#include "mainlib.h"
 
 
 int main(){
-
-//& Testing the basic functions 
-/*printf("%d \n",sumOfDigits(145));
+  // ** ||Instructions for users|| **//
+  //TODO: // Uncomment the lines below to test specific functions./ You can modify the arguments or add new tests as needed.
+  
+ //& Testing the basic functions 
+ /*printf("%d \n",sumOfDigits(145));
   printf("%d\n",reverseNumber(541));
   printf("%d\n",isPalindrome(121));
   printf("%d\n",isPrime(1098));
@@ -16,8 +18,8 @@ int main(){
   printf("%d\n", factorial(5));
   printf("%d\n", isEven(-6));*/
 
-//& Testing intermediate functions 
-/*primeFactors(125);
+ //& Testing intermediate functions 
+ /*primeFactors(125);
   printf("\n");
   printf("%d\n",isArmstrong(19));
   printf("%llu\n",fibonacci(12));
@@ -32,8 +34,8 @@ int main(){
   printf("%d\n",numberOfDigits(18523));
   printf("%d\n",isAutomorphic(111));*/
 
-//& Testing advanced functions
-/*toBinary(-159);
+ //& Testing advanced functions
+ /*toBinary(-159);
   printf("%d\n",isNarcissistic(15));
   printf("%llf\n",sqrtApprox(5,0.0001));
   printf("%llf\n",sqrtApproxDefault(5));

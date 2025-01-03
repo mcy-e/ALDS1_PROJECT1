@@ -1,7 +1,7 @@
 #include<stdbool.h>
 #include<math.h>
 #include<stdio.h>
-#include"numbers.h"
+#include"../include/numbers.h"
 
 //& MAKE SURE TO INSTALL BETTER COMMENTS EXTENSION IF YOU ARE IN VS CODE FOR BETTER READABILITY 
 
