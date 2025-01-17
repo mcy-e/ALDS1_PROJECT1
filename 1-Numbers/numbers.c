@@ -14,12 +14,12 @@ int sumOfDigits(int num){
   check = isNegative(num);
   num =reverse_negative(num, check);
   
-  if (num < 0)
+  /*if (num < 0)
   {
     num =-num;
     check = 1; //*need it in order to return with negative value
-  }
-    
+  }*/
+  
  while (num > 0){
     //*the loop where we get the  digit add it to sum then moving upwards 
       digit = num % 10;//*get the digit
@@ -148,6 +148,10 @@ bool isEven(int num){
   
 }
 
+bool isOdd(int num){
+  if(isEven(num)) return false;//*is even 
+  else return true;//*is odd
+}
 //!Intermediate Functions
 void primeFactors(int num){
   int i,j=num;//*j is to store the value of num because its changes every time
@@ -247,7 +251,7 @@ int reverse_negative(int num , bool check){
 }
 
 bool isDivisor(int num,int divisor){
-  //*modularity purposes what made me make this function
+  //*modularity purposes what pushed me to make this function
   if (num%divisor==0){
     return true;
     
@@ -255,20 +259,13 @@ bool isDivisor(int num,int divisor){
 }
 int sumDivisors_out_num(int num){
   //*calculate the sum of the divisors without the number itself used in cases to find a type of numbers like perfect numbers
-  int sum = 0,divisor;
-
+  
   bool check;
   check = isNegative(num);
   num =reverse_negative(num, check);//*to make it work with negatives
 
-  for ( divisor= 1; divisor < num; divisor++)
-  {
-    if (isDivisor(num,divisor))
-    {//*when i find the divisor i add it to the sum
-      sum = sum +divisor;
-    }
-    
-  }
+  int sum = sumDivisors(num);
+  sum = sum -num; //*remove the num from the sum
   
   return reverse_negative(sum, check);//*returns the sum of the divisors negative in case of negative numbers or positive in case of positive numbers
 
@@ -467,7 +464,7 @@ void toBinary(int num){
     
     int carry = 1;//*carry to perform addition
     
-    int verification=0,temp= negative_binary,calc_var;//*some var used in the 2's complement method
+    int verification=0,temp=negative_binary,calc_var;//*some var used in the 2's complement method
     
     while ( verification==0)
     {

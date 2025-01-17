@@ -22,6 +22,8 @@ unsigned long long  factorial(int num);
 
 bool isEven(int num);
 
+bool isOdd(int num);
+
 //!Intermediate Functions
 
 void primeFactors(int num);
