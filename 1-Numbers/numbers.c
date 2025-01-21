@@ -87,16 +87,17 @@ bool isPrime(int num){
 int gcd(int a,int b){
   int i,gcd;
   gcd=1;
-  for (i = 2; i <= Max(a,b); i++){
+  for (i = 2; i <= Min(a,b); i++){
     if (a%i ==0 && b%i == 0)
     {
-      return gcd=i;//*updates until it gets to the lasts one 
-    }else{
-      return gcd;//*means there is no common divisor
+      gcd=i;//*updates until it gets to the lasts one 
     }
     
 
+    
+
   }
+  return gcd;
 
   
 }
@@ -110,7 +111,14 @@ int Max(int a,int b){
     return b;//* max(a,b)=b
   }
 }
-
+int Min(int a,int b){
+  if (a>b)
+  {
+    return b;//* min(a,b) = a
+  }else{
+    return a;//* min(a,b)=b
+  }
+}
 int lcm(int a ,int b){
 
   return (a*b)/gcd(a,b);//*by applying the mathematical formula

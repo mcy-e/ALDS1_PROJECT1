@@ -16,6 +16,7 @@ int gcd(int a,int b);
 
 int Max(int a,int b);
 
+int Min(int a,int b);
 int lcm(int a,int b);
 
 unsigned long long  factorial(int num);
