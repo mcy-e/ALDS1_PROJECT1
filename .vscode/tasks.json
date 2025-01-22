@@ -21,7 +21,7 @@
       "command": "cmd",
       "args": [
         "/c", 
-        "gcc -I ${workspaceFolder}/2-Strings -I ${workspaceFolder}/lib ${workspaceFolder}/2-Strings/strings.c ${workspaceFolder}/Tests/test_strings.c -o ${workspaceFolder}/Tests/output/test_strings && \"${workspaceFolder}/Tests/output/test_strings\""
+        "gcc -I \"${workspaceFolder}/2-Strings\" -I \"${workspaceFolder}/lib\" \"${workspaceFolder}/2-Strings/strings.c\" \"${workspaceFolder}/Tests/test_strings.c\" \"${workspaceFolder}/1-Numbers/numbers.c\" -o \"${workspaceFolder}/Tests/output/test_strings\" && \"${workspaceFolder}/Tests/output/test_strings\""
       ],
       "problemMatcher": [],
       "group": {
