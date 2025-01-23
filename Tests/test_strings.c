@@ -3,9 +3,13 @@
 #include "../lib/mainlib.h"
 
 int main(){
- char result[106]={0};
- char dst[1024]="abc";
- int v=179;
+ // ** ||Instructions for users|| **//
+  //TODO: // Uncomment the lines below to test specific functions./ You can modify the arguments or add new tests as needed.
+  
+ 
+  //char result[106]={0};
+  //char dst[1024]="abc";
+  //int v=179,c;
  //printf("%s",dst-1);
  //!Basic Functions
   //printf("%d",stringLength("hello world!"));
@@ -51,12 +55,12 @@ int main(){
   //longestPalindrome(dst,result);
   //printf("%s \n" ,result); 
   //printPermutations(dst);
-  char str[999]="mcy,bb,apple,waffle,gg,bro";
-  char delimiter=',';
-  char tokens[100][100];
-  int token=0;
-  splitString(str,delimiter,tokens,&token);
-  for (int i = 0; i < 6; i++)
+  //char str[999]="mcy,bb,apple,waffle,gg,bro";
+  //char delimiter=',';
+  //char tokens[100][100];
+  //int token=0;
+ // splitString(str,delimiter,tokens,&token);
+  /*for (int i = 0; i < 6; i++)
   {
     
     printf("token number %d is :%s\n",i+1,tokens[i]);
@@ -64,6 +68,6 @@ int main(){
     
   }
   printf("%d\n",token);
-
+*/
   return 0;
 }
