@@ -35,7 +35,7 @@
       "command": "cmd",
       "args": [
         "/c", 
-        "gcc -I ${workspaceFolder}/3-Arrays -I ${workspaceFolder}/lib ${workspaceFolder}/3-Arrays/arrays.c ${workspaceFolder}/Tests/test_arrays.c -o ${workspaceFolder}/Tests/output/test_arrays && \"${workspaceFolder}/Tests/output/test_arrays\""
+        "gcc -I ${workspaceFolder}/3-Arrays -I ${workspaceFolder}/lib ${workspaceFolder}/3-Arrays/arrays.c ${workspaceFolder}/Tests/test_arrays.c \"${workspaceFolder}/1-Numbers/numbers.c\" -o ${workspaceFolder}/Tests/output/test_arrays && \"${workspaceFolder}/Tests/output/test_arrays\""
       ],
       "problemMatcher": [],
       "group": {

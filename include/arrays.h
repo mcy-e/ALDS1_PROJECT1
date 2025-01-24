@@ -59,4 +59,44 @@ void shift_left(int arr[],int arr_size,int repeat_times);
 
 void shift_right(int arr[],int arr_size,int repeat_times);
 
+void compare_swap(int arr[],int size);
+
+void bubbleSort(int arr[],int size);
+
+void selectionSort(int arr[],int size);
+
+void insertionSort(int arr[],int size);
+
+void mergeSort(int arr[],int left,int right);
+
+bool isEmptyArray(int arr[],int size);
+void quickSort(int arr[],int low,int high);
+
+void swap(int* elem1,int* elem2);
+
+//!Advanced functions
+
+int findMissingNumber(int arr[], int size);
+
+void findPairsWithSum(int arr[], int size, int sum);
+
+void findSubArrayWithSum(int arr[], int size, int sum);
+
+void rearrangeAlternatePositiveNegative(int arr[], int size);
+
+int findMajorityElement(int arr[], int size);
+
+int longestIncreasingSubsequence(int arr[], int size);
+
+void findDuplicates(int arr[], int size);
+
+
+void findIntersection(int arr1[], int size1, int arr2[], int size2);
+
+void findUnion(int arr1[], int size1, int arr2[], int size2);
+
+
+
+
+
 #endif 
