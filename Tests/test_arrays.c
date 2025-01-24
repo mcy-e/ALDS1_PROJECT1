@@ -4,10 +4,10 @@
 int main(){
  // ** ||Instructions for users|| **//
   //TODO: // Uncomment the lines below to test specific functions./ You can modify the arguments or add new tests as needed.
-  int size=6;
+  /*int size=6;
   int arr[]={-1,-1,2,5,5,5};
   int size1=6;
-  int arr1[]={-1,2,2,4,5,7};
+  int arr1[]={-1,2,2,4,5,7};*/
 
   //& Testing the basic functions
     //initializeArray(arr,size,5);
@@ -49,7 +49,10 @@ int main(){
   //printf("%d",findMajorityElement(arr,size));
   //printf("%d",longestIncreasingSubsequence(arr,size));
   //findDuplicates(arr,size);
-  findIntersection(arr,size,arr1,size1);
+  //findIntersection(arr,size,arr1,size1);
   //findUnion(arr,size,arr1,size1);
-    return 0;
+
+
+
+  return 0;
 }

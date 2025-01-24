@@ -24,7 +24,6 @@ void storingDigits(int arr[],int number);
 
 void minimumValue(int arr[],int size,int *index,int pos);
 
-void selectionSort(int arr[],int size);
 
 int returningDigits(int arr[] ,int size );
 
@@ -61,6 +60,7 @@ void shift_right(int arr[],int arr_size,int repeat_times);
 
 void compare_swap(int arr[],int size);
 
+//!Sorting Algorithms
 void bubbleSort(int arr[],int size);
 
 void selectionSort(int arr[],int size);
@@ -69,12 +69,14 @@ void insertionSort(int arr[],int size);
 
 void mergeSort(int arr[],int left,int right);
 
-bool isEmptyArray(int arr[],int size);
 void quickSort(int arr[],int low,int high);
+
+
+//!Advanced functions
 
 void swap(int* elem1,int* elem2);
 
-//!Advanced functions
+bool isEmptyArray(int arr[],int size);
 
 int findMissingNumber(int arr[], int size);
 

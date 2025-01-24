@@ -402,11 +402,7 @@ void insertionSort(int arr[],int size){
 
 }
 
-bool isEmptyArray(int arr[],int size){
-    if (size==0) return true;
-    return false;
-    
-}
+
 void mergeSort(int arr[], int left, int right) {
     if (left < right - 1) {
         int midle = (left + right) / 2;
@@ -483,15 +479,21 @@ void quickSort(int arr[], int low, int high) {
     
 
 
+
+
+//!Advanced functions
+
+bool isEmptyArray(int arr[],int size){
+    if (size==0) return true;
+    return false;
+    
+}
 void swap(int* elem1,int* elem2){
     int temp;
     temp = *elem1;
     *elem1 = *elem2;
     *elem2 = temp;
 }
-
-//!Advanced functions
-
 int findMissingNumber(int arr[], int size){
     quickSort(arr,0,size);
     for (int i = 0; i < size; i++)

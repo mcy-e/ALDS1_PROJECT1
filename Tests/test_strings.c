@@ -11,7 +11,8 @@ int main(){
   //char dst[1024]="abc";
   //int v=179,c;
  //printf("%s",dst-1);
- //!Basic Functions
+  //& Testing the basic functions
+
   //printf("%d",stringLength("hello world!"));
   //stringCopy("hello",dst);
   //stringConcat(dst,"world!");
@@ -21,7 +22,7 @@ int main(){
   //toUpperCase(dst);
   //toLowerCase(dst);
 
- //!Intermediate Functions    
+  //& Testing the intermediate functions  
   //printf("%d",isPalindromeString(dst));
   //countVowelsConsonants(dst,&v,&c);
   //printf("v= %d ,c= %d",v,c);
@@ -35,7 +36,7 @@ int main(){
   //removeDuplicates(dst);
   //printf("%s",dst);
 
-  //!Advanced functions
+  //& Testing the advanced functions
   //compressString(dst,result);
   //printf("%s \n" ,dst);    
   //printf("%s \n" ,result);

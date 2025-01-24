@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdbool.h>
-#include "mainlib.h"
+#include "../lib/mainlib.h"
 
 
 int main(){
