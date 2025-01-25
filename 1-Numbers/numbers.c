@@ -891,4 +891,55 @@ int sumOfPrimes(int num){
   return sum;
 }
 
+int binary(int num){
+  int temp=num;
+  int binary_num=0;
+  int binary_digit,pos=0;
+  while (temp>0)
+  {//*converting the number to its equivalent binary with taking in mind that every binary digit that construct a number we can consider it as a decimal digit (they won't add together)
+    binary_digit = temp%2;
+    temp = temp/2;
+    binary_num = binary_num + binary_digit*pow(10,pos);
+    pos++;
+   
+  }
+  return binary_num;
+}
 
+int decimal(int num){
+  int temp=num;
+  int decimal_num=0;
+  int pos=0;
+  int digit_num;  
+  while(temp>0){
+    digit_num=temp%10;
+    decimal_num+= pow(2,pos);
+    temp=temp/10;
+    pos++;
+  }
+  return decimal_num;
+}
+
+int Xor(int num1,int num2){
+  int num1_digits=numberOfDigits(num1);
+  int num2_digits=numberOfDigits(num2);
+  int digit_num1,digit_num2;  
+  int xor=0;
+  int pos=0;
+  while (num1_digits!=0&&num2_digits!=0)
+  {
+    digit_num1=num1%10;
+    digit_num2=num2%10;
+    if (digit_num1==digit_num2) xor+= 0;
+    else xor+= pow(10,pos);
+   pos++;
+   num1=num1/10;
+   num2=num2/10;
+   num1_digits--;
+   num2_digits--;
+    
+  }
+  return xor;
+  
+  
+}

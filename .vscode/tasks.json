@@ -26,7 +26,7 @@
       "problemMatcher": [],
       "group": {
         "kind": "build",
-        "isDefault": false
+        "isDefault": true
       }
     },
     {
@@ -49,12 +49,12 @@
       "command": "cmd",
       "args": [
         "/c", 
-        "gcc -I ${workspaceFolder}/4-Matrices -I ${workspaceFolder}/lib ${workspaceFolder}/4-Matrices/matrices.c ${workspaceFolder}/Tests/test_matrices.c -o ${workspaceFolder}/Tests/output/test_matrices && \"${workspaceFolder}/Tests/output/test_matrices\""
+        "gcc -I ${workspaceFolder}/4-Matrices -I ${workspaceFolder}/lib ${workspaceFolder}/4-Matrices/matrices.c ${workspaceFolder}/Tests/test_matrices.c \"${workspaceFolder}/1-Numbers/numbers.c\" \"${workspaceFolder}/3-Arrays/arrays.c\" -o ${workspaceFolder}/Tests/output/test_matrices && \"${workspaceFolder}/Tests/output/test_matrices\""
       ],
       "problemMatcher": [],
       "group": {
         "kind": "build",
-        "isDefault": true
+        "isDefault": false
       }
     }
   ]

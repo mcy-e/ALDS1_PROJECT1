@@ -94,5 +94,11 @@ int primeFactorsSum(int num);
 
 int sumOfPrimes(int num);
 
+int binary(int num);
+
+int decimal(int num);
+
+int Xor(int num1,int num2);
+
 
 #endif

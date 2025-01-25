@@ -72,4 +72,21 @@ void printPermutations(char* str);
 
 void splitString(char* str, char delimiter, char tokens[][100], int* tokenCount);
 
+//!Cypher functions
+
+void caesarCipher(char *text, int shift);
+
+void substitutionCipher(char *text, const char *key);
+
+void xorCipher(char *text, char key);
+
+
+
+void vigenereCipher(char *text, const char *key, int encrypt);
+
+void atbashCipher(char *text);
+
+void railFenceCipher(const char *text, char *result, int depth);
+
+
 #endif

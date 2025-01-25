@@ -70,5 +70,39 @@ int main(){
   }
   printf("%d\n",token);
 */
+
+//& Test Cypher functions
+
+char str[100]="Hello world";
+char str2[100];
+
+//caesarCipher(str, 3);
+//printf("%s\n",str);
+
+//substitutionCipher(str, "QAZWSXEDCRFVTGBYHNUJMIKOLP");
+//printf("%s\n",str);
+
+xorCipher(str, 'k');
+printf("%s\n",str);
+xorCipher(str, 'k');
+printf("\n%s\n",str);
+xorCipher(str, 'k');
+printf("\n%s\n",str);
+//vigenereCipher(str, "key" ,1);
+//vigenereCipher(str,"key",0);
+//printf("%s\n",str);
+
+//atbashCipher(str);
+//printf("%s\n",str);
+
+//railFenceCipher(str, str2, 3);
+//printf("%s\n",str2);
+
+
+
+
+
+
+
   return 0;
 }

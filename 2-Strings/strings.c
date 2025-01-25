@@ -725,4 +725,166 @@ void splitString(char* str, char delimiter, char tokens[][100], int* tokenCount)
     }
 }
 
+//!Cypher functions
+
+void caesarCipher(char *text, int shift){
+    int len=stringLengthWithSpace(text);
+    for (int i = 0; i < len; i++)
+    {
+        if (text[i] >= 'a' && text[i] <= 'z')
+        {
+            text[i] = text[i] + shift;
+            if (text[i] > 'z') text[i] = text[i] - 26;
+            else if (text[i] < 'a') text[i] = text[i] + 26;
+        }
+        
+        else if (text[i] >= 'A' && text[i] <= 'Z')
+        {
+            text[i] = text[i] + shift;
+            if (text[i] > 'Z') text[i] = text[i] - 26;
+            else if (text[i] < 'A')  text[i] = text[i] + 26;
+        }
+
+    }
+    
+}
+
+void substitutionCipher(char *text, const char *key){
+
+   int len=stringLengthWithSpace(text);
+   int lenKey=stringLengthWithSpace(key);
+   char lowerKey[lenKey];
+   stringCopy(key,lowerKey);
+   toLowerCase(lowerKey);
+   char upperKey[lenKey];
+   stringCopy(key,upperKey);
+   toUpperCase(upperKey);
+    for (int i = 0; i < len; i++)
+    {
+        if (text[i]>='A'&& text[i]<='Z')
+        {
+            text[i]=upperKey[text[i]-'A'];
+        }
+        if (text[i]>='a'&& text[i]<='z')
+        {
+            text[i]=lowerKey[text[i]-'a'];
+        }
+    }
+    
+}
+void xorCipher(char *text, char key) {
+    int len = stringLengthWithSpace(text);
+    
+    for (int i = 0; i < len; i++) {
+        text[i] = (text[i] ^ key);  
+        text[i] = (text[i] % 95) + 32;  
+    }
+}
+
+
+void vigenereCipher(char *text, const char *key, int encrypt){
+    int len =stringLengthWithSpace(text);
+    char keyCopy[1024];
+    stringCopy(key,keyCopy);
+    int keyLen=stringLength(keyCopy);
+    int keyIndex=0;
+    
+    if (encrypt==1)
+    {
+        for (int i = 0; i < len; i++)
+        {
+            if (text[i]>='a' && text[i]<='z' )
+            {
+                keyIndex=i%keyLen;
+                text[i]=(text[i] - 'a' + key[keyIndex] - 'a') % 26 + 'a';
+                keyIndex++;
+            }
+            if (text[i]>='A' && text[i]<='Z' )
+            {
+                keyIndex=i%keyLen;
+                text[i]=(text[i] - 'A' + key[keyIndex] - 'A') % 26 + 'A';
+                keyIndex++;
+            }
+        }
+        
+    }else if (encrypt==0)
+    {
+        for (int i = 0; i < len; i++)
+        {
+            if (text[i]>='a' && text[i]<='z' )
+            {
+                keyIndex=i%keyLen;
+                text[i]=(text[i] - 'a' - (key[keyIndex] - 'a') + 26) % 26 + 'a';
+                keyIndex++;
+            }
+            if (text[i]>='A' && text[i]<='Z' )
+            {
+                keyIndex=i%keyLen;
+                text[i]=(text[i] - 'A' - (key[keyIndex] - 'A') + 26) % 26 + 'A';
+                keyIndex++;
+            }
+        }
+    }else{
+        printf("Invalid encryption flag!");
+    }
+    
+    
+}
+void atbashCipher(char *text){
+    int len=stringLengthWithSpace(text);
+    for (int i = 0; i < len; i++)
+    {
+        if (text[i]>='a' && text[i]<='z' )
+        {
+            text[i]='z'-(text[i]-'a');
+        }
+        if (text[i]>='A' && text[i]<='Z' )
+        {
+            text[i]='Z'-(text[i]-'A');
+        }
+    }
+    
+}
+
+void railFenceCipher(const char *text, char *result, int depth) {
+    char textCopy[2025];
+    stringCopy(text,textCopy);
+    int cols = stringLengthWithSpace(textCopy);
+    char matrix[depth][cols];
+    for (int i = 0; i < depth; i++) {
+        for (int j = 0; j < cols; j++) {
+            matrix[i][j] = '\0';  
+        }
+    }
+
+    int i = 0, j = 0;
+    while (j < cols) {
+        while (i < depth && j < cols) {
+            matrix[i][j] = text[j];
+            i++;
+            j++;
+        }
+        i--;
+        while (i > 0 && j < cols) {
+            i--;
+            matrix[i][j] = text[j];
+            j++;
+        }
+    }
+
+    int track = 0;
+    for (int row = 0; row < depth; row++) {
+        for (int col = 0; col < cols; col++) {
+            if (matrix[row][col] != '\0') {
+                result[track] = matrix[row][col];
+                track++;
+            }
+        }
+    }
+    result[track] = '\0';
+}
+
+
+
+
 
