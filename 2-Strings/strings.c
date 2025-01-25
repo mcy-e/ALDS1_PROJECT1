@@ -108,14 +108,14 @@ int stringCompareInsensitive(const char* str1, const char* str2){
 
 bool isEmpty(char* str){
     int length=stringLength(str);
-    if (length==0) return true;
+    if (length==0) return true;//*is empty
     
 
     return false;
 }
 
 bool isEmptyLiterally(char* str){
-    if(str[0]=='\0') return true;
+    if(str[0]=='\0') return true;//*that's literally empty
     return false;
 }
 

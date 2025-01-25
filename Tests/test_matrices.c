@@ -5,15 +5,15 @@
 int main(){
 // ** ||Instructions for users|| **//
   //TODO: // Uncomment the lines below to test specific functions./ You can modify the arguments or add new tests as needed.
-  int size=3;
-  int mat[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-  double mat2[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-  int pow=2;
-  double result[size][size];
-  double upper[size][size];
-  double lower[size][size];
-  double arr[size]; 
-   //& Testing the basic functions
+ // int size=3;
+  //int mat[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+  //double mat2[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+  //int pow=2;
+  //double result[size][size];
+  //double upper[size][size];
+  //double lower[size][size];
+  //double arr[size]; 
+  //& Testing the basic functions
   //initializeMatrix(size,size,result,1);
   //multiplyMatrices(size,size,mat,size,size,mat,result);
   
