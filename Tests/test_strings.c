@@ -3,106 +3,131 @@
 #include "../lib/mainlib.h"
 
 int main(){
- // ** ||Instructions for users|| **//
-  //TODO: // Uncomment the lines below to test specific functions./ You can modify the arguments or add new tests as needed.
-  
- 
-  //char result[106]={0};
-  //char dst[1024]="abc";
-  //int v=179,c;
- //printf("%s",dst-1);
-  //& Testing the basic functions
-
-  //printf("%d",stringLength("hello world!"));
-  //stringCopy("hello",dst);
-  //stringConcat(dst,"world!");
-  //printf("%d",stringCompare("wowe","ewow"));
-  //printf("%d",isEmptyLiterally(""));
-  //reverseString(dst);
-  //toUpperCase(dst);
-  //toLowerCase(dst);
-
-  //& Testing the intermediate functions  
-  //printf("%d",isPalindromeString(dst));
-  //countVowelsConsonants(dst,&v,&c);
-  //printf("v= %d ,c= %d",v,c);
-  //printf("%d",findSubstring("ggvlm","mcy"));
-  // printf("%d",findSubstringInsensitive("rfrMcygg","mcy"));
-  //removeWhiteSpace(dst);
-  //printf("%s",dst);  
-  //printf("%d",isAnagram("listen","silent"));
-  //charFrequency(dst);
-  //printf("%d",countWords(dst));
-  //removeDuplicates(dst);
-  //printf("%s",dst);
-
-  //& Testing the advanced functions
-  //compressString(dst,result);
-  //printf("%s \n" ,dst);    
-  //printf("%s \n" ,result);
-  //switchInt_Str(result,v);
-  //printf("%s \n",result);
-  //printf("%d \n",v);
-  //longestWord(dst,result);
-  //printf("%s \n" ,result); 
-  //rotateLeftTimes(dst,2);
-  //printf("%s \n" ,dst);
-  //rotateRightTimes(result,1);
-  //printf("%s \n" ,result);
-  //printf("%d \n",isRotation(dst,result));
-  //printf("%d\n",countChar(dst,'a'));
-  //findAndReplace(dst,"mcy","m3ztt");
-  //printf("%s \n" ,dst);
-  //longestPalindrome(dst,result);
-  //printf("%s \n" ,result); 
-  //printPermutations(dst);
-  //char str[999]="mcy,bb,apple,waffle,gg,bro";
-  //char delimiter=',';
-  //char tokens[100][100];
-  //int token=0;
- // splitString(str,delimiter,tokens,&token);
-  /*for (int i = 0; i < 6; i++)
-  {
+    // ** ||Instructions for users|| **//
+    //TODO: // Uncomment the lines below to test specific functions./ You can modify the arguments or add new tests as needed.
     
-    printf("token number %d is :%s\n",i+1,tokens[i]);
+    //& Testing Basic String Functions 
+    /*
+    char dst[1024] = "hello world";
+    printf("String Length: %d\n", stringLength(dst));
     
+    char copy[1024];
+    stringCopy(dst, copy);
+    printf("Copied String: %s\n", copy);
     
-  }
-  printf("%d\n",token);
-*/
+    stringConcat(copy, " test");
+    printf("Concatenated String: %s\n", copy);
+    
+    printf("String Compare: %d\n", stringCompare("hello", "world"));
+    
+    printf("Is Empty: %d\n", isEmpty(dst));
+    printf("Is Literally Empty: %d\n", isEmptyLiterally(""));
+    
+    reverseString(dst);
+    printf("Reversed String: %s\n", dst);
+    
+    toUpperCase(dst);
+    printf("Uppercase: %s\n", dst);
+    
+    toLowerCase(dst);
+    printf("Lowercase: %s\n", dst);
+    */
 
-//& Test Cypher functions
+    //& Testing Intermediate String Functions
+    /*
+    char test[1024] = "hello world";
+    printf("Is Palindrome: %d\n", isPalindromeString(test));
+    
+    int vowels = 0, consonants = 0;
+    countVowelsConsonants(test, &vowels, &consonants);
+    printf("Vowels: %d, Consonants: %d\n", vowels, consonants);
+    
+    printf("Substring Position: %d\n", findSubstring("hello world", "world"));
+    printf("Case Insensitive Substring: %d\n", findSubstringInsensitive("Hello World", "world"));
+    
+    removeWhiteSpace(test);
+    printf("Removed Whitespace: %s\n", test);
+    
+    printf("Is Anagram: %d\n", isAnagram("listen", "silent"));
+    
+    charFrequency(test);
+    
+    printf("Word Count: %d\n", countWords("hello world test batata"));
+    
+    removeDuplicates(test);
+    printf("Removed Duplicates: %s\n", test);
+    */
 
-//char str[100]="Hello world";
-//char str2[100];
+    //& Testing Advanced String Functions
+    /*
+    char test[1024] = "hello world";
+    char result[1024] = {0};
+    
+    compressString(test, result);
+    printf("Compressed String: %s\n", result);
+    
+    char num_str[100];
+    switchInt_Str(num_str, 179);
+    printf("Integer to String: %s\n", num_str);
+    
+    longestWord("quick brown fox jumps", result);
+    printf("Longest Word: %s\n", result);
+    
+    rotateLeftTimes(test, 2);
+    printf("Rotated Left: %s\n", test);
+    
+    printf("Is Rotation: %d\n", isRotation("hello", "llohe"));
+    
+    printf("Char Count: %d\n", countChar(test, 'l'));
+    
+    findAndReplace(test, "world", "earth");
+    printf("Find and Replace: %s\n", test);
+    
+    longestPalindrome("racecar hello", result);
+    printf("Longest Palindrome: %s\n", result);
+    
+    printPermutations("abc");
+    
+    char str[999] = "apple,banana,cherry,mcy,bro,tt";
+    char delimiter = ',';
+    char tokens[100][100];
+    int token_count = 0;
+    splitString(str, delimiter, tokens, &token_count);
+    for (int i = 0; i < token_count; i++) {
+        printf("Token %d: %s\n", i+1, tokens[i]);
+    }
+    */
 
-//caesarCipher(str, 3);
-//printf("%s\n",str);
+    //& Testing Cipher Functions
+    /*
+    char cipher_test[100] = "Hello World";
+    
+    caesarCipher(cipher_test, 3);
+    printf("Caesar Cipher: %s\n", cipher_test);
+    
+    strcpy(cipher_test, "Hello World");
+    substitutionCipher(cipher_test, "QAZWSXEDCRFVTGBYHNUJMIKOLP");
+    printf("Substitution Cipher: %s\n", cipher_test);
+    
+    strcpy(cipher_test, "Hello World");
+    xorCipher(cipher_test, 'k');
+    printf("XOR Cipher: %s\n", cipher_test);
+    
+    strcpy(cipher_test, "Hello World");
+    vigenereCipher(cipher_test, "key", 1);
+    printf("Vigenere Encrypt: %s\n", cipher_test);
+    
+    vigenereCipher(cipher_test, "key", 0);
+    printf("Vigenere Decrypt: %s\n", cipher_test);
+    
+    strcpy(cipher_test, "Hello World");
+    atbashCipher(cipher_test);
+    printf("Atbash Cipher: %s\n", cipher_test);
+    
+    char rail_result[100];
+    railFenceCipher(cipher_test, rail_result, 3);
+    printf("Rail Fence Cipher: %s\n", rail_result);
+    */
 
-//substitutionCipher(str, "QAZWSXEDCRFVTGBYHNUJMIKOLP");
-//printf("%s\n",str);
-
-//xorCipher(str, 'k');
-//printf("%s\n",str);
-//xorCipher(str, 'k');
-//printf("\n%s\n",str);
-//xorCipher(str, 'k');
-//printf("\n%s\n",str);
-//vigenereCipher(str, "key" ,1);
-//vigenereCipher(str,"key",0);
-//printf("%s\n",str);
-
-//atbashCipher(str);
-//printf("%s\n",str);
-
-//railFenceCipher(str, str2, 3);
-//printf("%s\n",str2);
-
-
-
-
-
-
-
-  return 0;
+    return 0;
 }
