@@ -10,7 +10,7 @@ Jan.26, 2025
 
 - **Table Of Contents**
 
-1. [Introduction](#bookmark=id.gjdgxs)
+1. [Introduction](#1._Introduction_)
 
 ……………………………………………………………………………………
 
@@ -18,7 +18,7 @@ Jan.26, 2025
 
 ……………………………………………………………………………………
 
-3. [Analysis](#bookmark=id.4f8qti2qqef1)
+3. [Analysis](#introduction)
 
 ……………………………………………………………………………………
 
@@ -6645,7 +6645,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 # Code Snippets
 
-# Numbers Library Code Snippet
+# Numbers Library Code Snippets
 
 ## Basic Functions
 
@@ -7423,7 +7423,7 @@ int Xor(int num1, int num2) {
 }
 ```
 
-# Strings Library Code Snippet
+# Strings Library Code Snippets
 
 ## Basic Functions
 
@@ -8335,7 +8335,7 @@ void railFenceCipher(const char *text, char *result, int depth) {
 }
 ```
 
-# Array Functions Snippets
+# Array Library Code Snippets
 
 ## Basic Functions
 
