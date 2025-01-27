@@ -8124,7 +8124,19 @@ int Xor(int num1, int num2) {
 
 ## Basic Functions
 
+stringLengthWithSpace
+Calculates the length of a string including white spaces.
 
+C
+#include "strings.h"
+
+int main() {
+    char str[] = "hello world";
+    int length = stringLengthWithSpace(str);
+    printf("Length: %d\n", length);
+    return 0;
+}
+removeWhiteSpaceLength
 
 
 
