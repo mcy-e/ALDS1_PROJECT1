@@ -6031,201 +6031,811 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 2       | “HELLO” |         “hello”          |
 | 3       |  “TB”   |           “tb”           |
 
-## Intermediate Functions/Procedures:
+# Strings.c Function Documentation
 
-                on progress…
+## Intermediate Functions
 
-## Advanced Functions/Procedures:
+### `isPalindromeString`
+Checks if a string is a palindrome (case-insensitive).
 
-                on progress…
+| Example | Input       | Output |
+|---------|-------------|--------|
+| 1       | `"racecar"` | `true` |
+| 2       | `"hello"`   | `false`|
 
-## Cypher Functions/Procedures:
+---
 
-                on progress…
+### `countVowelsConsonants`
+Counts the number of vowels and consonants in a string.
+
+| Example | Input       | Output                        |
+|---------|-------------|-------------------------------|
+| 1       | `"hello"`   | `vowels: 2, consonants: 3`    |
+| 2       | `"world"`   | `vowels: 1, consonants: 4`    |
+
+---
+
+### `findSubstring`
+Finds the starting index of a substring in a string (case-sensitive).
+
+| Example | Input                | Output |
+|---------|----------------------|--------|
+| 1       | `"hello", "ell"`     | `1`    |
+| 2       | `"world", "abc"`     | `-1`   |
+
+---
+
+### `findSubstringInsensitive`
+Finds the starting index of a substring in a string (case-insensitive).
+
+| Example | Input                | Output |
+|---------|----------------------|--------|
+| 1       | `"Hello", "ell"`     | `1`    |
+| 2       | `"world", "abc"`     | `-1`   |
+
+---
+
+### `removeWhiteSpace`
+Removes all whitespace characters from a string.
+
+| Example | Input            | Output    |
+|---------|------------------|-----------|
+| 1       | `"h e l l o"`    | `"hello"` |
+| 2       | `"hello world"`  | `"helloworld"` |
+
+---
+
+### `isAnagram`
+Checks if two strings are anagrams of each other.
+
+| Example | Input                  | Output |
+|---------|------------------------|--------|
+| 1       | `"listen", "silent"`   | `true` |
+| 2       | `"hello", "world"`     | `false`|
+
+---
+
+### `charFrequency`
+Prints the frequency of each character in a string.
+
+| Example | Input       | Output                                      |
+|---------|-------------|---------------------------------------------|
+| 1       | `"hello"`   | `'h': 1, 'e': 1, 'l': 2, 'o': 1`            |
+| 2       | `"world"`   | `'w': 1, 'o': 1, 'r': 1, 'l': 1, 'd': 1`    |
+
+---
+
+### `countWords`
+Counts the number of words in a string.
+
+| Example | Input            | Output |
+|---------|------------------|--------|
+| 1       | `"hello world"`  | `2`    |
+| 2       | `"hello"`        | `1`    |
+
+---
+
+### `removeDuplicates`
+Removes duplicate characters from a string.
+
+| Example | Input       | Output    |
+|---------|-------------|-----------|
+| 1       | `"hello"`   | `"helo"`  |
+| 2       | `"world"`   | `"world"` |
+
+---
+
+## Advanced Functions
+
+### `compressString`
+Compresses a string by replacing repeated characters with counts.
+
+| Example | Input         | Output    |
+|---------|---------------|-----------|
+| 1       | `"aaabbbccc"` | `"a3b3c3"`|
+| 2       | `"hello"`     | `"h1e1l2o1"` |
+
+---
+
+### `longestWord`
+Finds the longest word in a string.
+
+| Example | Input            | Output    |
+|---------|------------------|-----------|
+| 1       | `"hello world"`  | `"world"` |
+| 2       | `"hello"`        | `"hello"` |
+
+---
+
+### `isRotation`
+Checks if one string is a rotation of another.
+
+| Example | Input                  | Output |
+|---------|------------------------|--------|
+| 1       | `"hello", "llohe"`     | `true` |
+| 2       | `"world", "dlrow"`     | `false`|
+
+---
+
+### `rotateLeft`
+Rotates a string to the left by one character.
+
+| Example | Input       | Output    |
+|---------|-------------|-----------|
+| 1       | `"hello"`   | `"elloh"` |
+| 2       | `"world"`   | `"orldw"` |
+
+---
+
+### `rotateLeftTimes`
+Rotates a string to the left by a specified number of characters.
+
+| Example | Input            | Output    |
+|---------|------------------|-----------|
+| 1       | `"hello", 2`     | `"llohe"` |
+| 2       | `"world", 3`     | `"ldwor"` |
+
+---
+
+### `rotateRightTimes`
+Rotates a string to the right by a specified number of characters.
+
+| Example | Input            | Output    |
+|---------|------------------|-----------|
+| 1       | `"hello", 2`     | `"lohel"` |
+| 2       | `"world", 3`     | `"rldwo"` |
+
+---
+
+### `countChar`
+Counts the occurrences of a specific character in a string.
+
+| Example | Input            | Output |
+|---------|------------------|--------|
+| 1       | `"hello", 'l'`   | `2`    |
+| 2       | `"world", 'o'`   | `1`    |
+
+---
+
+### `findAndReplace`
+Finds and replaces all occurrences of a substring in a string.
+
+| Example | Input                              | Output          |
+|---------|------------------------------------|-----------------|
+| 1       | `"hello world", "world", "there"`  | `"hello there"` |
+| 2       | `"hello hello", "hello", "hi"`     | `"hi hi"`       |
+
+---
+
+### `longestPalindrome`
+Finds the longest palindrome substring in a string.
+
+| Example | Input       | Output    |
+|---------|-------------|-----------|
+| 1       | `"babad"`   | `"bab"`   |
+| 2       | `"cbbd"`    | `"bb"`    |
+
+---
+
+### `printPermutations`
+Prints all permutations of a string.
+
+| Example | Input       | Output                                      |
+|---------|-------------|---------------------------------------------|
+| 1       | `"abc"`     | `"abc", "acb", "bac", "bca", "cab", "cba"`  |
+| 2       | `"xy"`      | `"xy", "yx"`                                |
+
+---
+
+### `splitString`
+Splits a string into tokens based on a delimiter.
+
+| Example | Input                  | Output          |
+|---------|------------------------|-----------------|
+| 1       | `"hello,world", ','`   | `["hello", "world"]` |
+| 2       | `"one two three", ' '` | `["one", "two", "three"]` |
+
+---
+
+## Cypher Functions
+
+### `caesarCipher`
+Encrypts or decrypts a string using the Caesar cipher.
+
+| Example | Input            | Output    |
+|---------|------------------|-----------|
+| 1       | `"hello", 3`     | `"khoor"` |
+| 2       | `"world", 5`     | `"btwqi"` |
+
+---
+
+### `substitutionCipher`
+Encrypts or decrypts a string using a substitution cipher.
+
+| Example | Input                              | Output    |
+|---------|------------------------------------|-----------|
+| 1       | `"hello", "zyxwvutsrqponmlkjihgfedcba"` | `"svool"` |
+| 2       | `"world", "zyxwvutsrqponmlkjihgfedcba"` | `"dliow"` |
+
+---
+
+### `xorCipher`
+Encrypts or decrypts a string using the XOR cipher.
+
+| Example | Input            | Output        |
+|---------|------------------|---------------|
+| 1       | `"hello", 'k'`   | `"encrypted"` |
+| 2       | `"world", 'k'`   | `"encrypted"` |
+
+---
+
+### `vigenereCipher`
+Encrypts or decrypts a string using the Vigenère cipher.
+
+| Example | Input                  | Output        |
+|---------|------------------------|---------------|
+| 1       | `"hello", "key", 1`    | `"encrypted"` |
+| 2       | `"world", "key", 0`    | `"decrypted"` |
+
+---
+
+### `atbashCipher`
+Encrypts or decrypts a string using the Atbash cipher.
+
+| Example | Input       | Output    |
+|---------|-------------|-----------|
+| 1       | `"hello"`   | `"svool"` |
+| 2       | `"world"`   | `"dliow"` |
+
+---
+
+### `railFenceCipher`
+Encrypts or decrypts a string using the Rail Fence cipher.
+
+| Example | Input            | Output    |
+|---------|------------------|-----------|
+| 1       | `"hello", 2`     | `"hloel"` |
+| 2       | `"world", 3`     | `"wrodl"` |
 
 # 3. _Arrays_
 
 ## Basic Functions
 
-### initializeArray(int arr[], int size, int value)
+### `initializeArray`
+Initializes all elements of an array with a given value.
 
-| Example |          Inputs          |   Output(s)   |
-| ------- | :----------------------: | :-----------: |
-| 1       | arr=[], size=3, value=5  |  arr=[5,5,5]  |
-| 2       | arr=[], size=4, value=0  | arr=[0,0,0,0] |
-| 3       | arr=[], size=2, value=-1 |  arr=[-1,-1]  |
+**Parameters:**
+- `arr[]`: The array to initialize.
+- `size`: The size of the array.
+- `value`: The value to initialize the array with.
 
-### printArray(int arr[], int size)
+| Example | Input (`arr`, `size`, `value`) | Output (`arr`) |
+|---------|--------------------------------|----------------|
+| 1       | `arr[5]`, `5`, `0`             | `[0, 0, 0, 0, 0]` |
+| 2       | `arr[3]`, `3`, `10`            | `[10, 10, 10]` |
 
-| Example |       Inputs        |    Output(s)     |
-| ------- | :-----------------: | :--------------: |
-| 1       | arr=[1,2,3], size=3 |  Array=[1,2,3]   |
-| 2       |   arr=[], size=0    | "Array is empty" |
-| 3       |   arr=[5], size=1   |    Array=[5]     |
+---
 
-### findMax(int arr[], int size)
+### `printArray`
+Prints the elements of an array.
 
-| Example |         Inputs         | Output(s) |
-| ------- | :--------------------: | :-------: |
-| 1       |  arr=[1,5,3], size=3   |     5     |
-| 2       | arr=[10,2,8,9], size=4 |    10     |
-| 3       | arr=[-1,-5,-3], size=3 |    -1     |
+**Parameters:**
+- `arr[]`: The array to print.
+- `size`: The size of the array.
 
-### findMin(int arr[], int size)
+| Example | Input (`arr`, `size`) | Output |
+|---------|-----------------------|--------|
+| 1       | `[1, 2, 3]`, `3`      | `Array = [1, 2, 3]` |
+| 2       | `[]`, `0`             | `Array is empty` |
 
-| Example |         Inputs         | Output(s) |
-| ------- | :--------------------: | :-------: |
-| 1       |  arr=[1,5,3], size=3   |     1     |
-| 2       | arr=[10,2,8,9], size=4 |     2     |
-| 3       | arr=[-1,-5,-3], size=3 |    -5     |
+---
 
-### sumArray(int arr[], int size)
+### `findMax`
+Finds the maximum value in an array.
 
-| Example |        Inputs         | Output(s) |
-| ------- | :-------------------: | :-------: |
-| 1       |  arr=[1,2,3], size=3  |     6     |
-| 2       | arr=[5,5,5,5], size=4 |    20     |
-| 3       |  arr=[-1,1], size=2   |     0     |
+**Parameters:**
+- `arr[]`: The array to search.
+- `size`: The size of the array.
 
-### averageArray(int arr[], int size)
+**Returns:**
+- The maximum value in the array.
 
-| Example |        Inputs         | Output(s) |
-| ------- | :-------------------: | :-------: |
-| 1       |  arr=[1,2,3], size=3  |    2.0    |
-| 2       | arr=[5,5,5,5], size=4 |    5.0    |
-| 3       |   arr=[1,2], size=2   |    1.5    |
+| Example | Input (`arr`, `size`) | Output |
+|---------|-----------------------|--------|
+| 1       | `[1, 2, 3]`, `3`      | `3`    |
+| 2       | `[10, 5, 20]`, `3`    | `20`   |
 
-### storingDigits(int arr[], int number)
+---
 
-| Example |   Inputs    |   Output(s)   |
-| ------- | :---------: | :-----------: |
-| 1       | number=123  |  arr=[3,2,1]  |
-| 2       | number=4567 | arr=[7,6,5,4] |
-| 3       |  number=90  |   arr=[0,9]   |
+### `findMin`
+Finds the minimum value in an array.
 
-### returningDigits(int arr[], int size)
+**Parameters:**
+- `arr[]`: The array to search.
+- `size`: The size of the array.
 
-| Example |        Inputs         | Output(s) |
-| ------- | :-------------------: | :-------: |
-| 1       |  arr=[3,2,1], size=3  |    123    |
-| 2       | arr=[7,6,5,4], size=4 |   4567    |
-| 3       |   arr=[0,9], size=2   |    90     |
+**Returns:**
+- The minimum value in the array.
+
+| Example | Input (`arr`, `size`) | Output |
+|---------|-----------------------|--------|
+| 1       | `[1, 2, 3]`, `3`      | `1`    |
+| 2       | `[10, 5, 20]`, `3`    | `5`    |
+
+---
+
+### `sumArray`
+Calculates the sum of all elements in an array.
+
+**Parameters:**
+- `arr[]`: The array to sum.
+- `size`: The size of the array.
+
+**Returns:**
+- The sum of the array elements.
+
+| Example | Input (`arr`, `size`) | Output |
+|---------|-----------------------|--------|
+| 1       | `[1, 2, 3]`, `3`      | `6`    |
+| 2       | `[10, 20, 30]`, `3`   | `60`   |
+
+---
+
+### `averageArray`
+Calculates the average of all elements in an array.
+
+**Parameters:**
+- `arr[]`: The array to calculate the average for.
+- `size`: The size of the array.
+
+**Returns:**
+- The average of the array elements.
+
+| Example | Input (`arr`, `size`) | Output |
+|---------|-----------------------|--------|
+| 1       | `[1, 2, 3]`, `3`      | `2.0`  |
+| 2       | `[10, 20, 30]`, `3`   | `20.0` |
+
+---
+
+### `minimizedArray`
+Shifts the elements of an array to the left, discarding the first element.
+
+**Parameters:**
+- `arr[]`: The array to minimize.
+- `size`: The size of the array.
+
+| Example | Input (`arr`, `size`) | Output (`arr`) |
+|---------|-----------------------|----------------|
+| 1       | `[1, 2, 3]`, `3`      | `[2, 3, 3]`    |
+| 2       | `[10, 20, 30]`, `3`   | `[20, 30, 30]` |
+
+---
+
+### `isSorted`
+Checks if an array is sorted in ascending order.
+
+**Parameters:**
+- `arr[]`: The array to check.
+- `size`: The size of the array.
+
+**Returns:**
+- `true` if the array is sorted, `false` otherwise.
+
+| Example | Input (`arr`, `size`) | Output |
+|---------|-----------------------|--------|
+| 1       | `[1, 2, 3]`, `3`      | `true` |
+| 2       | `[3, 2, 1]`, `3`      | `false`|
+
+---
+
+### `storingDigits`
+Stores the digits of a number in an array.
+
+**Parameters:**
+- `arr[]`: The array to store the digits.
+- `number`: The number whose digits are to be stored.
+
+| Example | Input (`arr`, `number`) | Output (`arr`) |
+|---------|-------------------------|----------------|
+| 1       | `arr[3]`, `123`         | `[3, 2, 1]`    |
+| 2       | `arr[4]`, `4567`        | `[7, 6, 5, 4]` |
+
+---
+
+### `minimumValue`
+Finds the minimum value in an array starting from a given position.
+
+**Parameters:**
+- `arr[]`: The array to search.
+- `size`: The size of the array.
+- `*index`: Pointer to store the index of the minimum value.
+- `pos`: The starting position to search from.
+
+| Example | Input (`arr`, `size`, `pos`) | Output (`min`, `index`) |
+|---------|------------------------------|-------------------------|
+| 1       | `[1, 2, 3]`, `3`, `0`        | `1`, `0`                |
+| 2       | `[10, 5, 20]`, `3`, `1`      | `5`, `1`                |
+
+---
+
+### `returningDigits`
+Converts an array of digits into a single number.
+
+**Parameters:**
+- `arr[]`: The array of digits.
+- `size`: The size of the array.
+
+**Returns:**
+- The number formed by the digits.
+
+| Example | Input (`arr`, `size`) | Output |
+|---------|-----------------------|--------|
+| 1       | `[1, 2, 3]`, `3`      | `321`  |
+| 2       | `[4, 5, 6]`, `3`      | `654`  |
+
+---
+
+### `createArray`
+Creates an array by taking input from the user.
+
+**Parameters:**
+- `arr[]`: The array to store the input.
+- `size`: The size of the array.
+
+| Example | Input (`size`) | Output (`arr`) |
+|---------|----------------|----------------|
+| 1       | `3` (inputs: `1, 2, 3`) | `[1, 2, 3]` |
+| 2       | `2` (inputs: `10, 20`)   | `[10, 20]`  |
+
+---
+
+### `swapArray`
+Swaps the elements of an array (effectively reversing it).
+
+**Parameters:**
+- `arr[]`: The array to swap.
+- `arr_size`: The size of the array.
+
+| Example | Input (`arr`, `arr_size`) | Output (`arr`) |
+|---------|---------------------------|----------------|
+| 1       | `[1, 2, 3]`, `3`          | `[3, 2, 1]`    |
+| 2       | `[10, 20]`, `2`           | `[20, 10]`     |
+
+---
+
+### `mergeSortedArray`
+Merges two sorted arrays into a third sorted array.
+
+**Parameters:**
+- `arr1[]`: The first sorted array.
+- `arr2[]`: The second sorted array.
+- `arr_size1`: The size of the first array.
+- `arr_size2`: The size of the second array.
+- `arr3[]`: The array to store the merged result.
+
+| Example | Input (`arr1`, `arr2`, `arr_size1`, `arr_size2`) | Output (`arr3`) |
+|---------|--------------------------------------------------|-----------------|
+| 1       | `[1, 3]`, `[2, 4]`, `2`, `2`                    | `[1, 2, 3, 4]`  |
+| 2       | `[10, 20]`, `[15, 25]`, `2`, `2`                | `[10, 15, 20, 25]` |
+
+---
 
 ## Intermediate Functions
 
-### reverseArray(int arr[], int size)
+### `reverseArray`
+Reverses the elements of an array.
 
-| Example |        Inputs         |   Output(s)   |
-| ------- | :-------------------: | :-----------: |
-| 1       |  arr=[1,2,3], size=3  |  arr=[3,2,1]  |
-| 2       | arr=[4,5,6,7], size=4 | arr=[7,6,5,4] |
-| 3       |    arr=[1], size=1    |    arr=[1]    |
+**Parameters:**
+- `arr[]`: The array to reverse.
+- `size`: The size of the array.
 
-### countEvenOdd(int arr[], int size, int* evenCount, int* oddCount)
+| Example | Input (`arr`, `size`) | Output (`arr`) |
+|---------|-----------------------|----------------|
+| 1       | `[1, 2, 3]`, `3`      | `[3, 2, 1]`    |
+| 2       | `[10, 20, 30]`, `3`   | `[30, 20, 10]` |
 
-| Example |        Inputs         |        Output(s)        |
-| ------- | :-------------------: | :---------------------: |
-| 1       | arr=[1,2,3,4], size=4 | evenCount=2, oddCount=2 |
-| 2       |  arr=[2,4,6], size=3  | evenCount=3, oddCount=0 |
-| 3       | arr=[1,3,5,7], size=4 | evenCount=0, oddCount=4 |
+---
 
-### secondLargest(int arr[], int size)
+### `countEvenOdd`
+Counts the number of even and odd elements in an array.
 
-| Example |        Inputs         | Output(s) |
-| ------- | :-------------------: | :-------: |
-| 1       | arr=[1,5,3,4], size=4 |     4     |
-| 2       | arr=[10,8,9], size=3  |     9     |
-| 3       |  arr=[5,5,5], size=3  |     5     |
+**Parameters:**
+- `arr[]`: The array to count.
+- `size`: The size of the array.
+- `*evenCount`: Pointer to store the count of even numbers.
+- `*oddCount`: Pointer to store the count of odd numbers.
 
-### findElementPos(int arr[], int size, int element)
+| Example | Input (`arr`, `size`) | Output (`evenCount`, `oddCount`) |
+|---------|-----------------------|----------------------------------|
+| 1       | `[1, 2, 3]`, `3`      | `1`, `2`                         |
+| 2       | `[10, 20, 30]`, `3`   | `3`, `0`                         |
 
-| Example |              Inputs              | Output(s) |
-| ------- | :------------------------------: | :-------: |
-| 1       |  arr=[1,2,3], size=3, element=2  |     1     |
-| 2       | arr=[4,5,6,7], size=4, element=7 |     3     |
-| 3       |  arr=[1,2,3], size=3, element=4  |    -1     |
+---
 
-### elementFrequency(int arr[], int size)
+### `secondLargest`
+Finds the second largest element in an array.
 
-| Example |        Inputs         |                           Output(s)                           |
-| ------- | :-------------------: | :-----------------------------------------------------------: |
-| 1       | arr=[1,2,2,3], size=4 | "1 found 1 time(s)", "2 found 2 time(s)", "3 found 1 time(s)" |
-| 2       |  arr=[1,1,1], size=3  |                      "1 found 3 time(s)"                      |
-| 3       |  arr=[1,2,3], size=3  | "1 found 1 time(s)", "2 found 1 time(s)", "3 found 1 time(s)" |
+**Parameters:**
+- `arr[]`: The array to search.
+- `size`: The size of the array.
 
-### removeDuplicatesElements(int arr[], int size)
+**Returns:**
+- The second largest element.
 
-| Example |        Inputs         | Output(s) |
-| ------- | :-------------------: | :-------: |
-| 1       | arr=[1,2,2,3], size=4 |     3     |
-| 2       |  arr=[1,1,1], size=3  |     1     |
-| 3       |  arr=[1,2,3], size=3  |     3     |
+| Example | Input (`arr`, `size`) | Output |
+|---------|-----------------------|--------|
+| 1       | `[1, 2, 3]`, `3`      | `2`    |
+| 2       | `[10, 20, 30]`, `3`   | `20`   |
 
-### linearSearch(int arr[], int size, int target)
+---
 
-| Example |             Inputs              | Output(s) |
-| ------- | :-----------------------------: | :-------: |
-| 1       |  arr=[1,2,3], size=3, target=2  |     1     |
-| 2       | arr=[4,5,6,7], size=4, target=7 |     3     |
-| 3       |  arr=[1,2,3], size=3, target=4  |    -1     |
+### `findElementPos`
+Finds the position of a given element in an array.
 
-### binarySearch(int arr[], int size, int target)
+**Parameters:**
+- `arr[]`: The array to search.
+- `size`: The size of the array.
+- `element`: The element to find.
 
-| Example |              Inputs               | Output(s) |
-| ------- | :-------------------------------: | :-------: |
-| 1       | arr=[1,2,3,4,5], size=5, target=3 |     2     |
-| 2       | arr=[1,3,5,7,9], size=5, target=7 |     3     |
-| 3       |  arr=[2,4,6,8], size=4, target=5  |    -1     |
+**Returns:**
+- The position of the element, or `-1` if not found.
+
+| Example | Input (`arr`, `size`, `element`) | Output |
+|---------|----------------------------------|--------|
+| 1       | `[1, 2, 3]`, `3`, `2`            | `1`    |
+| 2       | `[10, 20, 30]`, `3`, `40`        | `-1`   |
+
+---
+
+### `found`
+Checks if an element exists in an array.
+
+**Parameters:**
+- `arr[]`: The array to search.
+- `size`: The size of the array.
+- `element`: The element to find.
+
+**Returns:**
+- `true` if the element is found, `false` otherwise.
+
+| Example | Input (`arr`, `size`, `element`) | Output |
+|---------|----------------------------------|--------|
+| 1       | `[1, 2, 3]`, `3`, `2`            | `true` |
+| 2       | `[10, 20, 30]`, `3`, `40`        | `false`|
+
+---
+
+### `elementFrequency`
+Prints the frequency of each element in an array.
+
+**Parameters:**
+- `arr[]`: The array to analyze.
+- `size`: The size of the array.
+
+| Example | Input (`arr`, `size`) | Output |
+|---------|-----------------------|--------|
+| 1       | `[1, 2, 2, 3]`, `4`   | `1: 1, 2: 2, 3: 1` |
+| 2       | `[10, 20, 10]`, `3`   | `10: 2, 20: 1`     |
+
+---
+
+### `removeDuplicatesElements`
+Removes duplicate elements from an array.
+
+**Parameters:**
+- `arr[]`: The array to process.
+- `size`: The size of the array.
+
+**Returns:**
+- The new size of the array after removing duplicates.
+
+| Example | Input (`arr`, `size`) | Output (`arr`, `new_size`) |
+|---------|-----------------------|----------------------------|
+| 1       | `[1, 2, 2, 3]`, `4`   | `[1, 2, 3]`, `3`           |
+| 2       | `[10, 20, 10]`, `3`   | `[10, 20]`, `2`            |
+
+---
+
+### `linearSearch`
+Performs a linear search for a target element in an array.
+
+**Parameters:**
+- `arr[]`: The array to search.
+- `size`: The size of the array.
+- `target`: The element to find.
+
+**Returns:**
+- The index of the target element, or `-1` if not found.
+
+| Example | Input (`arr`, `size`, `target`) | Output |
+|---------|---------------------------------|--------|
+| 1       | `[1, 2, 3]`, `3`, `2`           | `1`    |
+| 2       | `[10, 20, 30]`, `3`, `40`       | `-1`   |
+
+---
+
+### `binarySearch`
+Performs a binary search for a target element in a sorted array.
+
+**Parameters:**
+- `arr[]`: The sorted array to search.
+- `size`: The size of the array.
+- `target`: The element to find.
+
+**Returns:**
+- The index of the target element, or `-1` if not found.
+
+| Example | Input (`arr`, `size`, `target`) | Output |
+|---------|---------------------------------|--------|
+| 1       | `[1, 2, 3]`, `3`, `2`           | `1`    |
+| 2       | `[10, 20, 30]`, `3`, `40`       | `-1`   |
+
+---
+
+### `shift_left`
+Shifts the elements of an array to the left by a specified number of times.
+
+**Parameters:**
+- `arr[]`: The array to shift.
+- `arr_size`: The size of the array.
+- `repeat_times`: The number of times to shift.
+
+| Example | Input (`arr`, `arr_size`, `repeat_times`) | Output (`arr`) |
+|---------|-------------------------------------------|----------------|
+| 1       | `[1, 2, 3]`, `3`, `1`                     | `[2, 3, 1]`    |
+| 2       | `[10, 20, 30]`, `3`, `2`                  | `[30, 10, 20]` |
+
+---
+
+### `shift_right`
+Shifts the elements of an array to the right by a specified number of times.
+
+**Parameters:**
+- `arr[]`: The array to shift.
+- `arr_size`: The size of the array.
+- `repeat_times`: The number of times to shift.
+
+| Example | Input (`arr`, `arr_size`, `repeat_times`) | Output (`arr`) |
+|---------|-------------------------------------------|----------------|
+| 1       | `[1, 2, 3]`, `3`, `1`                     | `[3, 1, 2]`    |
+| 2       | `[10, 20, 30]`, `3`, `2`                  | `[20, 30, 10]` |
+
+---
+
+### `compare_swap`
+Compares adjacent elements in an array and swaps them if they are out of order.
+
+**Parameters:**
+- `arr[]`: The array to process.
+- `size`: The size of the array.
+
+| Example | Input (`arr`, `size`) | Output (`arr`) |
+|---------|-----------------------|----------------|
+| 1       | `[3, 2, 1]`, `3`      | `[2, 1, 3]`    |
+| 2       | `[10, 30, 20]`, `3`   | `[10, 20, 30]` |
+
+---
+
+## Sorting Algorithms
+
+### `bubbleSort`
+Sorts an array using the Bubble Sort algorithm.
+
+**Parameters:**
+- `arr[]`: The array to sort.
+- `size`: The size of the array.
+
+| Example | Input (`arr`, `size`) | Output (`arr`) |
+|---------|-----------------------|----------------|
+| 1       | `[3, 2, 1]`, `3`      | `[1, 2, 3]`    |
+| 2       | `[10, 30, 20]`, `3`   | `[10, 20, 30]` |
+
+---
+
+### `selectionSort`
+Sorts an array using the Selection Sort algorithm.
+
+**Parameters:**
+- `arr[]`: The array to sort.
+- `size`: The size of the array.
+
+| Example | Input (`arr`, `size`) | Output (`arr`) |
+|---------|-----------------------|----------------|
+| 1       | `[3, 2, 1]`, `3`      | `[1, 2, 3]`    |
+| 2       | `[10, 30, 20]`, `3`   | `[10, 20, 30]` |
+
+---
+
+# Arrays.c Function Examples
+
+## Sorting Algorithms
+
+### `insertionSort`
+
+| Function Call | Input Array | Output Array | Description |
+|---------------|-------------|--------------|-------------|
+| `insertionSort(arr, 5)` | `[5, 3, 4, 1, 2]` | `[1, 2, 3, 4, 5]` | Sorts the array in ascending order using insertion sort. |
+| `insertionSort(arr, 3)` | `[9, 7, 8]` | `[7, 8, 9]` | Sorts a smaller array in ascending order. |
+
+### `mergeSort`
+
+| Function Call | Input Array | Output Array | Description |
+|---------------|-------------|--------------|-------------|
+| `mergeSort(arr, 0, 5)` | `[5, 3, 4, 1, 2]` | `[1, 2, 3, 4, 5]` | Sorts the array using merge sort. |
+| `mergeSort(arr, 0, 3)` | `[9, 7, 8]` | `[7, 8, 9]` | Sorts a smaller array using merge sort. |
+
+### `quickSort`
+
+| Function Call | Input Array | Output Array | Description |
+|---------------|-------------|--------------|-------------|
+| `quickSort(arr, 0, 5)` | `[5, 3, 4, 1, 2]` | `[1, 2, 3, 4, 5]` | Sorts the array using quick sort. |
+| `quickSort(arr, 0, 3)` | `[9, 7, 8]` | `[7, 8, 9]` | Sorts a smaller array using quick sort. |
 
 ## Advanced Functions
 
-### findMissingNumber(int arr[], int size)
+### `findMissingNumber`
 
-| Example |        Inputs         | Output(s) |
-| ------- | :-------------------: | :-------: |
-| 1       | arr=[1,2,4,5], size=4 |     3     |
-| 2       | arr=[1,2,3,5], size=4 |     4     |
-| 3       | arr=[1,2,3,4], size=4 |    -1     |
+| Function Call | Input Array | Output | Description |
+|---------------|-------------|--------|-------------|
+| `findMissingNumber(arr, 5)` | `[1, 2, 3, 5, 6]` | `4` | Finds the missing number in a sorted array. |
+| `findMissingNumber(arr, 4)` | `[1, 2, 4, 5]` | `3` | Finds the missing number in a smaller array. |
 
-### findPairsWithSum(int arr[], int size, int sum)
+### `findPairsWithSum`
 
-| Example |            Inputs             |                  Output(s)                   |
-| ------- | :---------------------------: | :------------------------------------------: |
-| 1       | arr=[1,2,3,4], size=4, sum=5  | "Pair found: 1 and 4", "Pair found: 2 and 3" |
-| 2       | arr=[2,4,6,8], size=4, sum=10 | "Pair found: 2 and 8", "Pair found: 4 and 6" |
-| 3       |  arr=[1,2,3], size=3, sum=10  |              "Pairs not found"               |
+| Function Call | Input Array | Sum | Output | Description |
+|---------------|-------------|-----|--------|-------------|
+| `findPairsWithSum(arr, 5, 6)` | `[1, 2, 3, 4, 5]` | `6` | `Pair found: 1 and 5` | Finds pairs in the array that sum up to the given value. |
+| `findPairsWithSum(arr, 4, 7)` | `[2, 3, 4, 5]` | `7` | `Pair found: 2 and 5` | Finds pairs in a smaller array that sum up to the given value. |
 
-### findMajorityElement(int arr[], int size)
+### `findSubArrayWithSum`
 
-| Example |         Inputs          | Output(s)  |
-| ------- | :---------------------: | :--------: |
-| 1       |  arr=[2,2,2,1], size=4  |     2      |
-| 2       | arr=[1,1,1,1,2], size=5 |     1      |
-| 3       |  arr=[1,2,3,4], size=4  | -999999999 |
+| Function Call | Input Array | Sum | Output | Description |
+|---------------|-------------|-----|--------|-------------|
+| `findSubArrayWithSum(arr, 5, 9)` | `[1, 2, 3, 4, 5]` | `9` | `Sub Array found: [2, 3, 4]` | Finds a subarray that sums up to the given value. |
+| `findSubArrayWithSum(arr, 4, 7)` | `[2, 3, 4, 5]` | `7` | `Sub Array found: [2, 5]` | Finds a subarray in a smaller array that sums up to the given value. |
 
-### longestIncreasingSubsequence(int arr[], int size)
+### `rearrangeAlternatePositiveNegative`
 
-| Example |                Inputs                | Output(s) |
-| ------- | :----------------------------------: | :-------: |
-| 1       | arr=[10,22,9,33,21,50,41,60], size=8 |     5     |
-| 2       |      arr=[3,10,2,1,20], size=5       |     3     |
-| 3       |        arr=[1,2,3,4], size=4         |     4     |
+| Function Call | Input Array | Output Array | Description |
+|---------------|-------------|--------------|-------------|
+| `rearrangeAlternatePositiveNegative(arr, 5)` | `[-1, 2, -3, 4, -5]` | `[-5, 4, -3, 2, -1]` | Rearranges the array to alternate between positive and negative numbers. |
+| `rearrangeAlternatePositiveNegative(arr, 4)` | `[-2, 3, -4, 5]` | `[-4, 5, -2, 3]` | Rearranges a smaller array to alternate between positive and negative numbers. |
 
-### findIntersection(int arr1[], int size1, int arr2[], int size2)
+### `findMajorityElement`
 
-| Example |                    Inputs                    |  Output(s)  |
-| ------- | :------------------------------------------: | :---------: |
-| 1       | arr1=[1,2,3], size1=3, arr2=[2,3,4], size2=3 | Array=[2,3] |
-| 2       |  arr1=[1,1,1], size1=3, arr2=[1,1], size2=2  |  Array=[1]  |
-| 3       |   arr1=[1,2], size1=2, arr2=[3,4], size2=2   |  Array=[]   |
+| Function Call | Input Array | Output | Description |
+|---------------|-------------|--------|-------------|
+| `findMajorityElement(arr, 5)` | `[2, 2, 3, 2, 2]` | `2` | Finds the majority element in the array. |
+| `findMajorityElement(arr, 4)` | `[1, 1, 1, 2]` | `1` | Finds the majority element in a smaller array. |
 
-### findUnion(int arr1[], int size1, int arr2[], int size2)
+### `longestIncreasingSubsequence`
 
-| Example |                    Inputs                    |    Output(s)    |
-| ------- | :------------------------------------------: | :-------------: |
-| 1       | arr1=[1,2,3], size1=3, arr2=[2,3,4], size2=3 | Array=[1,2,3,4] |
-| 2       |  arr1=[1,1,1], size1=3, arr2=[1,1], size2=2  |    Array=[1]    |
-| 3       |   arr1=[1,2], size1=2, arr2=[3,4], size2=2   | Array=[1,2,3,4] |
+| Function Call | Input Array | Output | Description |
+|---------------|-------------|--------|-------------|
+| `longestIncreasingSubsequence(arr, 5)` | `[10, 22, 9, 33, 21]` | `3` | Finds the length of the longest increasing subsequence. |
+| `longestIncreasingSubsequence(arr, 4)` | `[3, 4, 2, 8]` | `3` | Finds the length of the longest increasing subsequence in a smaller array. |
+
+### `findDuplicates`
+
+| Function Call | Input Array | Output | Description |
+|---------------|-------------|--------|-------------|
+| `findDuplicates(arr, 5)` | `[1, 2, 2, 3, 4]` | `The Element 2 has a duplicate` | Finds duplicate elements in the array. |
+| `findDuplicates(arr, 4)` | `[1, 1, 2, 3]` | `The Element 1 has a duplicate` | Finds duplicate elements in a smaller array. |
+
+### `findIntersection`
+
+| Function Call | Input Array 1 | Input Array 2 | Output Array | Description |
+|---------------|---------------|---------------|--------------|-------------|
+| `findIntersection(arr1, 3, arr2, 3)` | `[1, 2, 3]` | `[2, 3, 4]` | `[2, 3]` | Finds the intersection of two arrays. |
+| `findIntersection(arr1, 4, arr2, 4)` | `[1, 2, 3, 4]` | `[3, 4, 5, 6]` | `[3, 4]` | Finds the intersection of two larger arrays. |
+
+### `findUnion`
+
+| Function Call | Input Array 1 | Input Array 2 | Output Array | Description |
+|---------------|---------------|---------------|--------------|-------------|
+| `findUnion(arr1, 3, arr2, 3)` | `[1, 2, 3]` | `[2, 3, 4]` | `[1, 2, 3, 4]` | Finds the union of two arrays. |
+| `findUnion(arr1, 4, arr2, 4)` | `[1, 2, 3, 4]` | `[3, 4, 5, 6]` | `[1, 2, 3, 4, 5, 6]` | Finds the union of two larger arrays. |
 
 ## 4. _Matrices_
 
