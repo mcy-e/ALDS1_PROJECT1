@@ -1155,26 +1155,22 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 ### **_Basic Functions:_**
 
 - [ ] sumOfDigits(num);
+### What is the sum of digits?
 
-- What is the sum of digits?
 
 * In mathematics, the **digit sum** of a natural number in a decimal base is the sum of all its [digits](https://en.wikipedia.org/wiki/Numerical_digit). For example, the digit sum of the [decimal number](https://en.wikipedia.org/wiki/Decimal_number) N1N2N3N4 would be N1+N2+N3+N4.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To calculate the sum of any integer digits.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
 * int sum\=0;//of type integer
 * int digit;//of type integer
 * bool check;//of type boolean
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Check if the number is negative.
 2. reverse the negative number.
@@ -1185,29 +1181,25 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 7. check if the “check” parameter changed indicating a negative number so that we return the sum with a negative sign.
 8. we return the sum.
 
-- :
 
 ---
 
 - [ ] reverseNumber(num);
-- What is a reverse Number?
+### What is a reverse Number?
+
 
 * In mathematics, reversing a number means rearranging its digits in reverse order. For example, reversing N1N2N3 would result in N3N2N1.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To reverse the digits of a given integer.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
 * int reverse_num\=0;
 * bool check
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Check if the number is negative.
 2. Reverse the negative number to simplify operations.
@@ -1216,218 +1208,186 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 5. Reduce the number by dividing it by 10\.
 6. Return the reversed number, ensuring its sign matches the original input.
 
-- :
 
 ---
 
 - [ ] isPalindrom(num);
-- What is a palindrome?
+### What is a palindrome?
+
 
 * A palindrome is a number that reads the same forward and backward, such as D0D1D1D0 or D1D1.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To determine whether a given integer is a palindrome.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
 * bool check \= false; // of type boolean
 * int its_reverse; // of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Reverse the number using the reverseNumber function.
 2. Compare the reversed number to the original number.
 3. Return true if they are equal, indicating a palindrome, or false otherwise.
 
-- :
 
 ---
 
 - [ ] isPrime(num);
-- What is a prime number?
+### What is a prime number?
+
 
 * In mathematics, A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To determine whether a given integer is a prime number.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
 * int i;//of type integer
 * bool check;//of type boolean
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Iterate from 2 to the square root of the number.
 2. Check divisibility by any number in this range.
 3. If divisible, set check to false and break the loop.
 4. Return true if no divisors are found, indicating a prime number.
 
-- :
 
 ---
 
 - [ ] gcd(a,b);
-- What is the greatest common divisor (GCD)?
+### What is the greatest common divisor (GCD)?
+
 
 * In mathematics,The GCD of two integers is the largest positive integer that divides both numbers without leaving a remainder.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To compute the GCD of two integers using an iterative approach.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int a;//First integer
 * int b;//Seconde integer
-
-- The Environment:
+### The Environment:
 
 * int i;//of type integer
 * int gcd\=1;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Iterate from 2 to the maximum of the two numbers.
 2. Check if both numbers are divisible by the current value of i.
 3. Update the GCD if a common divisor is found.
 4. Return the last updated GCD.
 
-- :
 
 ---
 
 - [ ] Max(a,b);
-- What is a Max?
+### What is a Max?
+
 
 * In mathematics, the concept of "greater than" is represented using the symbol “**\>”**. If a number a is greater than a number b, it means that “a” lies further to the right on the number line than “b”.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To compare and determine the bigger integer between two integers
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int a;//First integer
 * int b;//Seconde integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment: 
+* / 
+### Primitive Actions:
 
 1. Checks if the first integer is bigger than the second integer
 2. If so it returns the first integer
 3. Otherwise, it returns the second integer
 
-- :
 
 ---
 
 - [ ] lcm(a,b);
-- What is a Max?
+### What is a Max?
+
 
 * In mathematics, The **least common multiple (LCM)** of two integers a and b ,often written as lcm(a,b), is the smallest positive integer that is divisible by both a and b.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To compute the LCM of two integers using an iterative approach.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int a;//First integer
 * int b;//Seconde integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. return the multiplication of the first and second integers divided by their GCD
 
-- :
 
 ---
 
 - [ ] factorial(num);
-- What is a factorial?
+### What is a factorial?
+
 
 * In mathematics, The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. For example, n\!=n\*(n-1)\*(n-2)\*(n-3)..... .
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To compute the factorial of any given integer n.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. Return 1 if the number is 0 or 1 (base case).
 2. For other values, recursively call the function with (num \- 1\) and multiply the result by num.
 3. Return 0 if the number is negative (factorials are undefined for negative numbers).
 
-- :
 
 ---
 
 - [ ] isEven(num);
-- What is an even number?
+### What is an even number?
+
 
 * In mathematics,An even number is an integer that is divisible by 2 without a remainder.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To determine whether a given integer is even.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. Check if the number is divisible by 2 using the modulus operator.
 2. Return true if the result is 0 (indicating an even number).
 3. Return false otherwise (indicating an odd number).
 
-- :
 
 ---
 
 - [ ] isOdd(num);
-- What is an odd number?
+### What is an odd number?
+
 
 * In mathematics,An odd number is an integer that is not divisible by 2 has a remainder of 1\.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To determine whether a given integer is odd.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. Call isEven function to check if it’s even the isOdd will return false.
 2. Otherwise, it will retruns true.
 
-- :
 
 ### **_Intermediate Functions/procedures:_**
 
@@ -1435,51 +1395,43 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 - What are prime factors?
 
 * In mathematics,Prime factors are the prime numbers that multiply together to give a composite number. For example, the prime factors of 28 are 2, 2, and 7\.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To compute and display the prime factors of a given integer.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
 * int i;//of type integer
 * int j\=num;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Iterate through integers starting from 2 up to the input number.
 2. Check if each integer is a prime number.
 3. For each prime number, divide the input number repeatedly by the prime factor and display the factor until the number is no longer divisible.
 4. Print the prime factors in a readable format.
 
-- :
 
 ---
 
 - [ ] isArmstrong(num);
-- What is an Armstrong number?
+### What is an Armstrong number?
+
 
 * In mathematics,An Armstrong number (or narcissistic number) is a number that is equal to the sum of its own digits raised to the power of the number of digits. For example, 153 is an Armstrong number because 13+53+33=1531^3 \+ 5^3 \+ 3^3 \= 153\.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To determine whether a given integer is an Armstrong number.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
 * int digit_num \= 0;//of type integer
 * int digit;//of type integer
 * int sum\=0;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Check if the number is negative; Armstrong numbers are always non-negative.
 2. Count the number of digits in the number.
@@ -1487,54 +1439,46 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 4. Compare the calculated sum with the original number.
 5. Return true if they are equal, indicating an Armstrong number, or false otherwise.
 
-- :
 
 ---
 
 - [ ] fibonacci(num);
-- What is a Fibonacci sequence?
+### What is a Fibonacci sequence?
+
 
 * In mathematics, The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, starting from 0 and 1\. For example, 0, 1, 1, 2, 3, 5, 8… .
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To compute the nth Fibonacci number using recursion.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. Check if the input number is 1 or 2; if so, return 1\.
 2. For larger numbers, recursively compute the sum of the two preceding Fibonacci numbers.
 3. Return the computed Fibonacci number.
 
-- :
 
 ---
 
 - [ ] numberOfDivisors(num);
-- What is a divisor?
+### What is a divisor?
+
 
 * In mathematics,A divisor of a number is an integer that divides the number without leaving a remainder. For example, the divisors of 6 are 1, 2, 3, and 6\.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To calculate the total number of divisors of a given integer.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int num_divisors \= 0;//of type integer
     - int divisor;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Check if the number is negative and reverse it for calculations.
 2. Iterate through all integers from 1 to the number.
@@ -1542,32 +1486,27 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 4. Increment the divisor count for each valid divisor.
 5. Return the total count of divisors.
 
-- :
 
 ---
 
 - [ ] isNegative(num);
-- What is a negative number?
+### What is a negative number?
+
 
 * In mathematics,A negative number is any real number less than zero. For example, \-1, \-25, and \-100.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To determine whether a given number is negative.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. Compare the number with zero.
 2. Return true if the number is less than zero.
 3. Return false otherwise.
 
-- :
 
 ---
 
@@ -1575,74 +1514,62 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 - Why reverse a negative number?
 
 * Reversing a negative number makes it easier to handle its digits for operations while retaining the original sign.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To convert a negative number to positive for operations, or leave it unchanged if already positive.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
 * bool check;// of type boolean
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. Check if the boolean parameter indicates the number is negative.
 2. Multiply the number by \-1 if negative.
 3. Return the modified number.
 
-- :
 
 ---
 
 - [ ] isDivisor(num);
-- What is a divisor?
+### What is a divisor?
+
 
 * In mathematics,A divisor of a number is an integer that divides the number without leaving a remainder.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To check if a given integer is a divisor of another number.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int divisor;//of type integer
 * int num;//of type integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. Use the modulus operator to check divisibility.
 2. Return true if the modulus result is zero.
 3. Return false otherwise.
 
-- :
 
 ---
 
 - [ ] sumDivisors(num);
-- What is the sum of divisors?
+### What is the sum of divisors?
+
 
 * In mathematics,The sum of divisors of a number includes all positive divisors, including the number itself.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To calculate the sum of all divisors of a given integer.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int sum \= 0;//of type integer
     - bool check;// of type boolean
     - int divisor;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Check if the number is negative and reverse it for calculations.
 2. Iterate through all integers from 1 to the number.
@@ -1650,82 +1577,71 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 4. Add each valid divisor to the sum.
 5. Return the sum of divisors with the appropriate sign based on the input number.
 
-- :
 
 ---
 
 - [ ] sumDivisors_out_num(num);
-- What is the sum of divisors?
+### What is the sum of divisors?
+
 
 * In mathematics,The sum of divisors of a number includes all positive divisors, including the number itself.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To calculate the sum of all divisors of a given integer and excluding the integer.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int sum ;//of type integer
     - bool check;// of type boolean
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Check if the number is negative and reverse it for calculations.
 2. Call the function of sumDivisors to calculate the sum
 3. Subtract the number from the final sum
 4. Return the sum of divisors with the appropriate sign based on the input number.
 
-- :
 
 ---
 
 - [ ] isPerfect(num);
-- What is a perfect number?
+### What is a perfect number?
+
 
 * A perfect number is a positive integer that is equal to the sum of its proper divisors (excluding itself). For example, 6 is a perfect number because 1+2+3=6.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To determine whether a given integer is a perfect number.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int sum ;//of type integer
     - bool check;// of type boolean
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Check if the number is negative and reverse it for calculations.
 2. Calculate the sum of proper divisors using the sumDivisors_out_num function.
 3. Compare the sum of proper divisors with the original number.
 4. Return true if they are equal, indicating a perfect number.
 
-- :
 
 ---
 
 - [ ] isMagic(num);
-- What is a Magic number?
+### What is a Magic number?
+
 
 * In mathematics,a number is considered a magic number if repeatedly summing its digits until a single digit results in 1\.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To check if a number is a "magic number."
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int i;//of type integer
     - int j;//of type integer
@@ -1734,8 +1650,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
     - int digit;//of type integer
     - int temp;//of type integer
     - bool check;// of type boolean
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Check if the number is negative and reverse it for calculations.
 2. Calculate the number of digits.
@@ -1743,29 +1658,25 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 4. Stop when both the intermediate sums are \<= \`9\`.
 5. Return true if the single-digit result is 1; otherwise, return false.
 
-- :
 
 ---
 
 - [ ] numberOfDigits(num);
-- What is a digit?
+### What is a digit?
+
 
 * In mathematics, a **digit** is a single symbol used to represent numbers. The ten digits in the decimal system are 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9\. Digits are the building blocks of numbers and can be combined to form larger numerical values, such as 10, 42, or 365\.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To calculate the number of decimal digits in an integer.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int number_digits \= 0;//of type integer
     - int verify=1;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1.  Check if the number is negative and reverse its sign.
 2.  Handle the special case when the number is 0 (returns \`1\` digit).
@@ -1773,32 +1684,28 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 4.  Count the iterations, which corresponds to the number of digits.
 5.  Return the total count.
 
-- :
 
 ---
 
 - [ ] isAutomorphic(num);
-- What is a divisor?
+### What is a divisor?
+
 
 * In mathematics,A number is automorphic if its square ends in the same digits as the number itself.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To check if a number is automorphic.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int square_num;//of type integer
     - int digits;//of type integer
     - bool check;// of type boolean
     - int digits_num;//of type integer
     - int power;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Check if the number is negative and reverse it for calculations.
 2. Calculate the number of digits in num.
@@ -1807,24 +1714,21 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 5. Compare the extracted digits to \`num\`.
 6. Return true if they match; otherwise, return false.
 
-- :
 
 ### **_Advanced Functions/procedures:_**
 
 - [ ] toBinary(num);
-- What is a divisor?
+### What is a divisor?
+
 
 * Binary conversion represents a number in base-2 (binary) format, using only the digits 0 and 1\.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To convert an integer to its binary equivalent, supporting both positive and negative numbers.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int binary_digit;//of type integer
     - int binary_num;//of type integer
@@ -1838,67 +1742,58 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
     - int pos;//of type integer
     - bool check;// of type boolean
     - int negative_binary;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Check if the number is negative and reverse it for calculations.
 2. For positive numbers: \- Use repeated division by \`2\` to calculate binary digits. \- Combine the binary digits into a single number.
 3. For negative numbers: \- Compute the 1's complement of the binary representation. \- Add \`1\` to obtain the 2's complement binary representation.
 4. Display the binary representation with appropriate formatting.
 
-- :
 
 ---
 
 - [ ] isNarcissistic(num);
-- What is an Armstrong number?
+### What is an Armstrong number?
+
 
 * In mathematics,An Armstrong number (or narcissistic number) is a number that is equal to the sum of its own digits raised to the power of the number of digits. For example, 153 is an Armstrong number because 13+53+33=1531^3 \+ 5^3 \+ 3^3 \= 153\.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * To determine whether a given integer is a narcissistic number.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
 * int digit_num \= 0;//of type integer
 * int digit;//of type integer
 * int sum\=0;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Call the isArmstrong function to check if it’s narcissistic
 2. Retruns what isArmstrong returns
 
-- :
 
 ---
 
 - [ ] sqrtApprox(num, approx);
-- What is square root approximation?
+### What is square root approximation?
+
 
 * It estimates the square root of a number using iterative refinement
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Finds the approximate square root of a number to the desired precision
-
-- Function Argument(s):
+### Function Argument(s):
 
 * double approx;//of type real
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - double root1;//of type real
     - double root2;//of type real
     - double initial_guess;//of type real
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Start with an initial guess.
 2. Apply iterative refinement using the [Babylonian method](https://blogs.sas.com/content/iml/2016/05/16/babylonian-square-roots.html).
@@ -1906,44 +1801,38 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 4. Return the final approximation.
 
 - [ ] power(base, exp);
-- What is a power?
+### What is a power?
+
 
 * Power is the result of multiplying a base by itself exp times.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Computes the power of a base raised to an exponent using recursion
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int base;//of type integer
 * int exp;//of type integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. Return 1 if exp is 0\.
 2. Otherwise, recursively compute the power of (base, exp \- 1 ) and multiply by the base so that the function returns until exp=0 which gives 1 multiplied by the base which ‘s corresponds to the couple (base,1) and so on until it hites the exp value
 
-- :
 
 ---
 
 - [ ] isHappy(num);
-- What is a happy number?
+### What is a happy number?
+
 
 * A happy number eventually reduces to 1 when repeatedly replaced by the sum of the squares of its digits
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Determines if a number is a happy number
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int num_digits;//of type integer
     - int temp;//of type integer
@@ -1952,279 +1841,238 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
     - int i;//of type integer
     - bool check;// of type boolean
     - int digit;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Split the number into digits and compute the sum of their squares.
 2. Repeat until the result becomes a single digit.
 3. Return true if the result is 1, otherwise false
 
-- :
 
 ---
 
 - [ ] isAbundant(num);
-- What is an abundant number?
+### What is an abundant number?
+
 
 * A number is abundant if the sum of its proper divisors is greater than itself.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Checks if a number is abundant
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. Calculate the sum of proper divisors.
 2. Compare the sum to the number itself.
 3. Return true if greater, otherwise false.
 
-- :
 
 ---
 
 - [ ] isDeficient(num);
-- What is a deficient number?
+### What is a deficient number?
+
 
 * A number is deficient if the sum of its proper divisors is less than itself
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Checks if a number is deficient.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. \- Uses isAbundant function to obtain the result
 2. Check if the number is not abundant “finds false condition”.
 3. Return true if deficient “abundant if false”, otherwise false “abundant is true”.
 
-- :
 
 ---
 
 - [ ] sumEvenFibonacci(num);
-- What is a Fibonacci?
+### What is a Fibonacci?
+
 
 * A sequence where each number is the sum of the two preceding ones
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Computes the sum of the first n-th even Fibonacci numbers
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
 * int sum= 0;//of type integer
 * int i;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Identify even Fibonacci numbers up to the specified count.
 2. Sum these numbers.
 3. Return the sum
 
-- :
 
 ---
 
 - [ ] isHarshad(num);
-- What is a Harshad number?
+### What is a Harshad number?
+
 
 * A number divisible by the sum of its digits
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Determines if a number is Harshad.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. Compute the sum of digits.
 2. Check if the number is divisible by this sum.
 3. Return true if divisible, otherwise false.
 
-- :
 
 ---
 
 - [ ] catalanNumber(num);
-- What is a Catalan number?
+### What is a Catalan number?
+
 
 * A [Catalan number](https://en.wikipedia.org/wiki/Catalan_number) is a sequence of natural numbers that occur in combinatorial mathematics
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Computes the nth Catalan number.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int num_divisors \= 0;//of type integer
     - int divisor;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. If num is 0 or 1, return 1\.
 2. Otherwise, calculate the nth Catalan number using (2n)\! / ((n+1)\! \* n\!) (recursive formula).![][image2]
 3. Return the result.
 
-- :
 
 ---
 
 - [ ] pascalPyramid(row);
-- What is Pascal's Pyramid?
+### What is Pascal's Pyramid?
+
 
 * Pascal's pyramid is a pyramid arrangement of binomial coefficients, where each number is the sum of the two directly above it.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Prints Pascal's Pyramid up to the specified row in a pyramid format
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int row;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int k;//of type integer
     - int nCr;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Iterate from row 0 to the given row.
 2. Calculate each binomial coefficient using nCk(temp, k).
 3. Print the coefficients of each row in a formatted way.
 4. Return or output the pyramid as a visual representation.
 
-- :
 
 ---
 
 - [ ] pascalTriangle(row);
-- What is Pascal's Triangle?
+### What is Pascal's Triangle?
+
 
 * Pascal's Triangle is a triangular arrangement of binomial coefficients, where each number is the sum of the two directly above it.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Prints Pascal's Triangle up to the specified row in a perpendicular triangular format.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int row;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int k;//of type integer
     - int nCr;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Iterate from row 0 to the given row.
 2. Calculate each binomial coefficient using nCk(temp, k).
 3. Print the coefficients of each row in a formatted way.
 4. Return or output the triangle as a visual representation
 
-- :
 
 ---
 
 - [ ] pascalTriangleRow(row);
-- What is a Pascal Row?
+### What is a Pascal Row?
+
 
 * A specific row from Pascal's Triangle, containing binomial coefficients of the specified row.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Prints the specified row from Pascal's Triangle
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int row;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int k;//of type integer
     - int nCr;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Calculate the binomial coefficients for the given row using nCk(row, k).
 2. Print the coefficients in a single row format.
 3. Format output with brackets (\[ \]) for clarity.
 
-- :
 
 ---
 
 - [ ] nCk(num,k);
-- What is nCk?
+### What is nCk?
+
 
 * It represents the binomial coefficient, which calculates the number of ways to choose k items from a set of n items without regard to order
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Computes the binomial coefficient C(n, k) \= n\! / (k\!(n-k)\!).
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int k;//of type integer
 * int num;//of type integer
-
-- The Environment:
-
-- Primitive Actions:
+### The Environment:
+### Primitive Actions:
 
 1. Calculate the factorial of num, k, and (num \- k).
 2. Divide num\! by the product of k\! and (num \- k)\!.
 3. Return the result.
 
-- :
 
 ---
 
 - [ ] isSmith(num);
-- What is a Smith number?
+### What is a Smith number?
+
 
 * A composite number whose sum of digits equals the sum of the digits of its prime factors
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Checks if a given number is a Smith number.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int num_digits;//of type integer
     - int sum_PrimeFactors;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Exclude prime numbers, as they cannot be Smith numbers.
 2. Calculate the sum of the digits of the number.
@@ -2232,117 +2080,101 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 4. Compare the two sums.
 5. Return true if they match, otherwise false.
 
-- :
 
 ---
 
 - [ ] isKaprekar(num);
-- What is a Kaprekar number?
+### What is a Kaprekar number?
+
 
 * In mathematics, A Kaprekar number is one whose square can be split into two parts that sum up to the original number.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Checks if a number is a Kaprekar number.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int square_num;//of type integer
     - int num_digits;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Compute the square of the number.
 2. Split the square into two parts based on the number of digits.
 3. Sum the two parts and compare the result with the original number.
 
-- :
 
 ---
 
 - [ ] sumOfPrimes(num);
-- What is the sum of primes?
+### What is the sum of primes?
+
 
 * The total sum of all prime numbers less than or equal to a given number
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Computes the sum of all primes up to the given number.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int sum=0;//of type integer
     - int i;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Iterate through all numbers from 2 to num.
 2. Check if each number is prime.
 3. Add prime numbers to the sum.
 4. Return the sum.
 
-- :
 
 ---
 
 - [ ] primeFactorsSum(num);
-- What is the prime factors' sum?
+### What is the prime factors' sum?
+
 
 * The sum of all prime factors of a number
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Computes the sum of the prime factors of a given number.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int i;//of type integer
     - int factor;//of type integer
     - int j;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Iterate through all integers up to num.
 2. For each integer, check if it is a prime factor of num.
 3. Accumulate the sum of these prime factors.
 4. Return the total sum.
 
-- :
 
 ---
 
 - [ ] divideNumDigits(num, num_digits, num1);
-- What is a divisor?
+### What is a divisor?
+
 
 * Splits a number into two parts based on its digits, for use in checks like Kaprekar numbers.
-
-- The purpose of the function:
+### The purpose of the function:
 
 * Divides a number into two parts based on the number of digits.
-
-- Function Argument(s):
+### Function Argument(s):
 
 * int num_digits;//of type integer
 * int \*num;//of type integer
 * int \*num1;//of type integer
-
-- The Environment:
+### The Environment:
 
   - int Power;//of type integer
-
-- Primitive Actions:
+### Primitive Actions:
 
 1. Calculate the dividing power based on the number of digits.
 2. Split the number into two parts:
@@ -2353,7 +2185,6 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 3. Return the parts through pointers.
 
-- :
 
 0.
 ## 2. _Strings_
