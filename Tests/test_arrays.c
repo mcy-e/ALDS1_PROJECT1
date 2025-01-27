@@ -58,6 +58,7 @@ int main(){
   */
 
   //& Testing Sorting Algorithms
+  
   /*
   int bubbleArr[5] = {64, 34, 25, 12, 22};
   printf("Before Bubble Sort:\n");
@@ -65,7 +66,7 @@ int main(){
   bubbleSort(bubbleArr, 5);
   printf("After Bubble Sort:\n");
   printArray(bubbleArr, 5);
-  
+ 
   int selectionArr[5] = {64, 34, 25, 12, 22};
   printf("Before Selection Sort:\n");
   printArray(selectionArr, 5);
@@ -107,7 +108,7 @@ int main(){
   printf("Find Pairs With Sum Test:\n");
   findPairsWithSum(pairArr, 6, 10);
   
-  int subArr[5] = {1, 4, 20, 3, 10};
+  int subArr[5] = {20, 3, 10,1, 4};
   printf("Find Subarray With Sum Test:\n");
   findSubArrayWithSum(subArr, 5, 33);
   
