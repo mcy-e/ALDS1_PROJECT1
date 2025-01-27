@@ -5917,9 +5917,9 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 7. **ExampleOfUsage**
 
-8. ## _Numbers_
+ ## 1. _Numbers_
 
-9. **_Basic Functions:_**
+ ### **_Basic Functions:_**
 
 - [ ] sumOfDigits(num);
 
@@ -6020,7 +6020,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 2       |   19   |       1       |
 | 3       |   6    |       0       |
 
-2. **_Intermediate Functions/Procedures:_**
+ ### **_Intermediate Functions/Procedures:_**
 
 - [ ] PrimeFactors(num);
 
@@ -6139,7 +6139,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 2       |   76   |           1           |
 | 3       |   3    |           0           |
 
-3. **_Advanced Functions/Procedures:_**
+ ### **_Advanced Functions/Procedures:_**
 
 - [ ] toBinary(num);
 
@@ -6321,9 +6321,9 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 2       |   85   |         874         |
 | 3       |   16   |         41          |
 
-2. ## _Strings_
+ ## 2._Strings_
 
-1. **_Basic Functions:_**
+  ### **_Basic Functions:_**
 
 - [ ] stringLength(var str);
 
@@ -6424,62 +6424,205 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 2       | “HELLO” |         “hello”          |
 | 3       |  “TB”   |           “tb”           |
 
-2.  **_Intermediate Functions/Procedures:_**
+### **_Intermediate Functions/Procedures:_**
 
     on progress…
 
-3.  **_Advanced Functions/Procedures:_**
+### **_Advanced Functions/Procedures:_**
 
                 on progress…
 
-4.  **_Cypher Functions/Procedures:_**
+### **_Cypher Functions/Procedures:_**
 
                 on progress…
 
-5.  ## _Arrays_
 
-6.  **_Basic Functions:_**  
-     on progress…
 
-7.  **_Intermediate Functions/Procedures:_**
+# 3. _Arrays_
 
-                on progress…
+## Basic Functions
 
-8.  **_Sorting Algorithms:_**
+### initializeArray(int arr[], int size, int value)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[], size=3, value=5 | arr=[5,5,5] |
+| 2 | arr=[], size=4, value=0 | arr=[0,0,0,0] |
+| 3 | arr=[], size=2, value=-1 | arr=[-1,-1] |
 
-    on progress…
+### printArray(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,3], size=3 | Array=[1,2,3] |
+| 2 | arr=[], size=0 | "Array is empty" |
+| 3 | arr=[5], size=1 | Array=[5] |
 
-9.  **_Advanced Functions/Procedures:_**
+### findMax(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,5,3], size=3 | 5 |
+| 2 | arr=[10,2,8,9], size=4 | 10 |
+| 3 | arr=[-1,-5,-3], size=3 | -1 |
 
-    on progress…
+### findMin(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,5,3], size=3 | 1 |
+| 2 | arr=[10,2,8,9], size=4 | 2 |
+| 3 | arr=[-1,-5,-3], size=3 | -5 |
 
-10. ## _Matrices_
+### sumArray(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,3], size=3 | 6 |
+| 2 | arr=[5,5,5,5], size=4 | 20 |
+| 3 | arr=[-1,1], size=2 | 0 |
 
-11. **_Basic Functions:_**
+### averageArray(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,3], size=3 | 2.0 |
+| 2 | arr=[5,5,5,5], size=4 | 5.0 |
+| 3 | arr=[1,2], size=2 | 1.5 |
+
+### storingDigits(int arr[], int number)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | number=123 | arr=[3,2,1] |
+| 2 | number=4567 | arr=[7,6,5,4] |
+| 3 | number=90 | arr=[0,9] |
+
+### returningDigits(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[3,2,1], size=3 | 123 |
+| 2 | arr=[7,6,5,4], size=4 | 4567 |
+| 3 | arr=[0,9], size=2 | 90 |
+
+## Intermediate Functions
+
+### reverseArray(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,3], size=3 | arr=[3,2,1] |
+| 2 | arr=[4,5,6,7], size=4 | arr=[7,6,5,4] |
+| 3 | arr=[1], size=1 | arr=[1] |
+
+### countEvenOdd(int arr[], int size, int* evenCount, int* oddCount)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,3,4], size=4 | evenCount=2, oddCount=2 |
+| 2 | arr=[2,4,6], size=3 | evenCount=3, oddCount=0 |
+| 3 | arr=[1,3,5,7], size=4 | evenCount=0, oddCount=4 |
+
+### secondLargest(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,5,3,4], size=4 | 4 |
+| 2 | arr=[10,8,9], size=3 | 9 |
+| 3 | arr=[5,5,5], size=3 | 5 |
+
+### findElementPos(int arr[], int size, int element)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,3], size=3, element=2 | 1 |
+| 2 | arr=[4,5,6,7], size=4, element=7 | 3 |
+| 3 | arr=[1,2,3], size=3, element=4 | -1 |
+
+### elementFrequency(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,2,3], size=4 | "1 found 1 time(s)", "2 found 2 time(s)", "3 found 1 time(s)" |
+| 2 | arr=[1,1,1], size=3 | "1 found 3 time(s)" |
+| 3 | arr=[1,2,3], size=3 | "1 found 1 time(s)", "2 found 1 time(s)", "3 found 1 time(s)" |
+
+### removeDuplicatesElements(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,2,3], size=4 | 3 |
+| 2 | arr=[1,1,1], size=3 | 1 |
+| 3 | arr=[1,2,3], size=3 | 3 |
+
+### linearSearch(int arr[], int size, int target)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,3], size=3, target=2 | 1 |
+| 2 | arr=[4,5,6,7], size=4, target=7 | 3 |
+| 3 | arr=[1,2,3], size=3, target=4 | -1 |
+
+### binarySearch(int arr[], int size, int target)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,3,4,5], size=5, target=3 | 2 |
+| 2 | arr=[1,3,5,7,9], size=5, target=7 | 3 |
+| 3 | arr=[2,4,6,8], size=4, target=5 | -1 |
+
+## Advanced Functions
+
+### findMissingNumber(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,4,5], size=4 | 3 |
+| 2 | arr=[1,2,3,5], size=4 | 4 |
+| 3 | arr=[1,2,3,4], size=4 | -1 |
+
+### findPairsWithSum(int arr[], int size, int sum)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[1,2,3,4], size=4, sum=5 | "Pair found: 1 and 4", "Pair found: 2 and 3" |
+| 2 | arr=[2,4,6,8], size=4, sum=10 | "Pair found: 2 and 8", "Pair found: 4 and 6" |
+| 3 | arr=[1,2,3], size=3, sum=10 | "Pairs not found" |
+
+### findMajorityElement(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[2,2,2,1], size=4 | 2 |
+| 2 | arr=[1,1,1,1,2], size=5 | 1 |
+| 3 | arr=[1,2,3,4], size=4 | -999999999 |
+
+### longestIncreasingSubsequence(int arr[], int size)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr=[10,22,9,33,21,50,41,60], size=8 | 5 |
+| 2 | arr=[3,10,2,1,20], size=5 | 3 |
+| 3 | arr=[1,2,3,4], size=4 | 4 |
+
+### findIntersection(int arr1[], int size1, int arr2[], int size2)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr1=[1,2,3], size1=3, arr2=[2,3,4], size2=3 | Array=[2,3] |
+| 2 | arr1=[1,1,1], size1=3, arr2=[1,1], size2=2 | Array=[1] |
+| 3 | arr1=[1,2], size1=2, arr2=[3,4], size2=2 | Array=[] |
+
+### findUnion(int arr1[], int size1, int arr2[], int size2)
+| Example | Inputs | Output(s) |
+| ------- | :----: | :-------: |
+| 1 | arr1=[1,2,3], size1=3, arr2=[2,3,4], size2=3 | Array=[1,2,3,4] |
+| 2 | arr1=[1,1,1], size1=3, arr2=[1,1], size2=2 | Array=[1] |
+| 3 | arr1=[1,2], size1=2, arr2=[3,4], size2=2 | Array=[1,2,3,4] |
+
+## 4. _Matrices_
+
+### **_Basic Functions:_**
 
 - on progress…
 
-2. ### **_Matrix Arithmetic:_**
+### **_Matrix Arithmetic:_**
 
 - on progress…
 
-3. ### **_Matrix Operations:_**
+### **_Matrix Operations:_**
 
 - on progress…
 
-4. **_Advanced Matrix Functions:_**
+### **_Advanced Matrix Functions:_**
 
 - on progress…
 
-5. **_Advanced Matrix Functions:_**
+### **_Special Matrix Operations:_**
 
 - on progress…
 
-6. **_Special Matrix Operations:_**
-
-- on progress…
-
-#Code Snipet
+# Code Snippets
 
 # Numbers Library Code Snippet
 
