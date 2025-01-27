@@ -75,52 +75,44 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - [ ] sumOfDigits(num);
 - inputs: number of type integer
 - output: sum of the number digits of type integer
-- Block diagram:
 
 ---
 
 - [ ] reverseNumber(num);
 - inputs: number of type integer
 - output: the same number with reversed digits of type integer
-- Block diagram:
 
 - [ ] isPalindrom(num);
 - inputs: number of type integer
 - possible outputs: the result of whether the number is equal to its inverse so it either outputs 1 or 0 (of type boolean)
-- Block diagram:
 
 ---
 
 - [ ] isPrime(num);
 - inputs: number of type integer
 - possible outputs: if the number is prime the output is 1 else it will be 0 the output of type boolean
-- Block diagram:
 
 ---
 
 - [ ] gcd(a,b);
 - inputs: two numbers a and b of type integer
 - output: the greatest common divisor of a and b of type integer
-- Block diagram:
 
 - [ ] Max(a,b);
 - inputs: two numbers a and b of type integer
 - output: the biggest number between a and b of type integer (returns a or b)
-- Block diagram:
 
 ---
 
 - [ ] lcm(a,b);
 - inputs: two numbers a and b of type integer
 - output: least common multiplier of a and b of type integer
-- Block diagram:
 
 ---
 
 - [ ] factorial(num);
 - inputs: number of type natural
 - output: the factorial of that number ‘num\!’ of type natural
-- Block diagram:
 
 - [ ] isEven(num);
 - inputs: number of type integer
@@ -132,8 +124,6 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
   of type boolean
 
-- Block diagram:
-
 ---
 
 2. #### **_Intermediate Functions/procedures_**
@@ -141,7 +131,6 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - [ ] primeFactors(num);
 - input: number of type integer
 - outputs: The prime numbers that when multiplied will give the
-- Block diagram:
 
 ---
 
@@ -152,21 +141,17 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 1-\> The sum of digits of a number raised to the power of the number of digits is equal to the number itself
 * 0-\> The above condition isn’t true
 
-- Block diagram:
-
 ---
 
 - [ ] fibonacci(num);
 - input: number of type natural
 - output: The fibonacci number like the fibonacci(number) function of type natural
-- Block diagram:
 
 ---
 
 - [ ] numberOfDivisors(num);
 - input: number of type integer
 - output: The number of possible divisors of a number of type integer
-- Block diagram:
 
 ---
 
@@ -176,21 +161,17 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
   else the same number will be the output
 
-- Block diagram:
-
 ---
 
 - [ ] isNegative(num);
 - input: number of type integer
 - output: a check parameter of type boolean
-- Block diagram:
 
 ---
 
 - [ ] isDivisor(num,divisor);
 - input: number of type integer and a divisor of type integer
 - output: a boolean parameter that’s either 1 or 0
-- Block diagram:
 
 ---
 
@@ -198,14 +179,11 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - input: number of type integer
 - output: the sum of the divisors of the input number of type integer
 
-- Block diagram:
-
 ---
 
 - [ ] sumDivisor_out_num(num);
 - input: number of type integer
 - output: the sum of the divisors of the input number without the number itself of type integer
-- Block diagram:
 
 - Note:
 
@@ -221,8 +199,6 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 0-\> The sum of the number divisors without the number isn’t equal to that number
 * 1-\> The sum of the number divisors without the number is equal to that number
 
-- Block diagram:
-
 - [ ] isMagic(num);
 - input: number of type integer
 - output: of type boolean
@@ -230,14 +206,11 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 1-\> The sum of the number digits is going to be 1 in any number of iterations
 * 0-\> The sum of the number digits is going to be not 1 in any number of iterations
 
-- Block diagram:
-
 ---
 
 - [ ] numberOfDigits(num);
 - input: number of type integer
 - output: the number of digits of type integer
-- Block diagram:
 
 ---
 
@@ -248,8 +221,6 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 1-\> the square of a number last digits is equal to the same number (the digits number depends on the entered number)
 * 0-\> the square of a number last digits is equal to the same number
 
-- Block diagram:
-
 ---
 
 3. #### **_Advanced Functions/procedures_**
@@ -258,7 +229,6 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - input: number of type integer
 - output: the given number written in binary (with 0 & 1\)
 - option: can convert negative numbers using 2 complement’s method
-- Block diagram:
 
 ---
 
@@ -269,8 +239,6 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 1-\> The sum of digits of a number raised to the power of the number of digits is equal to the number itself
 * 0-\> The above condition isn’t true
 
-- Block diagram:
-
 ---
 
 - [ ] sqrtApprox(num,approx);
@@ -280,14 +248,12 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 - output: the square root of the input number using the Babylonian method of type double
 - Defeault_Method: there is a default approximation so you don’t have to enter the approximation by yourself using sqrtApproxDefault(5); function call
-- Block diagram:
 
 ---
 
 - [ ] power(base,exp);
 - inputs: base of type integer, exponent of type integer
 - output: the base multiplied by itself the number of (exp) times of type integer
-- Block diagram:
 
 ---
 
@@ -298,8 +264,6 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 0-\> The sum of digits square of the input number isn’t equal to 1
 * 1-\> The sum of digits square of the input number is equal to 1
 
-- Block diagram:
-
 ---
 
 - [ ] isAbundant(num);
@@ -308,8 +272,6 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 * 0-\> The sum of divisors without the number is less than the number itself
 * 1-\> The sum of divisors without the number is bigger than the number itself
-
-- Block diagram:
 
 ---
 
@@ -320,14 +282,11 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 1-\> The sum of divisors without the number is less than the number itself
 * 0-\> The sum of divisors without the number is bigger than the number itself
 
-- Block diagram:
-
 ---
 
 - [ ] sumEvenFibonacci(num);
 - input: number of type natural
 - output: the sum of even fibonacci number that means the fibonacci number that has an even result is added with the others of type natural
-- Block diagram:
 
 ---
 
@@ -338,49 +297,41 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 1-\> The sum of digits of the number is a divisor of the number
 * 0-\> The sum of digits of the number isn’t a divisor of the number
 
-- Block diagram:
-
 ---
 
 - [ ] catalanNumber(num);
 - inputs: number of type natural
 - output: the n’th catalan number of the number inputted of type natural
-- Block diagram:
 
 ---
 
 - [ ] passcalPyramid(num);
 - inputs: number of type natural
 - output: the passcal pyramid until the given number of type natural
-- Block diagram:
 
 ---
 
 - [ ] passcalTriangle(num);
 - inputs: number of type natural
 - output: the passcal triangle until the given number of type natural
-- Block diagram:
 
 ---
 
 - [ ] passcalTriangleRow(row);
 - inputs: row of type natural
 - output: the n’th passcal triangle row according to the given row of type natural
-- Block diagram:
 
 ---
 
 - [ ] nck(num,k);
 - inputs: number of type natural, k of type natural
 - output: nck of type natural
-- Block diagram:
 
 ---
 
 - [ ] bellNumber(num);
 - inputs: number of type natural
 - output: bell number of type natural
-- Block diagram:
 
 ---
 
@@ -391,14 +342,11 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 1-\> The sum of the squared number divide it into half is equal to the number itself
 * 0-\> The sum of the squared number divide it into half isn’t equal to the number itself
 
-- Block diagram:
-
 ---
 
 - [ ] divideNumDigits(var num,num_digits,var num1);
 - inputs: number of type natural,number of digits of type natural,number 1 of type natural
 - outputs: number represents the first half and number1 represents the seconde half of the input number both of type natural
-- Block diagram:
 
 ---
 
@@ -409,21 +357,17 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 1-\> the number isn’t prime and the sum of it’s digits is equal to the sum of digits of it’s prime factors sum
 * 0-\> the number is prime or the sum of it’s digits isn’t equal to the sum of digits of it’s prime factors sum
 
-- Block diagram:
-
 ---
 
 - [ ] primeFactorSum(num);
 - input: number of type natural
 - output: the sum of the number prime factors of type natural
-- Block diagram:
 
 ---
 
 - [ ] sumOfprimes(num);
 - inputs: number of type natural
 - output: the sum of the primes until the given number of type natural
-- Block diagram:
 
 2. ## _Strings_
 
@@ -432,273 +376,234 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - [ ] stringLength(var str);
 - inputs: string of type list of chars
 - output: length of type natural
-- Block diagram:
 
 ---
 
 - [ ] stringLengthWithSpace(var str);
 - inputs: string of type list of chars
 - output: length of type natural
-- Block diagram:
 
 ---
 
 - [ ] removeWhiteSpaceLength(var str,length);
 - inputs: string of type list of chars, length of type integer
 - output: length of type integer
-- Block diagram:
 
 ---
 
 - [ ] stringCopy(var src,var dst);
 - inputs: source string of type list of chars, destination string of type list of chars
 - output: copies source string to destination string
-- Block diagram:
 
 ---
 
 - [ ] stringConcat(var dest,var src);
 - inputs: destination string of type list of chars, source string of type list of chars
 - output: appends source string to destination string
-- Block diagram:
 
 ---
 
 - [ ] stringCompare(var str1,var str2);
 - inputs: string1 of type list of chars, string2 of type list of chars
 - output: integer (returns 0 if strings are equal, otherwise the difference between the first mismatched characters)
-- Block diagram:
 
 ---
 
 - [ ] stringCompareInsensitive(var str1,var str2);
 - inputs: string1 of type list of chars, string2 of type list of chars
 - output: integer (returns 0 if strings are equal ignoring case, otherwise the difference between the first mismatched characters)
-- Block diagram:
 
 ---
 
 - [ ] isEmpty(var str);
 - inputs: string of type list of chars
 - output: boolean (returns true if the string is empty, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] isEmptyLiterally(var str);
 - inputs: string of type list of chars
 - output: boolean (returns true if the string is literally empty, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] reverseString(var str);
 - inputs: string of type list of chars
 - output: reverses the string in place
-- Block diagram:
 
 ---
 
 - [ ] toUpperCase(var str);
 - inputs: string of type list of chars
 - output: converts the string to uppercase in place
-- Block diagram:
 
 ---
 
 - [ ] toLowerCase(var str);
 - inputs: string of type list of chars
 - output: converts the string to lowercase in place
-- Block diagram:
 
 2. #### **_Intermediate Functions/procedures_**
 
 - [ ] isPalindromeString(var str);
 - inputs: string of type list of chars
 - output: boolean (returns true if the string is a palindrome, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] countVowelsConsonants(var str,var vowels, var consonants);
 - inputs: string of type list of chars ,pointer to integer for vowels, pointer to integer for consonants
 - output: integer (the number of vowels and consonants in the string)
-- Block diagram:
 
 ---
 
 - [ ] findSubstring(var str,var sub);
 - inputs: string of type list of chars ,substring of type list of chars
 - output: integer (returns the starting index of the substring if found, otherwise \-1)
-- Block diagram:
 
 ---
 
 - [ ] findSubstringInsensitive(var str,var sub);
 - inputs: string of type list of chars ,substring of type list of chars
 - output: integer (returns the starting index of the substring if found, ignoring case, otherwise \-1)
-- Block diagram:
 
 ---
 
 - [ ] removeWhiteSpace(var str);
 - inputs: string of type list of chars
 - output: removes all whitespace from the string in place
-- Block diagram:
 
 ---
 
 - [ ] isAnagram(var str1,var str2);
 - inputs: string1 of type list of chars ,string2 of type list of chars
 - output: boolean (returns true if the strings are anagrams, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] charFrequency(var str);
 - inputs: string of type list of chars
 - output: prints the frequency of each character in the string
-- Block diagram:
 
 ---
 
 - [ ] countWords(var str);
 - inputs: string of type list of chars
 - output: integer (returns the number of words in the string)
-- Block diagram:
 
 ---
 
 - [ ] removeDuplicates(var str);
 - inputs: string of type list of chars
 - output: removes duplicate characters from the string in place
-- Block diagram:
 
 3. #### **_Advanced Functions/procedures_**
 
 - [ ] compressString(var str,var result);
 - inputs: string of type list of chars,result string of type list of chars
 - output: compresses the string and stores the result in the result string
-- Block diagram:
 
 ---
 
 - [ ] switchInt_Str(var str,num);
 - inputs: string of type list of chars integer number
 - output: converts the integer to a string and stores it in the provided string
-- Block diagram:
 
 ---
 
 - [ ] longestWord(var str,var result);
 - inputs: string of type list of chars,result string of type list of chars
 - output: finds the longest word in the string and stores it in the result string
-- Block diagram:
 
 ---
 
 - [ ] isRotation(var str1,var str2);
 - inputs: string1 of type list of chars,string2 of type list of chars
 - output: boolean (returns true if string2 is a rotation of string1, otherwise false
-- Block diagram:
 
 ---
 
 - [ ] rotateLeft(var str);
 - inputs: string of type list of chars
 - output: rotates the string left by one character in place
-- Block diagram:
 
 ---
 
 - [ ] rotateLeftTimes(var str,times);
 - inputs: string of type list of chars integer number of times
 - output: rotates the string left by the specified number of times in place
-- Block diagram:
 
 ---
 
 - [ ] rotateRightTimes(var str,times);
 - inputs: string of type list of chars integer number of times
 - output: rotates the string right by the specified number of times in place
-- Block diagram:
 
 ---
 
 - [ ] countChar(var str,character);
 - inputs: string of type list of chars character to count of type char
 - output: integer (returns the count of the specified character in the string)
-- Block diagram:
 
 ---
 
 - [ ] findAndReplace(var str,var find,var replace);
 - inputs: string of type list of chars ,substring to find of type list of chars ,subtring to replace of type list of chars
 - output: replaces all occurrences of the find substring with the replace substring in the string
-- Block diagram:
 
 ---
 
 - [ ] longestPalindrome(var str,var result);
 - inputs: string of type list of chars ,result string of type list of chars
 - output: finds the longest palindrome in the string and stores it in the result string
-- Block diagram:
 
 ---
 
 - [ ] printPermutations(var str);
 - inputs: string of type list of chars
 - output: prints all permutations of the string
-- Block diagram:
 
 ---
 
 - [ ] splitString(var str,delimiter,var tokens,var tokencount);
 - inputs: string of type list of chars, delimiter character, array of strings to store tokens, pointer to integer for token count
 - output: splits the string into tokens based on the delimiter and stores them in the array
-- Block diagram:
 
 4. #### **_Cypher Functions/procedures_**
 
 - [ ] caesarCipher(var text,shift);
 - inputs: string of type list of chars,integer shift value
 - output: applies Caesar cipher to the string in place
-- Block diagram:
 
 ---
 
 - [ ] substitutionCipher(var text,var key);
 - inputs: string of type list of chars, key of type list of chars
 - output: applies substitution cipher to the string in place
-- Block diagram:
 
 ---
 
 - [ ] xorCipher(var text,key);
 - inputs: string of type list of chars ,kay of type char
 - output: applies XOR cipher to the string in place
-- Block diagram:
 
 ---
 
 - [ ] vigenereCipher(var text,var key,encrypt);
 - inputs: string of type list of chars ,key string of type list of chars ,integer encryption flag (1 for encrypt, 0 for decrypt)
 - output: applies Vigenère cipher to the string in place
-- Block diagram:
 
 ---
 
 - [ ] atbashCipher(var text);
 - inputs: string of type list of chars
 - output: applies Atbash cipher to the string in place
-- Block diagram:
 
 ---
 
 - [ ] railFenceCipher(var text,var result,depth);
 - inputs: string of type list of chars ,result string of type list of chars ,integer depth
 - output: applies Rail Fence cipher to the string and stores the result in the result string
-- Block diagram:
 
 3. ## _Arrays_
 
@@ -707,301 +612,258 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - [ ] initializeArray(var arr,size,value);
 - inputs: array with garbage values of type integer,size of type integer ,value of type integer
 - output: array filled with the value of type integer
-- Block diagram:
 
 ---
 
 - [ ] printArray(var arr,size);
 - inputs: array of type list of integers, size of type integer, value of type integer
 - output: prints the array
-- Block diagram:
 
 ---
 
 - [ ] findMax(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the maximum value in the array)
-- Block diagram:
 
 ---
 
 - [ ] findMin(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output:
-- Block diagram:
 
 ---
 
 - [ ] sumArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the sum of all elements in the array)
-- Block diagram:
 
 ---
 
 - [ ] averageArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: double (returns the average of all elements in the array)
-- Block diagram:
 
 ---
 
 - [ ] minimizedArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: shifts the array to the left by one position removing the first element
-- Block diagram:
 
 ---
 
 - [ ] isSorted(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: boolean (returns true if the array is sorted, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] fillArray(var arr,size);
 - inputs: array of type list of integers, number of type integer
 - output: creates an array by taking input from the user
-- Block diagram:
 
 ---
 
 - [ ] storingDigits(var arr,size,number);
 - inputs: array of type list of integers, number of type integer
 - output: stores the digits of the number in the array
-- Block diagram:
 
 ---
 
 - [ ] minimumValue(var arr,size,var index,pos);
 - inputs: array of type list of integers, size of type integer, pointer to integer for index, position of type integer
 - output: finds the minimum value in the array starting from the given position
-- Block diagram:
 
 ---
 
 - [ ] returningDigits(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the number formed by the digits in the array)
-- Block diagram:
 
 ---
 
 - [ ] createArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: creates an array by taking input from the user
-- Block diagram:
 
 ---
 
 - [ ] swapArray(var arr,arr_size);
 - inputs: array of type list of integers, size of type integer
 - output: swaps the elements of the array
-- Block diagram:
 
 ---
 
 - [ ] mergeSortedArray(var arr1,arr_size1,var arr2,arr_size2,var arr3);
 - inputs: array1 of type list of integers, array2 of type list of integers, size1 of type integer, size2 of type integer, array3 of type list of integers
 - output: merges two sorted arrays into a third array
-- Block diagram:
 
 2. #### **_Intermediate Functions/procedures_**
 
 - [ ] reverseArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: reverses the array in place
-- Block diagram:
 
 ---
 
 - [ ] countEvenOdd(var arr,size,var evenCount,var oddCount);
 - inputs: array of type list of integers, size of type integer, pointer to integer for even count, pointer to integer for odd count
 - output: counts the number of even and odd elements in the array
-- Block diagram:
 
 ---
 
 - [ ] secondLargest(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the second largest element in the array)
-- Block diagram:
 
 ---
 
 - [ ] findElementPos(var arr,size,element);
 - inputs: array of type list of integers, size of type integer, element of type integer
 - output: integer (returns the position of the element in the array, or \-1 if not found)
-- Block diagram:
 
 ---
 
 - [ ] elementFrequency(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: prints the frequency of each element in the array
-- Block diagram:
 
 ---
 
 - [ ] found(var arr,size,element);
 - inputs: array of type list of integers, size of type integer, element of type integer
 - output: boolean (returns true if the element is found in the array, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] removeDuplicatesElements(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the new size of the array after removing duplicates)
-- Block diagram:
 
 ---
 
 - [ ] binarySearch(var arr,size,target);
 - inputs: array of type list of integers, size of type integer, target of type integer
 - output: integer (returns the index of the target element, or \-1 if not found)
-- Block diagram:
 
 ---
 
 - [ ] linearSearch(var arr,size,target);
 - inputs: array of type list of integers, size of type integer, target of type integer
 - output: integer (returns the index of the target element, or \-1 if not found)
-- Block diagram:
 
 ---
 
 - [ ] shift_left(var arr,arr_size,repeat_times);
 - inputs: array of type list of integers, size of type integer, repeat_times of type integer
 - output: shifts the array left by the specified number of times
-- Block diagram:
 
 ---
 
 - [ ] shift_right(var arr,arr_size,repeat_times);
 - inputs: array of type list of integers, size of type integer, repeat_times of type integer
 - output: shifts the array right by the specified number of times
-- Block diagram:
 
 ---
 
 - [ ] compare_swap(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: compares and swaps adjacent elements in the array
-- Block diagram:
 
 3. #### **_Sorting Algorithms_**
 
 - [ ] bubbleSort(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: sorts the array using bubble sort
-- Block diagram:
 
 ---
 
 - [ ] selectionSort(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: sorts the array using selection sort
-- Block diagram:
 
 ---
 
 - [ ] insertionSort(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: sorts the array using insertion sort
-- Block diagram:
 
 ---
 
 - [ ] mergeSort(var arr,left,right);
 - inputs: array of type list of integers, left index of type integer, right index of type integer
 - output: sorts the array using merge sort
-- Block diagram:
 
 ---
 
 - [ ] quickSort(var arr,low,high);
 - inputs: array of type list of integers, low index of type integer, high index of type integer
 - output: sorts the array using quick sortr
-- Block diagram:
 
 4. #### **_Advanced Functions/procedures_**
 
 - [ ] swap(var elem1,var elem2);
 - inputs: pointer to integer element1, pointer to integer element2
 - output: swaps the values of the two elements
-- Block diagram:
 
 ---
 
 - [ ] isEmpty(var arr,size,);
 - inputs: array of type list of integers, size of type integer
 - output: boolean (returns true if the array is empty, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] findMissingNumber(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the missing number in the array, or \-1 if no missing number is found)
-- Block diagram:
 
 ---
 
 - [ ] findPairsWithSum(var arr,size,sum);
 - inputs: array of type list of integers, size of type integer, sum of type integer
 - output: prints pairs of elements that sum to the given value
-- Block diagram:
 
 ---
 
 - [ ] findSubArrayWithSum(var arr,size,sum);
 - inputs: array of type list of integers, size of type integer, sum of type integer
 - output: prints the subarray that sums to the given value
-- Block diagram:
 
 ---
 
 - [ ] rearrangeAlternatePositiveNegative(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: rearranges the array to alternate positive and negative elements
-- Block diagram:
 
 ---
 
 - [ ] findMajorityElement(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the majority element in the array, or 0 if no majority element is found)
-- Block diagram:
 
 ---
 
 - [ ] longestIncreasingSubsequence(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the length of the longest increasing subsequence)
-- Block diagram:
 
 ---
 
 - [ ] findDuplicates(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: prints duplicate elements in the array
-- Block diagram:
 
 ---
 
 - [ ] findIntersection(var arr1,size1,var arr2,size2);
 - inputs: array1 of type list of integers, size1 of type integer, array2 of type list of integers, size2 of type integer
 - output: prints the intersection of the two arrays
-- Block diagram:
 
 ---
 
 - [ ] findUnion(var arr1,size1,var arr2,size2);
 - inputs: array1 of type list of integers, size1 of type integer, array2 of type list of integers, size2 of type integer
 - output: prints the union of the two arrays
-- Block diagram:
 
 4. ## _Matrices_
 
@@ -1010,203 +872,174 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - [ ] initializeMatrix(rows,cols,var matrix,value);
 - inputs: rows of type integer,cols of type integer,matrix with garbage values of type double ,value of type integer
 - output: matrix filled with the value of type integer
-- Block diagram:
 
 ---
 
 - [ ] printMatrix(rows,cols,var matrix);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles
 - output: prints the matrix
-- Block diagram:
 
 ---
 
 - [ ] inputMatrix(rows,cols,var matrix);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of integers
 - output: takes input from the user to fill the matrix
-- Block diagram:
 
 ---
 
 - [ ] copyMatrix(rows,cols,var matrix,var copy);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, copy of type 2D array of doubles
 - output: copies the contents of the matrix to the copy
-- Block diagram:
 
 2. #### **_Matrix Arithmetic_**
 
 - [ ] addMatrices(rows,cols,var mat1,var mat2,var result);
 - inputs: rows of type integer, cols of type integer, mat1 of type 2D array of integers, mat2 of type 2D array of integers, result of type 2D array of integers.
 - output: adds two matrices and stores the result in the result matrix
-- Block diagram:
 
 ---
 
 - [ ] subtractMatrices(rows,cols,var mat1,var mat2,var result);
 - inputs: rows of type integer, cols of type integer, mat1 of type 2D array of integers, mat2 of type 2D array of integers, result of type 2D array of integers.
 - output: subtracts mat2 from mat1 and stores the result in the result matrix
-- Block diagram:
 
 ---
 
 - [ ] multiplyMatrices(rows1,cols1,var mat1,rows2,cols2,var mat2,var result);
 - inputs: rows1 of type integer, cols1 of type integer, mat1 of type 2D array of integers, rows2 of type integer, cols2 of type integer, mat2 of type 2D array of integers, result of type 2D array of integers
 - output: multiplies two matrices and stores the result in the result matrix
-- Block diagram:
 
 ---
 
 - [ ] scalarMultiplyMatrix(rows,cols,var matrix,scalar);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, scalar of type double
 - output: multiplies the matrix by a scalar value
-- Block diagram:
 
 3. #### **_Matrix properties and checks_**
 
 - [ ] isSquareMatrix(rows,cols);
 - inputs: rows of type integer, cols of type integer
 - output: boolean (returns true if the matrix is square, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] isIdentityMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
 - output: boolean (returns true if the matrix is an identity matrix, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] isDiagonalMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
 - output: boolean (returns true if the matrix is diagonal, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] isSymmetricMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
 - output: boolean (returns true if the matrix is symmetric, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] isUpperTriangular(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
 - output: boolean (returns true if the matrix is upper triangular, otherwise false)
-- Block diagram:
 
 ---
 
 - [ ] isEqualMatrix(rows,cols,var mat1,var mat2);
 - inputs: rows of type integer, cols of type integer, mat1 of type 2D array of doubles, mat2 of type 2D array of doubles
 - output: boolean (returns true if the two matrices are equal, otherwise false)
-- Block diagram:
 
 4. #### **_Matrix operations_**
 
 - [ ] transposeMatrix(rows,cols,var matrix,var result);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, result of type 2D array of doubles
 - output: computes the transpose of the matrix and stores it in the result matrix
-- Block diagram:
 
 ---
 
 - [ ] determinantMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of doubles
 - output: double (returns the determinant of the matrix)
-- Block diagram:
 
 ---
 
 - [ ] inverseMatrix(size,var matrix,var result);
 - inputs: size of type integer, matrix of type 2D array of doubles, result of type 2D array of doubles
 - output: computes the inverse of the matrix and stores it in the result matrix
-- Block diagram:
 
 ---
 
 - [ ] matrixPower(size,var matrix,power,var result);
 - inputs: size of type integer, matrix of type 2D array of doubles, power of type integer, result of type 2D array of doubles
 - output: computes the matrix raised to the given power and stores it in the result matrix
-- Block diagram:
 
 5. #### **_Advanced Functions/procedures_**
 
 - [ ] cofactorMatrix(size,var matrix,var cofactor);
 - inputs: size of type integer, matrix of type 2D array of doubles, cofactor of type 2D array of doubles
 - output: computes the cofactor matrix and stores it in the cofactor matrix
-- Block diagram:
 
 ---
 
 - [ ] adjointMatrix(size,var matrix,var adjoint);
 - inputs: size of type integer, matrix of type 2D array of doubles, adjoint of type 2D array of doubles
 - output: computes the adjoint matrix and stores it in the adjoint matrix
-- Block diagram:
 
 ---
 
 - [ ] luDecomposition(size,var matrix,var lower,var upper);
 - inputs: size of type integer, matrix of type 2D array of doubles, lower of type 2D array of doubles, upper of type 2D array of doubles
 - output: performs LU decomposition on the matrix and stores the results in the lower and upper matrices
-- Block diagram:
 
 ---
 
 - [ ] matrixRank(rows,cols,var matrix);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles
 - output: integer (returns the rank of the matrix)
-- Block diagram:
 
 ---
 
 - [ ] reduceRowEchelonForm(rows,cols,var matrix);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles
 - output: reduces the matrix to its row echelon form
-- Block diagram:
 
 ---
 
 - [ ] swapRows(rows,cols,var mat,row1,row2);
 - inputs: rows of type integer, cols of type integer, mat of type 2D array of doubles, row1 of type integer, row2 of type integer
 - output: swaps two rows in the matrix
-- Block diagram:
 
 6. #### **_Special Matrix operations_**
 
 - [ ] traceMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
 - output: integer (returns the trace of the matrix)
-- Block diagram:
 
 ---
 
 - [ ] rotateMatrix90(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of doubles
 - output: rotates the matrix 90 degrees clockwise
-- Block diagram:
 
 ---
 
 - [ ] reverseRows(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of doubles
 - output: reverses the rows of the matrix
-- Block diagram:
 
 ---
 
 - [ ] findEigenvalues(size,var matrix,var eigenvalues);
 - inputs: size of type integer, matrix of type 2D array of doubles, eigenvalues of type array of doubles
 - output: computes the eigenvalues of the matrix and stores them in the eigenvalues array
-- Block diagram:
 
 ---
 
 - [ ] findEigenvalues2x2(var matrix,var eigenvalues);
 - inputs: matrix of type 2D array of doubles (2x2), eigenvalues of type array of doubles
 - output: computes the eigenvalues of a 2x2 matrix and stores them in the eigenvalues array
-- Block diagram:
 
 4. **Tutorial**
 
@@ -7430,6 +7263,2188 @@ int Xor(int num1, int num2) {
 
 ## Basic Functions
 
+```c
+#include<stdbool.h>
+#include<math.h>
+#include<stdio.h>
+#include "../lib/mainlib.h"
+#include"../include/strings.h"
+#include <string.h>
+
+
+
+
+int stringLength(char* str){
+    int length=0;
+    while (str[length] != '\0')
+    {
+        length++;
+    }
+    
+    length=removeWhiteSpaceLength(str,length);
+    return length;
+    
+}
+int stringLengthWithSpace(char* str){
+    int length=0;
+    while (str[length] != '\0')
+    {
+        length++;
+    }
+    
+    
+    return length;
+    
+}
+int removeWhiteSpaceLength(char* str,int length){
+
+    for (int i = 0; i <= length; i++)
+    {
+        if (str[i] == ' ')
+        {
+            length--;
+            
+        }
+        
+    }
+    return length;
+}
+
+void stringCopy(const char* src,char* dst){
+    
+    for (int i = 0; src[i] !='\0'; i++)
+    {
+        dst[i] = src[i];
+    }
+   
+}
+
+void stringConcat(char* dest,  const char* src){
+    char str1[900];
+    stringCopy(src,str1);
+    int len1 =stringLengthWithSpace(str1);
+    int len2 = stringLengthWithSpace(dest);
+
+   dest[len2]=' ';
+    
+    for (int i = 0; i<len1 ; i++)
+    {
+        
+        dest[i+len2+1] = src[i];
+        
+    }
+    len2 =stringLengthWithSpace(dest);
+    dest[len1+len2+1]='\0';
+ 
+    
+}
+
+int stringCompare(const char* str1, const char* str2){
+
+   int i=0;
+    while (str1[i]!='\0' && str2[i]!='\0')
+    {
+        if (str1[i]!=str2[i])
+        {
+            return str1[i]-str2[i];
+            
+        }
+        i++;
+    }
+    return str1[i]-str2[i];
+    
+}
+
+int stringCompareInsensitive(const char* str1, const char* str2){
+
+   int i=0;
+    while (str1[i]!='\0' && str2[i]!='\0')
+    {
+        if (str1[i]!=str2[i])
+        {
+            return str1[i]-str2[i];
+            
+        }
+        i++;
+    }
+    return 0;
+    
+}
+
+
+bool isEmpty(char* str){
+    int length=stringLength(str);
+    if (length==0) return true;
+    
+
+    return false;
+}
+
+bool isEmptyLiterally(char* str){
+    if(str[0]=='\0') return true;
+    return false;
+}
+
+void reverseString(char* str){
+    int len= stringLengthWithSpace(str);
+    int temp;
+    
+    for(int i=0; i<len/2; i++)
+    {
+    
+        temp=str[i];
+        str[i]=str[len-i-1];
+        str[len-i-1]=temp;
+        
+    }
+    
+    
+}
+
+void toUpperCase(char* str){
+    int i=0;
+    while (str[i]!='\0')
+    {
+        if (str[i]>=97 && str[i]<=122)
+        {
+            str[i]=str[i]-32;
+            
+        }
+        i++;
+    }
+   
+    
+}
+
+void toLowerCase(char* str){
+    int i=0;
+    while (str[i]!='\0')
+    {
+        if (str[i]>=65 && str[i]<=90)
+        {
+            str[i]=str[i]+32;
+
+            
+        }
+
+        i++;
+    }
+    
+    
+}
+
+
+
+bool isPalindromeString(char* str){
+    char str1[256];
+    stringCopy(str,str1);
+    reverseString(str);
+
+
+    if (stringCompareInsensitive(str1,str)==0){ return true;}
+    else {return false;}
+    
+        
+    
+    
+}
+
+void countVowelsConsonants(char* str,int* vowels,int* consonants){
+    int len =stringLengthWithSpace(str);
+    *vowels=0;*consonants=0;
+    toLowerCase(str);
+    for (int i = 0; i < len; i++)
+    {   
+        if (str[i]>=97 && str[i]<=122)
+        {
+           switch (str[i])
+            {
+            case 'a': 
+                *vowels+=1;
+                break;
+            case 'e': 
+                *vowels+=1;
+                break;
+            case 'i': 
+                *vowels+=1;
+                break;
+            case 'o': 
+                *vowels+=1;
+                break;
+            case 'u': 
+                *vowels+=1;
+                break;     
+            default:
+                
+                *consonants+=1;
+                
+                break;
+            }
+        }
+    }
+    
+}
+int findSubstring(const char* str, const char* sub){
+    char str1[512];stringCopy(str,str1);
+    char sub1[512];stringCopy(sub,sub1);
+
+    int len1 = stringLength(str1);
+    int len2 = stringLength(sub1);
+    int total=len1-len2;
+    
+    if (len2 > len1){
+        return -1;
+    }else{
+        for (int i = 0; i <= len1-len2; i++)
+        {
+            if (stringCompareInsensitive(str+i, sub) == 0){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+}
+
+int findSubstringInsensitive(const char* str, const char* sub){
+    char str1[512];stringCopy(str,str1);
+    char sub1[512];stringCopy(sub,sub1);
+
+    int len1 = stringLength(str1);
+    int len2 = stringLength(sub1);
+    int total=len1-len2;
+    
+    
+   
+    toLowerCase(str1);
+    toLowerCase(sub1);
+    
+    if (len2 > len1){
+        return -1;
+    }else{
+        for (int i = 0; i <= len1-len2; i++)
+        {
+            if (stringCompareInsensitive(str1+i, sub1) == 0){
+                return i;
+            }
+        }
+        return -1;
+
+    }
+
+}
+
+void removeWhiteSpace(char* str){
+    int len = stringLengthWithSpace(str);
+    for (int i = 0; i < len; i++)
+    {
+        if (str[i]==' ')
+        {   for (int j = i; j <= len; j++)
+            {
+                str[j] = str[j+1];
+                
+                
+            }
+        
+            
+        }
+        
+    }
+
+    
+}
+
+bool isAnagram(char* str1, char* str2){
+    int len1=stringLength(str1);
+    int len2=stringLength(str2);
+    int k=0;
+    int arr[512];
+    
+    if (len1 != len2) {return false;}
+    else{
+        
+        for (int i = 0; i < len1; i++)
+        {
+            for (int j = 0; j < len2; j++)
+            {
+                if (str1[i]==str2[j])
+                {
+                    arr[k]=1; 
+                }
+                
+            }
+            k++;
+        }
+        
+        for ( k = 0; k < len1; k++)
+        {
+            if (arr[k]!=1) return false;
+        }
+        return true;
+
+
+
+    }
+    
+}
+
+
+void charFrequency(char* str)
+{
+    char arr[30] = {0};
+    int freq;
+    int len = stringLength(str);  
+
+    for (int i = 0; i < len; i++) {
+        freq = 0;
+        
+        int already_counted = 0;
+        for (int k = 0; k < i; k++) {
+            if (arr[k] == str[i]) {
+                already_counted = 1;
+                break;
+            }
+        }
+
+        if (already_counted==1) {
+            continue;  
+        }
+
+        for (int j = 0; j < len; j++) {
+            if (str[i] == str[j]) {
+                freq++;
+            }
+        }
+
+        arr[i] = str[i];
+        printf("'%c' has been repeated %d times\n", str[i], freq);
+    }
+}
+
+
+int countWords(char* str){
+    int len =stringLengthWithSpace(str);
+    int count=1;
+    for (int i = 0; i < len; i++)
+    {
+        if (str[i]==' ')
+        {
+            count++;
+        }
+        
+    }
+    return count;
+}
+
+void removeDuplicates(char* str){
+    int len =stringLength(str);
+    char arr[30];
+    int check;
+    int new_len=0;
+    for (int i = 0; i < len; i++)
+    {
+        for (int k = 0; k < len; k++)
+        {
+            if(arr[k]==str[i]) {check = 1;
+            break;}
+
+        }
+        if(check==1){
+            continue;
+            new_len++;
+        
+        }else{
+            for (int j = i+1; j < len; j++)
+            {
+                if (str[j]==str[i])
+                {
+                    for (int l = j; l < len-1; l++)
+                    {
+                        str[l]=str[l+1];
+                    }
+                    
+                }
+                
+            }
+            new_len++;
+
+        }
+        
+        arr[i]=str[i];
+    }
+    
+ str[new_len]='\0';
+
+
+
+}
+
+
+void compressString(char* str, char* result)
+{
+    int len=stringLength(str);
+    int start=0;int count;
+    result[0]='\0';
+    
+    for (int i = 0; i < len; i=i+count)
+    {
+        count=0;
+        for (int  j = i; j < len; j++)
+        {
+            if (str[j]==str[i])
+            {
+                count++;
+            }else{break;}
+            
+        }
+
+        int numberDigits = numberOfDigits(count);
+        result[start] = str[i];
+        char countStr[numberDigits];
+        switchInt_Str(countStr,count);
+        for (int k = 0; k < numberDigits; k++){
+            result[start+1+k] = countStr[k];
+        }
+        
+       
+        start=start+numberDigits+1;
+        
+    }
+
+    result[start]='\0';
+}
+void switchInt_Str(char* str,int num){
+    int digit_num=numberOfDigits(num);
+    int digit;
+    for (int i = digit_num-1; i >=0; i--)
+    {
+        digit = num%10;
+        
+        switch (digit)
+        {
+        case 0:
+            str[i]='0';
+            break;
+        case 1:
+            str[i]='1';
+            break;
+        case 2:
+            str[i]='2';
+            break;
+        case 3:
+            str[i]='3';
+            break;
+        case 4:
+            str[i]='4';
+            break;
+        case 5:
+            str[i]='5';
+            break;
+        case 6:
+            str[i]='6';
+            break;
+        case 7:
+            str[i]='7';
+            break;
+        case 8:
+            str[i]='8';
+            break;
+        case 9:
+            str[i]='9';
+            break;
+        
+        
+        }
+        num=num/10;
+
+    }
+    str[digit_num]='\0';
+    
+}
+
+void longestWord(char* str, char* result){
+    int words_num=countWords(str);
+    int len =stringLengthWithSpace(str);
+    int max=-1;
+    int count;
+    int pos=0;
+    for (int i = 0; i < words_num; i++)
+    {
+        count = 0;
+        for (int j =pos; j < len; j++)
+        {
+            if (str[j]!=' ')
+            {
+                count++;
+                pos++;
+            }else{break;}
+            
+            
+        }
+        
+        if (count >= max)
+        {   
+            int temp=pos;
+            max=count;
+            for (int i = max-1; i >= 0; i--)
+            {
+                result[i]=str[temp-1];
+                temp--;
+            }
+        }
+        pos++;
+        
+    }
+    
+    result[max]='\0';
+    
+
+}
+
+bool isRotation(char* str1, char* str2){
+    int len=stringLength(str1);
+    for (int i = 0; i < len; i++)
+    {
+        rotateLeft(str2);
+        if (stringCompare(str1, str2)==0) return true;
+        
+    }
+    return false;
+
+    
+    
+}
+void rotateLeft(char* str){
+    int len=stringLength(str);
+    char temp=str[0];
+    for (int i = 0; i < len-1; i++)
+    {
+        str[i]=str[i+1];
+    }
+    str[len-1]=temp;
+}
+
+void rotateLeftTimes(char* str,int times){
+    for (int i = 0; i < times; i++)
+    {
+        rotateLeft(str);
+    }
+}
+
+void rotateRightTimes(char* str,int times){
+    int len=stringLength(str);
+    rotateLeftTimes(str,abs(len-times));
+    
+}
+
+int countChar(char* str, char character){
+    int len=stringLengthWithSpace(str);
+    int count=0;
+    for (int i = 0; i < len; i++){
+        if (character==str[i])
+        {
+            count++;
+        }
+        
+    }
+    return count;
+}
+
+void findAndReplace(char* str, char* find, char* replace){
+    int len=stringLengthWithSpace(str);
+    int find_len=stringLength(find);
+    int replace_len=stringLength(replace);
+    int pos=0;
+    while(pos<len){
+        
+        if (stringCompareInsensitive(str+pos, find)==0)
+        {
+            for (int i = 0; i < replace_len; i++)
+            {
+                str[pos+i]=replace[i];
+            }
+
+            pos=pos+replace_len;
+        } else{
+            pos++;
+        }
+        
+    }
+    
+}
+
+
+
+void longestPalindrome(char* str, char* result){
+    int len = stringLength(str);
+    
+    for (int start = 0; start < len; start++)
+    {
+        
+        for (int end = len - 1; end >= start; end--) { 
+            int pos=0; 
+            char temp[len +1];
+            
+          
+            for (int j = start; j <= end; j++)
+            {   
+                temp[pos]=str[j];
+                pos++;
+                
+            }
+            
+            temp[pos]='\0';
+            printf("%s\n", temp);
+            
+            if (isPalindromeString(temp))
+            {   
+            
+                if (stringLength(temp) > stringLength(result)){            
+                    stringCopy(temp,result);
+                    
+                    
+                }break;   
+            }
+        }
+    } 
+}
+
+void printPermutations(char* str){
+    int len=stringLength(str);int pos=1;
+    
+    char arrOfStr[5212]="";
+   
+    for (int i = 0; i < len; i++)
+    {
+
+        for (int j = 0; j <len; j++)
+        { 
+            rotateLeft(str);
+            int verification=0;
+            
+            
+            if (findSubstring(arrOfStr,str)!=-1)
+            {
+                verification=1;
+                break; 
+            }
+                
+          
+        
+            if(verification==0){printf("permutation[%d]is : %s\n",pos,str);
+            stringConcat(arrOfStr,str);
+            pos++;}
+                
+            
+           
+           
+           
+            
+        }
+        rotateLeft(str);
+        char temp=str[0];
+        str[0]=str[i+1];
+        str[i+1]=temp;
+      
+    }
+    
+}
+
+
+
+
+
+
+void splitString(char* str, char delimiter, char tokens[][100], int* tokenCount) {
+    int len = stringLengthWithSpace(str);
+
+    int pos = 0;
+    int new_len = 0;
+    for (int i = 0; i < len; i++) {
+        new_len++;
+        if (str[i] == delimiter) {
+
+            int k = i - 1;
+            for (int j = new_len -2; j >= 0; j--) {
+                tokens[*tokenCount][pos] = str[k];
+                k--;
+                pos++;
+            }
+            reverseString(tokens[*tokenCount]);
+            tokens[*tokenCount][pos] = '\0';
+            new_len = 0;
+            pos = 0;
+            *tokenCount = *tokenCount + 1;
+           
+        }
+        
+    }
+    
+
+    if (new_len > 0) {
+        int k = len - new_len;
+        for (int j = 0; j < new_len; j++) {
+            tokens[*tokenCount][j] = str[k + j];
+        }
+        tokens[*tokenCount][new_len] = '\0';
+        *tokenCount = *tokenCount + 1;
+    }
+}
+
+
+
+void caesarCipher(char *text, int shift){
+    int len=stringLengthWithSpace(text);
+    for (int i = 0; i < len; i++)
+    {
+        if (text[i] >= 'a' && text[i] <= 'z')
+        {
+            text[i] = text[i] + shift;
+            if (text[i] > 'z') text[i] = text[i] - 26;
+            else if (text[i] < 'a') text[i] = text[i] + 26;
+        }
+        
+        else if (text[i] >= 'A' && text[i] <= 'Z')
+        {
+            text[i] = text[i] + shift;
+            if (text[i] > 'Z') text[i] = text[i] - 26;
+            else if (text[i] < 'A')  text[i] = text[i] + 26;
+        }
+
+    }
+    
+}
+
+void substitutionCipher(char *text, const char *key){
+
+   int len=stringLengthWithSpace(text);
+   int lenKey=stringLengthWithSpace(key);
+   char lowerKey[lenKey];
+   stringCopy(key,lowerKey);
+   toLowerCase(lowerKey);
+   char upperKey[lenKey];
+   stringCopy(key,upperKey);
+   toUpperCase(upperKey);
+    for (int i = 0; i < len; i++)
+    {
+        if (text[i]>='A'&& text[i]<='Z')
+        {
+            text[i]=upperKey[text[i]-'A'];
+        }
+        if (text[i]>='a'&& text[i]<='z')
+        {
+            text[i]=lowerKey[text[i]-'a'];
+        }
+    }
+    
+}
+void xorCipher(char *text, char key) {
+    int len = stringLengthWithSpace(text);
+    
+    for (int i = 0; i < len; i++) {
+        text[i] = (text[i] ^ key);  
+        text[i] = (text[i] % 95) + 32;  
+    }
+}
+
+
+void vigenereCipher(char *text, const char *key, int encrypt){
+    int len =stringLengthWithSpace(text);
+    char keyCopy[1024];
+    stringCopy(key,keyCopy);
+    int keyLen=stringLength(keyCopy);
+    int keyIndex=0;
+    
+    if (encrypt==1)
+    {
+        for (int i = 0; i < len; i++)
+        {
+            if (text[i]>='a' && text[i]<='z' )
+            {
+                keyIndex=i%keyLen;
+                text[i]=(text[i] - 'a' + key[keyIndex] - 'a') % 26 + 'a';
+                keyIndex++;
+            }
+            if (text[i]>='A' && text[i]<='Z' )
+            {
+                keyIndex=i%keyLen;
+                text[i]=(text[i] - 'A' + key[keyIndex] - 'A') % 26 + 'A';
+                keyIndex++;
+            }
+        }
+        
+    }else if (encrypt==0)
+    {
+        for (int i = 0; i < len; i++)
+        {
+            if (text[i]>='a' && text[i]<='z' )
+            {
+                keyIndex=i%keyLen;
+                text[i]=(text[i] - 'a' - (key[keyIndex] - 'a') + 26) % 26 + 'a';
+                keyIndex++;
+            }
+            if (text[i]>='A' && text[i]<='Z' )
+            {
+                keyIndex=i%keyLen;
+                text[i]=(text[i] - 'A' - (key[keyIndex] - 'A') + 26) % 26 + 'A';
+                keyIndex++;
+            }
+        }
+    }else{
+        printf("Invalid encryption flag!");
+    }
+    
+    
+}
+void atbashCipher(char *text){
+    int len=stringLengthWithSpace(text);
+    for (int i = 0; i < len; i++)
+    {
+        if (text[i]>='a' && text[i]<='z' )
+        {
+            text[i]='z'-(text[i]-'a');
+        }
+        if (text[i]>='A' && text[i]<='Z' )
+        {
+            text[i]='Z'-(text[i]-'A');
+        }
+    }
+    
+}
+
+void railFenceCipher(const char *text, char *result, int depth) {
+    char textCopy[2025];
+    stringCopy(text,textCopy);
+    int cols = stringLengthWithSpace(textCopy);
+    char matrix[depth][cols];
+    for (int i = 0; i < depth; i++) {
+        for (int j = 0; j < cols; j++) {
+            matrix[i][j] = '\0';  
+        }
+    }
+
+    int i = 0, j = 0;
+    while (j < cols) {
+        while (i < depth && j < cols) {
+            matrix[i][j] = text[j];
+            i++;
+            j++;
+        }
+        i--;
+        while (i > 0 && j < cols) {
+            i--;
+            matrix[i][j] = text[j];
+            j++;
+        }
+    }
+
+    int track = 0;
+    for (int row = 0; row < depth; row++) {
+        for (int col = 0; col < cols; col++) {
+            if (matrix[row][col] != '\0') {
+                result[track] = matrix[row][col];
+                track++;
+            }
+        }
+    }
+    result[track] = '\0';
+}
+
+
+
+
+
+
+```
+
+```c
+#include<stdbool.h>
+#include<math.h>
+#include<stdio.h>
+#include "../lib/mainlib.h"
+#include <string.h>
+#define UNUSED INT_MIN 
+#include<limits.h>
+
+
+
+
+void initializeArray(int arr[], int size, int value){
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = value;
+    }
+    
+}
+
+void printArray(int arr[] ,int size){
+
+    if (size == 0)
+    {
+        printf("Array is empty \n");
+        
+    }else 
+    {
+    
+        printf(" Array =[");
+        for (int i = 0; i < size; i++)
+        {
+            printf("%d",arr[i]);
+            if (i+1 != size)
+            {
+                printf(",");
+            }
+        
+        }
+        printf("]\n");
+   
+    }
+    
+
+}
+
+int findMax(int arr[], int size){
+    int max = arr[0];
+    for (int i = 1; i < size; i++)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+    }
+    return max;
+ 
+}
+
+int findMin(int arr[], int size){
+    int min = arr[0];
+    for (int i = 1; i < size; i++)
+    {
+        if (arr[i] < min)
+        {
+            min = arr[i];
+        }
+    }
+    return min;
+ 
+}
+
+int sumArray(int arr[], int size){
+    int sum=0;
+    for (int i = 0; i < size; i++)
+    {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+
+double averageArray(int arr[], int size){
+    return sumArray(arr, size)/(double)size;
+}
+
+void minimizedArray(int arr[], int size){
+    for (int i = 0; i<size; i++)
+    {   
+        if (i==size-1)
+        {
+            break;
+        }
+        
+        arr[i]=arr[i+1];
+        
+    }
+    
+}
+
+bool isSorted(int arr[], int size){
+    int min ;
+    for (int i = 0; i < size; i++)
+    {
+        min = findMin(arr,size-i);
+        
+        if (arr[0]!=min)
+        {
+         return false;   
+        }
+        
+        shift_right(arr,size,1);
+    }
+    return true;
+
+    
+}
+
+void storingDigits(int arr[],int number){
+    int i=0, digit;
+    while (number > 0)
+    {
+        digit = number%10;
+        arr[i]=digit;
+        number=number/10;
+        i++;
+    }
+    
+}
+void minimumValue(int arr[],int size,int *index,int pos)
+{
+    int min=arr[pos];
+    for (int i = pos; i < size; i++)
+    {
+        if (min>=arr[i])
+        {
+            min=arr[i];
+            *index=i;
+        }
+        
+    }
+    
+}
+
+
+int returningDigits(int arr[] ,int size ){
+    int number=0;
+    for (int i = 0; i < size; i++)
+    {
+        int t=arr[i]*pow(10,i);
+        number = number+ t;
+    }
+    return number;
+}
+void createArray(int arr [],int size){
+    
+    for (int i = 0; i <size; i++)
+    {
+        printf("Enter  element number %d \n",i);
+        scanf("%d",&arr[i]);
+        
+    }
+    
+}
+
+void swapArray(int arr[],int arr_size){
+    int i,j,temp;
+    for ( i = 0,j=arr_size-1; j>i; i++,j--)
+    {   temp = arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+
+    }
+    
+}
+
+void mergeSortedArray(int arr1[], int arr2[], int arr_size1, int arr_size2, int arr3[]) {
+    int i = 0, j = 0, k = 0;
+    while (i < arr_size1 && j < arr_size2) {
+        if (arr1[i] <= arr2[j]) {
+            arr3[k] = arr1[i];
+            i++;
+            k++;
+        } else {
+            arr3[k] = arr2[j];
+            j++;
+            k++;
+        }
+    }
+    while (i < arr_size1) {
+        arr3[k] = arr1[i];
+        i++;
+        k++;
+    }
+    while (j < arr_size2) {
+        arr3[k] = arr2[j];
+        j++;
+        k++;
+    }
+}
+
+
+
+void reverseArray(int arr[],int size){
+    for (int i = 0,j=size-1; i < size/2,j>=size/2; j--,i++)
+    {
+        int temp = arr[i];
+        int temp1 = arr[j];
+        arr[j] = temp;
+        arr[i] = temp1;
+    }
+    
+}
+
+void countEvenOdd(int arr[], int size, int* evenCount, int* oddCount){
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i]%2==0)
+        {
+            *evenCount+=1;
+        }else{*oddCount+=1;}
+        
+    }
+    
+}
+
+int secondLargest(int arr[], int size){
+    int max=findMax(arr,size);
+    int min=findMin(arr,size);
+    int maxPos=findElementPos(arr,size,max);
+    arr[maxPos] = min;
+    return findMax(arr,size);
+    
+}
+
+int findElementPos(int arr[], int size,int element){
+    int pos=0;
+    for (int i = 0; i < size; i++)
+    {
+        
+        if (arr[i]==element) 
+        {
+            return pos;
+        }
+        pos++;
+    }
+    return -1;
+    
+}
+
+bool found(int arr[], int size,int element){
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i]==element) return true;
+        
+        
+    }
+    return false;
+    
+}
+void elementFrequency(int arr[], int size){
+
+    int check[size];
+    for (int i = 0; i < size; i++)
+    {
+        int count=0;
+        if (!found(check,size,arr[i]))
+        {
+            for (int j = 0; j < size; j++)
+            {
+                if (arr[i]==arr[j])
+                {
+                    count++;
+                }
+            
+            }
+            
+        }
+        
+        
+        
+        if (!found(check,size,arr[i]))
+        {
+            printf("->The element %d has been found %d times \n",arr[i],count);
+        
+        
+        }
+        check[i] = arr[i];
+    }
+    
+}
+
+int removeDuplicatesElements(int arr[], int size){
+    int new_size=0,check[size];
+    for (int i = 0; i < size; i++)
+    {
+        
+        
+        if (!found(check,size,arr[i]))
+        {     
+           check[new_size]=arr[i];
+           new_size++;
+        }
+            
+        
+        
+        
+    }
+    
+    
+    return new_size;
+    
+
+}
+
+int linearSearch(int arr[],int size,int target){
+   for (int i = 0; i < size; i++)
+    {
+        if (arr[i]==target)
+        {
+            return i;
+        }
+        
+    }
+    return -1;
+}
+
+int binarySearch(int arr[],int size ,int target){
+    int left=0,right=size-1;
+    while(left<=right)
+    {
+        int mid=(left+right)/2;
+        if (arr[mid]==target)
+        {
+            return mid;
+        } else if (arr[mid]<target)
+        {
+            left=mid+1;
+        } else{
+            right=mid-1;
+        }
+        
+    }
+    return -1;
+}
+
+void shift_left(int arr[],int arr_size,int repeat_times){
+   int temp;
+   for ( int j = 0; j < repeat_times; j++)
+   {
+        for (int i = arr_size-1; i >0 ; i--)
+        {          
+            temp= arr[i];
+            arr[i]=arr[i-1];
+            arr[i-1]=temp;
+        }
+    }
+}
+void shift_right(int arr[],int arr_size,int repeat_times){
+   int temp;
+   for ( int j = 1; j <= repeat_times; j++)
+   {
+        for (int i = 0; i < arr_size-1; i++)
+        {          
+            temp= arr[i];
+            arr[i]=arr[i+1];
+            arr[i+1]=temp;  
+        }
+    }
+}
+
+void compare_swap(int arr[],int size){
+    for (int i = 0; i < size-1; i++)
+    {
+        if (arr[i]>arr[i+1])
+        {
+            int temp=arr[i];
+            arr[i]=arr[i+1];
+            arr[i+1]=temp;
+        }
+        
+    }
+    
+}
+
+
+void bubbleSort(int arr[],int size){
+    for (int i = 0; i < size-1; i++)
+    {
+        compare_swap(arr,size-i);
+    }
+    
+
+}
+
+void selectionSort(int arr[],int size){
+
+    for (int i = size-1,pos=0; i >=0,pos<size ; i--,pos++)
+    {
+        int min=findMin(arr,size-pos);
+        int minPos=findElementPos(arr,size-pos,min);
+        int temp=arr[i];
+        arr[i]=arr[minPos];
+        arr[minPos]=temp;
+    }
+    
+    reverseArray(arr,size);
+    
+    
+    
+   
+}
+
+
+void insertionSort(int arr[],int size){
+   
+   int j;
+   for(int i=1;i<size;i++){
+        int temp=arr[i];
+        j=i-1;
+        while (j>=0&&temp<arr[j])
+        {
+            arr[j+1]=arr[j];
+
+            j--;
+            
+        }
+        arr[j+1]=temp;
+    }
+   
+
+
+}
+
+
+void mergeSort(int arr[], int left, int right) {
+    if (left < right - 1) {
+        int midle = (left + right) / 2;
+        int temp1[midle - left];
+        int temp2[right - midle];
+
+        for (int i = 0; i < midle - left; i++) {
+            temp1[i] = arr[left + i];
+        }
+        for (int i = 0; i < right - midle; i++) {
+            temp2[i] = arr[midle + i];
+        }
+
+        mergeSort(temp1, 0, midle - left);
+        mergeSort(temp2, 0, right - midle);
+        mergeSortedArray(temp1, temp2, midle - left, right - midle, arr + left);
+    }
+}
+
+
+
+void quickSort(int arr[], int low, int high) {
+    if (low < high) {
+        int pivot = arr[high];
+        int j = low;
+        int i;
+        
+        for (i = low; i < high; i++) {
+            if (arr[i] <= pivot) {
+                swap(&arr[i], &arr[j]);
+                j++;
+            }
+        }
+        
+        swap(&arr[j], &arr[high]);
+        quickSort(arr, low, j - 1);
+        quickSort(arr, j + 1, high);
+    }
+}
+
+
+
+    
+
+
+
+
+
+
+bool isEmptyArray(int arr[],int size){
+    if (size==0) return true;
+    return false;
+    
+}
+void swap(int* elem1,int* elem2){
+    int temp;
+    temp = *elem1;
+    *elem1 = *elem2;
+    *elem2 = temp;
+}
+int findMissingNumber(int arr[], int size){
+    quickSort(arr,0,size-1);
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i+1]-arr[i]==1)
+        {
+            continue;
+        }else{
+            return arr[i]+1;
+        }
+        
+        
+    }
+    return -1;
+}
+
+void findPairsWithSum(int arr[], int size, int sum){
+    quickSort(arr,0,size-1);
+    int i=0,j=size-1;
+    bool verification=false;
+    while(i<j){
+        if(arr[i]+arr[j]==sum){
+            printf("Pair found: %d and %d\n", arr[i], arr[j]);
+            i++;
+            j--;
+            verification=true;
+
+        } else if(arr[i]+arr[j]<sum){
+            i++;
+        } else{
+            j--;
+        }
+    }
+    if (!verification)
+    {
+        printf("Pairs not found \n");
+    }
+    
+ 
+}
+
+void findSubArrayWithSum(int arr[], int size, int sum){
+    int delimiter=0;
+    
+    int check_sum= sumArray(arr,size);
+    bool verification=false;
+    for (int i = 0; i < size; i++)
+    {
+        if (check_sum==sum)
+        {
+            printf("Sub Array found: \n"); 
+            quickSort(arr,delimiter,size-delimiter);
+            printArray(arr+delimiter,size-delimiter);
+            verification=true;
+        }if (check_sum>sum)
+        {
+            delimiter++;
+            check_sum=sumArray(arr+delimiter,size-delimiter);
+                
+        }else{
+            break;
+        }
+            
+               
+        
+        
+    }
+    if (!verification)
+    {
+        check_sum=sumArray(arr,size);
+        delimiter=0;
+        reverseArray(arr,size);
+        for (int i = 0; i < size; i++)
+        {
+            if (check_sum==sum)
+            {
+                printf("Sub Array found: \n"); 
+                quickSort(arr,delimiter,size-delimiter);
+                printArray(arr+delimiter,size-delimiter);
+                verification=true;
+            }if (check_sum>sum)
+            {
+                delimiter++;
+                check_sum=sumArray(arr+delimiter,size-delimiter);
+                
+            }else{
+                break;
+            }
+            
+               
+        
+        
+        }  
+    }
+    
+    
+    if (!verification)
+    {
+        for (int i = 0; i < size; i++)
+        {
+            if (arr[i]==sum)
+            {
+                printf("Sub Array found: \n");
+                printf("Array[%d]=[%d",i+1,arr[i]);
+                verification=true;
+                printf("]\n");
+            }
+        
+        }
+    }
+    if (!verification)
+    {
+        printf("No Subarray found");
+    }
+    
+        
+    
+}
+
+void rearrangeAlternatePositiveNegative(int arr[], int size){
+    quickSort(arr,0,size-1);
+    int temp1[size];
+    int rearrangedArray[size];
+    int startOfPositive=0;
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i]<=0)
+        {
+            temp1[startOfPositive]=arr[i];
+            startOfPositive++;
+
+        }else{break;}
+        
+    }
+    reverseArray(temp1,startOfPositive);
+    int j=0;
+    
+    for (int i = 0; i < size; i+=2)
+    {
+        rearrangedArray[i]=temp1[j];
+        rearrangedArray[i+1]=arr[startOfPositive];
+        j++;
+        startOfPositive++;
+    }
+    printArray(rearrangedArray,size);
+    
+    
+}
+
+int findMajorityElement(int arr[], int size){
+    quickSort(arr,0,size-1);
+    for (int i = 0; i < size; i++)
+    {
+        int count = 0;
+        for (int j = 0; j < size; j++)
+        {
+            if (arr[i] == arr[j]) count++;
+        }
+        if (count > size / 2)return arr[i];
+    }
+    return -999999999;
+}
+
+int longestIncreasingSubsequence(int arr[], int size){
+    int dp[size];
+    initializeArray(dp,size,1);
+    
+    for (int i = 1; i < size; i++) 
+    {
+        for (int j = 0; j < i; j++) 
+        {
+            if (arr[i] >= arr[j])
+            {
+                dp[i] =Max(dp[i],dp[j]+1);
+            }
+        }
+    }
+    
+   return findMax(dp,size); 
+}
+
+void findDuplicates(int arr[], int size){
+    quickSort(arr,0,size-1);
+    int count;
+   for (int j = 0; j < size; j=j+count+1)
+   {
+        count=0;
+        bool verification=false;
+        for (int i = j; i < size; i++)
+        {
+            if (arr[i]==arr[i+1])
+            {
+                count++;
+                verification=true;
+            }else{break;}
+        
+        }
+        if (verification) printf("The Element %d has a duplicate \n",arr[j]);
+     
+
+
+
+
+
+    }
+   
+    
+    
+}
+
+
+void findIntersection(int arr1[], int size1, int arr2[], int size2){
+    quickSort(arr1,0,size1-1);
+    quickSort(arr2,0,size2-1);
+    
+    int IntersectionArr[size1+size2];
+    int count=0;
+    for (int i = 0; i < size1; i++)
+    {
+        for (int j = 0; j < size2; j++)
+        {
+            if (arr1[i]==arr2[j])
+            {
+                IntersectionArr[count]=arr1[i];
+                count++;
+            }
+            
+        }
+        
+    }
+    quickSort(IntersectionArr,0,count-1);
+    int new_size=0;
+    int newArr[count];
+    for (int i = 0; i < count; i++)
+    {
+        if (i == 0 || IntersectionArr[i] != IntersectionArr[i - 1])
+        {
+           newArr[new_size]=IntersectionArr[i];
+           new_size++;
+        }
+    }
+
+    printArray(newArr,new_size);
+    
+}
+
+void findUnion(int arr1[], int size1, int arr2[], int size2){
+    int UnionArr[size1+size2];
+    int count=0;
+    for (int i = 0; i < size1; i++)
+    {
+        UnionArr[count]=arr1[i];
+        count++;
+    }
+    for (int j = 0; j < size2; j++)
+    {
+        UnionArr[count]=arr2[j];
+        count++;
+    }
+    quickSort(UnionArr,0,count-1);
+    int new_size=0;
+    int newArr[count];
+    for (int i = 0; i < count; i++)
+    {
+        if (i == 0 || UnionArr[i] != UnionArr[i - 1])
+        {
+           newArr[new_size]=UnionArr[i];
+           new_size++;
+        }
+    }
+    printArray(newArr,new_size);
+}
+
+
+
+```
+
+```c
+#include<stdbool.h>
+#include<math.h>
+#include<stdio.h>
+#include "../lib/mainlib.h"
+#include<limits.h>
+
+
+
+void initializeMatrix(int rows, int cols, double matrix[rows][cols], int value){
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            matrix[i][j]=value;
+        }
+        
+    }
+    
+}
+void printMatrix(int rows, int cols, double matrix[rows][cols]){
+     for (int i = 0; i < rows; i++)
+    {
+        printf("\n");
+        printf(" ");
+        for (int j = 0; j < cols; j++)
+        {
+            printf("%f",matrix[i][j]);
+            if (j+1 != rows)
+            {
+                printf(" ");
+            }
+            
+        }
+        printf(" ");
+        
+    }
+}
+void inputMatrix(int rows, int cols, int matrix[rows][cols]){
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            printf("Enter element %d %d: ",i,j);
+            scanf("%d",&matrix[i][j]);
+        }
+    }
+}
+
+void copyMatrix(int rows, int cols, double matrix[rows][cols],double copy[rows][cols]){
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            copy[i][j]=matrix[i][j];
+        }
+        
+    }
+}
+
+void addMatrices(int rows, int cols, int mat1[rows][cols], int mat2[rows][cols], int result[rows][cols]){
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            result[i][j]=mat1[i][j]+mat2[i][j];
+        }
+        
+    }
+    
+}
+void subtractMatrices(int rows, int cols, int mat1[rows][cols], int mat2[rows][cols],int result[rows][cols]){
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            result[i][j]=mat1[i][j]-mat2[i][j];
+        }
+        
+    }
+    
+}
+
+void multiplyMatrices(int rows1, int cols1, int mat1[rows1][cols1], int rows2, int cols2, int mat2[rows2][cols2], int result[rows1][cols2]){
+   
+   initializeMatrix(rows1,cols2,result,0);
+    for (int i = 0; i < rows1; i++)
+    {
+        for (int j = 0; j < cols2; j++)
+        {
+            for (int  k= 0; k<cols1 ; k++)
+            {
+                result[i][j]=result[i][j]+(mat1[i][k]*mat2[k][j]);
+            }
+            
+            
+        }
+        
+    }
+    
+}
+
+void scalarMultiplyMatrix(int rows, int cols, double matrix[rows][cols], double scalar){
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            matrix[i][j]=matrix[i][j]*scalar;
+        }
+        
+    }
+    
+}
+
+
+bool isSquareMatrix(int rows, int cols){
+    if (rows==cols) return true;
+    return false;
+}
+bool isIdentityMatrix(int size, int matrix[size][size]){
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size; j++)
+        {
+            if (i==j && matrix[i][j]==1 )  continue;
+            
+            if (i!=j && matrix[i][j]==0) continue;
+            return false;
+                        
+        }
+        
+    }
+    return true;
+}
+bool isDiagonalMatrix(int size, int matrix[size][size]){
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size; j++)
+        {
+            if (i!=j && matrix[i][j]!=0) return false;
+                        
+        }
+        
+    }
+    return true;
+}
+bool isSymmetricMatrix(int size, int matrix[size][size]){
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size; j++)
+        {
+            if (matrix[i][j]!=matrix[j][i]) return false;
+                        
+        }
+        
+    }
+    return true;
+}
+
+bool isUpperTriangular(int size, int matrix[size][size]){
+    for (int i = 1; i < size; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            if (matrix[i][j]!=0) return false;
+                        
+        }
+        
+    }
+    return true;
+}
+
+bool isEqualMatrix(int rows, int cols,double mat1[rows][cols],double mat2[rows][cols]){
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            if (mat1[i][j]!=mat2[i][j]) return false;
+                        
+        }
+        
+    }
+    return true;
+}
+
+
+void transposeMatrix(int rows, int cols, double matrix[rows][cols], double result[cols][rows]){
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            result[j][i]=matrix[i][j];
+        }
+        
+    }
+    
+}
+
+
+
+
+double determinantMatrix(int size, double matrix[size][size]) {
+    if (size == 2) {
+        return (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0]);
+    }
+    if (size == 1) {
+        return matrix[0][0];
+    }
+  
+    double temp[size - 1][size - 1];
+    double det = 0;
+
+    for (int j = 0; j < size; j++) {
+        int sub_i = 0;
+        for (int i = 1; i < size; i++) {
+            int sub_j = 0;
+            for (int k = 0; k < size; k++) {
+                if (k == j) {
+                    continue;
+                }
+                temp[sub_i][sub_j] = matrix[i][k];
+                
+                sub_j++;
+            }
+            sub_i++;
+        }
+        double sign = 1;
+        if (j % 2 != 0) {
+            sign = -1;
+        }
+        det +=  matrix[0][j] * determinantMatrix(size - 1, temp);
+    }
+
+    return det;
+}
+
+
+void inverseMatrix(int size, double matrix[size][size], double result[size][size]){
+    int det =determinantMatrix(size ,matrix);
+    double temp[size][size];
+    
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0;j < size; j++)
+        {
+          temp[i][j] = pow(-1,i+j)*determinantMatrix(size-1,temp);
+        }
+        
+    }
+    double Adjugate[size][size];
+    transposeMatrix(size,size,temp,Adjugate);
+    scalarMultiplyMatrix(size,size,Adjugate,1/det);
+    copyMatrix(size,size,Adjugate,result);
+}
+
+void matrixPower(int size, double matrix[size][size], int power, double result[size][size]) {
+    if (power == 0) {
+        initializeMatrix(size, size, result, 1);
+        return;
+    }
+    if (power == 1) {
+        copyMatrix(size, size, matrix, result);
+        return;
+    }
+
+    int temp[size][size];
+    
+    matrixPower(size, matrix, power / 2, temp);
+    multiplyMatrices(size, size, temp, size, size, temp, result);
+
+    if (power % 2 != 0) {
+        multiplyMatrices(size, size, result, size, size, matrix, result);
+    }
+}
+
+
+
+void cofactorMatrix(int size, double matrix[size][size], double cofactor[size][size]) {
+    double temp[size - 1][size - 1];
+
+    for (int row = 0; row < size; row++) {
+        for (int col = 0; col < size; col++) {
+            int sub_i = 0;
+
+            for (int i = 0; i < size; i++) {
+                if (i == row) continue;
+
+                int sub_j = 0;
+                for (int j = 0; j < size; j++) {
+                    if (j == col) continue;
+
+                    temp[sub_i][sub_j] = matrix[i][j];
+                    sub_j++;
+                }
+                sub_i++;
+            }
+           
+
+            double sign = 1;
+            if ((row + col) % 2 != 0) {
+                sign = -1;
+            }
+           
+            cofactor[row][col] = sign * determinantMatrix(size - 1, temp);
+        }
+    }
+}
+
+ 
+void adjointMatrix(int size, double matrix[size][size], double adjoint[size][size]){
+    double temp[size][size];
+    cofactorMatrix(size, matrix, temp);
+    transposeMatrix(size, size, temp, adjoint);
+}
+
+void luDecomposition(int size, double matrix[size][size], double lower[size][size], double upper[size][size]) {
+    initializeMatrix(size, size, upper, 0);
+    initializeMatrix(size, size, lower, 0);
+
+    for (int i = 0; i < size; i++) {
+        lower[i][i] = 1;
+    }
+
+   
+    
+    for (int k = 0; k < size; k++) {
+        for (int j = k; j < size; j++) {
+            double sum = 0;
+            for (int p = 0; p < k; p++) {
+                sum += lower[k][p] * upper[p][j];
+            }
+            upper[k][j] = matrix[k][j] - sum;
+        }
+        
+        
+    } 
+
+    for (int k = 0; k < size; k++) {
+        for (int i = k + 1; i < size; i++) {
+            double sum = 0;
+            for (int p = 0; p < k; p++) {
+                sum += lower[i][p] * upper[p][k];
+            }
+            lower[i][k] = (matrix[i][k] - sum) / upper[k][k];
+        }
+
+      
+    }
+    printf("\nUper matrix:\n");
+    printMatrix(size, size, upper);
+    printf("\nLower matrix:\n");
+    printMatrix(size, size, lower);
+}
+
+
+
+int matrixRank(int rows, int cols, double matrix[rows][cols]){
+    int rank=0;
+    
+    reduceRowEchelonForm(rows,cols,matrix);
+    
+    for (int i = 0; i < rows; i++)
+    {
+        bool found =false;
+        for (int j = 0; j < cols; j++)
+        {
+            if (matrix[i][j]==0)
+            {
+                found=true;
+                break;
+            }
+            
+        }
+        if (!found) rank++;
+        
+    }
+    
+    return rank;
+}
+
+void reduceRowEchelonForm(int rows, int cols, double matrix[rows][cols]) {
+    int col = 0;
+    for (int k = 0; k < rows; k++) {
+        
+        int pivotRow = k;
+        while (pivotRow < rows && matrix[pivotRow][col] == 0) {
+            pivotRow++;
+        }
+        
+        if (pivotRow == rows) {
+            col++;
+            k--;
+            continue;
+        }
+
+        if (pivotRow != k) {
+            swapRows(rows, cols, matrix, k, pivotRow);
+        }
+
+        double pivot = matrix[k][col];
+        for (int j = 0; j < cols; j++) {
+            matrix[k][j] = matrix[k][j]/pivot;
+        }
+
+        for (int i = k + 1; i < rows; i++) {
+            double factor = matrix[i][col];
+            for (int j = 0; j < cols; j++) {
+                matrix[i][j] -= factor * matrix[k][j];
+            }
+        }
+
+        col++;
+    }
+}
+
+void swapRows(int rows, int cols, double mat[rows][cols], int row1, int row2) {
+    for (int j = 0; j < cols; j++) {
+        double temp = mat[row1][j];
+        mat[row1][j] = mat[row2][j];
+        mat[row2][j] = temp;
+    }
+}
+
+void swapElements(double* elem2,double* elem1){
+    double tmp=*elem1;
+    *elem1=*elem2;
+    *elem2=tmp;
+}
+
+
+int traceMatrix(int size, int matrix[size][size]){
+    int sum=0;
+    for(int i=0;i<size;i++){
+        sum+=matrix[i][i];
+        
+    }
+    return sum;
+}
+
+void rotateMatrix90(int size, double matrix[size][size]){
+    double temp[size][size];
+    transposeMatrix(size,size,matrix,temp);
+    reverseRows(size,temp);
+    
+    
+    copyMatrix(size,size,temp,matrix);
+}
+
+void reverseRows(int size, double matrix[size][size]){
+    for (int i=0;i<size;i++){
+        for (int j = 0; j <= size/2; j++)
+        {
+            double temp1=matrix[i][j];
+            matrix[i][j]=matrix[i][size-1-j];
+            matrix[i][size-1-j]=temp1;
+
+        }
+        
+    }
+}
+
+void findEigenvalues(int size, double matrix[size][size],double eigenvalues[size]){
+    
+    
+    double identity[size][size];
+    int track=0;
+    initializeMatrix(size,size,identity,0);
+    for (int i = 0; i < size; i++)
+    {
+        identity[i][i] = 1;
+    }
+    double lambda;
+    double diff[size][size];
+    double scalarMatrix[size][size];
+    for ( lambda =-10; lambda < 10; lambda+=0.1)
+    {
+        scalarMultiplyMatrix(size,size,identity,lambda);
+        subtractMatrices(size,size,matrix,identity,diff);
+        double det = determinantMatrix(size,diff);
+        if (fabs(det)<0.0001)
+        { 
+            eigenvalues[track]=lambda;
+            track++;
+            
+        }
+        
+    }
+    
+
+
+}
+
+void findEigenvalues2x2(double matrix[2][2], double eigenvalues[2]) {
+    
+    double trace = matrix[0][0] + matrix[1][1];
+    double det = determinantMatrix(2,matrix);
+    double discriminant = trace * trace - 4 * det;
+
+    if (discriminant < 0) {
+        eigenvalues[0] = eigenvalues[1] = -1; 
+        return;
+    }
+
+    eigenvalues[0] = (trace + sqrt(discriminant)) / 2;
+    eigenvalues[1] = (trace - sqrt(discriminant)) / 2;
+}
+
+
+
+
+
+```
+
+
 7. **Conclusion**
 
 - if you find yourself here i hope you have read it all i hope you enjoyed this adventure as we may call ,i learned time management and modularity before when i used python i didn’t use modularity that often yeah i used it but the idea of creating a library that contains all of useful functions didn’t come in mind and to be honest it’s a nice miniproject experience i also enjoyed (not really) the environment of C yeah it’s good but not easy like when i start comparing i get mad because when first learned python sorting an array didn’t need you to creat a sorting function for it you just needed to call `sort()` maethode which is built in by the way but rather than making programing easy it also made it hard the roasoning start decreasing and people even me when i first start with it i didn’t ask myself why and how i just did what every body does but today i learned to ask thank you for your time ihope you had an experience with me and will meet agian
+
+
