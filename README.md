@@ -1041,14 +1041,14 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: matrix of type 2D array of doubles (2x2), eigenvalues of type array of doubles
 - output: computes the eigenvalues of a 2x2 matrix and stores them in the eigenvalues array
 
-# 4. **Tutorial**
+# 4. _Tutorial_
 
 - ### **In this section, we will learn many things like how to clone the repository and how to set up the workspace and more things will be listed below let’s get into it:**
 
 - ## **_Cloning the Repository_**
 
 1. Clone the repository to your local machine. Open your terminal and run the following command:
-![git](gitclone.png)
+![git]("git clone.png")
 2. After cloning, navigate to the project folder:
 
 ![cd](cd.png)   
@@ -1069,7 +1069,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
    - Go to File \> Add Folder to Workspace and select the project folder.
    - Save the workspace (File \> Save Workspace As...).
 4. Create a new .c file and include the library at the top:
-![includemain](includemain.png)
+![includemain]("include main.png")
 
 5. Write your test code. Example:
 ![main](main.png)
@@ -1082,14 +1082,14 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 Create a new test file using any text editor (e.g., nano, vim, or gedit). For example, using nano:
 ![nano](nano.png)
 2. Include the library in your test file by adding the following line at the top:
-![includemain](includemain.png)
+![includemain]("include main.png")
 3. Write your test code. Example:
 [main](main.png)
 4. Save the file and compile it using the GCC compiler:
 ![gcc](gcc.png)
 5. Run your program:
 
-![mytest](mytest.png)
+![mytest]("my test.png")
 
 - #### **_General Editors (e.g., Sublime Text, Atom)_**
 
@@ -1102,9 +1102,9 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 1. Open the provided test file (test_numbers.c) in your text editor.
 2. Uncomment the lines corresponding to the functions you want to test. For example:
-![testfunc](testfunc.png)
+![testfunc]("test func.png")
 3. Compile and run the file:
-![gcc](gcc.png)
+![gcc]("gcc.png")
 - ### **Using the Makefile for Easy Builds and Tests**
 
   The Makefile automates the build and test process.
@@ -1115,9 +1115,9 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
   ![make](make.png)
 
   - Run the tests:
- ![testprog](testprog.png)
+ ![testprog]("test prog.png")
   - Clean up build artefacts:
- ![makeclean](makeclean.png)
+ ![makeclean]("make clean.png")
 - ### **_VS Code Integration_**
 
 * #### **Setting Up Build Tasks**
