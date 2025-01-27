@@ -5919,7 +5919,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
  ## 1. _Numbers_
 
- ### **_Basic Functions:_**
+## Basic Functions:
 
 - [ ] sumOfDigits(num);
 
@@ -6020,7 +6020,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 2       |   19   |       1       |
 | 3       |   6    |       0       |
 
- ### **_Intermediate Functions/Procedures:_**
+## Intermediate Functions/Procedures:
 
 - [ ] PrimeFactors(num);
 
@@ -6139,7 +6139,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 2       |   76   |           1           |
 | 3       |   3    |           0           |
 
- ### **_Advanced Functions/Procedures:_**
+## Advanced Functions/Procedures:
 
 - [ ] toBinary(num);
 
@@ -6321,9 +6321,9 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 2       |   85   |         874         |
 | 3       |   16   |         41          |
 
- ## 2._Strings_
+# 2._Strings_
 
-  ### **_Basic Functions:_**
+  ## Basic Functions:
 
 - [ ] stringLength(var str);
 
@@ -6424,15 +6424,15 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 2       | “HELLO” |         “hello”          |
 | 3       |  “TB”   |           “tb”           |
 
-### **_Intermediate Functions/Procedures:_**
-
-    on progress…
-
-### **_Advanced Functions/Procedures:_**
+## Intermediate Functions/Procedures:
 
                 on progress…
 
-### **_Cypher Functions/Procedures:_**
+## Advanced Functions/Procedures:
+
+                on progress…
+
+## Cypher Functions/Procedures:
 
                 on progress…
 
