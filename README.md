@@ -34,11 +34,11 @@ Jan.26, 2025
 
 7. [Conclusion](#bookmark=id.i1gf92t92aj7)
 
-1.#**Introduction**
+1.**Introduction**
 
 Algorithm isn’t just about thinking; it may also encounter some smart acts because yes, you can work hard and achieve your goal. However, you get tired every time you try hard and to avoid this you need to apply the DRY process “Don’t Repeat Yourself”. In which you work smart but not hard and you know when you write your first programme you will get happy but after that you will face some problems and challenges our digital world isn’t that easy it's like a forest where the weak gets destroyed .So for my fellow programmes especially the new one’s I facilitated the work for you and I created a library in C language that has 4 sub-libraires (numbers,arrays,matrices and strings) in which you have different operations in those fields and that’s going to make programming easier than before.Yeah this library helps you in your projects like you need some operations or checks to perform an action and in order to don’t repeat yourself and recreate a function from the scratch that does the needed operation I gave you the keys to the treasure so you don’t need to rage quit if you didn’t find the solution or consume more time finding the module structure instead of working on the main project it’s like customizing a car too look good and high class instead of working to improve its functionality. But don’t forget you need to be a good programmer, and you need to know the structure of those functions to understand when you call it what happens inside it. Thus, I wrote this documentation for me first and for you to help me and you understand those functions and procedures. This counts as an experience for me and the first gate into the world of projects. I hope I didn’t take your time and let’s start our Adventure\!
 
-2.# **Project Overview**
+2.**Project Overview**
 
 Our project is a workspace that contains the main folder called “ALDS1_Project1” which then contains some branches starting with:
 
@@ -64,7 +64,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 ![Structure](Structure.png)
 
-3. **Analysis**
+3.**Analysis**
 
 - ### **In this section, we will talk about the function and the procedures like what we should input to them what they do and what they should output however we won’t complicate things or move into details for more details go to** “Implementation”.**Let’s start:**
 
@@ -7263,140 +7263,187 @@ int Xor(int num1, int num2) {
 
 ## Basic Functions
 
-
-7. **Conclusion**
-
-- if you find yourself here i hope you have read it all i hope you enjoyed this adventure as we may call ,i learned time management and modularity before when i used python i didn’t use modularity that often yeah i used it but the idea of creating a library that contains all of useful functions didn’t come in mind and to be honest it’s a nice miniproject experience i also enjoyed (not really) the environment of C yeah it’s good but not easy like when i start comparing i get mad because when first learned python sorting an array didn’t need you to creat a sorting function for it you just needed to call `sort()` maethode which is built in by the way but rather than making programing easy it also made it hard the roasoning start decreasing and people even me when i first start with it i didn’t ask myself why and how i just did what every body does but today i learned to ask thank you for your time ihope you had an experience with me and will meet agian
-
-
-### stringLength Function
+### stringLength
 ```c
-int length=0;
+int stringLength(char* str){
+    int length=0;
     while (str[length] != '\0')
     {
         length++;
+    }
+    
+    length=removeWhiteSpaceLength(str,length);
+    return length;
+}
 ```
 
-### stringLengthWithSpace Function
+### stringLengthWithSpace
 ```c
-int length=0;
+int stringLengthWithSpace(char* str){
+    int length=0;
     while (str[length] != '\0')
     {
         length++;
+    }
+    return length;
+}
 ```
 
-### removeWhiteSpaceLength Function
+### removeWhiteSpaceLength
 ```c
-for (int i = 0; i <= length; i++)
+int removeWhiteSpaceLength(char* str,int length){
+    for (int i = 0; i <= length; i++)
     {
         if (str[i] == ' ')
         {
             length--;
+        }
+    }
+    return length;
+}
 ```
 
-### stringCopy Function
+### stringCopy
 ```c
-for (int i = 0; src[i] !='\0'; i++)
+void stringCopy(const char* src,char* dst){
+    for (int i = 0; src[i] !='\0'; i++)
     {
         dst[i] = src[i];
+    }
+}
 ```
 
-### stringConcat Function
+### stringConcat
 ```c
-char str1[900];
+void stringConcat(char* dest, const char* src){
+    char str1[900];
     stringCopy(src,str1);
     int len1 =stringLengthWithSpace(str1);
     int len2 = stringLengthWithSpace(dest);
 
-   dest[len2]=' ';
+    dest[len2]=' ';
     
     for (int i = 0; i<len1 ; i++)
     {
-        
         dest[i+len2+1] = src[i];
+    }
+    len2 =stringLengthWithSpace(dest);
+    dest[len1+len2+1]='\0';
+}
 ```
 
-### stringCompare Function
+### stringCompare
 ```c
-int i=0;
+int stringCompare(const char* str1, const char* str2){
+   int i=0;
     while (str1[i]!='\0' && str2[i]!='\0')
     {
         if (str1[i]!=str2[i])
         {
             return str1[i]-str2[i];
+        }
+        i++;
+    }
+    return str1[i]-str2[i];
+}
 ```
 
-### stringCompareInsensitive Function
+### stringCompareInsensitive
 ```c
-int i=0;
+int stringCompareInsensitive(const char* str1, const char* str2){
+   int i=0;
     while (str1[i]!='\0' && str2[i]!='\0')
     {
         if (str1[i]!=str2[i])
         {
             return str1[i]-str2[i];
+        }
+        i++;
+    }
+    return 0;
+}
 ```
 
-### isEmpty Function
+### isEmpty
 ```c
-int length=stringLength(str);
+bool isEmpty(char* str){
+    int length=stringLength(str);
     if (length==0) return true;
-    
-
     return false;
+}
 ```
 
-### isEmptyLiterally Function
+### isEmptyLiterally
 ```c
-if(str[0]=='\0') return true;
+bool isEmptyLiterally(char* str){
+    if(str[0]=='\0') return true;
     return false;
+}
 ```
 
-### reverseString Function
+### reverseString
 ```c
-int len= stringLengthWithSpace(str);
+void reverseString(char* str){
+    int len= stringLengthWithSpace(str);
     int temp;
     
     for(int i=0; i<len/2; i++)
     {
-    
         temp=str[i];
         str[i]=str[len-i-1];
         str[len-i-1]=temp;
+    }
+}
 ```
 
-### toUpperCase Function
+### toUpperCase
 ```c
-int i=0;
+void toUpperCase(char* str){
+    int i=0;
     while (str[i]!='\0')
     {
         if (str[i]>=97 && str[i]<=122)
         {
             str[i]=str[i]-32;
+        }
+        i++;
+    }
+}
 ```
 
-### toLowerCase Function
+### toLowerCase
 ```c
-int i=0;
+void toLowerCase(char* str){
+    int i=0;
     while (str[i]!='\0')
     {
         if (str[i]>=65 && str[i]<=90)
         {
             str[i]=str[i]+32;
+        }
+        i++;
+    }
+}
 ```
 
-### isPalindromeString Function
+## Intermediate Functions
+
+### isPalindromeString
 ```c
-char str1[256];
+bool isPalindromeString(char* str){
+    char str1[256];
     stringCopy(str,str1);
     reverseString(str);
 
-
-    if (stringCompareInsensitive(str1,str)==0){ return true;
+    if (stringCompareInsensitive(str1,str)==0){ return true;}
+    else {return false;}
+}
 ```
 
-### countVowelsConsonants Function
+### countVowelsConsonants
 ```c
-int len =stringLengthWithSpace(str);
+void countVowelsConsonants(char* str,int* vowels,int* consonants){
+    int len =stringLengthWithSpace(str);
     *vowels=0;*consonants=0;
     toLowerCase(str);
     for (int i = 0; i < len; i++)
@@ -7421,15 +7468,18 @@ int len =stringLengthWithSpace(str);
                 *vowels+=1;
                 break;     
             default:
-                
                 *consonants+=1;
-                
                 break;
+            }
+        }
+    }
+}
 ```
 
-### findSubstring Function
+### findSubstring
 ```c
-char str1[512];stringCopy(str,str1);
+int findSubstring(const char* str, const char* sub){
+    char str1[512];stringCopy(str,str1);
     char sub1[512];stringCopy(sub,sub1);
 
     int len1 = stringLength(str1);
@@ -7438,66 +7488,147 @@ char str1[512];stringCopy(str,str1);
     
     if (len2 > len1){
         return -1;
+    }else{
+        for (int i = 0; i <= len1-len2; i++)
+        {
+            if (stringCompareInsensitive(str+i, sub) == 0){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
 ```
 
-### findSubstringInsensitive Function
+### findSubstringInsensitive
 ```c
-char str1[512];stringCopy(str,str1);
+int findSubstringInsensitive(const char* str, const char* sub){
+    char str1[512];stringCopy(str,str1);
     char sub1[512];stringCopy(sub,sub1);
 
     int len1 = stringLength(str1);
     int len2 = stringLength(sub1);
     int total=len1-len2;
     
-    
-   
     toLowerCase(str1);
     toLowerCase(sub1);
     
     if (len2 > len1){
         return -1;
+    }else{
+        for (int i = 0; i <= len1-len2; i++)
+        {
+            if (stringCompareInsensitive(str1+i, sub1) == 0){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
 ```
 
-### removeWhiteSpace Function
+### removeWhiteSpace
 ```c
-int len = stringLengthWithSpace(str);
+void removeWhiteSpace(char* str){
+    int len = stringLengthWithSpace(str);
     for (int i = 0; i < len; i++)
     {
         if (str[i]==' ')
         {   for (int j = i; j <= len; j++)
             {
                 str[j] = str[j+1];
+            }
+        }
+    }
+}
 ```
 
-### isAnagram Function
+### isAnagram
 ```c
-int len1=stringLength(str1);
+bool isAnagram(char* str1, char* str2){
+    int len1=stringLength(str1);
     int len2=stringLength(str2);
     int k=0;
     int arr[512];
     
-    if (len1 != len2) {return false;
+    if (len1 != len2) {return false;}
+    else{
+        for (int i = 0; i < len1; i++)
+        {
+            for (int j = 0; j < len2; j++)
+            {
+                if (str1[i]==str2[j])
+                {
+                    arr[k]=1; 
+                }
+            }
+            k++;
+        }
+        
+        for ( k = 0; k < len1; k++)
+        {
+            if (arr[k]!=1) return false;
+        }
+        return true;
+    }
+}
 ```
 
-### charFrequency Function
+### charFrequency
 ```c
-char arr[30] = {0
+void charFrequency(char* str)
+{
+    char arr[30] = {0};     
+    int freq;
+    int len = stringLength(str);  
+
+    for (int i = 0; i < len; i++) {
+        freq = 0;
+        
+        int already_counted = 0;
+        for (int k = 0; k < i; k++) {
+            if (arr[k] == str[i]) {
+                already_counted = 1;
+                break;
+            }
+        }
+
+        if (already_counted==1) {
+            continue;
+        }
+
+        for (int j = 0; j < len; j++) {
+            if (str[i] == str[j]) {
+                freq++;
+            }
+        }
+
+        arr[i] = str[i];
+        printf("'%c' has been repeated %d times\n", str[i], freq);
+    }
+}
 ```
 
-### countWords Function
+### countWords
 ```c
-int len =stringLengthWithSpace(str);
+int countWords(char* str){
+    int len =stringLengthWithSpace(str);
     int count=1;
     for (int i = 0; i < len; i++)
     {
         if (str[i]==' ')
         {
             count++;
+        }
+    }
+    return count;
+}
 ```
 
-### removeDuplicates Function
+### removeDuplicates
 ```c
-int len =stringLength(str);
+void removeDuplicates(char* str){
+    int len =stringLength(str);
     char arr[30];
     int check;
     int new_len=0;
@@ -7506,12 +7637,37 @@ int len =stringLength(str);
         for (int k = 0; k < len; k++)
         {
             if(arr[k]==str[i]) {check = 1;
-            break;
+            break;}
+        }
+        if(check==1){
+            continue;
+            new_len++;
+        }else{
+            for (int j = i+1; j < len; j++)
+            {
+                if (str[j]==str[i])
+                {
+                    for (int l = j; l < len-1; l++)
+                    {
+                        str[l]=str[l+1];
+                    }
+                }
+            }
+            new_len++;
+        }
+        arr[i]=str[i];
+    }
+    str[new_len]='\0';
+}
 ```
 
-### compressString Function
+## Advanced Functions
+
+### compressString
 ```c
-int len=stringLength(str);
+void compressString(char* str, char* result)
+{
+    int len=stringLength(str);
     int start=0;int count;
     result[0]='\0';
     
@@ -7523,16 +7679,30 @@ int len=stringLength(str);
             if (str[j]==str[i])
             {
                 count++;
+            }else{break;}
+        }
+
+        int numberDigits = numberOfDigits(count);
+        result[start] = str[i];
+        char countStr[numberDigits];
+        switchInt_Str(countStr,count);
+        for (int k = 0; k < numberDigits; k++){
+            result[start+1+k] = countStr[k];
+        }
+        start=start+numberDigits+1;
+    }
+    result[start]='\0';
+}
 ```
 
-### switchInt_Str Function
+### switchInt_Str
 ```c
-int digit_num=numberOfDigits(num);
+void switchInt_Str(char* str,int num){
+    int digit_num=numberOfDigits(num);
     int digit;
     for (int i = digit_num-1; i >=0; i--)
     {
         digit = num%10;
-        
         switch (digit)
         {
         case 0:
@@ -7565,11 +7735,17 @@ int digit_num=numberOfDigits(num);
         case 9:
             str[i]='9';
             break;
+        }
+        num=num/10;
+    }
+    str[digit_num]='\0';
+}
 ```
 
-### longestWord Function
+### longestWord
 ```c
-int words_num=countWords(str);
+void longestWord(char* str, char* result){
+    int words_num=countWords(str);
     int len =stringLengthWithSpace(str);
     int max=-1;
     int count;
@@ -7583,52 +7759,88 @@ int words_num=countWords(str);
             {
                 count++;
                 pos++;
+            }else{break;}
+        }
+        
+        if (count >= max)
+        {   
+            int temp=pos;
+            max=count;
+            for (int i = max-1; i >= 0; i--)
+            {
+                result[i]=str[temp-1];
+                temp--;
+            }
+        }
+        pos++;
+    }
+    result[max]='\0';
+}
 ```
 
-### isRotation Function
+### isRotation
 ```c
-int len=stringLength(str1);
+bool isRotation(char* str1, char* str2){
+    int len=stringLength(str1);
     for (int i = 0; i < len; i++)
     {
         rotateLeft(str2);
         if (stringCompare(str1, str2)==0) return true;
+    }
+    return false;
+}
 ```
 
-### rotateLeft Function
+### rotateLeft
 ```c
-int len=stringLength(str);
+void rotateLeft(char* str){
+    int len=stringLength(str);
     char temp=str[0];
     for (int i = 0; i < len-1; i++)
     {
         str[i]=str[i+1];
+    }
+    str[len-1]=temp;
+}
 ```
 
-### rotateLeftTimes Function
+### rotateLeftTimes
 ```c
-for (int i = 0; i < times; i++)
+void rotateLeftTimes(char* str,int times){
+    for (int i = 0; i < times; i++)
     {
         rotateLeft(str);
+    }
+}
 ```
 
-### rotateRightTimes Function
+### rotateRightTimes
 ```c
-int len=stringLength(str);
+void rotateRightTimes(char* str,int times){
+    int len=stringLength(str);
     rotateLeftTimes(str,abs(len-times));
+}
 ```
 
-### countChar Function
+### countChar
 ```c
-int len=stringLengthWithSpace(str);
+int countChar(char* str, char character){
+    int len=stringLengthWithSpace(str);
     int count=0;
     for (int i = 0; i < len; i++){
         if (character==str[i])
         {
             count++;
+        }
+    }
+    return count;
+}
 ```
 
-### findAndReplace Function
+### findAndReplace
 ```c
-int len=stringLengthWithSpace(str);
+void findAndReplace(char* str, char* find, char* replace){
+    int len=stringLengthWithSpace(str);
     int find_len=stringLength(find);
     int replace_len=stringLength(replace);
     int pos=0;
@@ -7639,67 +7851,123 @@ int len=stringLengthWithSpace(str);
             for (int i = 0; i < replace_len; i++)
             {
                 str[pos+i]=replace[i];
+            }
+
+            pos=pos+replace_len;
+        } else{
+            pos++;
+        }
+        
+    }
+    
+}
+
 ```
 
-### longestPalindrome Function
+### longestPalindrome
 ```c
-int len = stringLength(str);
+void longestPalindrome(char* str, char* result){
+    int len = stringLength(str);
     
     for (int start = 0; start < len; start++)
     {
-        
-        for (int end = len - 1; end >= start; end--) { 
-            int pos=0; 
+        for (int end = len - 1; end >= start; end--) {
+            int pos=0;
             char temp[len +1];
             
-          
             for (int j = start; j <= end; j++)
             {   
                 temp[pos]=str[j];
                 pos++;
+            }
+            
+            temp[pos]='\0';
+            if (isPalindromeString(temp))
+            {   
+                if (stringLength(temp) > stringLength(result)){            
+                    stringCopy(temp,result);
+                }break;           
+            }
+        }
+    } 
+}
 ```
 
-### printPermutations Function
+### printPermutations
 ```c
-int len=stringLength(str);int pos=1;
+void printPermutations(char* str){
+    int len=stringLength(str);
+    int pos=1;
     
     char arrOfStr[5212]="";
-   
     for (int i = 0; i < len; i++)
     {
-
         for (int j = 0; j <len; j++)
         { 
             rotateLeft(str);
             int verification=0;
             
-            
             if (findSubstring(arrOfStr,str)!=-1)
             {
                 verification=1;
-                break;
+                break; 
+            }
+                
+            if(verification==0){
+                printf("permutation[%d]is : %s\n",pos,str);
+                stringConcat(arrOfStr,str);
+                pos++;
+            }
+        }
+        rotateLeft(str);
+        char temp=str[0];
+        str[0]=str[i+1];
+        str[i+1]=temp;
+    }
+}
 ```
 
-### splitString Function
+### splitString
 ```c
-int len = stringLengthWithSpace(str);
-
+void splitString(char* str, char delimiter, char tokens[][100], int* tokenCount) {
+    int len = stringLengthWithSpace(str);
     int pos = 0;
     int new_len = 0;
+    
     for (int i = 0; i < len; i++) {
         new_len++;
         if (str[i] == delimiter) {
-
             int k = i - 1;
             for (int j = new_len -2; j >= 0; j--) {
                 tokens[*tokenCount][pos] = str[k];
                 k--;
                 pos++;
+            }
+            reverseString(tokens[*tokenCount]);
+            tokens[*tokenCount][pos] = '\0';
+            new_len = 0;
+            pos = 0;
+            *tokenCount = *tokenCount + 1;
+        }
+    }
+
+    if (new_len > 0) {
+        int k = len - new_len;
+        for (int j = 0; j < new_len; j++) {
+            tokens[*tokenCount][j] = str[k + j];
+        }
+        tokens[*tokenCount][new_len] = '\0';
+        *tokenCount = *tokenCount + 1;
+    }
+}
 ```
 
-### caesarCipher Function
+## Cipher Functions
+
+### caesarCipher
 ```c
-int len=stringLengthWithSpace(text);
+void caesarCipher(char *text, int shift){
+    int len=stringLengthWithSpace(text);
     for (int i = 0; i < len; i++)
     {
         if (text[i] >= 'a' && text[i] <= 'z')
@@ -7707,18 +7975,21 @@ int len=stringLengthWithSpace(text);
             text[i] = text[i] + shift;
             if (text[i] > 'z') text[i] = text[i] - 26;
             else if (text[i] < 'a') text[i] = text[i] + 26;
-```
-
-### if Function
-```c
-text[i] = text[i] + shift;
+        }
+        else if (text[i] >= 'A' && text[i] <= 'Z')
+        {
+            text[i] = text[i] + shift;
             if (text[i] > 'Z') text[i] = text[i] - 26;
             else if (text[i] < 'A')  text[i] = text[i] + 26;
+        }
+    }
+}
 ```
 
-### substitutionCipher Function
+### substitutionCipher
 ```c
-int len=stringLengthWithSpace(text);
+void substitutionCipher(char *text, const char *key){
+   int len=stringLengthWithSpace(text);
    int lenKey=stringLengthWithSpace(key);
    char lowerKey[lenKey];
    stringCopy(key,lowerKey);
@@ -7726,25 +7997,37 @@ int len=stringLengthWithSpace(text);
    char upperKey[lenKey];
    stringCopy(key,upperKey);
    toUpperCase(upperKey);
+    
     for (int i = 0; i < len; i++)
     {
         if (text[i]>='A'&& text[i]<='Z')
         {
             text[i]=upperKey[text[i]-'A'];
+        }
+        if (text[i]>='a'&& text[i]<='z')
+        {
+            text[i]=lowerKey[text[i]-'a'];
+        }
+    }
+}
 ```
 
-### xorCipher Function
+### xorCipher
 ```c
-int len = stringLengthWithSpace(text);
+void xorCipher(char *text, char key) {
+    int len = stringLengthWithSpace(text);
     
     for (int i = 0; i < len; i++) {
         text[i] = (text[i] ^ key);  
-        text[i] = (text[i] % 95) + 32;
+        text[i] = (text[i] % 95) + 32;  
+    }
+}
 ```
 
-### vigenereCipher Function
+### vigenereCipher
 ```c
-int len =stringLengthWithSpace(text);
+void vigenereCipher(char *text, const char *key, int encrypt){
+    int len =stringLengthWithSpace(text);
     char keyCopy[1024];
     stringCopy(key,keyCopy);
     int keyLen=stringLength(keyCopy);
@@ -7759,345 +8042,334 @@ int len =stringLengthWithSpace(text);
                 keyIndex=i%keyLen;
                 text[i]=(text[i] - 'a' + key[keyIndex] - 'a') % 26 + 'a';
                 keyIndex++;
-```
-
-### if Function
-```c
-for (int i = 0; i < len; i++)
+            }
+            if (text[i]>='A' && text[i]<='Z' )
+            {
+                keyIndex=i%keyLen;
+                text[i]=(text[i] - 'A' + key[keyIndex] - 'A') % 26 + 'A';
+                keyIndex++;
+            }
+        }
+    }else if (encrypt==0)
+    {
+        for (int i = 0; i < len; i++)
         {
             if (text[i]>='a' && text[i]<='z' )
             {
                 keyIndex=i%keyLen;
                 text[i]=(text[i] - 'a' - (key[keyIndex] - 'a') + 26) % 26 + 'a';
                 keyIndex++;
+            }
+            if (text[i]>='A' && text[i]<='Z' )
+            {
+                keyIndex=i%keyLen;
+                text[i]=(text[i] - 'A' - (key[keyIndex] - 'A') + 26) % 26 + 'A';
+                keyIndex++;
+            }
+        }
+    }else{
+        printf("Invalid encryption flag!");
+    }
+}
 ```
 
-### atbashCipher Function
+### atbashCipher
 ```c
-int len=stringLengthWithSpace(text);
+void atbashCipher(char *text){
+    int len=stringLengthWithSpace(text);
     for (int i = 0; i < len; i++)
     {
         if (text[i]>='a' && text[i]<='z' )
         {
             text[i]='z'-(text[i]-'a');
+        }
+        if (text[i]>='A' && text[i]<='Z' )
+        {
+            text[i]='Z'-(text[i]-'A');
+        }
+    }
+}
 ```
 
-### railFenceCipher Function
+### railFenceCipher
 ```c
-char textCopy[2025];
+void railFenceCipher(const char *text, char *result, int depth) {
+    char textCopy[2025];
     stringCopy(text,textCopy);
     int cols = stringLengthWithSpace(textCopy);
     char matrix[depth][cols];
     for (int i = 0; i < depth; i++) {
         for (int j = 0; j < cols; j++) {
-            matrix[i][j] = '\0';
+            matrix[i][j] = '\0';  
+        }
+    }
+
+    int i = 0, j = 0;
+    while (j < cols) {
+        while (i < depth && j < cols) {
+            matrix[i][j] = text[j];
+            i++;
+            j++;
+        }
+        i--;
+        while (i > 0 && j < cols) {
+            i--;
+            matrix[i][j] = text[j];
+            j++;
+        }
+    }
+
+    int track = 0;
+    for (int row = 0; row < depth; row++) {
+        for (int col = 0; col < cols; col++) {
+            if (matrix[row][col] != '\0') {
+                result[track] = matrix[row][col];
+                track++;
+            }
+        }
+    }
+    result[track] = '\0';
+}
 ```
 
-### initializeArray Function
+# Array Functions Snippets
+
+## Basic Functions
+
+### Initialize Array
 ```c
-for (int i = 0; i < size; i++)
-    {
+void initializeArray(int arr[], int size, int value) {
+    for (int i = 0; i < size; i++) {
         arr[i] = value;
+    }
+}
 ```
 
-### printArray Function
+### Print Array
 ```c
-if (size == 0)
-    {
+void printArray(int arr[], int size) {
+    if (size == 0) {
         printf("Array is empty \n");
+    } else {
+        printf(" Array =[");
+        for (int i = 0; i < size; i++) {
+            printf("%d", arr[i]);
+            if (i+1 != size) {
+                printf(",");
+            }
+        }
+        printf("]\n");
+    }
+}
 ```
 
-### findMax Function
+### Find Maximum
 ```c
-int max = arr[0];
-    for (int i = 1; i < size; i++)
-    {
-        if (arr[i] > max)
-        {
+int findMax(int arr[], int size) {
+    int max = arr[0];
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > max) {
             max = arr[i];
+        }
+    }
+    return max;
+}
 ```
 
-### findMin Function
+### Find Minimum
 ```c
-int min = arr[0];
-    for (int i = 1; i < size; i++)
-    {
-        if (arr[i] < min)
-        {
+int findMin(int arr[], int size) {
+    int min = arr[0];
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < min) {
             min = arr[i];
+        }
+    }
+    return min;
+}
 ```
 
-### sumArray Function
+### Sum Array
 ```c
-int sum=0;
-    for (int i = 0; i < size; i++)
-    {
+int sumArray(int arr[], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
         sum += arr[i];
+    }
+    return sum;
+}
 ```
 
-### averageArray Function
+### Average Array
 ```c
-return sumArray(arr, size)/(double)size;
+double averageArray(int arr[], int size) {
+    return sumArray(arr, size)/(double)size;
+}
 ```
 
-### minimizedArray Function
+### Create Array
 ```c
-for (int i = 0; i<size; i++)
-    {   
-        if (i==size-1)
-        {
-            break;
+void createArray(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        printf("Enter element number %d \n", i);
+        scanf("%d", &arr[i]);
+    }
+}
 ```
 
-### isSorted Function
+### Swap Array
 ```c
-int min ;
-    for (int i = 0; i < size; i++)
-    {
-        min = findMin(arr,size-i);
-        
-        if (arr[0]!=min)
-        {
-         return false;
+void swapArray(int arr[], int arr_size) {
+    int i, j, temp;
+    for (i = 0, j = arr_size-1; j > i; i++, j--) {
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
 ```
 
-### storingDigits Function
+### Merge Sorted Arrays
 ```c
-int i=0, digit;
-    while (number > 0)
-    {
-        digit = number%10;
-        arr[i]=digit;
-        number=number/10;
-        i++;
-```
-
-### minimumValue Function
-```c
-int min=arr[pos];
-    for (int i = pos; i < size; i++)
-    {
-        if (min>=arr[i])
-        {
-            min=arr[i];
-            *index=i;
-```
-
-### returningDigits Function
-```c
-int number=0;
-    for (int i = 0; i < size; i++)
-    {
-        int t=arr[i]*pow(10,i);
-        number = number+ t;
-```
-
-### createArray Function
-```c
-for (int i = 0; i <size; i++)
-    {
-        printf("Enter  element number %d \n",i);
-        scanf("%d",&arr[i]);
-```
-
-### swapArray Function
-```c
-int i,j,temp;
-    for ( i = 0,j=arr_size-1; j>i; i++,j--)
-    {   temp = arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
-```
-
-### mergeSortedArray Function
-```c
-int i = 0, j = 0, k = 0;
+void mergeSortedArray(int arr1[], int arr2[], int arr_size1, int arr_size2, int arr3[]) {
+    int i = 0, j = 0, k = 0;
     while (i < arr_size1 && j < arr_size2) {
         if (arr1[i] <= arr2[j]) {
             arr3[k] = arr1[i];
             i++;
             k++;
+        } else {
+            arr3[k] = arr2[j];
+            j++;
+            k++;
+        }
+    }
+    while (i < arr_size1) {
+        arr3[k] = arr1[i];
+        i++;
+        k++;
+    }
+    while (j < arr_size2) {
+        arr3[k] = arr2[j];
+        j++;
+        k++;
+    }
+}
 ```
 
-### reverseArray Function
+## Intermediate Functions
+
+### Reverse Array
 ```c
-for (int i = 0,j=size-1; i < size/2,j>=size/2; j--,i++)
-    {
+void reverseArray(int arr[], int size) {
+    for (int i = 0, j = size-1; i < size/2, j >= size/2; j--, i++) {
         int temp = arr[i];
         int temp1 = arr[j];
         arr[j] = temp;
         arr[i] = temp1;
+    }
+}
 ```
 
-### countEvenOdd Function
+### Count Even and Odd
 ```c
-for (int i = 0; i < size; i++)
-    {
-        if (arr[i]%2==0)
-        {
-            *evenCount+=1;
+void countEvenOdd(int arr[], int size, int* evenCount, int* oddCount) {
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {
+            *evenCount += 1;
+        } else {
+            *oddCount += 1;
+        }
+    }
+}
 ```
 
-### secondLargest Function
+### Find Second Largest
 ```c
-int max=findMax(arr,size);
-    int min=findMin(arr,size);
-    int maxPos=findElementPos(arr,size,max);
+int secondLargest(int arr[], int size) {
+    int max = findMax(arr, size);
+    int min = findMin(arr, size);
+    int maxPos = findElementPos(arr, size, max);
     arr[maxPos] = min;
-    return findMax(arr,size);
+    return findMax(arr, size);
+}
 ```
 
-### findElementPos Function
+### Linear Search
 ```c
-int pos=0;
-    for (int i = 0; i < size; i++)
-    {
-        
-        if (arr[i]==element) 
-        {
-            return pos;
-```
-
-### found Function
-```c
-for (int i = 0; i < size; i++)
-    {
-        if (arr[i]==element) return true;
-```
-
-### elementFrequency Function
-```c
-int check[size];
-    for (int i = 0; i < size; i++)
-    {
-        int count=0;
-        if (!found(check,size,arr[i]))
-        {
-            for (int j = 0; j < size; j++)
-            {
-                if (arr[i]==arr[j])
-                {
-                    count++;
-```
-
-### removeDuplicatesElements Function
-```c
-int new_size=0,check[size];
-    for (int i = 0; i < size; i++)
-    {
-        
-        
-        if (!found(check,size,arr[i]))
-        {     
-           check[new_size]=arr[i];
-           new_size++;
-```
-
-### linearSearch Function
-```c
-for (int i = 0; i < size; i++)
-    {
-        if (arr[i]==target)
-        {
+int linearSearch(int arr[], int size, int target) {
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == target) {
             return i;
+        }
+    }
+    return -1;
+}
 ```
 
-### binarySearch Function
+### Binary Search
 ```c
-int left=0,right=size-1;
-    while(left<=right)
-    {
-        int mid=(left+right)/2;
-        if (arr[mid]==target)
-        {
+int binarySearch(int arr[], int size, int target) {
+    int left = 0, right = size-1;
+    while(left <= right) {
+        int mid = (left + right)/2;
+        if (arr[mid] == target) {
             return mid;
+        } else if (arr[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+    return -1;
+}
 ```
 
-### if Function
+## Sorting Algorithms
+
+### Bubble Sort
 ```c
-left=mid+1;
+void bubbleSort(int arr[], int size) {
+    for (int i = 0; i < size-1; i++) {
+        compare_swap(arr, size-i);
+    }
+}
 ```
 
-### shift_left Function
+### Selection Sort
 ```c
-int temp;
-   for ( int j = 0; j < repeat_times; j++)
-   {
-        for (int i = arr_size-1; i >0 ; i--)
-        {          
-            temp= arr[i];
-            arr[i]=arr[i-1];
-            arr[i-1]=temp;
+void selectionSort(int arr[], int size) {
+    for (int i = size-1, pos = 0; i >= 0, pos < size; i--, pos++) {
+        int min = findMin(arr, size-pos);
+        int minPos = findElementPos(arr, size-pos, min);
+        int temp = arr[i];
+        arr[i] = arr[minPos];
+        arr[minPos] = temp;
+    }
+    reverseArray(arr, size);
+}
 ```
 
-### shift_right Function
+### Insertion Sort
 ```c
-int temp;
-   for ( int j = 1; j <= repeat_times; j++)
-   {
-        for (int i = 0; i < arr_size-1; i++)
-        {          
-            temp= arr[i];
-            arr[i]=arr[i+1];
-            arr[i+1]=temp;
-```
-
-### compare_swap Function
-```c
-for (int i = 0; i < size-1; i++)
-    {
-        if (arr[i]>arr[i+1])
-        {
-            int temp=arr[i];
-            arr[i]=arr[i+1];
-            arr[i+1]=temp;
-```
-
-### bubbleSort Function
-```c
-for (int i = 0; i < size-1; i++)
-    {
-        compare_swap(arr,size-i);
-```
-
-### selectionSort Function
-```c
-for (int i = size-1,pos=0; i >=0,pos<size ; i--,pos++)
-    {
-        int min=findMin(arr,size-pos);
-        int minPos=findElementPos(arr,size-pos,min);
-        int temp=arr[i];
-        arr[i]=arr[minPos];
-        arr[minPos]=temp;
-```
-
-### insertionSort Function
-```c
-int j;
-   for(int i=1;i<size;i++){
-        int temp=arr[i];
-        j=i-1;
-        while (j>=0&&temp<arr[j])
-        {
-            arr[j+1]=arr[j];
-
+void insertionSort(int arr[], int size) {
+    int j;
+    for(int i = 1; i < size; i++) {
+        int temp = arr[i];
+        j = i-1;
+        while (j >= 0 && temp < arr[j]) {
+            arr[j+1] = arr[j];
             j--;
+        }
+        arr[j+1] = temp;
+    }
+}
 ```
 
-### mergeSort Function
+### Quick Sort
 ```c
-if (left < right - 1) {
-        int midle = (left + right) / 2;
-        int temp1[midle - left];
-        int temp2[right - midle];
-
-        for (int i = 0; i < midle - left; i++) {
-            temp1[i] = arr[left + i];
-```
-
-### quickSort Function
-```c
-if (low < high) {
+void quickSort(int arr[], int low, int high) {
+    if (low < high) {
         int pivot = arr[high];
         int j = low;
         int i;
@@ -8106,438 +8378,474 @@ if (low < high) {
             if (arr[i] <= pivot) {
                 swap(&arr[i], &arr[j]);
                 j++;
+            }
+        }
+        
+        swap(&arr[j], &arr[high]);
+        quickSort(arr, low, j - 1);
+        quickSort(arr, j + 1, high);
+    }
+}
 ```
 
-### isEmptyArray Function
+### Merge Sort
 ```c
-if (size==0) return true;
-    return false;
+void mergeSort(int arr[], int left, int right) {
+    if (left < right - 1) {
+        int midle = (left + right) / 2;
+        int temp1[midle - left];
+        int temp2[right - midle];
+
+        for (int i = 0; i < midle - left; i++) {
+            temp1[i] = arr[left + i];
+        }
+        for (int i = 0; i < right - midle; i++) {
+            temp2[i] = arr[midle + i];
+        }
+
+        mergeSort(temp1, 0, midle - left);
+        mergeSort(temp2, 0, right - midle);
+        mergeSortedArray(temp1, temp2, midle - left, right - midle, arr + left);
+    }
+}
 ```
 
-### swap Function
-```c
-int temp;
-    temp = *elem1;
-    *elem1 = *elem2;
-    *elem2 = temp;
-```
+## Advanced Functions
 
-### findMissingNumber Function
+### Find Missing Number
 ```c
-quickSort(arr,0,size-1);
-    for (int i = 0; i < size; i++)
-    {
-        if (arr[i+1]-arr[i]==1)
-        {
+int findMissingNumber(int arr[], int size) {
+    quickSort(arr, 0, size-1);
+    for (int i = 0; i < size; i++) {
+        if (arr[i+1]-arr[i] == 1) {
             continue;
+        } else {
+            return arr[i]+1;
+        }
+    }
+    return -1;
+}
 ```
 
-### findPairsWithSum Function
+### Find Pairs With Sum
 ```c
-quickSort(arr,0,size-1);
-    int i=0,j=size-1;
-    bool verification=false;
-    while(i<j){
-        if(arr[i]+arr[j]==sum){
+void findPairsWithSum(int arr[], int size, int sum) {
+    quickSort(arr, 0, size-1);
+    int i = 0, j = size-1;
+    bool verification = false;
+    while(i < j) {
+        if(arr[i]+arr[j] == sum) {
             printf("Pair found: %d and %d\n", arr[i], arr[j]);
             i++;
             j--;
-            verification=true;
+            verification = true;
+        } else if(arr[i]+arr[j] < sum) {
+            i++;
+        } else {
+            j--;
+        }
+    }
+    if (!verification) {
+        printf("Pairs not found \n");
+    }
+}
 ```
 
-### if Function
+### Find Majority Element
 ```c
-i++;
-```
-
-### findSubArrayWithSum Function
-```c
-int delimiter=0;
-    
-    int check_sum= sumArray(arr,size);
-    bool verification=false;
-    for (int i = 0; i < size; i++)
-    {
-        if (check_sum==sum)
-        {
-            printf("Sub Array found: \n"); 
-            quickSort(arr,delimiter,size-delimiter);
-            printArray(arr+delimiter,size-delimiter);
-            verification=true;
-```
-
-### rearrangeAlternatePositiveNegative Function
-```c
-quickSort(arr,0,size-1);
-    int temp1[size];
-    int rearrangedArray[size];
-    int startOfPositive=0;
-    for (int i = 0; i < size; i++)
-    {
-        if (arr[i]<=0)
-        {
-            temp1[startOfPositive]=arr[i];
-            startOfPositive++;
-```
-
-### findMajorityElement Function
-```c
-quickSort(arr,0,size-1);
-    for (int i = 0; i < size; i++)
-    {
+int findMajorityElement(int arr[], int size) {
+    quickSort(arr, 0, size-1);
+    for (int i = 0; i < size; i++) {
         int count = 0;
-        for (int j = 0; j < size; j++)
-        {
+        for (int j = 0; j < size; j++) {
             if (arr[i] == arr[j]) count++;
+        }
+        if (count > size / 2) return arr[i];
+    }
+    return -999999999;
+}
 ```
 
-### longestIncreasingSubsequence Function
+### Longest Increasing Subsequence
 ```c
-int dp[size];
-    initializeArray(dp,size,1);
+int longestIncreasingSubsequence(int arr[], int size) {
+    int dp[size];
+    initializeArray(dp, size, 1);
     
-    for (int i = 1; i < size; i++) 
-    {
-        for (int j = 0; j < i; j++) 
-        {
-            if (arr[i] >= arr[j])
-            {
-                dp[i] =Max(dp[i],dp[j]+1);
+    for (int i = 1; i < size; i++) {
+        for (int j = 0; j < i; j++) {
+            if (arr[i] >= arr[j]) {
+                dp[i] = Max(dp[i], dp[j]+1);
+            }
+        }
+    }
+    
+    return findMax(dp, size);
+}
 ```
 
-### findDuplicates Function
+### Find Intersection
 ```c
-quickSort(arr,0,size-1);
-    int count;
-   for (int j = 0; j < size; j=j+count+1)
-   {
-        count=0;
-        bool verification=false;
-        for (int i = j; i < size; i++)
-        {
-            if (arr[i]==arr[i+1])
-            {
-                count++;
-                verification=true;
-```
-
-### findIntersection Function
-```c
-quickSort(arr1,0,size1-1);
-    quickSort(arr2,0,size2-1);
+void findIntersection(int arr1[], int size1, int arr2[], int size2) {
+    quickSort(arr1, 0, size1-1);
+    quickSort(arr2, 0, size2-1);
     
     int IntersectionArr[size1+size2];
-    int count=0;
-    for (int i = 0; i < size1; i++)
-    {
-        for (int j = 0; j < size2; j++)
-        {
-            if (arr1[i]==arr2[j])
-            {
-                IntersectionArr[count]=arr1[i];
+    int count = 0;
+    for (int i = 0; i < size1; i++) {
+        for (int j = 0; j < size2; j++) {
+            if (arr1[i] == arr2[j]) {
+                IntersectionArr[count] = arr1[i];
                 count++;
+            }
+        }
+    }
+    quickSort(IntersectionArr, 0, count-1);
+    int new_size = 0;
+    int newArr[count];
+    for (int i = 0; i < count; i++) {
+        if (i == 0 || IntersectionArr[i] != IntersectionArr[i - 1]) {
+           newArr[new_size] = IntersectionArr[i];
+           new_size++;
+        }
+    }
+    printArray(newArr, new_size);
+}
 ```
 
-### findUnion Function
+### Find Union
 ```c
-int UnionArr[size1+size2];
-    int count=0;
-    for (int i = 0; i < size1; i++)
-    {
-        UnionArr[count]=arr1[i];
+void findUnion(int arr1[], int size1, int arr2[], int size2) {
+    int UnionArr[size1+size2];
+    int count = 0;
+    for (int i = 0; i < size1; i++) {
+        UnionArr[count] = arr1[i];
         count++;
+    }
+    for (int j = 0; j < size2; j++) {
+        UnionArr[count] = arr2[j];
+        count++;
+    }
+    quickSort(UnionArr, 0, count-1);
+    int new_size = 0;
+    int newArr[count];
+    for (int i = 0; i < count; i++) {
+        if (i == 0 || UnionArr[i] != UnionArr[i - 1]) {
+           newArr[new_size] = UnionArr[i];
+           new_size++;
+        }
+    }
+    printArray(newArr, new_size);
+}
+```
+# Matrix Functions Snipepts
+
+## Basic Functions
+
+### Initialize Matrix
+```c
+void initializeMatrix(int rows, int cols, double matrix[rows][cols], int value) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            matrix[i][j] = value;
+        }
+    }
+}
 ```
 
-### initializeMatrix Function
+### Print Matrix
 ```c
-for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < cols; j++)
-        {
-            matrix[i][j]=value;
-```
-
-### printMatrix Function
-```c
-for (int i = 0; i < rows; i++)
-    {
+void printMatrix(int rows, int cols, double matrix[rows][cols]) {
+    for (int i = 0; i < rows; i++) {
         printf("\n");
         printf(" ");
-        for (int j = 0; j < cols; j++)
-        {
-            printf("%f",matrix[i][j]);
-            if (j+1 != rows)
-            {
+        for (int j = 0; j < cols; j++) {
+            printf("%f", matrix[i][j]);
+            if (j+1 != rows) {
                 printf(" ");
+            }
+        }
+        printf(" ");
+    }
+}
 ```
 
-### inputMatrix Function
+### Input Matrix
 ```c
-for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < cols; j++)
-        {
-            printf("Enter element %d %d: ",i,j);
-            scanf("%d",&matrix[i][j]);
+void inputMatrix(int rows, int cols, int matrix[rows][cols]) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("Enter element %d %d: ", i, j);
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+}
 ```
 
-### copyMatrix Function
+### Copy Matrix
 ```c
-for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < cols; j++)
-        {
-            copy[i][j]=matrix[i][j];
+void copyMatrix(int rows, int cols, double matrix[rows][cols], double copy[rows][cols]) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            copy[i][j] = matrix[i][j];
+        }
+    }
+}
 ```
 
-### addMatrices Function
+## Matrix Arithmetic
+
+### Add Matrices
 ```c
-for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < cols; j++)
-        {
-            result[i][j]=mat1[i][j]+mat2[i][j];
+void addMatrices(int rows, int cols, int mat1[rows][cols], int mat2[rows][cols], int result[rows][cols]) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            result[i][j] = mat1[i][j] + mat2[i][j];
+        }
+    }
+}
 ```
 
-### subtractMatrices Function
+### Subtract Matrices
 ```c
-for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < cols; j++)
-        {
-            result[i][j]=mat1[i][j]-mat2[i][j];
+void subtractMatrices(int rows, int cols, int mat1[rows][cols], int mat2[rows][cols], int result[rows][cols]) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            result[i][j] = mat1[i][j] - mat2[i][j];
+        }
+    }
+}
 ```
 
-### multiplyMatrices Function
+### Multiply Matrices
 ```c
-initializeMatrix(rows1,cols2,result,0);
-    for (int i = 0; i < rows1; i++)
-    {
-        for (int j = 0; j < cols2; j++)
-        {
-            for (int  k= 0; k<cols1 ; k++)
-            {
-                result[i][j]=result[i][j]+(mat1[i][k]*mat2[k][j]);
+void multiplyMatrices(int rows1, int cols1, int mat1[rows1][cols1], int rows2, int cols2, int mat2[rows2][cols2], int result[rows1][cols2]) {
+    initializeMatrix(rows1, cols2, result, 0);
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < cols2; j++) {
+            for (int k = 0; k < cols1; k++) {
+                result[i][j] = result[i][j] + (mat1[i][k] * mat2[k][j]);
+            }
+        }
+    }
+}
 ```
 
-### scalarMultiplyMatrix Function
+### Scalar Multiply Matrix
 ```c
-for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < cols; j++)
-        {
-            matrix[i][j]=matrix[i][j]*scalar;
+void scalarMultiplyMatrix(int rows, int cols, double matrix[rows][cols], double scalar) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            matrix[i][j] = matrix[i][j] * scalar;
+        }
+    }
+}
 ```
 
-### isSquareMatrix Function
+## Matrix Properties and Checks
+
+### Is Square Matrix
 ```c
-if (rows==cols) return true;
+bool isSquareMatrix(int rows, int cols) {
+    if (rows == cols) return true;
     return false;
+}
 ```
 
-### isIdentityMatrix Function
+### Is Identity Matrix
 ```c
-for (int i = 0; i < size; i++)
-    {
-        for (int j = 0; j < size; j++)
-        {
-            if (i==j && matrix[i][j]==1 )  continue;
-            
-            if (i!=j && matrix[i][j]==0) continue;
+bool isIdentityMatrix(int size, int matrix[size][size]) {
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if (i == j && matrix[i][j] == 1) continue;
+            if (i != j && matrix[i][j] == 0) continue;
             return false;
+        }
+    }
+    return true;
+}
 ```
 
-### isDiagonalMatrix Function
+### Is Diagonal Matrix
 ```c
-for (int i = 0; i < size; i++)
-    {
-        for (int j = 0; j < size; j++)
-        {
-            if (i!=j && matrix[i][j]!=0) return false;
+bool isDiagonalMatrix(int size, int matrix[size][size]) {
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if (i != j && matrix[i][j] != 0) return false;
+        }
+    }
+    return true;
+}
 ```
 
-### isSymmetricMatrix Function
+### Is Symmetric Matrix
 ```c
-for (int i = 0; i < size; i++)
-    {
-        for (int j = 0; j < size; j++)
-        {
-            if (matrix[i][j]!=matrix[j][i]) return false;
+bool isSymmetricMatrix(int size, int matrix[size][size]) {
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if (matrix[i][j] != matrix[j][i]) return false;
+        }
+    }
+    return true;
+}
 ```
 
-### isUpperTriangular Function
+## Matrix Operations
+
+### Transpose Matrix
 ```c
-for (int i = 1; i < size; i++)
-    {
-        for (int j = 0; j < i; j++)
-        {
-            if (matrix[i][j]!=0) return false;
+void transposeMatrix(int rows, int cols, double matrix[rows][cols], double result[cols][rows]) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            result[j][i] = matrix[i][j];
+        }
+    }
+}
 ```
 
-### isEqualMatrix Function
+### Determinant Matrix
 ```c
-for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < cols; j++)
-        {
-            if (mat1[i][j]!=mat2[i][j]) return false;
-```
-
-### transposeMatrix Function
-```c
-for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < cols; j++)
-        {
-            result[j][i]=matrix[i][j];
-```
-
-### determinantMatrix Function
-```c
-if (size == 2) {
+double determinantMatrix(int size, double matrix[size][size]) {
+    if (size == 2) {
         return (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0]);
+    }
+    if (size == 1) {
+        return matrix[0][0];
+    }
+
+    double temp[size - 1][size - 1];
+    double det = 0;
+
+    for (int j = 0; j < size; j++) {
+        int sub_i = 0;
+        for (int i = 1; i < size; i++) {
+            int sub_j = 0;
+            for (int k = 0; k < size; k++) {
+                if (k == j) continue;
+                temp[sub_i][sub_j] = matrix[i][k];
+                sub_j++;
+            }
+            sub_i++;
+        }
+        double sign = (j % 2 == 0) ? 1 : -1;
+        det += sign * matrix[0][j] * determinantMatrix(size - 1, temp);
+    }
+    return det;
+}
 ```
 
-### inverseMatrix Function
+### Matrix Power
 ```c
-int det =determinantMatrix(size ,matrix);
-    double temp[size][size];
-    
-    for (int i = 0; i < size; i++)
-    {
-        for (int j = 0;j < size; j++)
-        {
-          temp[i][j] = pow(-1,i+j)*determinantMatrix(size-1,temp);
-```
-
-### matrixPower Function
-```c
-if (power == 0) {
+void matrixPower(int size, double matrix[size][size], int power, double result[size][size]) {
+    if (power == 0) {
         initializeMatrix(size, size, result, 1);
         return;
+    }
+    if (power == 1) {
+        copyMatrix(size, size, matrix, result);
+        return;
+    }
+
+    int temp[size][size];
+    matrixPower(size, matrix, power / 2, temp);
+    multiplyMatrices(size, size, temp, size, size, temp, result);
+
+    if (power % 2 != 0) {
+        multiplyMatrices(size, size, result, size, size, matrix, result);
+    }
+}
 ```
 
-### cofactorMatrix Function
+## Advanced Matrix Operations
+
+### LU Decomposition
 ```c
-double temp[size - 1][size - 1];
-
-    for (int row = 0; row < size; row++) {
-        for (int col = 0; col < size; col++) {
-            int sub_i = 0;
-
-            for (int i = 0; i < size; i++) {
-                if (i == row) continue;
-
-                int sub_j = 0;
-                for (int j = 0; j < size; j++) {
-                    if (j == col) continue;
-
-                    temp[sub_i][sub_j] = matrix[i][j];
-                    sub_j++;
-```
-
-### adjointMatrix Function
-```c
-double temp[size][size];
-    cofactorMatrix(size, matrix, temp);
-    transposeMatrix(size, size, temp, adjoint);
-```
-
-### luDecomposition Function
-```c
-initializeMatrix(size, size, upper, 0);
+void luDecomposition(int size, double matrix[size][size], double lower[size][size], double upper[size][size]) {
+    initializeMatrix(size, size, upper, 0);
     initializeMatrix(size, size, lower, 0);
 
     for (int i = 0; i < size; i++) {
         lower[i][i] = 1;
-```
-
-### matrixRank Function
-```c
-int rank=0;
+    }
     
-    reduceRowEchelonForm(rows,cols,matrix);
-    
-    for (int i = 0; i < rows; i++)
-    {
-        bool found =false;
-        for (int j = 0; j < cols; j++)
-        {
-            if (matrix[i][j]==0)
-            {
-                found=true;
-                break;
-```
-
-### reduceRowEchelonForm Function
-```c
-int col = 0;
-    for (int k = 0; k < rows; k++) {
+    for (int k = 0; k < size; k++) {
+        for (int j = k; j < size; j++) {
+            double sum = 0;
+            for (int p = 0; p < k; p++) {
+                sum += lower[k][p] * upper[p][j];
+            }
+            upper[k][j] = matrix[k][j] - sum;
+        }
         
-        int pivotRow = k;
-        while (pivotRow < rows && matrix[pivotRow][col] == 0) {
-            pivotRow++;
+        for (int i = k + 1; i < size; i++) {
+            double sum = 0;
+            for (int p = 0; p < k; p++) {
+                sum += lower[i][p] * upper[p][k];
+            }
+            lower[i][k] = (matrix[i][k] - sum) / upper[k][k];
+        }
+    }
+}
 ```
 
-### swapRows Function
+### Matrix Rank
 ```c
-for (int j = 0; j < cols; j++) {
-        double temp = mat[row1][j];
-        mat[row1][j] = mat[row2][j];
-        mat[row2][j] = temp;
-```
-
-### swapElements Function
-```c
-double tmp=*elem1;
-    *elem1=*elem2;
-    *elem2=tmp;
-```
-
-### traceMatrix Function
-```c
-int sum=0;
-    for(int i=0;i<size;i++){
-        sum+=matrix[i][i];
-```
-
-### rotateMatrix90 Function
-```c
-double temp[size][size];
-    transposeMatrix(size,size,matrix,temp);
-    reverseRows(size,temp);
+int matrixRank(int rows, int cols, double matrix[rows][cols]) {
+    int rank = 0;
+    reduceRowEchelonForm(rows, cols, matrix);
     
-    
-    copyMatrix(size,size,temp,matrix);
+    for (int i = 0; i < rows; i++) {
+        bool found = false;
+        for (int j = 0; j < cols; j++) {
+            if (matrix[i][j] == 0) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) rank++;
+    }
+    return rank;
+}
 ```
 
-### reverseRows Function
+### Eigenvalues (2x2)
 ```c
-for (int i=0;i<size;i++){
-        for (int j = 0; j <= size/2; j++)
-        {
-            double temp1=matrix[i][j];
-            matrix[i][j]=matrix[i][size-1-j];
-            matrix[i][size-1-j]=temp1;
-```
-
-### findEigenvalues Function
-```c
-double identity[size][size];
-    int track=0;
-    initializeMatrix(size,size,identity,0);
-    for (int i = 0; i < size; i++)
-    {
-        identity[i][i] = 1;
-```
-
-### findEigenvalues2x2 Function
-```c
-double trace = matrix[0][0] + matrix[1][1];
-    double det = determinantMatrix(2,matrix);
+void findEigenvalues2x2(double matrix[2][2], double eigenvalues[2]) {
+    double trace = matrix[0][0] + matrix[1][1];
+    double det = determinantMatrix(2, matrix);
     double discriminant = trace * trace - 4 * det;
 
     if (discriminant < 0) {
-        eigenvalues[0] = eigenvalues[1] = -1; 
+        eigenvalues[0] = eigenvalues[1] = -1;
         return;
+    }
+
+    eigenvalues[0] = (trace + sqrt(discriminant)) / 2;
+    eigenvalues[1] = (trace - sqrt(discriminant)) / 2;
+}
 ```
+
+### Rotate Matrix 90 Degrees
+```c
+void rotateMatrix90(int size, double matrix[size][size]) {
+    double temp[size][size];
+    transposeMatrix(size, size, matrix, temp);
+    reverseRows(size, temp);
+    copyMatrix(size, size, temp, matrix);
+}
+```
+
+### Trace Matrix
+```c
+int traceMatrix(int size, int matrix[size][size]) {
+    int sum = 0;
+    for(int i = 0; i < size; i++) {
+        sum += matrix[i][i];
+    }
+    return sum;
+}
+```
+7.**Conclusion**
+
+- if you find yourself here i hope you have read it all i hope you enjoyed this adventure as we may call ,i learned time management and modularity before when i used python i didn’t use modularity that often yeah i used it but the idea of creating a library that contains all of useful functions didn’t come in mind and to be honest it’s a nice miniproject experience i also enjoyed (not really) the environment of C yeah it’s good but not easy like when i start comparing i get mad because when first learned python sorting an array didn’t need you to creat a sorting function for it you just needed to call `sort()` maethode which is built in by the way but rather than making programing easy it also made it hard the roasoning start decreasing and people even me when i first start with it i didn’t ask myself why and how i just did what every body does but today i learned to ask thank you for your time ihope you had an experience with me and will meet agian
+
