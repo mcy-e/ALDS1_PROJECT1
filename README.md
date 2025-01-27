@@ -6238,12 +6238,11 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 2       | rows=3, cols=3, value=1    | [[1, 1, 1], [1, 1, 1], [1, 1, 1]] |
 
 ## printMatrix(rows, cols, matrix);
-| Example | Inputs                     |      Output(s)      |
-| ------- | :------------------------: | :-----------------: |
-| 1       | rows=2, cols=2, matrix=[[1, 2], [3, 4]] | 1.000000 2.000000\\
-3.000000 4.000000 |
-| 2       | rows=2, cols=2, matrix=[[5, 6], [7, 8]] | 5.000000 6.000000\\
-7.000000 8.000000 |
+"| printMatrix | matrix=[[1,2],[3,4]] | 1 2\
+3 4 |",
+    "| printMatrix | matrix=[[1,2],[3,4]] | \
+ 1.000000 2.000000 \
+ 3.000000 4.000000 |"
 
 ## inputMatrix(rows, cols, matrix);
 | Example | Inputs                     |      Output(s)      |
