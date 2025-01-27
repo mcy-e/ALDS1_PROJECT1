@@ -2,6 +2,8 @@
 
 ARTICLE TYPE: DOCUMENTATION
 
+![Nscs](Nscs.png)
+
 PREPARED BY: REFFAS CHOUAIB
 
 Jan.26, 2025
@@ -34,11 +36,11 @@ Jan.26, 2025
 
 7. [Conclusion](#bookmark=id.i1gf92t92aj7)
 
- # 1. _Introduction_
+# 1. _Introduction_
 
 Algorithm isn’t just about thinking; it may also encounter some smart acts because yes, you can work hard and achieve your goal. However, you get tired every time you try hard and to avoid this you need to apply the DRY process “Don’t Repeat Yourself”. In which you work smart but not hard and you know when you write your first programme you will get happy but after that you will face some problems and challenges our digital world isn’t that easy it's like a forest where the weak gets destroyed .So for my fellow programmes especially the new one’s I facilitated the work for you and I created a library in C language that has 4 sub-libraires (numbers,arrays,matrices and strings) in which you have different operations in those fields and that’s going to make programming easier than before.Yeah this library helps you in your projects like you need some operations or checks to perform an action and in order to don’t repeat yourself and recreate a function from the scratch that does the needed operation I gave you the keys to the treasure so you don’t need to rage quit if you didn’t find the solution or consume more time finding the module structure instead of working on the main project it’s like customizing a car too look good and high class instead of working to improve its functionality. But don’t forget you need to be a good programmer, and you need to know the structure of those functions to understand when you call it what happens inside it. Thus, I wrote this documentation for me first and for you to help me and you understand those functions and procedures. This counts as an experience for me and the first gate into the world of projects. I hope I didn’t take your time and let’s start our Adventure\!
 
- # 2.  _Project Overview_
+# 2. _Project Overview_
 
 Our project is a workspace that contains the main folder called “ALDS1_Project1” which then contains some branches starting with:
 
@@ -64,13 +66,13 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 ![Structure](Structure.png)
 
- # 3. _Analysis_
+# 3. _Analysis_
 
 - ### **In this section, we will talk about the function and the procedures like what we should input to them what they do and what they should output however we won’t complicate things or move into details for more details go to** “Implementation”.**Let’s start:**
 
 ## 1._Numbers_
 
- #### **_Basic Functions_**
+#### **_Basic Functions_**
 
 - [ ] sumOfDigits(num);
 - inputs: number of type integer
@@ -126,7 +128,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 ---
 
- #### **_Intermediate Functions/procedures_**
+#### **_Intermediate Functions/procedures_**
 
 - [ ] primeFactors(num);
 - input: number of type integer
@@ -223,7 +225,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 ---
 
- #### **_Advanced Functions/procedures_**
+#### **_Advanced Functions/procedures_**
 
 - [ ] toBinary(num);
 - input: number of type integer
@@ -369,7 +371,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: number of type natural
 - output: the sum of the primes until the given number of type natural
 
- ## 2._Strings_
+## 2._Strings_
 
 #### **_Basic Functions_**
 
@@ -443,7 +445,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: string of type list of chars
 - output: converts the string to lowercase in place
 
- #### **_Intermediate Functions/procedures_**
+#### **_Intermediate Functions/procedures_**
 
 - [ ] isPalindromeString(var str);
 - inputs: string of type list of chars
@@ -497,7 +499,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: string of type list of chars
 - output: removes duplicate characters from the string in place
 
- #### **_Advanced Functions/procedures_**
+#### **_Advanced Functions/procedures_**
 
 - [ ] compressString(var str,var result);
 - inputs: string of type list of chars,result string of type list of chars
@@ -569,7 +571,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: string of type list of chars, delimiter character, array of strings to store tokens, pointer to integer for token count
 - output: splits the string into tokens based on the delimiter and stores them in the array
 
- #### **_Cypher Functions/procedures_**
+#### **_Cypher Functions/procedures_**
 
 - [ ] caesarCipher(var text,shift);
 - inputs: string of type list of chars,integer shift value
@@ -607,7 +609,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 ## 3. _Arrays_
 
- #### **_Basic Functions_**
+#### **_Basic Functions_**
 
 - [ ] initializeArray(var arr,size,value);
 - inputs: array with garbage values of type integer,size of type integer ,value of type integer
@@ -697,7 +699,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: array1 of type list of integers, array2 of type list of integers, size1 of type integer, size2 of type integer, array3 of type list of integers
 - output: merges two sorted arrays into a third array
 
- #### **_Intermediate Functions/procedures_**
+#### **_Intermediate Functions/procedures_**
 
 - [ ] reverseArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
@@ -769,7 +771,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: array of type list of integers, size of type integer
 - output: compares and swaps adjacent elements in the array
 
- #### **_Sorting Algorithms_**
+#### **_Sorting Algorithms_**
 
 - [ ] bubbleSort(var arr,size);
 - inputs: array of type list of integers, size of type integer
@@ -799,7 +801,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: array of type list of integers, low index of type integer, high index of type integer
 - output: sorts the array using quick sortr
 
- #### **_Advanced Functions/procedures_**
+#### **_Advanced Functions/procedures_**
 
 - [ ] swap(var elem1,var elem2);
 - inputs: pointer to integer element1, pointer to integer element2
@@ -865,9 +867,9 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: array1 of type list of integers, size1 of type integer, array2 of type list of integers, size2 of type integer
 - output: prints the union of the two arrays
 
- ## 4._Matrices_
+## 4._Matrices_
 
- #### **_Basic Functions_**
+#### **_Basic Functions_**
 
 - [ ] initializeMatrix(rows,cols,var matrix,value);
 - inputs: rows of type integer,cols of type integer,matrix with garbage values of type double ,value of type integer
@@ -891,7 +893,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, copy of type 2D array of doubles
 - output: copies the contents of the matrix to the copy
 
- #### **_Matrix Arithmetic_**
+#### **_Matrix Arithmetic_**
 
 - [ ] addMatrices(rows,cols,var mat1,var mat2,var result);
 - inputs: rows of type integer, cols of type integer, mat1 of type 2D array of integers, mat2 of type 2D array of integers, result of type 2D array of integers.
@@ -915,7 +917,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, scalar of type double
 - output: multiplies the matrix by a scalar value
 
- #### **_Matrix properties and checks_**
+#### **_Matrix properties and checks_**
 
 - [ ] isSquareMatrix(rows,cols);
 - inputs: rows of type integer, cols of type integer
@@ -951,7 +953,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: rows of type integer, cols of type integer, mat1 of type 2D array of doubles, mat2 of type 2D array of doubles
 - output: boolean (returns true if the two matrices are equal, otherwise false)
 
- #### **_Matrix operations_**
+#### **_Matrix operations_**
 
 - [ ] transposeMatrix(rows,cols,var matrix,var result);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, result of type 2D array of doubles
@@ -975,7 +977,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: size of type integer, matrix of type 2D array of doubles, power of type integer, result of type 2D array of doubles
 - output: computes the matrix raised to the given power and stores it in the result matrix
 
- #### **_Advanced Functions/procedures_**
+#### **_Advanced Functions/procedures_**
 
 - [ ] cofactorMatrix(size,var matrix,var cofactor);
 - inputs: size of type integer, matrix of type 2D array of doubles, cofactor of type 2D array of doubles
@@ -1011,7 +1013,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: rows of type integer, cols of type integer, mat of type 2D array of doubles, row1 of type integer, row2 of type integer
 - output: swaps two rows in the matrix
 
- #### **_Special Matrix operations_**
+#### **_Special Matrix operations_**
 
 - [ ] traceMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
@@ -1048,10 +1050,10 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - ## **_Cloning the Repository_**
 
 1. Clone the repository to your local machine. Open your terminal and run the following command:
-![git]("git clone.png")
+   ![git](gitclone.png)
 2. After cloning, navigate to the project folder:
 
-![cd](cd.png)   
+![cd](cd.png)
 
 - ### **_Devices Used_**
 
@@ -1069,27 +1071,24 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
    - Go to File \> Add Folder to Workspace and select the project folder.
    - Save the workspace (File \> Save Workspace As...).
 4. Create a new .c file and include the library at the top:
-![includemain]("include main.png")
+   ![includemain](includemain.png)
 
 5. Write your test code. Example:
-![main](main.png)
+   ![main](main.png)
 6. Use VS Code tasks or terminal to compile and run your code. Example:
-![gcc](gcc.png)
+   ![gcc](gcc.png)
+
 - ### **_For macOS and Linux_**
 
 1.  Open the terminal and navigate to the project folder where the repository was cloned.
 
 Create a new test file using any text editor (e.g., nano, vim, or gedit). For example, using nano:
-![nano](nano.png)
-2. Include the library in your test file by adding the following line at the top:
-![includemain]("include main.png")
-3. Write your test code. Example:
-[main](main.png)
-4. Save the file and compile it using the GCC compiler:
-![gcc](gcc.png)
-5. Run your program:
+![nano](nano.png) 2. Include the library in your test file by adding the following line at the top:
+![includemain](includemain.png) 3. Write your test code. Example:
+[main](main.png) 4. Save the file and compile it using the GCC compiler:
+![gcc](gcc.png) 5. Run your program:
 
-![mytest]("my test.png")
+![mytest](mytest.png)
 
 - #### **_General Editors (e.g., Sublime Text, Atom)_**
 
@@ -1102,9 +1101,10 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 1. Open the provided test file (test_numbers.c) in your text editor.
 2. Uncomment the lines corresponding to the functions you want to test. For example:
-![testfunc]("test func.png")
+   ![testfunc](testfunc.png)
 3. Compile and run the file:
-![gcc]("gcc.png")
+   ![gcc]("gcc.png")
+
 - ### **Using the Makefile for Easy Builds and Tests**
 
   The Makefile automates the build and test process.
@@ -1112,12 +1112,13 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 - #### **Basic Commands**
 
   - Build the project:
-  ![make](make.png)
+    ![make](make.png)
 
   - Run the tests:
- ![testprog]("test prog.png")
+    ![testprog]("test prog.png")
   - Clean up build artefacts:
- ![makeclean]("make clean.png")
+    ![makeclean]("make clean.png")
+
 - ### **_VS Code Integration_**
 
 * #### **Setting Up Build Tasks**
@@ -5917,7 +5918,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 7. **ExampleOfUsage**
 
- ## 1. _Numbers_
+## 1. _Numbers_
 
 ## Basic Functions:
 
@@ -6323,7 +6324,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 # 2._Strings_
 
-  ## Basic Functions:
+## Basic Functions:
 
 - [ ] stringLength(var str);
 
@@ -6436,169 +6437,189 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
                 on progress…
 
-
-
 # 3. _Arrays_
 
 ## Basic Functions
 
 ### initializeArray(int arr[], int size, int value)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[], size=3, value=5 | arr=[5,5,5] |
-| 2 | arr=[], size=4, value=0 | arr=[0,0,0,0] |
-| 3 | arr=[], size=2, value=-1 | arr=[-1,-1] |
+
+| Example |          Inputs          |   Output(s)   |
+| ------- | :----------------------: | :-----------: |
+| 1       | arr=[], size=3, value=5  |  arr=[5,5,5]  |
+| 2       | arr=[], size=4, value=0  | arr=[0,0,0,0] |
+| 3       | arr=[], size=2, value=-1 |  arr=[-1,-1]  |
 
 ### printArray(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,3], size=3 | Array=[1,2,3] |
-| 2 | arr=[], size=0 | "Array is empty" |
-| 3 | arr=[5], size=1 | Array=[5] |
+
+| Example |       Inputs        |    Output(s)     |
+| ------- | :-----------------: | :--------------: |
+| 1       | arr=[1,2,3], size=3 |  Array=[1,2,3]   |
+| 2       |   arr=[], size=0    | "Array is empty" |
+| 3       |   arr=[5], size=1   |    Array=[5]     |
 
 ### findMax(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,5,3], size=3 | 5 |
-| 2 | arr=[10,2,8,9], size=4 | 10 |
-| 3 | arr=[-1,-5,-3], size=3 | -1 |
+
+| Example |         Inputs         | Output(s) |
+| ------- | :--------------------: | :-------: |
+| 1       |  arr=[1,5,3], size=3   |     5     |
+| 2       | arr=[10,2,8,9], size=4 |    10     |
+| 3       | arr=[-1,-5,-3], size=3 |    -1     |
 
 ### findMin(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,5,3], size=3 | 1 |
-| 2 | arr=[10,2,8,9], size=4 | 2 |
-| 3 | arr=[-1,-5,-3], size=3 | -5 |
+
+| Example |         Inputs         | Output(s) |
+| ------- | :--------------------: | :-------: |
+| 1       |  arr=[1,5,3], size=3   |     1     |
+| 2       | arr=[10,2,8,9], size=4 |     2     |
+| 3       | arr=[-1,-5,-3], size=3 |    -5     |
 
 ### sumArray(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,3], size=3 | 6 |
-| 2 | arr=[5,5,5,5], size=4 | 20 |
-| 3 | arr=[-1,1], size=2 | 0 |
+
+| Example |        Inputs         | Output(s) |
+| ------- | :-------------------: | :-------: |
+| 1       |  arr=[1,2,3], size=3  |     6     |
+| 2       | arr=[5,5,5,5], size=4 |    20     |
+| 3       |  arr=[-1,1], size=2   |     0     |
 
 ### averageArray(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,3], size=3 | 2.0 |
-| 2 | arr=[5,5,5,5], size=4 | 5.0 |
-| 3 | arr=[1,2], size=2 | 1.5 |
+
+| Example |        Inputs         | Output(s) |
+| ------- | :-------------------: | :-------: |
+| 1       |  arr=[1,2,3], size=3  |    2.0    |
+| 2       | arr=[5,5,5,5], size=4 |    5.0    |
+| 3       |   arr=[1,2], size=2   |    1.5    |
 
 ### storingDigits(int arr[], int number)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | number=123 | arr=[3,2,1] |
-| 2 | number=4567 | arr=[7,6,5,4] |
-| 3 | number=90 | arr=[0,9] |
+
+| Example |   Inputs    |   Output(s)   |
+| ------- | :---------: | :-----------: |
+| 1       | number=123  |  arr=[3,2,1]  |
+| 2       | number=4567 | arr=[7,6,5,4] |
+| 3       |  number=90  |   arr=[0,9]   |
 
 ### returningDigits(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[3,2,1], size=3 | 123 |
-| 2 | arr=[7,6,5,4], size=4 | 4567 |
-| 3 | arr=[0,9], size=2 | 90 |
+
+| Example |        Inputs         | Output(s) |
+| ------- | :-------------------: | :-------: |
+| 1       |  arr=[3,2,1], size=3  |    123    |
+| 2       | arr=[7,6,5,4], size=4 |   4567    |
+| 3       |   arr=[0,9], size=2   |    90     |
 
 ## Intermediate Functions
 
 ### reverseArray(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,3], size=3 | arr=[3,2,1] |
-| 2 | arr=[4,5,6,7], size=4 | arr=[7,6,5,4] |
-| 3 | arr=[1], size=1 | arr=[1] |
+
+| Example |        Inputs         |   Output(s)   |
+| ------- | :-------------------: | :-----------: |
+| 1       |  arr=[1,2,3], size=3  |  arr=[3,2,1]  |
+| 2       | arr=[4,5,6,7], size=4 | arr=[7,6,5,4] |
+| 3       |    arr=[1], size=1    |    arr=[1]    |
 
 ### countEvenOdd(int arr[], int size, int* evenCount, int* oddCount)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,3,4], size=4 | evenCount=2, oddCount=2 |
-| 2 | arr=[2,4,6], size=3 | evenCount=3, oddCount=0 |
-| 3 | arr=[1,3,5,7], size=4 | evenCount=0, oddCount=4 |
+
+| Example |        Inputs         |        Output(s)        |
+| ------- | :-------------------: | :---------------------: |
+| 1       | arr=[1,2,3,4], size=4 | evenCount=2, oddCount=2 |
+| 2       |  arr=[2,4,6], size=3  | evenCount=3, oddCount=0 |
+| 3       | arr=[1,3,5,7], size=4 | evenCount=0, oddCount=4 |
 
 ### secondLargest(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,5,3,4], size=4 | 4 |
-| 2 | arr=[10,8,9], size=3 | 9 |
-| 3 | arr=[5,5,5], size=3 | 5 |
+
+| Example |        Inputs         | Output(s) |
+| ------- | :-------------------: | :-------: |
+| 1       | arr=[1,5,3,4], size=4 |     4     |
+| 2       | arr=[10,8,9], size=3  |     9     |
+| 3       |  arr=[5,5,5], size=3  |     5     |
 
 ### findElementPos(int arr[], int size, int element)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,3], size=3, element=2 | 1 |
-| 2 | arr=[4,5,6,7], size=4, element=7 | 3 |
-| 3 | arr=[1,2,3], size=3, element=4 | -1 |
+
+| Example |              Inputs              | Output(s) |
+| ------- | :------------------------------: | :-------: |
+| 1       |  arr=[1,2,3], size=3, element=2  |     1     |
+| 2       | arr=[4,5,6,7], size=4, element=7 |     3     |
+| 3       |  arr=[1,2,3], size=3, element=4  |    -1     |
 
 ### elementFrequency(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,2,3], size=4 | "1 found 1 time(s)", "2 found 2 time(s)", "3 found 1 time(s)" |
-| 2 | arr=[1,1,1], size=3 | "1 found 3 time(s)" |
-| 3 | arr=[1,2,3], size=3 | "1 found 1 time(s)", "2 found 1 time(s)", "3 found 1 time(s)" |
+
+| Example |        Inputs         |                           Output(s)                           |
+| ------- | :-------------------: | :-----------------------------------------------------------: |
+| 1       | arr=[1,2,2,3], size=4 | "1 found 1 time(s)", "2 found 2 time(s)", "3 found 1 time(s)" |
+| 2       |  arr=[1,1,1], size=3  |                      "1 found 3 time(s)"                      |
+| 3       |  arr=[1,2,3], size=3  | "1 found 1 time(s)", "2 found 1 time(s)", "3 found 1 time(s)" |
 
 ### removeDuplicatesElements(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,2,3], size=4 | 3 |
-| 2 | arr=[1,1,1], size=3 | 1 |
-| 3 | arr=[1,2,3], size=3 | 3 |
+
+| Example |        Inputs         | Output(s) |
+| ------- | :-------------------: | :-------: |
+| 1       | arr=[1,2,2,3], size=4 |     3     |
+| 2       |  arr=[1,1,1], size=3  |     1     |
+| 3       |  arr=[1,2,3], size=3  |     3     |
 
 ### linearSearch(int arr[], int size, int target)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,3], size=3, target=2 | 1 |
-| 2 | arr=[4,5,6,7], size=4, target=7 | 3 |
-| 3 | arr=[1,2,3], size=3, target=4 | -1 |
+
+| Example |             Inputs              | Output(s) |
+| ------- | :-----------------------------: | :-------: |
+| 1       |  arr=[1,2,3], size=3, target=2  |     1     |
+| 2       | arr=[4,5,6,7], size=4, target=7 |     3     |
+| 3       |  arr=[1,2,3], size=3, target=4  |    -1     |
 
 ### binarySearch(int arr[], int size, int target)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,3,4,5], size=5, target=3 | 2 |
-| 2 | arr=[1,3,5,7,9], size=5, target=7 | 3 |
-| 3 | arr=[2,4,6,8], size=4, target=5 | -1 |
+
+| Example |              Inputs               | Output(s) |
+| ------- | :-------------------------------: | :-------: |
+| 1       | arr=[1,2,3,4,5], size=5, target=3 |     2     |
+| 2       | arr=[1,3,5,7,9], size=5, target=7 |     3     |
+| 3       |  arr=[2,4,6,8], size=4, target=5  |    -1     |
 
 ## Advanced Functions
 
 ### findMissingNumber(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,4,5], size=4 | 3 |
-| 2 | arr=[1,2,3,5], size=4 | 4 |
-| 3 | arr=[1,2,3,4], size=4 | -1 |
+
+| Example |        Inputs         | Output(s) |
+| ------- | :-------------------: | :-------: |
+| 1       | arr=[1,2,4,5], size=4 |     3     |
+| 2       | arr=[1,2,3,5], size=4 |     4     |
+| 3       | arr=[1,2,3,4], size=4 |    -1     |
 
 ### findPairsWithSum(int arr[], int size, int sum)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[1,2,3,4], size=4, sum=5 | "Pair found: 1 and 4", "Pair found: 2 and 3" |
-| 2 | arr=[2,4,6,8], size=4, sum=10 | "Pair found: 2 and 8", "Pair found: 4 and 6" |
-| 3 | arr=[1,2,3], size=3, sum=10 | "Pairs not found" |
+
+| Example |            Inputs             |                  Output(s)                   |
+| ------- | :---------------------------: | :------------------------------------------: |
+| 1       | arr=[1,2,3,4], size=4, sum=5  | "Pair found: 1 and 4", "Pair found: 2 and 3" |
+| 2       | arr=[2,4,6,8], size=4, sum=10 | "Pair found: 2 and 8", "Pair found: 4 and 6" |
+| 3       |  arr=[1,2,3], size=3, sum=10  |              "Pairs not found"               |
 
 ### findMajorityElement(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[2,2,2,1], size=4 | 2 |
-| 2 | arr=[1,1,1,1,2], size=5 | 1 |
-| 3 | arr=[1,2,3,4], size=4 | -999999999 |
+
+| Example |         Inputs          | Output(s)  |
+| ------- | :---------------------: | :--------: |
+| 1       |  arr=[2,2,2,1], size=4  |     2      |
+| 2       | arr=[1,1,1,1,2], size=5 |     1      |
+| 3       |  arr=[1,2,3,4], size=4  | -999999999 |
 
 ### longestIncreasingSubsequence(int arr[], int size)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr=[10,22,9,33,21,50,41,60], size=8 | 5 |
-| 2 | arr=[3,10,2,1,20], size=5 | 3 |
-| 3 | arr=[1,2,3,4], size=4 | 4 |
+
+| Example |                Inputs                | Output(s) |
+| ------- | :----------------------------------: | :-------: |
+| 1       | arr=[10,22,9,33,21,50,41,60], size=8 |     5     |
+| 2       |      arr=[3,10,2,1,20], size=5       |     3     |
+| 3       |        arr=[1,2,3,4], size=4         |     4     |
 
 ### findIntersection(int arr1[], int size1, int arr2[], int size2)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr1=[1,2,3], size1=3, arr2=[2,3,4], size2=3 | Array=[2,3] |
-| 2 | arr1=[1,1,1], size1=3, arr2=[1,1], size2=2 | Array=[1] |
-| 3 | arr1=[1,2], size1=2, arr2=[3,4], size2=2 | Array=[] |
+
+| Example |                    Inputs                    |  Output(s)  |
+| ------- | :------------------------------------------: | :---------: |
+| 1       | arr1=[1,2,3], size1=3, arr2=[2,3,4], size2=3 | Array=[2,3] |
+| 2       |  arr1=[1,1,1], size1=3, arr2=[1,1], size2=2  |  Array=[1]  |
+| 3       |   arr1=[1,2], size1=2, arr2=[3,4], size2=2   |  Array=[]   |
 
 ### findUnion(int arr1[], int size1, int arr2[], int size2)
-| Example | Inputs | Output(s) |
-| ------- | :----: | :-------: |
-| 1 | arr1=[1,2,3], size1=3, arr2=[2,3,4], size2=3 | Array=[1,2,3,4] |
-| 2 | arr1=[1,1,1], size1=3, arr2=[1,1], size2=2 | Array=[1] |
-| 3 | arr1=[1,2], size1=2, arr2=[3,4], size2=2 | Array=[1,2,3,4] |
+
+| Example |                    Inputs                    |    Output(s)    |
+| ------- | :------------------------------------------: | :-------------: |
+| 1       | arr1=[1,2,3], size1=3, arr2=[2,3,4], size2=3 | Array=[1,2,3,4] |
+| 2       |  arr1=[1,1,1], size1=3, arr2=[1,1], size2=2  |    Array=[1]    |
+| 3       |   arr1=[1,2], size1=2, arr2=[3,4], size2=2   | Array=[1,2,3,4] |
 
 ## 4. _Matrices_
 
@@ -7407,6 +7428,7 @@ int Xor(int num1, int num2) {
 ## Basic Functions
 
 ### stringLength
+
 ```c
 int stringLength(char* str){
     int length=0;
@@ -7414,13 +7436,14 @@ int stringLength(char* str){
     {
         length++;
     }
-    
+
     length=removeWhiteSpaceLength(str,length);
     return length;
 }
 ```
 
 ### stringLengthWithSpace
+
 ```c
 int stringLengthWithSpace(char* str){
     int length=0;
@@ -7433,6 +7456,7 @@ int stringLengthWithSpace(char* str){
 ```
 
 ### removeWhiteSpaceLength
+
 ```c
 int removeWhiteSpaceLength(char* str,int length){
     for (int i = 0; i <= length; i++)
@@ -7447,6 +7471,7 @@ int removeWhiteSpaceLength(char* str,int length){
 ```
 
 ### stringCopy
+
 ```c
 void stringCopy(const char* src,char* dst){
     for (int i = 0; src[i] !='\0'; i++)
@@ -7457,6 +7482,7 @@ void stringCopy(const char* src,char* dst){
 ```
 
 ### stringConcat
+
 ```c
 void stringConcat(char* dest, const char* src){
     char str1[900];
@@ -7465,7 +7491,7 @@ void stringConcat(char* dest, const char* src){
     int len2 = stringLengthWithSpace(dest);
 
     dest[len2]=' ';
-    
+
     for (int i = 0; i<len1 ; i++)
     {
         dest[i+len2+1] = src[i];
@@ -7476,6 +7502,7 @@ void stringConcat(char* dest, const char* src){
 ```
 
 ### stringCompare
+
 ```c
 int stringCompare(const char* str1, const char* str2){
    int i=0;
@@ -7492,6 +7519,7 @@ int stringCompare(const char* str1, const char* str2){
 ```
 
 ### stringCompareInsensitive
+
 ```c
 int stringCompareInsensitive(const char* str1, const char* str2){
    int i=0;
@@ -7508,6 +7536,7 @@ int stringCompareInsensitive(const char* str1, const char* str2){
 ```
 
 ### isEmpty
+
 ```c
 bool isEmpty(char* str){
     int length=stringLength(str);
@@ -7517,6 +7546,7 @@ bool isEmpty(char* str){
 ```
 
 ### isEmptyLiterally
+
 ```c
 bool isEmptyLiterally(char* str){
     if(str[0]=='\0') return true;
@@ -7525,11 +7555,12 @@ bool isEmptyLiterally(char* str){
 ```
 
 ### reverseString
+
 ```c
 void reverseString(char* str){
     int len= stringLengthWithSpace(str);
     int temp;
-    
+
     for(int i=0; i<len/2; i++)
     {
         temp=str[i];
@@ -7540,6 +7571,7 @@ void reverseString(char* str){
 ```
 
 ### toUpperCase
+
 ```c
 void toUpperCase(char* str){
     int i=0;
@@ -7555,6 +7587,7 @@ void toUpperCase(char* str){
 ```
 
 ### toLowerCase
+
 ```c
 void toLowerCase(char* str){
     int i=0;
@@ -7572,6 +7605,7 @@ void toLowerCase(char* str){
 ## Intermediate Functions
 
 ### isPalindromeString
+
 ```c
 bool isPalindromeString(char* str){
     char str1[256];
@@ -7584,32 +7618,33 @@ bool isPalindromeString(char* str){
 ```
 
 ### countVowelsConsonants
+
 ```c
 void countVowelsConsonants(char* str,int* vowels,int* consonants){
     int len =stringLengthWithSpace(str);
     *vowels=0;*consonants=0;
     toLowerCase(str);
     for (int i = 0; i < len; i++)
-    {   
+    {
         if (str[i]>=97 && str[i]<=122)
         {
            switch (str[i])
             {
-            case 'a': 
+            case 'a':
                 *vowels+=1;
                 break;
-            case 'e': 
+            case 'e':
                 *vowels+=1;
                 break;
-            case 'i': 
+            case 'i':
                 *vowels+=1;
                 break;
-            case 'o': 
+            case 'o':
                 *vowels+=1;
                 break;
-            case 'u': 
+            case 'u':
                 *vowels+=1;
-                break;     
+                break;
             default:
                 *consonants+=1;
                 break;
@@ -7620,6 +7655,7 @@ void countVowelsConsonants(char* str,int* vowels,int* consonants){
 ```
 
 ### findSubstring
+
 ```c
 int findSubstring(const char* str, const char* sub){
     char str1[512];stringCopy(str,str1);
@@ -7628,7 +7664,7 @@ int findSubstring(const char* str, const char* sub){
     int len1 = stringLength(str1);
     int len2 = stringLength(sub1);
     int total=len1-len2;
-    
+
     if (len2 > len1){
         return -1;
     }else{
@@ -7644,6 +7680,7 @@ int findSubstring(const char* str, const char* sub){
 ```
 
 ### findSubstringInsensitive
+
 ```c
 int findSubstringInsensitive(const char* str, const char* sub){
     char str1[512];stringCopy(str,str1);
@@ -7652,10 +7689,10 @@ int findSubstringInsensitive(const char* str, const char* sub){
     int len1 = stringLength(str1);
     int len2 = stringLength(sub1);
     int total=len1-len2;
-    
+
     toLowerCase(str1);
     toLowerCase(sub1);
-    
+
     if (len2 > len1){
         return -1;
     }else{
@@ -7671,6 +7708,7 @@ int findSubstringInsensitive(const char* str, const char* sub){
 ```
 
 ### removeWhiteSpace
+
 ```c
 void removeWhiteSpace(char* str){
     int len = stringLengthWithSpace(str);
@@ -7687,13 +7725,14 @@ void removeWhiteSpace(char* str){
 ```
 
 ### isAnagram
+
 ```c
 bool isAnagram(char* str1, char* str2){
     int len1=stringLength(str1);
     int len2=stringLength(str2);
     int k=0;
     int arr[512];
-    
+
     if (len1 != len2) {return false;}
     else{
         for (int i = 0; i < len1; i++)
@@ -7702,12 +7741,12 @@ bool isAnagram(char* str1, char* str2){
             {
                 if (str1[i]==str2[j])
                 {
-                    arr[k]=1; 
+                    arr[k]=1;
                 }
             }
             k++;
         }
-        
+
         for ( k = 0; k < len1; k++)
         {
             if (arr[k]!=1) return false;
@@ -7718,16 +7757,17 @@ bool isAnagram(char* str1, char* str2){
 ```
 
 ### charFrequency
+
 ```c
 void charFrequency(char* str)
 {
-    char arr[30] = {0};     
+    char arr[30] = {0};
     int freq;
-    int len = stringLength(str);  
+    int len = stringLength(str);
 
     for (int i = 0; i < len; i++) {
         freq = 0;
-        
+
         int already_counted = 0;
         for (int k = 0; k < i; k++) {
             if (arr[k] == str[i]) {
@@ -7753,6 +7793,7 @@ void charFrequency(char* str)
 ```
 
 ### countWords
+
 ```c
 int countWords(char* str){
     int len =stringLengthWithSpace(str);
@@ -7769,6 +7810,7 @@ int countWords(char* str){
 ```
 
 ### removeDuplicates
+
 ```c
 void removeDuplicates(char* str){
     int len =stringLength(str);
@@ -7807,13 +7849,14 @@ void removeDuplicates(char* str){
 ## Advanced Functions
 
 ### compressString
+
 ```c
 void compressString(char* str, char* result)
 {
     int len=stringLength(str);
     int start=0;int count;
     result[0]='\0';
-    
+
     for (int i = 0; i < len; i=i+count)
     {
         count=0;
@@ -7839,6 +7882,7 @@ void compressString(char* str, char* result)
 ```
 
 ### switchInt_Str
+
 ```c
 void switchInt_Str(char* str,int num){
     int digit_num=numberOfDigits(num);
@@ -7886,6 +7930,7 @@ void switchInt_Str(char* str,int num){
 ```
 
 ### longestWord
+
 ```c
 void longestWord(char* str, char* result){
     int words_num=countWords(str);
@@ -7904,9 +7949,9 @@ void longestWord(char* str, char* result){
                 pos++;
             }else{break;}
         }
-        
+
         if (count >= max)
-        {   
+        {
             int temp=pos;
             max=count;
             for (int i = max-1; i >= 0; i--)
@@ -7922,6 +7967,7 @@ void longestWord(char* str, char* result){
 ```
 
 ### isRotation
+
 ```c
 bool isRotation(char* str1, char* str2){
     int len=stringLength(str1);
@@ -7935,6 +7981,7 @@ bool isRotation(char* str1, char* str2){
 ```
 
 ### rotateLeft
+
 ```c
 void rotateLeft(char* str){
     int len=stringLength(str);
@@ -7948,6 +7995,7 @@ void rotateLeft(char* str){
 ```
 
 ### rotateLeftTimes
+
 ```c
 void rotateLeftTimes(char* str,int times){
     for (int i = 0; i < times; i++)
@@ -7958,6 +8006,7 @@ void rotateLeftTimes(char* str,int times){
 ```
 
 ### rotateRightTimes
+
 ```c
 void rotateRightTimes(char* str,int times){
     int len=stringLength(str);
@@ -7966,6 +8015,7 @@ void rotateRightTimes(char* str,int times){
 ```
 
 ### countChar
+
 ```c
 int countChar(char* str, char character){
     int len=stringLengthWithSpace(str);
@@ -7981,6 +8031,7 @@ int countChar(char* str, char character){
 ```
 
 ### findAndReplace
+
 ```c
 void findAndReplace(char* str, char* find, char* replace){
     int len=stringLengthWithSpace(str);
@@ -7988,7 +8039,7 @@ void findAndReplace(char* str, char* find, char* replace){
     int replace_len=stringLength(replace);
     int pos=0;
     while(pos<len){
-        
+
         if (stringCompareInsensitive(str+pos, find)==0)
         {
             for (int i = 0; i < replace_len; i++)
@@ -8000,62 +8051,64 @@ void findAndReplace(char* str, char* find, char* replace){
         } else{
             pos++;
         }
-        
+
     }
-    
+
 }
 
 ```
 
 ### longestPalindrome
+
 ```c
 void longestPalindrome(char* str, char* result){
     int len = stringLength(str);
-    
+
     for (int start = 0; start < len; start++)
     {
         for (int end = len - 1; end >= start; end--) {
             int pos=0;
             char temp[len +1];
-            
+
             for (int j = start; j <= end; j++)
-            {   
+            {
                 temp[pos]=str[j];
                 pos++;
             }
-            
+
             temp[pos]='\0';
             if (isPalindromeString(temp))
-            {   
-                if (stringLength(temp) > stringLength(result)){            
+            {
+                if (stringLength(temp) > stringLength(result)){
                     stringCopy(temp,result);
-                }break;           
+                }break;
             }
         }
-    } 
+    }
 }
 ```
 
 ### printPermutations
+
 ```c
 void printPermutations(char* str){
     int len=stringLength(str);
     int pos=1;
-    
+
     char arrOfStr[5212]="";
     for (int i = 0; i < len; i++)
     {
         for (int j = 0; j <len; j++)
-        { 
+        {
             rotateLeft(str);
             int verification=0;
-            
+
             if (findSubstring(arrOfStr,str)!=-1)
             {
                 verification=1;
-                break; 
+                break;
             }
-                
+
             if(verification==0){
                 printf("permutation[%d]is : %s\n",pos,str);
                 stringConcat(arrOfStr,str);
@@ -8071,12 +8124,13 @@ void printPermutations(char* str){
 ```
 
 ### splitString
+
 ```c
 void splitString(char* str, char delimiter, char tokens[][100], int* tokenCount) {
     int len = stringLengthWithSpace(str);
     int pos = 0;
     int new_len = 0;
-    
+
     for (int i = 0; i < len; i++) {
         new_len++;
         if (str[i] == delimiter) {
@@ -8108,6 +8162,7 @@ void splitString(char* str, char delimiter, char tokens[][100], int* tokenCount)
 ## Cipher Functions
 
 ### caesarCipher
+
 ```c
 void caesarCipher(char *text, int shift){
     int len=stringLengthWithSpace(text);
@@ -8130,6 +8185,7 @@ void caesarCipher(char *text, int shift){
 ```
 
 ### substitutionCipher
+
 ```c
 void substitutionCipher(char *text, const char *key){
    int len=stringLengthWithSpace(text);
@@ -8140,7 +8196,7 @@ void substitutionCipher(char *text, const char *key){
    char upperKey[lenKey];
    stringCopy(key,upperKey);
    toUpperCase(upperKey);
-    
+
     for (int i = 0; i < len; i++)
     {
         if (text[i]>='A'&& text[i]<='Z')
@@ -8156,18 +8212,20 @@ void substitutionCipher(char *text, const char *key){
 ```
 
 ### xorCipher
+
 ```c
 void xorCipher(char *text, char key) {
     int len = stringLengthWithSpace(text);
-    
+
     for (int i = 0; i < len; i++) {
-        text[i] = (text[i] ^ key);  
-        text[i] = (text[i] % 95) + 32;  
+        text[i] = (text[i] ^ key);
+        text[i] = (text[i] % 95) + 32;
     }
 }
 ```
 
 ### vigenereCipher
+
 ```c
 void vigenereCipher(char *text, const char *key, int encrypt){
     int len =stringLengthWithSpace(text);
@@ -8175,7 +8233,7 @@ void vigenereCipher(char *text, const char *key, int encrypt){
     stringCopy(key,keyCopy);
     int keyLen=stringLength(keyCopy);
     int keyIndex=0;
-    
+
     if (encrypt==1)
     {
         for (int i = 0; i < len; i++)
@@ -8217,6 +8275,7 @@ void vigenereCipher(char *text, const char *key, int encrypt){
 ```
 
 ### atbashCipher
+
 ```c
 void atbashCipher(char *text){
     int len=stringLengthWithSpace(text);
@@ -8235,6 +8294,7 @@ void atbashCipher(char *text){
 ```
 
 ### railFenceCipher
+
 ```c
 void railFenceCipher(const char *text, char *result, int depth) {
     char textCopy[2025];
@@ -8243,7 +8303,7 @@ void railFenceCipher(const char *text, char *result, int depth) {
     char matrix[depth][cols];
     for (int i = 0; i < depth; i++) {
         for (int j = 0; j < cols; j++) {
-            matrix[i][j] = '\0';  
+            matrix[i][j] = '\0';
         }
     }
 
@@ -8280,6 +8340,7 @@ void railFenceCipher(const char *text, char *result, int depth) {
 ## Basic Functions
 
 ### Initialize Array
+
 ```c
 void initializeArray(int arr[], int size, int value) {
     for (int i = 0; i < size; i++) {
@@ -8289,6 +8350,7 @@ void initializeArray(int arr[], int size, int value) {
 ```
 
 ### Print Array
+
 ```c
 void printArray(int arr[], int size) {
     if (size == 0) {
@@ -8307,6 +8369,7 @@ void printArray(int arr[], int size) {
 ```
 
 ### Find Maximum
+
 ```c
 int findMax(int arr[], int size) {
     int max = arr[0];
@@ -8320,6 +8383,7 @@ int findMax(int arr[], int size) {
 ```
 
 ### Find Minimum
+
 ```c
 int findMin(int arr[], int size) {
     int min = arr[0];
@@ -8333,6 +8397,7 @@ int findMin(int arr[], int size) {
 ```
 
 ### Sum Array
+
 ```c
 int sumArray(int arr[], int size) {
     int sum = 0;
@@ -8344,6 +8409,7 @@ int sumArray(int arr[], int size) {
 ```
 
 ### Average Array
+
 ```c
 double averageArray(int arr[], int size) {
     return sumArray(arr, size)/(double)size;
@@ -8351,6 +8417,7 @@ double averageArray(int arr[], int size) {
 ```
 
 ### Create Array
+
 ```c
 void createArray(int arr[], int size) {
     for (int i = 0; i < size; i++) {
@@ -8361,6 +8428,7 @@ void createArray(int arr[], int size) {
 ```
 
 ### Swap Array
+
 ```c
 void swapArray(int arr[], int arr_size) {
     int i, j, temp;
@@ -8373,6 +8441,7 @@ void swapArray(int arr[], int arr_size) {
 ```
 
 ### Merge Sorted Arrays
+
 ```c
 void mergeSortedArray(int arr1[], int arr2[], int arr_size1, int arr_size2, int arr3[]) {
     int i = 0, j = 0, k = 0;
@@ -8403,6 +8472,7 @@ void mergeSortedArray(int arr1[], int arr2[], int arr_size1, int arr_size2, int 
 ## Intermediate Functions
 
 ### Reverse Array
+
 ```c
 void reverseArray(int arr[], int size) {
     for (int i = 0, j = size-1; i < size/2, j >= size/2; j--, i++) {
@@ -8415,6 +8485,7 @@ void reverseArray(int arr[], int size) {
 ```
 
 ### Count Even and Odd
+
 ```c
 void countEvenOdd(int arr[], int size, int* evenCount, int* oddCount) {
     for (int i = 0; i < size; i++) {
@@ -8428,6 +8499,7 @@ void countEvenOdd(int arr[], int size, int* evenCount, int* oddCount) {
 ```
 
 ### Find Second Largest
+
 ```c
 int secondLargest(int arr[], int size) {
     int max = findMax(arr, size);
@@ -8439,6 +8511,7 @@ int secondLargest(int arr[], int size) {
 ```
 
 ### Linear Search
+
 ```c
 int linearSearch(int arr[], int size, int target) {
     for (int i = 0; i < size; i++) {
@@ -8451,6 +8524,7 @@ int linearSearch(int arr[], int size, int target) {
 ```
 
 ### Binary Search
+
 ```c
 int binarySearch(int arr[], int size, int target) {
     int left = 0, right = size-1;
@@ -8471,6 +8545,7 @@ int binarySearch(int arr[], int size, int target) {
 ## Sorting Algorithms
 
 ### Bubble Sort
+
 ```c
 void bubbleSort(int arr[], int size) {
     for (int i = 0; i < size-1; i++) {
@@ -8480,6 +8555,7 @@ void bubbleSort(int arr[], int size) {
 ```
 
 ### Selection Sort
+
 ```c
 void selectionSort(int arr[], int size) {
     for (int i = size-1, pos = 0; i >= 0, pos < size; i--, pos++) {
@@ -8494,6 +8570,7 @@ void selectionSort(int arr[], int size) {
 ```
 
 ### Insertion Sort
+
 ```c
 void insertionSort(int arr[], int size) {
     int j;
@@ -8510,20 +8587,21 @@ void insertionSort(int arr[], int size) {
 ```
 
 ### Quick Sort
+
 ```c
 void quickSort(int arr[], int low, int high) {
     if (low < high) {
         int pivot = arr[high];
         int j = low;
         int i;
-        
+
         for (i = low; i < high; i++) {
             if (arr[i] <= pivot) {
                 swap(&arr[i], &arr[j]);
                 j++;
             }
         }
-        
+
         swap(&arr[j], &arr[high]);
         quickSort(arr, low, j - 1);
         quickSort(arr, j + 1, high);
@@ -8532,6 +8610,7 @@ void quickSort(int arr[], int low, int high) {
 ```
 
 ### Merge Sort
+
 ```c
 void mergeSort(int arr[], int left, int right) {
     if (left < right - 1) {
@@ -8556,6 +8635,7 @@ void mergeSort(int arr[], int left, int right) {
 ## Advanced Functions
 
 ### Find Missing Number
+
 ```c
 int findMissingNumber(int arr[], int size) {
     quickSort(arr, 0, size-1);
@@ -8571,6 +8651,7 @@ int findMissingNumber(int arr[], int size) {
 ```
 
 ### Find Pairs With Sum
+
 ```c
 void findPairsWithSum(int arr[], int size, int sum) {
     quickSort(arr, 0, size-1);
@@ -8595,6 +8676,7 @@ void findPairsWithSum(int arr[], int size, int sum) {
 ```
 
 ### Find Majority Element
+
 ```c
 int findMajorityElement(int arr[], int size) {
     quickSort(arr, 0, size-1);
@@ -8610,11 +8692,12 @@ int findMajorityElement(int arr[], int size) {
 ```
 
 ### Longest Increasing Subsequence
+
 ```c
 int longestIncreasingSubsequence(int arr[], int size) {
     int dp[size];
     initializeArray(dp, size, 1);
-    
+
     for (int i = 1; i < size; i++) {
         for (int j = 0; j < i; j++) {
             if (arr[i] >= arr[j]) {
@@ -8622,17 +8705,18 @@ int longestIncreasingSubsequence(int arr[], int size) {
             }
         }
     }
-    
+
     return findMax(dp, size);
 }
 ```
 
 ### Find Intersection
+
 ```c
 void findIntersection(int arr1[], int size1, int arr2[], int size2) {
     quickSort(arr1, 0, size1-1);
     quickSort(arr2, 0, size2-1);
-    
+
     int IntersectionArr[size1+size2];
     int count = 0;
     for (int i = 0; i < size1; i++) {
@@ -8657,6 +8741,7 @@ void findIntersection(int arr1[], int size1, int arr2[], int size2) {
 ```
 
 ### Find Union
+
 ```c
 void findUnion(int arr1[], int size1, int arr2[], int size2) {
     int UnionArr[size1+size2];
@@ -8681,11 +8766,13 @@ void findUnion(int arr1[], int size1, int arr2[], int size2) {
     printArray(newArr, new_size);
 }
 ```
+
 # Matrix Functions Snipepts
 
 ## Basic Functions
 
 ### Initialize Matrix
+
 ```c
 void initializeMatrix(int rows, int cols, double matrix[rows][cols], int value) {
     for (int i = 0; i < rows; i++) {
@@ -8697,6 +8784,7 @@ void initializeMatrix(int rows, int cols, double matrix[rows][cols], int value) 
 ```
 
 ### Print Matrix
+
 ```c
 void printMatrix(int rows, int cols, double matrix[rows][cols]) {
     for (int i = 0; i < rows; i++) {
@@ -8714,6 +8802,7 @@ void printMatrix(int rows, int cols, double matrix[rows][cols]) {
 ```
 
 ### Input Matrix
+
 ```c
 void inputMatrix(int rows, int cols, int matrix[rows][cols]) {
     for (int i = 0; i < rows; i++) {
@@ -8726,6 +8815,7 @@ void inputMatrix(int rows, int cols, int matrix[rows][cols]) {
 ```
 
 ### Copy Matrix
+
 ```c
 void copyMatrix(int rows, int cols, double matrix[rows][cols], double copy[rows][cols]) {
     for (int i = 0; i < rows; i++) {
@@ -8739,6 +8829,7 @@ void copyMatrix(int rows, int cols, double matrix[rows][cols], double copy[rows]
 ## Matrix Arithmetic
 
 ### Add Matrices
+
 ```c
 void addMatrices(int rows, int cols, int mat1[rows][cols], int mat2[rows][cols], int result[rows][cols]) {
     for (int i = 0; i < rows; i++) {
@@ -8750,6 +8841,7 @@ void addMatrices(int rows, int cols, int mat1[rows][cols], int mat2[rows][cols],
 ```
 
 ### Subtract Matrices
+
 ```c
 void subtractMatrices(int rows, int cols, int mat1[rows][cols], int mat2[rows][cols], int result[rows][cols]) {
     for (int i = 0; i < rows; i++) {
@@ -8761,6 +8853,7 @@ void subtractMatrices(int rows, int cols, int mat1[rows][cols], int mat2[rows][c
 ```
 
 ### Multiply Matrices
+
 ```c
 void multiplyMatrices(int rows1, int cols1, int mat1[rows1][cols1], int rows2, int cols2, int mat2[rows2][cols2], int result[rows1][cols2]) {
     initializeMatrix(rows1, cols2, result, 0);
@@ -8775,6 +8868,7 @@ void multiplyMatrices(int rows1, int cols1, int mat1[rows1][cols1], int rows2, i
 ```
 
 ### Scalar Multiply Matrix
+
 ```c
 void scalarMultiplyMatrix(int rows, int cols, double matrix[rows][cols], double scalar) {
     for (int i = 0; i < rows; i++) {
@@ -8788,6 +8882,7 @@ void scalarMultiplyMatrix(int rows, int cols, double matrix[rows][cols], double 
 ## Matrix Properties and Checks
 
 ### Is Square Matrix
+
 ```c
 bool isSquareMatrix(int rows, int cols) {
     if (rows == cols) return true;
@@ -8796,6 +8891,7 @@ bool isSquareMatrix(int rows, int cols) {
 ```
 
 ### Is Identity Matrix
+
 ```c
 bool isIdentityMatrix(int size, int matrix[size][size]) {
     for (int i = 0; i < size; i++) {
@@ -8810,6 +8906,7 @@ bool isIdentityMatrix(int size, int matrix[size][size]) {
 ```
 
 ### Is Diagonal Matrix
+
 ```c
 bool isDiagonalMatrix(int size, int matrix[size][size]) {
     for (int i = 0; i < size; i++) {
@@ -8822,6 +8919,7 @@ bool isDiagonalMatrix(int size, int matrix[size][size]) {
 ```
 
 ### Is Symmetric Matrix
+
 ```c
 bool isSymmetricMatrix(int size, int matrix[size][size]) {
     for (int i = 0; i < size; i++) {
@@ -8836,6 +8934,7 @@ bool isSymmetricMatrix(int size, int matrix[size][size]) {
 ## Matrix Operations
 
 ### Transpose Matrix
+
 ```c
 void transposeMatrix(int rows, int cols, double matrix[rows][cols], double result[cols][rows]) {
     for (int i = 0; i < rows; i++) {
@@ -8847,6 +8946,7 @@ void transposeMatrix(int rows, int cols, double matrix[rows][cols], double resul
 ```
 
 ### Determinant Matrix
+
 ```c
 double determinantMatrix(int size, double matrix[size][size]) {
     if (size == 2) {
@@ -8878,6 +8978,7 @@ double determinantMatrix(int size, double matrix[size][size]) {
 ```
 
 ### Matrix Power
+
 ```c
 void matrixPower(int size, double matrix[size][size], int power, double result[size][size]) {
     if (power == 0) {
@@ -8902,6 +9003,7 @@ void matrixPower(int size, double matrix[size][size], int power, double result[s
 ## Advanced Matrix Operations
 
 ### LU Decomposition
+
 ```c
 void luDecomposition(int size, double matrix[size][size], double lower[size][size], double upper[size][size]) {
     initializeMatrix(size, size, upper, 0);
@@ -8910,7 +9012,7 @@ void luDecomposition(int size, double matrix[size][size], double lower[size][siz
     for (int i = 0; i < size; i++) {
         lower[i][i] = 1;
     }
-    
+
     for (int k = 0; k < size; k++) {
         for (int j = k; j < size; j++) {
             double sum = 0;
@@ -8919,7 +9021,7 @@ void luDecomposition(int size, double matrix[size][size], double lower[size][siz
             }
             upper[k][j] = matrix[k][j] - sum;
         }
-        
+
         for (int i = k + 1; i < size; i++) {
             double sum = 0;
             for (int p = 0; p < k; p++) {
@@ -8932,11 +9034,12 @@ void luDecomposition(int size, double matrix[size][size], double lower[size][siz
 ```
 
 ### Matrix Rank
+
 ```c
 int matrixRank(int rows, int cols, double matrix[rows][cols]) {
     int rank = 0;
     reduceRowEchelonForm(rows, cols, matrix);
-    
+
     for (int i = 0; i < rows; i++) {
         bool found = false;
         for (int j = 0; j < cols; j++) {
@@ -8952,6 +9055,7 @@ int matrixRank(int rows, int cols, double matrix[rows][cols]) {
 ```
 
 ### Eigenvalues (2x2)
+
 ```c
 void findEigenvalues2x2(double matrix[2][2], double eigenvalues[2]) {
     double trace = matrix[0][0] + matrix[1][1];
@@ -8969,6 +9073,7 @@ void findEigenvalues2x2(double matrix[2][2], double eigenvalues[2]) {
 ```
 
 ### Rotate Matrix 90 Degrees
+
 ```c
 void rotateMatrix90(int size, double matrix[size][size]) {
     double temp[size][size];
@@ -8979,6 +9084,7 @@ void rotateMatrix90(int size, double matrix[size][size]) {
 ```
 
 ### Trace Matrix
+
 ```c
 int traceMatrix(int size, int matrix[size][size]) {
     int sum = 0;
@@ -8988,7 +9094,7 @@ int traceMatrix(int size, int matrix[size][size]) {
     return sum;
 }
 ```
+
 7.**Conclusion**
 
 - if you find yourself here i hope you have read it all i hope you enjoyed this adventure as we may call ,i learned time management and modularity before when i used python i didn’t use modularity that often yeah i used it but the idea of creating a library that contains all of useful functions didn’t come in mind and to be honest it’s a nice miniproject experience i also enjoyed (not really) the environment of C yeah it’s good but not easy like when i start comparing i get mad because when first learned python sorting an array didn’t need you to creat a sorting function for it you just needed to call `sort()` maethode which is built in by the way but rather than making programing easy it also made it hard the roasoning start decreasing and people even me when i first start with it i didn’t ask myself why and how i just did what every body does but today i learned to ask thank you for your time ihope you had an experience with me and will meet agian
-
