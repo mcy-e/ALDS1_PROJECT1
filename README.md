@@ -1,4 +1,13 @@
-**ALDS END SEMESTER PROJECT**
+<html>
+<head>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+    }
+  </style>
+</head>
+<body>
+# _ALDS END SEMESTER PROJECT_
 
 ARTICLE TYPE: DOCUMENTATION
 
@@ -8,10 +17,9 @@ PREPARED BY: REFFAS CHOUAIB
 
 Jan.26, 2025
 
-- **Table Of Contents**
+# _Table Of Contents_
 
-1. [Introduction](#1.-introduction_)
-
+1. [Go to Introduction](#1-introduction)
 ……………………………………………………………………………………
 
 2. [Go to Project Overview](#2-project-overview)
@@ -19,23 +27,31 @@ Jan.26, 2025
 
 ……………………………………………………………………………………
 
-3. [Analysis](#introduction)
+3. [Go to Analysis](#3-analysis)
 
 ……………………………………………………………………………………
 
-4. [Tutorial](#bookmark=id.cjnrj5khwgsu)
+4. [Go to Tutorial](#4-tutorial)
+
 
 ……………………………………………………………………………………
 
-5. [Implementation](#bookmark=id.lrqn2mjz1z41)
+5. [Go to Implementation](#5-implementation)
+
 
 ……………………………………………………………………………………
 
-6. [Example of Usage](#bookmark=id.r80qbc5axry0)
+6. [Go to ExampleOfUsage](#6-exampleofusage)
 
 ……………………………………………………………………………………
 
-7. [Conclusion](#bookmark=id.i1gf92t92aj7)
+7. [Go to Code Snippets](#7-code-snippets)
+
+
+……………………………………………………………………………………
+
+8. [Go to Conclusion](#8-conclusion)
+
 
 # 1. _Introduction_
 
@@ -1145,10 +1161,10 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 - **Compilation Errors**:
   - Check for typos in your code or missing library functions.
 
-5. **Implementation**
+# 5. _Implementation_
 
-1. **Numbers**
-1. **_Basic Functions:_**
+## 1. _Numbers_
+### **_Basic Functions:_**
 
 - [ ] sumOfDigits(num);
 
@@ -1425,7 +1441,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 - :
 
-2. **_Intermediate Functions/procedures:_**
+### **_Intermediate Functions/procedures:_**
 
 - [ ] primeFactors(num);
 - What are prime factors?
@@ -1805,7 +1821,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 - :
 
-3. **_Advanced Functions/procedures:_**
+### **_Advanced Functions/procedures:_**
 
 - [ ] toBinary(num);
 - What is a divisor?
@@ -2352,7 +2368,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 - :
 
 0.
-1. **Strings**
+## 2. _Strings_
 
 2. ### **_Basic Functions_**
 
@@ -2732,7 +2748,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 ---
 
-2. ### **_Intermediate Functions_**
+ ### **_Intermediate Functions_**
 
    ### Function: isPalindromeString
 
@@ -3034,7 +3050,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 ---
 
-3. ### **_Advanced Functions_**
+ ### **_Advanced Functions_**
 
    ### Function: compressString
 
@@ -3439,7 +3455,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 ---
 
-4. ### **_Cipher Functions_**
+ ### **_Cipher Functions_**
 
 ---
 
@@ -3605,9 +3621,9 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 **Potential Errors**  
 \- Assumes the string is null-terminated.
 
-3. **Arrays**
+## 3. _Arrays_
 
-1. ### **_Basic Functions_**
+ ### **_Basic Functions_**
 
    ### Function: initializeArray
 
@@ -4029,7 +4045,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 ---
 
-2. ### **_Intermediate Functions_**
+### **_Intermediate Functions_**
 
    ### Function: reverseArray
 
@@ -4408,7 +4424,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 ---
 
-3. ### **_Sorting Algorithms_**
+### **_Sorting Algorithms_**
 
    ### Function: bubbleSort
 
@@ -4581,7 +4597,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 ---
 
-4. ### **_Advanced Functions_**
+### **_Advanced Functions_**
 
    ### Function: findMissingNumber
 
@@ -4923,9 +4939,9 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 - Assumes that both arrays are valid and of the given sizes.
 - If quickSort or printArray functions are undefined, the program will fail.
 
-4. **Matrices**
+## 4. _Matrices_
 
-1. ### **_Basic Functions_**
+ ### **_Basic Functions_**
 
    ### Function: initializeMatrix
 
@@ -5062,7 +5078,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 ---
 
-2. ### **_Matrix Arithmetic_**
+ ### **_Matrix Arithmetic_**
 
    ### Function: addMatrices
 
@@ -5209,7 +5225,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 ---
 
-3. ### **_Matrix Properties and Checks_**
+ ### **_Matrix Properties and Checks_**
 
    ### Function: isSquareMatrix
 
@@ -5375,7 +5391,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 ---
 
-4. ### **_Matrix Operations_**
+ ### **_Matrix Operations_**
 
    ### Function: transposeMatrix
 
@@ -5517,7 +5533,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 ---
 
-5. ### **_Advanced Matrix Functions_**
+ ### **_Advanced Matrix Functions_**
 
    ### Function: cofactorMatrix
 
@@ -5754,7 +5770,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 ---
 
-6. ### **_Special Matrix Operations_**
+ ### **_Special Matrix Operations_**
 
    ### Function: traceMatrix
 
@@ -5917,7 +5933,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
    ***
 
-7. **ExampleOfUsage**
+# 6. _ExampleOfUsage_
 
 ## 1. _Numbers_
 
@@ -6644,7 +6660,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 - on progress…
 
-# Code Snippets
+# 7. _Code Snippets_
 
 # Numbers Library Code Snippets
 
@@ -9096,6 +9112,8 @@ int traceMatrix(int size, int matrix[size][size]) {
 }
 ```
 
-7.**Conclusion**
+# 8. _Conclusion_
 
 - if you find yourself here i hope you have read it all i hope you enjoyed this adventure as we may call ,i learned time management and modularity before when i used python i didn’t use modularity that often yeah i used it but the idea of creating a library that contains all of useful functions didn’t come in mind and to be honest it’s a nice miniproject experience i also enjoyed (not really) the environment of C yeah it’s good but not easy like when i start comparing i get mad because when first learned python sorting an array didn’t need you to creat a sorting function for it you just needed to call `sort()` maethode which is built in by the way but rather than making programing easy it also made it hard the roasoning start decreasing and people even me when i first start with it i didn’t ask myself why and how i just did what every body does but today i learned to ask thank you for your time ihope you had an experience with me and will meet agian
+</body>
+</html>
