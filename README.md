@@ -68,9 +68,9 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 - ### **In this section, we will talk about the function and the procedures like what we should input to them what they do and what they should output however we won’t complicate things or move into details for more details go to** “Implementation”.**Let’s start:**
 
-1. ## _Numbers_
+## 1._Numbers_
 
-1. #### **_Basic Functions_**
+ #### **_Basic Functions_**
 
 - [ ] sumOfDigits(num);
 - inputs: number of type integer
@@ -126,7 +126,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 ---
 
-2. #### **_Intermediate Functions/procedures_**
+ #### **_Intermediate Functions/procedures_**
 
 - [ ] primeFactors(num);
 - input: number of type integer
@@ -223,7 +223,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 ---
 
-3. #### **_Advanced Functions/procedures_**
+ #### **_Advanced Functions/procedures_**
 
 - [ ] toBinary(num);
 - input: number of type integer
@@ -369,9 +369,9 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: number of type natural
 - output: the sum of the primes until the given number of type natural
 
-2. ## _Strings_
+ ## 2._Strings_
 
-1. #### **_Basic Functions_**
+#### **_Basic Functions_**
 
 - [ ] stringLength(var str);
 - inputs: string of type list of chars
@@ -443,7 +443,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: string of type list of chars
 - output: converts the string to lowercase in place
 
-2. #### **_Intermediate Functions/procedures_**
+ #### **_Intermediate Functions/procedures_**
 
 - [ ] isPalindromeString(var str);
 - inputs: string of type list of chars
@@ -497,7 +497,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: string of type list of chars
 - output: removes duplicate characters from the string in place
 
-3. #### **_Advanced Functions/procedures_**
+ #### **_Advanced Functions/procedures_**
 
 - [ ] compressString(var str,var result);
 - inputs: string of type list of chars,result string of type list of chars
@@ -569,7 +569,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: string of type list of chars, delimiter character, array of strings to store tokens, pointer to integer for token count
 - output: splits the string into tokens based on the delimiter and stores them in the array
 
-4. #### **_Cypher Functions/procedures_**
+ #### **_Cypher Functions/procedures_**
 
 - [ ] caesarCipher(var text,shift);
 - inputs: string of type list of chars,integer shift value
@@ -605,9 +605,9 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: string of type list of chars ,result string of type list of chars ,integer depth
 - output: applies Rail Fence cipher to the string and stores the result in the result string
 
-3. ## _Arrays_
+## 3. _Arrays_
 
-1. #### **_Basic Functions_**
+ #### **_Basic Functions_**
 
 - [ ] initializeArray(var arr,size,value);
 - inputs: array with garbage values of type integer,size of type integer ,value of type integer
@@ -697,7 +697,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: array1 of type list of integers, array2 of type list of integers, size1 of type integer, size2 of type integer, array3 of type list of integers
 - output: merges two sorted arrays into a third array
 
-2. #### **_Intermediate Functions/procedures_**
+ #### **_Intermediate Functions/procedures_**
 
 - [ ] reverseArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
@@ -769,7 +769,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: array of type list of integers, size of type integer
 - output: compares and swaps adjacent elements in the array
 
-3. #### **_Sorting Algorithms_**
+ #### **_Sorting Algorithms_**
 
 - [ ] bubbleSort(var arr,size);
 - inputs: array of type list of integers, size of type integer
@@ -799,7 +799,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: array of type list of integers, low index of type integer, high index of type integer
 - output: sorts the array using quick sortr
 
-4. #### **_Advanced Functions/procedures_**
+ #### **_Advanced Functions/procedures_**
 
 - [ ] swap(var elem1,var elem2);
 - inputs: pointer to integer element1, pointer to integer element2
@@ -865,9 +865,9 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: array1 of type list of integers, size1 of type integer, array2 of type list of integers, size2 of type integer
 - output: prints the union of the two arrays
 
-4. ## _Matrices_
+ ## 4._Matrices_
 
-1. #### **_Basic Functions_**
+ #### **_Basic Functions_**
 
 - [ ] initializeMatrix(rows,cols,var matrix,value);
 - inputs: rows of type integer,cols of type integer,matrix with garbage values of type double ,value of type integer
@@ -891,7 +891,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, copy of type 2D array of doubles
 - output: copies the contents of the matrix to the copy
 
-2. #### **_Matrix Arithmetic_**
+ #### **_Matrix Arithmetic_**
 
 - [ ] addMatrices(rows,cols,var mat1,var mat2,var result);
 - inputs: rows of type integer, cols of type integer, mat1 of type 2D array of integers, mat2 of type 2D array of integers, result of type 2D array of integers.
@@ -915,7 +915,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, scalar of type double
 - output: multiplies the matrix by a scalar value
 
-3. #### **_Matrix properties and checks_**
+ #### **_Matrix properties and checks_**
 
 - [ ] isSquareMatrix(rows,cols);
 - inputs: rows of type integer, cols of type integer
@@ -951,7 +951,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: rows of type integer, cols of type integer, mat1 of type 2D array of doubles, mat2 of type 2D array of doubles
 - output: boolean (returns true if the two matrices are equal, otherwise false)
 
-4. #### **_Matrix operations_**
+ #### **_Matrix operations_**
 
 - [ ] transposeMatrix(rows,cols,var matrix,var result);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, result of type 2D array of doubles
@@ -975,7 +975,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: size of type integer, matrix of type 2D array of doubles, power of type integer, result of type 2D array of doubles
 - output: computes the matrix raised to the given power and stores it in the result matrix
 
-5. #### **_Advanced Functions/procedures_**
+ #### **_Advanced Functions/procedures_**
 
 - [ ] cofactorMatrix(size,var matrix,var cofactor);
 - inputs: size of type integer, matrix of type 2D array of doubles, cofactor of type 2D array of doubles
@@ -1011,7 +1011,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: rows of type integer, cols of type integer, mat of type 2D array of doubles, row1 of type integer, row2 of type integer
 - output: swaps two rows in the matrix
 
-6. #### **_Special Matrix operations_**
+ #### **_Special Matrix operations_**
 
 - [ ] traceMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
@@ -1041,19 +1041,17 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: matrix of type 2D array of doubles (2x2), eigenvalues of type array of doubles
 - output: computes the eigenvalues of a 2x2 matrix and stores them in the eigenvalues array
 
-4. **Tutorial**
+# 4. **Tutorial**
 
 - ### **In this section, we will learn many things like how to clone the repository and how to set up the workspace and more things will be listed below let’s get into it:**
 
 - ## **_Cloning the Repository_**
 
 1. Clone the repository to your local machine. Open your terminal and run the following command:
-
+![git](gitclone.png)
 2. After cloning, navigate to the project folder:
 
-   ###
-
-   ###
+![cd](cd.png)   
 
 - ### **_Devices Used_**
 
@@ -1071,26 +1069,27 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
    - Go to File \> Add Folder to Workspace and select the project folder.
    - Save the workspace (File \> Save Workspace As...).
 4. Create a new .c file and include the library at the top:
+![includemain](includemain.png)
 
 5. Write your test code. Example:
-
+![main](main.png)
 6. Use VS Code tasks or terminal to compile and run your code. Example:
-
+![gcc](gcc.png)
 - ### **_For macOS and Linux_**
 
 1.  Open the terminal and navigate to the project folder where the repository was cloned.
 
 Create a new test file using any text editor (e.g., nano, vim, or gedit). For example, using nano:
-
+![nano](nano.png)
 2. Include the library in your test file by adding the following line at the top:
-
+![includemain](includemain.png)
 3. Write your test code. Example:
-
+[main](main.png)
 4. Save the file and compile it using the GCC compiler:
-
+![gcc](gcc.png)
 5. Run your program:
 
-   ####
+![mytest](mytest.png)
 
 - #### **_General Editors (e.g., Sublime Text, Atom)_**
 
@@ -1103,9 +1102,9 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 1. Open the provided test file (test_numbers.c) in your text editor.
 2. Uncomment the lines corresponding to the functions you want to test. For example:
-
+![testfunc](testfunc.png)
 3. Compile and run the file:
-
+![gcc](gcc.png)
 - ### **Using the Makefile for Easy Builds and Tests**
 
   The Makefile automates the build and test process.
@@ -1113,11 +1112,12 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 - #### **Basic Commands**
 
   - Build the project:
+  ![make](make.png)
 
   - Run the tests:
-
+ ![testprog](testprog.png)
   - Clean up build artefacts:
-
+ ![makeclean](makeclean.png)
 - ### **_VS Code Integration_**
 
 * #### **Setting Up Build Tasks**
