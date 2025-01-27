@@ -20,10 +20,10 @@ Jan.26, 2025
 # _Table Of Contents_
 
 1. [Go to Introduction](#1-introduction)
+
 ……………………………………………………………………………………
 
 2. [Go to Project Overview](#2-project-overview)
-
 
 ……………………………………………………………………………………
 
@@ -33,11 +33,9 @@ Jan.26, 2025
 
 4. [Go to Tutorial](#4-tutorial)
 
-
 ……………………………………………………………………………………
 
 5. [Go to Implementation](#5-implementation)
-
 
 ……………………………………………………………………………………
 
@@ -46,7 +44,6 @@ Jan.26, 2025
 ……………………………………………………………………………………
 
 7. [Go to Code Snippets](#7-code-snippets)
-
 
 ……………………………………………………………………………………
 
