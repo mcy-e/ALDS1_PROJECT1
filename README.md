@@ -14,7 +14,8 @@ Jan.26, 2025
 
 ……………………………………………………………………………………
 
-2. [Project Overview](#bookmark=id.30j0zll)
+2. [Go to Project Overview](#2-project-overview)
+
 
 ……………………………………………………………………………………
 
