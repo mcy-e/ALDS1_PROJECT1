@@ -1990,8 +1990,28 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 3. Return the parts through pointers.
 
+## Best Practices for Using This Library
 
-0.
+### 1. Input Validation
+   - Check for negative numbers when using functions that expect positive inputs
+   - Consider integer overflow possibilities with large numbers
+   - Verify binary inputs contain only 0s and 1s for binary operations
+
+### 2. Performance Considerations
+   - Use iterative alternatives for recursive functions with large inputs
+   - Consider algorithm complexity when working with large numbers
+   - Be aware of stack limitations with recursive functions
+
+### 3. Error Handling
+   - Check return values for special cases (e.g., 0 for undefined operations)
+   - Handle negative numbers appropriately based on function documentation
+   - Consider overflow possibilities in calculations
+
+### 4. Function Dependencies
+   - Review helper function requirements before using complex functions
+   - Understand interdependencies between functions
+   - Consider performance impact of nested function calls
+
 ## 2. _Strings_
 
 2. ### **_Basic Functions_**
@@ -6211,23 +6231,187 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 
 ### **_Basic Functions:_**
 
-- on progress…
+## initializeMatrix(rows, cols, matrix, value);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | rows=2, cols=2, value=0    | [[0, 0], [0, 0]] |
+| 2       | rows=3, cols=3, value=1    | [[1, 1, 1], [1, 1, 1], [1, 1, 1]] |
+
+## printMatrix(rows, cols, matrix);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | rows=2, cols=2, matrix=[[1, 2], [3, 4]] | 1.000000 2.000000\\
+3.000000 4.000000 |
+| 2       | rows=2, cols=2, matrix=[[5, 6], [7, 8]] | 5.000000 6.000000\\
+7.000000 8.000000 |
+
+## inputMatrix(rows, cols, matrix);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | rows=2, cols=2            | Takes user input for each position |
+| 2       | rows=3, cols=3            | Takes user input for each position |
+
+## copyMatrix(rows, cols, source, destination);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | source=[[1,2],[3,4]]      | destination=[[1,2],[3,4]] |
 
 ### **_Matrix Arithmetic:_**
 
-- on progress…
+## addMatrices(rows, cols, matrix1, matrix2, result);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix1=[[1,2],[3,4]], matrix2=[[5,6],[7,8]] | result=[[6,8],[10,12]] |
+| 2       | matrix1=[[0,1],[1,0]], matrix2=[[1,1],[1,1]] | result=[[1,2],[2,1]] |
+
+## subtractMatrices(rows, cols, matrix1, matrix2, result);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix1=[[5,6],[7,8]], matrix2=[[1,2],[3,4]] | result=[[4,4],[4,4]] |
+| 2       | matrix1=[[2,2],[2,2]], matrix2=[[1,1],[1,1]] | result=[[1,1],[1,1]] |
+
+## multiplyMatrices(rows1, cols1, cols2, matrix1, matrix2, result);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix1=[[1,2],[3,4]], matrix2=[[5,6],[7,8]] | result=[[19,22],[43,50]] |
+| 2       | matrix1=[[1,0],[0,1]], matrix2=[[2,3],[4,5]] | result=[[2,3],[4,5]] |
+
+## scalarMultiplyMatrix(rows, cols, matrix, scalar);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[3,4]], scalar=2 | result=[[2,4],[6,8]] |
+| 2       | matrix=[[1,1],[1,1]], scalar=3 | result=[[3,3],[3,3]] |
+
+### **_Matrix Properties and Checks:_**
+
+
+## isSymmetricMatrix(size, matrix);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[2,1]] | true |
+| 2       | matrix=[[1,2],[3,1]] | false |
+
+## isIdentityMatrix(size, matrix);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,0],[0,1]] | true |
+| 2       | matrix=[[1,1],[0,1]] | false |
+
+## isDiagonalMatrix(size, matrix);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[2,0],[0,3]] | true |
+| 2       | matrix=[[1,2],[0,1]] | false |
+
+## isUpperTriangularMatrix(size, matrix);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[0,1]] | true |
+| 2       | matrix=[[1,2],[3,1]] | false |
+
+## isLowerTriangularMatrix(size, matrix);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,0],[2,1]] | true |
+| 2       | matrix=[[1,2],[3,1]] | false |
+
+
+## isEqualMatrix(rows, cols, matrix1, matrix2)
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix1=[[1,2],[3,4]], matrix2=[[1,2],[3,4]] | true |
+| 2       | matrix1=[[1,2],[3,4]], matrix2=[[1,2],[3,5]] | false |
+
+
+
 
 ### **_Matrix Operations:_**
 
-- on progress…
+## transposeMatrix(rows, cols, matrix, result);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[3,4]] | result=[[1,3],[2,4]] |
+| 2       | matrix=[[1,2,3],[4,5,6]] | result=[[1,4],[2,5],[3,6]] |
+
+## determinantMatrix(size, matrix);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[3,4]] | -2 |
+| 2       | matrix=[[1,0,0],[0,1,0],[0,0,1]] | 1 |
+
+## inverseMatrix(size, matrix, result);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[3,4]]      | result=[[-2,1],[1.5,-0.5]] |
+
+## matrixPower(size, matrix, power, result);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[3,4]], power=2 | result=[[7,10],[15,22]] |
+
+
 
 ### **_Advanced Matrix Functions:_**
 
-- on progress…
+## cofactorMatrix(size, matrix, result);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[3,4]]      | result=[[4,-3],[-2,1]] |
+
+## adjointMatrix(size, matrix, result);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[3,4]]      | result=[[4,-2],[-3,1]] |
+
+## luDecomposition(size, matrix, lower, upper);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[2,3],[4,7]]      | L=[[1,0],[2,1]], U=[[2,3],[0,1]] |
+
+## reduceRowEchelonForm(rows, cols, matrix);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2,3],[4,5,6]]  | result=[[1,0,-1],[0,1,2]] |
+
+## swapRows(size, matrix, row1, row2);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[3,4]], row1=0, row2=1 | result=[[3,4],[1,2]] |
+
+## matrixRank(rows, cols, matrix)
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[3,4]]      | 2 |
+| 2       | matrix=[[1,2],[2,4]]      | 1 |
+
 
 ### **_Special Matrix Operations:_**
 
-- on progress…
+## traceMatrix(size, matrix)
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[3,4]]      | 5 (1+4) |
+| 2       | matrix=[[5,1],[2,3]]      | 8 (5+3) |
+
+
+## rotateMatrix90(size, matrix, result);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[3,4]]      | result=[[3,1],[4,2]] |
+
+
+## findEigenvalues(size, matrix, eigenvalues);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[3,1],[1,3]] | eigenvalues=[4,2] |
+| 2       | matrix=[[2,0],[0,2]] | eigenvalues=[2,2] |
+
+## findEigenvalues2x2(matrix, eigenvalues);
+| Example | Inputs                     |      Output(s)      |
+| ------- | :------------------------: | :-----------------: |
+| 1       | matrix=[[1,2],[2,1]] | eigenvalues=[3,-1] |
+| 2       | matrix=[[4,0],[0,3]] | eigenvalues=[4,3] |
+"""
 
 # 7. _Code Snippets_
 
