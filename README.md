@@ -78,50 +78,41 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 ## 1._Numbers_
 
 #### **_Basic Functions_**
-
-- [ ] sumOfDigits(num);
+## sumOfDigits(num);
 - inputs: number of type integer
 - output: sum of the number digits of type integer
 
 ---
-
-- [ ] reverseNumber(num);
+## reverseNumber(num);
 - inputs: number of type integer
 - output: the same number with reversed digits of type integer
-
-- [ ] isPalindrom(num);
+## isPalindrom(num);
 - inputs: number of type integer
 - possible outputs: the result of whether the number is equal to its inverse so it either outputs 1 or 0 (of type boolean)
 
 ---
-
-- [ ] isPrime(num);
+## isPrime(num);
 - inputs: number of type integer
 - possible outputs: if the number is prime the output is 1 else it will be 0 the output of type boolean
 
 ---
-
-- [ ] gcd(a,b);
+## gcd(a,b);
 - inputs: two numbers a and b of type integer
 - output: the greatest common divisor of a and b of type integer
-
-- [ ] Max(a,b);
+## Max(a,b);
 - inputs: two numbers a and b of type integer
 - output: the biggest number between a and b of type integer (returns a or b)
 
 ---
-
-- [ ] lcm(a,b);
+## lcm(a,b);
 - inputs: two numbers a and b of type integer
 - output: least common multiplier of a and b of type integer
 
 ---
-
-- [ ] factorial(num);
+## factorial(num);
 - inputs: number of type natural
 - output: the factorial of that number ‘num\!’ of type natural
-
-- [ ] isEven(num);
+## isEven(num);
 - inputs: number of type integer
 - possible outputs:
 
@@ -134,14 +125,12 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 ---
 
 #### **_Intermediate Functions/procedures_**
-
-- [ ] primeFactors(num);
+## primeFactors(num);
 - input: number of type integer
 - outputs: The prime numbers that when multiplied will give the
 
 ---
-
-- [ ] isArmstrong(num);
+## isArmstrong(num);
 - input: number of type integer
 - possible outputs: of type boolean
 
@@ -149,46 +138,39 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 0-\> The above condition isn’t true
 
 ---
-
-- [ ] fibonacci(num);
+## fibonacci(num);
 - input: number of type natural
 - output: The fibonacci number like the fibonacci(number) function of type natural
 
 ---
-
-- [ ] numberOfDivisors(num);
+## numberOfDivisors(num);
 - input: number of type integer
 - output: The number of possible divisors of a number of type integer
 
 ---
-
-- [ ] reverse_negative(num,check);
+## reverse_negative(num,check);
 - inputs: number of type integer,check parameter of type boolean
 - output: The same number without a negative sign (check \=1)
 
   else the same number will be the output
 
 ---
-
-- [ ] isNegative(num);
+## isNegative(num);
 - input: number of type integer
 - output: a check parameter of type boolean
 
 ---
-
-- [ ] isDivisor(num,divisor);
+## isDivisor(num,divisor);
 - input: number of type integer and a divisor of type integer
 - output: a boolean parameter that’s either 1 or 0
 
 ---
-
-- [ ] sumDivisor(num);
+## sumDivisor(num);
 - input: number of type integer
 - output: the sum of the divisors of the input number of type integer
 
 ---
-
-- [ ] sumDivisor_out_num(num);
+## sumDivisor_out_num(num);
 - input: number of type integer
 - output: the sum of the divisors of the input number without the number itself of type integer
 
@@ -198,15 +180,13 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * This function is used to solve other problems
 
 ---
-
-- [ ] isPerfect(num);
+## isPerfect(num);
 - input: number of type integer
 - output: of type boolean
 
 * 0-\> The sum of the number divisors without the number isn’t equal to that number
 * 1-\> The sum of the number divisors without the number is equal to that number
-
-- [ ] isMagic(num);
+## isMagic(num);
 - input: number of type integer
 - output: of type boolean
 
@@ -214,14 +194,12 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 0-\> The sum of the number digits is going to be not 1 in any number of iterations
 
 ---
-
-- [ ] numberOfDigits(num);
+## numberOfDigits(num);
 - input: number of type integer
 - output: the number of digits of type integer
 
 ---
-
-- [ ] isAutomorphic(num);
+## isAutomorphic(num);
 - input: number of type integer
 - output: of type boolean
 
@@ -231,15 +209,13 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 ---
 
 #### **_Advanced Functions/procedures_**
-
-- [ ] toBinary(num);
+## toBinary(num);
 - input: number of type integer
 - output: the given number written in binary (with 0 & 1\)
 - option: can convert negative numbers using 2 complement’s method
 
 ---
-
-- [ ] isNarcissistic(num);
+## isNarcissistic(num);
 - input: number of type integer
 - possible outputs: of type boolean
 
@@ -247,8 +223,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 0-\> The above condition isn’t true
 
 ---
-
-- [ ] sqrtApprox(num,approx);
+## sqrtApprox(num,approx);
 - inputs: number of type integer
 
   approx of type double
@@ -257,14 +232,12 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - Defeault_Method: there is a default approximation so you don’t have to enter the approximation by yourself using sqrtApproxDefault(5); function call
 
 ---
-
-- [ ] power(base,exp);
+## power(base,exp);
 - inputs: base of type integer, exponent of type integer
 - output: the base multiplied by itself the number of (exp) times of type integer
 
 ---
-
-- [ ] isHappy(num);
+## isHappy(num);
 - input: number of type integer
 - possible outputs: of type boolean
 
@@ -272,8 +245,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 1-\> The sum of digits square of the input number is equal to 1
 
 ---
-
-- [ ] isAbundant(num);
+## isAbundant(num);
 - inputs: number of type integer
 - output: of type boolean
 
@@ -281,8 +253,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 1-\> The sum of divisors without the number is bigger than the number itself
 
 ---
-
-- [ ] isDeficient(num);
+## isDeficient(num);
 - inputs: number of type integer
 - output: of type boolean
 
@@ -290,14 +261,12 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 0-\> The sum of divisors without the number is bigger than the number itself
 
 ---
-
-- [ ] sumEvenFibonacci(num);
+## sumEvenFibonacci(num);
 - input: number of type natural
 - output: the sum of even fibonacci number that means the fibonacci number that has an even result is added with the others of type natural
 
 ---
-
-- [ ] isHarshad(num);
+## isHarshad(num);
 - inputs: number of type integer
 - output: of type boolean
 
@@ -305,44 +274,37 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 0-\> The sum of digits of the number isn’t a divisor of the number
 
 ---
-
-- [ ] catalanNumber(num);
+## catalanNumber(num);
 - inputs: number of type natural
 - output: the n’th catalan number of the number inputted of type natural
 
 ---
-
-- [ ] passcalPyramid(num);
+## passcalPyramid(num);
 - inputs: number of type natural
 - output: the passcal pyramid until the given number of type natural
 
 ---
-
-- [ ] passcalTriangle(num);
+## passcalTriangle(num);
 - inputs: number of type natural
 - output: the passcal triangle until the given number of type natural
 
 ---
-
-- [ ] passcalTriangleRow(row);
+## passcalTriangleRow(row);
 - inputs: row of type natural
 - output: the n’th passcal triangle row according to the given row of type natural
 
 ---
-
-- [ ] nck(num,k);
+## nck(num,k);
 - inputs: number of type natural, k of type natural
 - output: nck of type natural
 
 ---
-
-- [ ] bellNumber(num);
+## bellNumber(num);
 - inputs: number of type natural
 - output: bell number of type natural
 
 ---
-
-- [ ] isKaprekar(num);
+## isKaprekar(num);
 - inputs: number of type natural
 - output: of type boolean
 
@@ -350,14 +312,12 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 0-\> The sum of the squared number divide it into half isn’t equal to the number itself
 
 ---
-
-- [ ] divideNumDigits(var num,num_digits,var num1);
+## divideNumDigits(var num,num_digits,var num1);
 - inputs: number of type natural,number of digits of type natural,number 1 of type natural
 - outputs: number represents the first half and number1 represents the seconde half of the input number both of type natural
 
 ---
-
-- [ ] isSmith(num);
+## isSmith(num);
 - input: number of type natural
 - output: of type boolean
 
@@ -365,686 +325,573 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 * 0-\> the number is prime or the sum of it’s digits isn’t equal to the sum of digits of it’s prime factors sum
 
 ---
-
-- [ ] primeFactorSum(num);
+## primeFactorSum(num);
 - input: number of type natural
 - output: the sum of the number prime factors of type natural
 
 ---
-
-- [ ] sumOfprimes(num);
+## sumOfprimes(num);
 - inputs: number of type natural
 - output: the sum of the primes until the given number of type natural
 
 ## 2._Strings_
 
 #### **_Basic Functions_**
-
-- [ ] stringLength(var str);
+## stringLength(var str);
 - inputs: string of type list of chars
 - output: length of type natural
 
 ---
-
-- [ ] stringLengthWithSpace(var str);
+## stringLengthWithSpace(var str);
 - inputs: string of type list of chars
 - output: length of type natural
 
 ---
-
-- [ ] removeWhiteSpaceLength(var str,length);
+## removeWhiteSpaceLength(var str,length);
 - inputs: string of type list of chars, length of type integer
 - output: length of type integer
 
 ---
-
-- [ ] stringCopy(var src,var dst);
+## stringCopy(var src,var dst);
 - inputs: source string of type list of chars, destination string of type list of chars
 - output: copies source string to destination string
 
 ---
-
-- [ ] stringConcat(var dest,var src);
+## stringConcat(var dest,var src);
 - inputs: destination string of type list of chars, source string of type list of chars
 - output: appends source string to destination string
 
 ---
-
-- [ ] stringCompare(var str1,var str2);
+## stringCompare(var str1,var str2);
 - inputs: string1 of type list of chars, string2 of type list of chars
 - output: integer (returns 0 if strings are equal, otherwise the difference between the first mismatched characters)
 
 ---
-
-- [ ] stringCompareInsensitive(var str1,var str2);
+## stringCompareInsensitive(var str1,var str2);
 - inputs: string1 of type list of chars, string2 of type list of chars
 - output: integer (returns 0 if strings are equal ignoring case, otherwise the difference between the first mismatched characters)
 
 ---
-
-- [ ] isEmpty(var str);
+## isEmpty(var str);
 - inputs: string of type list of chars
 - output: boolean (returns true if the string is empty, otherwise false)
 
 ---
-
-- [ ] isEmptyLiterally(var str);
+## isEmptyLiterally(var str);
 - inputs: string of type list of chars
 - output: boolean (returns true if the string is literally empty, otherwise false)
 
 ---
-
-- [ ] reverseString(var str);
+## reverseString(var str);
 - inputs: string of type list of chars
 - output: reverses the string in place
 
 ---
-
-- [ ] toUpperCase(var str);
+## toUpperCase(var str);
 - inputs: string of type list of chars
 - output: converts the string to uppercase in place
 
 ---
-
-- [ ] toLowerCase(var str);
+## toLowerCase(var str);
 - inputs: string of type list of chars
 - output: converts the string to lowercase in place
 
 #### **_Intermediate Functions/procedures_**
-
-- [ ] isPalindromeString(var str);
+## isPalindromeString(var str);
 - inputs: string of type list of chars
 - output: boolean (returns true if the string is a palindrome, otherwise false)
 
 ---
-
-- [ ] countVowelsConsonants(var str,var vowels, var consonants);
+## countVowelsConsonants(var str,var vowels, var consonants);
 - inputs: string of type list of chars ,pointer to integer for vowels, pointer to integer for consonants
 - output: integer (the number of vowels and consonants in the string)
 
 ---
-
-- [ ] findSubstring(var str,var sub);
+## findSubstring(var str,var sub);
 - inputs: string of type list of chars ,substring of type list of chars
 - output: integer (returns the starting index of the substring if found, otherwise \-1)
 
 ---
-
-- [ ] findSubstringInsensitive(var str,var sub);
+## findSubstringInsensitive(var str,var sub);
 - inputs: string of type list of chars ,substring of type list of chars
 - output: integer (returns the starting index of the substring if found, ignoring case, otherwise \-1)
 
 ---
-
-- [ ] removeWhiteSpace(var str);
+## removeWhiteSpace(var str);
 - inputs: string of type list of chars
 - output: removes all whitespace from the string in place
 
 ---
-
-- [ ] isAnagram(var str1,var str2);
+## isAnagram(var str1,var str2);
 - inputs: string1 of type list of chars ,string2 of type list of chars
 - output: boolean (returns true if the strings are anagrams, otherwise false)
 
 ---
-
-- [ ] charFrequency(var str);
+## charFrequency(var str);
 - inputs: string of type list of chars
 - output: prints the frequency of each character in the string
 
 ---
-
-- [ ] countWords(var str);
+## countWords(var str);
 - inputs: string of type list of chars
 - output: integer (returns the number of words in the string)
 
 ---
-
-- [ ] removeDuplicates(var str);
+## removeDuplicates(var str);
 - inputs: string of type list of chars
 - output: removes duplicate characters from the string in place
 
 #### **_Advanced Functions/procedures_**
-
-- [ ] compressString(var str,var result);
+## compressString(var str,var result);
 - inputs: string of type list of chars,result string of type list of chars
 - output: compresses the string and stores the result in the result string
 
 ---
-
-- [ ] switchInt_Str(var str,num);
+## switchInt_Str(var str,num);
 - inputs: string of type list of chars integer number
 - output: converts the integer to a string and stores it in the provided string
 
 ---
-
-- [ ] longestWord(var str,var result);
+## longestWord(var str,var result);
 - inputs: string of type list of chars,result string of type list of chars
 - output: finds the longest word in the string and stores it in the result string
 
 ---
-
-- [ ] isRotation(var str1,var str2);
+## isRotation(var str1,var str2);
 - inputs: string1 of type list of chars,string2 of type list of chars
 - output: boolean (returns true if string2 is a rotation of string1, otherwise false
 
 ---
-
-- [ ] rotateLeft(var str);
+## rotateLeft(var str);
 - inputs: string of type list of chars
 - output: rotates the string left by one character in place
 
 ---
-
-- [ ] rotateLeftTimes(var str,times);
+## rotateLeftTimes(var str,times);
 - inputs: string of type list of chars integer number of times
 - output: rotates the string left by the specified number of times in place
 
 ---
-
-- [ ] rotateRightTimes(var str,times);
+## rotateRightTimes(var str,times);
 - inputs: string of type list of chars integer number of times
 - output: rotates the string right by the specified number of times in place
 
 ---
-
-- [ ] countChar(var str,character);
+## countChar(var str,character);
 - inputs: string of type list of chars character to count of type char
 - output: integer (returns the count of the specified character in the string)
 
 ---
-
-- [ ] findAndReplace(var str,var find,var replace);
+## findAndReplace(var str,var find,var replace);
 - inputs: string of type list of chars ,substring to find of type list of chars ,subtring to replace of type list of chars
 - output: replaces all occurrences of the find substring with the replace substring in the string
 
 ---
-
-- [ ] longestPalindrome(var str,var result);
+## longestPalindrome(var str,var result);
 - inputs: string of type list of chars ,result string of type list of chars
 - output: finds the longest palindrome in the string and stores it in the result string
 
 ---
-
-- [ ] printPermutations(var str);
+## printPermutations(var str);
 - inputs: string of type list of chars
 - output: prints all permutations of the string
 
 ---
-
-- [ ] splitString(var str,delimiter,var tokens,var tokencount);
+## splitString(var str,delimiter,var tokens,var tokencount);
 - inputs: string of type list of chars, delimiter character, array of strings to store tokens, pointer to integer for token count
 - output: splits the string into tokens based on the delimiter and stores them in the array
 
 #### **_Cypher Functions/procedures_**
-
-- [ ] caesarCipher(var text,shift);
+## caesarCipher(var text,shift);
 - inputs: string of type list of chars,integer shift value
 - output: applies Caesar cipher to the string in place
 
 ---
-
-- [ ] substitutionCipher(var text,var key);
+## substitutionCipher(var text,var key);
 - inputs: string of type list of chars, key of type list of chars
 - output: applies substitution cipher to the string in place
 
 ---
-
-- [ ] xorCipher(var text,key);
+## xorCipher(var text,key);
 - inputs: string of type list of chars ,kay of type char
 - output: applies XOR cipher to the string in place
 
 ---
-
-- [ ] vigenereCipher(var text,var key,encrypt);
+## vigenereCipher(var text,var key,encrypt);
 - inputs: string of type list of chars ,key string of type list of chars ,integer encryption flag (1 for encrypt, 0 for decrypt)
 - output: applies Vigenère cipher to the string in place
 
 ---
-
-- [ ] atbashCipher(var text);
+## atbashCipher(var text);
 - inputs: string of type list of chars
 - output: applies Atbash cipher to the string in place
 
 ---
-
-- [ ] railFenceCipher(var text,var result,depth);
+## railFenceCipher(var text,var result,depth);
 - inputs: string of type list of chars ,result string of type list of chars ,integer depth
 - output: applies Rail Fence cipher to the string and stores the result in the result string
 
 ## 3. _Arrays_
 
 #### **_Basic Functions_**
-
-- [ ] initializeArray(var arr,size,value);
+## initializeArray(var arr,size,value);
 - inputs: array with garbage values of type integer,size of type integer ,value of type integer
 - output: array filled with the value of type integer
 
 ---
-
-- [ ] printArray(var arr,size);
+## printArray(var arr,size);
 - inputs: array of type list of integers, size of type integer, value of type integer
 - output: prints the array
 
 ---
-
-- [ ] findMax(var arr,size);
+## findMax(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the maximum value in the array)
 
 ---
-
-- [ ] findMin(var arr,size);
+## findMin(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output:
 
 ---
-
-- [ ] sumArray(var arr,size);
+## sumArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the sum of all elements in the array)
 
 ---
-
-- [ ] averageArray(var arr,size);
+## averageArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: double (returns the average of all elements in the array)
 
 ---
-
-- [ ] minimizedArray(var arr,size);
+## minimizedArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: shifts the array to the left by one position removing the first element
 
 ---
-
-- [ ] isSorted(var arr,size);
+## isSorted(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: boolean (returns true if the array is sorted, otherwise false)
 
 ---
-
-- [ ] fillArray(var arr,size);
+## fillArray(var arr,size);
 - inputs: array of type list of integers, number of type integer
 - output: creates an array by taking input from the user
 
 ---
-
-- [ ] storingDigits(var arr,size,number);
+## storingDigits(var arr,size,number);
 - inputs: array of type list of integers, number of type integer
 - output: stores the digits of the number in the array
 
 ---
-
-- [ ] minimumValue(var arr,size,var index,pos);
+## minimumValue(var arr,size,var index,pos);
 - inputs: array of type list of integers, size of type integer, pointer to integer for index, position of type integer
 - output: finds the minimum value in the array starting from the given position
 
 ---
-
-- [ ] returningDigits(var arr,size);
+## returningDigits(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the number formed by the digits in the array)
 
 ---
-
-- [ ] createArray(var arr,size);
+## createArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: creates an array by taking input from the user
 
 ---
-
-- [ ] swapArray(var arr,arr_size);
+## swapArray(var arr,arr_size);
 - inputs: array of type list of integers, size of type integer
 - output: swaps the elements of the array
 
 ---
-
-- [ ] mergeSortedArray(var arr1,arr_size1,var arr2,arr_size2,var arr3);
+## mergeSortedArray(var arr1,arr_size1,var arr2,arr_size2,var arr3);
 - inputs: array1 of type list of integers, array2 of type list of integers, size1 of type integer, size2 of type integer, array3 of type list of integers
 - output: merges two sorted arrays into a third array
 
 #### **_Intermediate Functions/procedures_**
-
-- [ ] reverseArray(var arr,size);
+## reverseArray(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: reverses the array in place
 
 ---
-
-- [ ] countEvenOdd(var arr,size,var evenCount,var oddCount);
+## countEvenOdd(var arr,size,var evenCount,var oddCount);
 - inputs: array of type list of integers, size of type integer, pointer to integer for even count, pointer to integer for odd count
 - output: counts the number of even and odd elements in the array
 
 ---
-
-- [ ] secondLargest(var arr,size);
+## secondLargest(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the second largest element in the array)
 
 ---
-
-- [ ] findElementPos(var arr,size,element);
+## findElementPos(var arr,size,element);
 - inputs: array of type list of integers, size of type integer, element of type integer
 - output: integer (returns the position of the element in the array, or \-1 if not found)
 
 ---
-
-- [ ] elementFrequency(var arr,size);
+## elementFrequency(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: prints the frequency of each element in the array
 
 ---
-
-- [ ] found(var arr,size,element);
+## found(var arr,size,element);
 - inputs: array of type list of integers, size of type integer, element of type integer
 - output: boolean (returns true if the element is found in the array, otherwise false)
 
 ---
-
-- [ ] removeDuplicatesElements(var arr,size);
+## removeDuplicatesElements(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the new size of the array after removing duplicates)
 
 ---
-
-- [ ] binarySearch(var arr,size,target);
+## binarySearch(var arr,size,target);
 - inputs: array of type list of integers, size of type integer, target of type integer
 - output: integer (returns the index of the target element, or \-1 if not found)
 
 ---
-
-- [ ] linearSearch(var arr,size,target);
+## linearSearch(var arr,size,target);
 - inputs: array of type list of integers, size of type integer, target of type integer
 - output: integer (returns the index of the target element, or \-1 if not found)
 
 ---
-
-- [ ] shift_left(var arr,arr_size,repeat_times);
+## shift_left(var arr,arr_size,repeat_times);
 - inputs: array of type list of integers, size of type integer, repeat_times of type integer
 - output: shifts the array left by the specified number of times
 
 ---
-
-- [ ] shift_right(var arr,arr_size,repeat_times);
+## shift_right(var arr,arr_size,repeat_times);
 - inputs: array of type list of integers, size of type integer, repeat_times of type integer
 - output: shifts the array right by the specified number of times
 
 ---
-
-- [ ] compare_swap(var arr,size);
+## compare_swap(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: compares and swaps adjacent elements in the array
 
 #### **_Sorting Algorithms_**
-
-- [ ] bubbleSort(var arr,size);
+## bubbleSort(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: sorts the array using bubble sort
 
 ---
-
-- [ ] selectionSort(var arr,size);
+## selectionSort(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: sorts the array using selection sort
 
 ---
-
-- [ ] insertionSort(var arr,size);
+## insertionSort(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: sorts the array using insertion sort
 
 ---
-
-- [ ] mergeSort(var arr,left,right);
+## mergeSort(var arr,left,right);
 - inputs: array of type list of integers, left index of type integer, right index of type integer
 - output: sorts the array using merge sort
 
 ---
-
-- [ ] quickSort(var arr,low,high);
+## quickSort(var arr,low,high);
 - inputs: array of type list of integers, low index of type integer, high index of type integer
 - output: sorts the array using quick sortr
 
 #### **_Advanced Functions/procedures_**
-
-- [ ] swap(var elem1,var elem2);
+## swap(var elem1,var elem2);
 - inputs: pointer to integer element1, pointer to integer element2
 - output: swaps the values of the two elements
 
 ---
-
-- [ ] isEmpty(var arr,size,);
+## isEmpty(var arr,size,);
 - inputs: array of type list of integers, size of type integer
 - output: boolean (returns true if the array is empty, otherwise false)
 
 ---
-
-- [ ] findMissingNumber(var arr,size);
+## findMissingNumber(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the missing number in the array, or \-1 if no missing number is found)
 
 ---
-
-- [ ] findPairsWithSum(var arr,size,sum);
+## findPairsWithSum(var arr,size,sum);
 - inputs: array of type list of integers, size of type integer, sum of type integer
 - output: prints pairs of elements that sum to the given value
 
 ---
-
-- [ ] findSubArrayWithSum(var arr,size,sum);
+## findSubArrayWithSum(var arr,size,sum);
 - inputs: array of type list of integers, size of type integer, sum of type integer
 - output: prints the subarray that sums to the given value
 
 ---
-
-- [ ] rearrangeAlternatePositiveNegative(var arr,size);
+## rearrangeAlternatePositiveNegative(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: rearranges the array to alternate positive and negative elements
 
 ---
-
-- [ ] findMajorityElement(var arr,size);
+## findMajorityElement(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the majority element in the array, or 0 if no majority element is found)
 
 ---
-
-- [ ] longestIncreasingSubsequence(var arr,size);
+## longestIncreasingSubsequence(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: integer (returns the length of the longest increasing subsequence)
 
 ---
-
-- [ ] findDuplicates(var arr,size);
+## findDuplicates(var arr,size);
 - inputs: array of type list of integers, size of type integer
 - output: prints duplicate elements in the array
 
 ---
-
-- [ ] findIntersection(var arr1,size1,var arr2,size2);
+## findIntersection(var arr1,size1,var arr2,size2);
 - inputs: array1 of type list of integers, size1 of type integer, array2 of type list of integers, size2 of type integer
 - output: prints the intersection of the two arrays
 
 ---
-
-- [ ] findUnion(var arr1,size1,var arr2,size2);
+## findUnion(var arr1,size1,var arr2,size2);
 - inputs: array1 of type list of integers, size1 of type integer, array2 of type list of integers, size2 of type integer
 - output: prints the union of the two arrays
 
 ## 4._Matrices_
 
 #### **_Basic Functions_**
-
-- [ ] initializeMatrix(rows,cols,var matrix,value);
+## initializeMatrix(rows,cols,var matrix,value);
 - inputs: rows of type integer,cols of type integer,matrix with garbage values of type double ,value of type integer
 - output: matrix filled with the value of type integer
 
 ---
-
-- [ ] printMatrix(rows,cols,var matrix);
+## printMatrix(rows,cols,var matrix);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles
 - output: prints the matrix
 
 ---
-
-- [ ] inputMatrix(rows,cols,var matrix);
+## inputMatrix(rows,cols,var matrix);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of integers
 - output: takes input from the user to fill the matrix
 
 ---
-
-- [ ] copyMatrix(rows,cols,var matrix,var copy);
+## copyMatrix(rows,cols,var matrix,var copy);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, copy of type 2D array of doubles
 - output: copies the contents of the matrix to the copy
 
 #### **_Matrix Arithmetic_**
-
-- [ ] addMatrices(rows,cols,var mat1,var mat2,var result);
+## addMatrices(rows,cols,var mat1,var mat2,var result);
 - inputs: rows of type integer, cols of type integer, mat1 of type 2D array of integers, mat2 of type 2D array of integers, result of type 2D array of integers.
 - output: adds two matrices and stores the result in the result matrix
 
 ---
-
-- [ ] subtractMatrices(rows,cols,var mat1,var mat2,var result);
+## subtractMatrices(rows,cols,var mat1,var mat2,var result);
 - inputs: rows of type integer, cols of type integer, mat1 of type 2D array of integers, mat2 of type 2D array of integers, result of type 2D array of integers.
 - output: subtracts mat2 from mat1 and stores the result in the result matrix
 
 ---
-
-- [ ] multiplyMatrices(rows1,cols1,var mat1,rows2,cols2,var mat2,var result);
+## multiplyMatrices(rows1,cols1,var mat1,rows2,cols2,var mat2,var result);
 - inputs: rows1 of type integer, cols1 of type integer, mat1 of type 2D array of integers, rows2 of type integer, cols2 of type integer, mat2 of type 2D array of integers, result of type 2D array of integers
 - output: multiplies two matrices and stores the result in the result matrix
 
 ---
-
-- [ ] scalarMultiplyMatrix(rows,cols,var matrix,scalar);
+## scalarMultiplyMatrix(rows,cols,var matrix,scalar);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, scalar of type double
 - output: multiplies the matrix by a scalar value
 
 #### **_Matrix properties and checks_**
-
-- [ ] isSquareMatrix(rows,cols);
+## isSquareMatrix(rows,cols);
 - inputs: rows of type integer, cols of type integer
 - output: boolean (returns true if the matrix is square, otherwise false)
 
 ---
-
-- [ ] isIdentityMatrix(size,var matrix);
+## isIdentityMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
 - output: boolean (returns true if the matrix is an identity matrix, otherwise false)
 
 ---
-
-- [ ] isDiagonalMatrix(size,var matrix);
+## isDiagonalMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
 - output: boolean (returns true if the matrix is diagonal, otherwise false)
 
 ---
-
-- [ ] isSymmetricMatrix(size,var matrix);
+## isSymmetricMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
 - output: boolean (returns true if the matrix is symmetric, otherwise false)
 
 ---
-
-- [ ] isUpperTriangular(size,var matrix);
+## isUpperTriangular(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
 - output: boolean (returns true if the matrix is upper triangular, otherwise false)
 
 ---
-
-- [ ] isEqualMatrix(rows,cols,var mat1,var mat2);
+## isEqualMatrix(rows,cols,var mat1,var mat2);
 - inputs: rows of type integer, cols of type integer, mat1 of type 2D array of doubles, mat2 of type 2D array of doubles
 - output: boolean (returns true if the two matrices are equal, otherwise false)
 
 #### **_Matrix operations_**
-
-- [ ] transposeMatrix(rows,cols,var matrix,var result);
+## transposeMatrix(rows,cols,var matrix,var result);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles, result of type 2D array of doubles
 - output: computes the transpose of the matrix and stores it in the result matrix
 
 ---
-
-- [ ] determinantMatrix(size,var matrix);
+## determinantMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of doubles
 - output: double (returns the determinant of the matrix)
 
 ---
-
-- [ ] inverseMatrix(size,var matrix,var result);
+## inverseMatrix(size,var matrix,var result);
 - inputs: size of type integer, matrix of type 2D array of doubles, result of type 2D array of doubles
 - output: computes the inverse of the matrix and stores it in the result matrix
 
 ---
-
-- [ ] matrixPower(size,var matrix,power,var result);
+## matrixPower(size,var matrix,power,var result);
 - inputs: size of type integer, matrix of type 2D array of doubles, power of type integer, result of type 2D array of doubles
 - output: computes the matrix raised to the given power and stores it in the result matrix
 
 #### **_Advanced Functions/procedures_**
-
-- [ ] cofactorMatrix(size,var matrix,var cofactor);
+## cofactorMatrix(size,var matrix,var cofactor);
 - inputs: size of type integer, matrix of type 2D array of doubles, cofactor of type 2D array of doubles
 - output: computes the cofactor matrix and stores it in the cofactor matrix
 
 ---
-
-- [ ] adjointMatrix(size,var matrix,var adjoint);
+## adjointMatrix(size,var matrix,var adjoint);
 - inputs: size of type integer, matrix of type 2D array of doubles, adjoint of type 2D array of doubles
 - output: computes the adjoint matrix and stores it in the adjoint matrix
 
 ---
-
-- [ ] luDecomposition(size,var matrix,var lower,var upper);
+## luDecomposition(size,var matrix,var lower,var upper);
 - inputs: size of type integer, matrix of type 2D array of doubles, lower of type 2D array of doubles, upper of type 2D array of doubles
 - output: performs LU decomposition on the matrix and stores the results in the lower and upper matrices
 
 ---
-
-- [ ] matrixRank(rows,cols,var matrix);
+## matrixRank(rows,cols,var matrix);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles
 - output: integer (returns the rank of the matrix)
 
 ---
-
-- [ ] reduceRowEchelonForm(rows,cols,var matrix);
+## reduceRowEchelonForm(rows,cols,var matrix);
 - inputs: rows of type integer, cols of type integer, matrix of type 2D array of doubles
 - output: reduces the matrix to its row echelon form
 
 ---
-
-- [ ] swapRows(rows,cols,var mat,row1,row2);
+## swapRows(rows,cols,var mat,row1,row2);
 - inputs: rows of type integer, cols of type integer, mat of type 2D array of doubles, row1 of type integer, row2 of type integer
 - output: swaps two rows in the matrix
 
 #### **_Special Matrix operations_**
-
-- [ ] traceMatrix(size,var matrix);
+## traceMatrix(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of integers
 - output: integer (returns the trace of the matrix)
 
 ---
-
-- [ ] rotateMatrix90(size,var matrix);
+## rotateMatrix90(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of doubles
 - output: rotates the matrix 90 degrees clockwise
 
 ---
-
-- [ ] reverseRows(size,var matrix);
+## reverseRows(size,var matrix);
 - inputs: size of type integer, matrix of type 2D array of doubles
 - output: reverses the rows of the matrix
 
 ---
-
-- [ ] findEigenvalues(size,var matrix,var eigenvalues);
+## findEigenvalues(size,var matrix,var eigenvalues);
 - inputs: size of type integer, matrix of type 2D array of doubles, eigenvalues of type array of doubles
 - output: computes the eigenvalues of the matrix and stores them in the eigenvalues array
 
 ---
-
-- [ ] findEigenvalues2x2(var matrix,var eigenvalues);
+## findEigenvalues2x2(var matrix,var eigenvalues);
 - inputs: matrix of type 2D array of doubles (2x2), eigenvalues of type array of doubles
 - output: computes the eigenvalues of a 2x2 matrix and stores them in the eigenvalues array
 
@@ -1153,8 +1000,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 ## 1. _Numbers_
 ### **_Basic Functions:_**
-
-- [ ] sumOfDigits(num);
+## sumOfDigits(num);
 ### What is the sum of digits?
 
 
@@ -1183,8 +1029,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] reverseNumber(num);
+## reverseNumber(num);
 ### What is a reverse Number?
 
 
@@ -1210,8 +1055,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isPalindrom(num);
+## isPalindrom(num);
 ### What is a palindrome?
 
 
@@ -1234,8 +1078,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isPrime(num);
+## isPrime(num);
 ### What is a prime number?
 
 
@@ -1259,8 +1102,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] gcd(a,b);
+## gcd(a,b);
 ### What is the greatest common divisor (GCD)?
 
 
@@ -1285,8 +1127,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] Max(a,b);
+## Max(a,b);
 ### What is a Max?
 
 
@@ -1308,8 +1149,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] lcm(a,b);
+## lcm(a,b);
 ### What is a Max?
 
 
@@ -1328,8 +1168,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] factorial(num);
+## factorial(num);
 ### What is a factorial?
 
 
@@ -1349,8 +1188,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isEven(num);
+## isEven(num);
 ### What is an even number?
 
 
@@ -1370,8 +1208,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isOdd(num);
+## isOdd(num);
 ### What is an odd number?
 
 
@@ -1390,8 +1227,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ### **_Intermediate Functions/procedures:_**
-
-- [ ] primeFactors(num);
+## primeFactors(num);
 - What are prime factors?
 
 * In mathematics,Prime factors are the prime numbers that multiply together to give a composite number. For example, the prime factors of 28 are 2, 2, and 7\.
@@ -1414,8 +1250,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isArmstrong(num);
+## isArmstrong(num);
 ### What is an Armstrong number?
 
 
@@ -1441,8 +1276,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] fibonacci(num);
+## fibonacci(num);
 ### What is a Fibonacci sequence?
 
 
@@ -1462,8 +1296,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] numberOfDivisors(num);
+## numberOfDivisors(num);
 ### What is a divisor?
 
 
@@ -1488,8 +1321,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isNegative(num);
+## isNegative(num);
 ### What is a negative number?
 
 
@@ -1509,8 +1341,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] reverse_negative(num);
+## reverse_negative(num);
 - Why reverse a negative number?
 
 * Reversing a negative number makes it easier to handle its digits for operations while retaining the original sign.
@@ -1530,8 +1361,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isDivisor(num);
+## isDivisor(num);
 ### What is a divisor?
 
 
@@ -1552,8 +1382,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] sumDivisors(num);
+## sumDivisors(num);
 ### What is the sum of divisors?
 
 
@@ -1579,8 +1408,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] sumDivisors_out_num(num);
+## sumDivisors_out_num(num);
 ### What is the sum of divisors?
 
 
@@ -1604,8 +1432,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isPerfect(num);
+## isPerfect(num);
 ### What is a perfect number?
 
 
@@ -1629,8 +1456,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isMagic(num);
+## isMagic(num);
 ### What is a Magic number?
 
 
@@ -1660,8 +1486,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] numberOfDigits(num);
+## numberOfDigits(num);
 ### What is a digit?
 
 
@@ -1686,8 +1511,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isAutomorphic(num);
+## isAutomorphic(num);
 ### What is a divisor?
 
 
@@ -1716,8 +1540,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ### **_Advanced Functions/procedures:_**
-
-- [ ] toBinary(num);
+## toBinary(num);
 ### What is a divisor?
 
 
@@ -1751,8 +1574,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isNarcissistic(num);
+## isNarcissistic(num);
 ### What is an Armstrong number?
 
 
@@ -1775,8 +1597,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] sqrtApprox(num, approx);
+## sqrtApprox(num, approx);
 ### What is square root approximation?
 
 
@@ -1799,8 +1620,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 2. Apply iterative refinement using the [Babylonian method](https://blogs.sas.com/content/iml/2016/05/16/babylonian-square-roots.html).
 3. Repeat until the difference between two successive estimates is within approx.
 4. Return the final approximation.
-
-- [ ] power(base, exp);
+## power(base, exp);
 ### What is a power?
 
 
@@ -1820,8 +1640,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isHappy(num);
+## isHappy(num);
 ### What is a happy number?
 
 
@@ -1849,8 +1668,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isAbundant(num);
+## isAbundant(num);
 ### What is an abundant number?
 
 
@@ -1870,8 +1688,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isDeficient(num);
+## isDeficient(num);
 ### What is a deficient number?
 
 
@@ -1891,8 +1708,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] sumEvenFibonacci(num);
+## sumEvenFibonacci(num);
 ### What is a Fibonacci?
 
 
@@ -1915,8 +1731,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isHarshad(num);
+## isHarshad(num);
 ### What is a Harshad number?
 
 
@@ -1936,8 +1751,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] catalanNumber(num);
+## catalanNumber(num);
 ### What is a Catalan number?
 
 
@@ -1960,8 +1774,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] pascalPyramid(row);
+## pascalPyramid(row);
 ### What is Pascal's Pyramid?
 
 
@@ -1985,8 +1798,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] pascalTriangle(row);
+## pascalTriangle(row);
 ### What is Pascal's Triangle?
 
 
@@ -2010,8 +1822,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] pascalTriangleRow(row);
+## pascalTriangleRow(row);
 ### What is a Pascal Row?
 
 
@@ -2034,8 +1845,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] nCk(num,k);
+## nCk(num,k);
 ### What is nCk?
 
 
@@ -2056,8 +1866,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isSmith(num);
+## isSmith(num);
 ### What is a Smith number?
 
 
@@ -2082,8 +1891,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] isKaprekar(num);
+## isKaprekar(num);
 ### What is a Kaprekar number?
 
 
@@ -2106,8 +1914,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] sumOfPrimes(num);
+## sumOfPrimes(num);
 ### What is the sum of primes?
 
 
@@ -2131,8 +1938,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] primeFactorsSum(num);
+## primeFactorsSum(num);
 ### What is the prime factors' sum?
 
 
@@ -2157,8 +1963,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 
 ---
-
-- [ ] divideNumDigits(num, num_digits, num1);
+## divideNumDigits(num, num_digits, num1);
 ### What is a divisor?
 
 
@@ -5757,8 +5562,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 ## 1. _Numbers_
 
 ## Basic Functions:
-
-- [ ] sumOfDigits(num);
+## sumOfDigits(num);
 
 | Example | Inputs |     |          |       | Output(s)           |
 | ------- | :----: | :-: | :------: | :---: | ------------------- |
@@ -5766,8 +5570,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   15   |  6  |  5-\>1   |   f   | 6                   |
 | 2       |  \-18  | \-9 | \-8-\>-1 |   t   | \-9                 |
 | 3       |   22   |  4  |  2-\>2   |   f   | 4                   |
-
-- [ ] reverseNumber(num);
+## reverseNumber(num);
 
 | Example | Inputs |             |       | Output(s)             |
 | ------- | :----: | :---------: | :---: | --------------------- |
@@ -5775,8 +5578,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   15   |     51      |   f   | 51                    |
 | 2       | \-128  |    –821     |   t   | \-821                 |
 | 3       |  223   |     322     |   f   | 322                   |
-
-- [ ] isPalindrome(num);
+## isPalindrome(num);
 
 | Example | Inputs |             |       | Output(s)             |
 | ------- | :----: | :---------: | :---: | --------------------- |
@@ -5784,8 +5586,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |  121   |     121     |   t   | 1                     |
 | 2       | \-128  |    –821     |   f   | 0                     |
 | 3       |  222   |     222     |   t   | 1                     |
-
-- [ ] isPrime(num);
+## isPrime(num);
 
 | Example | Inputs |           |       | Output(s)             |
 | ------- | :----: | :-------: | :---: | --------------------- |
@@ -5793,8 +5594,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |     2     |   t   | 1                     |
 | 2       |   19   | 2-\>3-\>4 |   t   | 1                     |
 | 3       |   6    |     2     |   f   | 0                     |
-
-- [ ] gcd(num);
+## gcd(num);
 
 | Example | Inputs |     |                                    |     |  Output(s)  |
 | ------- | :----: | :-: | :--------------------------------: | :-: | :---------: |
@@ -5802,8 +5602,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |  2  |                 2                  |  1  |      1      |
 | 2       |   2    |  4  |                 2                  |  2  |      2      |
 | 3       |   15   | 10  | 2-\>3-\>4-\>5-\>6-\>7-\>8-\>9-\>10 |     |      5      |
-
-- [ ] Max(a,b);
+## Max(a,b);
 
 | Example | Inputs |     |  Output(s)  |
 | ------- | :----: | :-: | :---------: |
@@ -5811,8 +5610,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |  2  |      7      |
 | 2       |   19   | \-1 |     19      |
 | 3       |  100   | 101 |     101     |
-
-- [ ] Min(a,b);
+## Min(a,b);
 
 | Example | Inputs |     |  Output(s)  |
 | ------- | :----: | :-: | :---------: |
@@ -5820,8 +5618,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |  2  |      2      |
 | 2       |   19   | \-1 |     \-1     |
 | 3       |  100   | 101 |     100     |
-
-- [ ] lcm(a,b);
+## lcm(a,b);
 
 | Example | Inputs |     |  Output(s)  |
 | ------- | :----: | :-: | :---------: |
@@ -5829,8 +5626,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |  2  |     14      |
 | 2       |   5    | 15  |     15      |
 | 3       |   2    |  3  |      6      |
-
-- [ ] factorial(num);
+## factorial(num);
 
 | Example | Inputs |     Output(s)     |
 | ------- | :----: | :---------------: |
@@ -5838,8 +5634,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |       5040        |
 | 2       |   0    |         1         |
 | 3       |   5    |        120        |
-
-- [ ] isEven(num);
+## isEven(num);
 
 | Example | Inputs |   Output(s)    |
 | ------- | :----: | :------------: |
@@ -5847,8 +5642,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |       0        |
 | 2       |   19   |       0        |
 | 3       |   6    |       1        |
-
-- [ ] isOdd(num);
+## isOdd(num);
 
 | Example | Inputs |   Output(s)   |
 | ------- | :----: | :-----------: |
@@ -5858,8 +5652,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 3       |   6    |       0       |
 
 ## Intermediate Functions/Procedures:
-
-- [ ] PrimeFactors(num);
+## PrimeFactors(num);
 
 | Example | Inputs |      Output(s)       |
 | ------- | :----: | :------------------: |
@@ -5867,8 +5660,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |         7= 7         |
 | 2       |   6    |        6=2x3         |
 | 3       |   16   |      16=2x2x2x2      |
-
-- [ ] isArmstrong(num);
+## isArmstrong(num);
 
 | Ex  | Inputs |      Output(s)      |
 | --- | :----: | :-----------------: |
@@ -5876,8 +5668,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1   |  \-5   |          0          |
 | 2   |   15   |          0          |
 | 3   |  153   |          1          |
-
-- [ ] fibonacci(num);
+## fibonacci(num);
 
 | Example | Inputs |     Output(s)     |
 | ------- | :----: | :---------------: |
@@ -5885,8 +5676,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |        13         |
 | 2       |   0    |        21         |
 | 3       |   5    |         0         |
-
-- [ ] numberOfDivisors(num);
+## numberOfDivisors(num);
 
 | Ex  | Inputs |        Output(s)         |
 | --- | :----: | :----------------------: |
@@ -5894,8 +5684,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1   |  \-5   |            2             |
 | 2   |   10   |            4             |
 | 3   |   1    |            1             |
-
-- [ ] isNegative(num);
+## isNegative(num);
 
 | Example | Inputs |     Output(s)      |
 | ------- | :----: | :----------------: |
@@ -5903,8 +5692,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |         0          |
 | 2       |   0    |         1          |
 | 3       |  \-5   |         1          |
-
-- [ ] reverse_negative(num,check);
+## reverse_negative(num,check);
 
 | Example | Inputs |       |           Output(s)            |
 | ------- | :----: | :---: | :----------------------------: |
@@ -5912,8 +5700,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |   0   |               7                |
 | 2       |  \-15  |   1   |               15               |
 | 3       |  \-5   |   1   |               5                |
-
-- [ ] isDivisor(num,divisor);
+## isDivisor(num,divisor);
 
 | Example | Inputs |         |         Output(s)          |
 | ------- | :----: | :-----: | :------------------------: |
@@ -5921,8 +5708,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |    7    |             1              |
 | 2       |   15   |    5    |             1              |
 | 3       |   5    |    2    |             0              |
-
-- [ ] sumDivsors_out_num(num);
+## sumDivsors_out_num(num);
 
 | Example | Inputs |         Output(s)          |
 | ------- | :----: | :------------------------: |
@@ -5930,8 +5716,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |             1              |
 | 2       |   10   |             8              |
 | 3       |   6    |             6              |
-
-- [ ] sumDivisors(num);
+## sumDivisors(num);
 
 | Example | Inputs |      Output(s)      |
 | ------- | :----: | :-----------------: |
@@ -5939,8 +5724,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |          8          |
 | 2       |   10   |         18          |
 | 3       |   6    |         12          |
-
-- [ ] isPerfect(num);
+## isPerfect(num);
 
 | Example | Inputs |     Output(s)     |
 | ------- | :----: | :---------------: |
@@ -5948,8 +5732,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   6    |         1         |
 | 2       |   28   |         1         |
 | 3       |   10   |         0         |
-
-- [ ] isMagic(num);
+## isMagic(num);
 
 | Example | Inputs |    Output(s)    |
 | ------- | :----: | :-------------: |
@@ -5957,8 +5740,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   19   |        1        |
 | 2       |   28   |        1        |
 | 3       |   9    |        0        |
-
-- [ ] numberOfDigits(num);
+## numberOfDigits(num);
 
 | Example | Inputs |       Output(s)        |
 | ------- | :----: | :--------------------: |
@@ -5966,8 +5748,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   6    |           1            |
 | 2       |   28   |           2            |
 | 3       | \-139  |           3            |
-
-- [ ] isAutomorphic(num);
+## isAutomorphic(num);
 
 | Example | Inputs |       Output(s)       |
 | ------- | :----: | :-------------------: |
@@ -5977,8 +5758,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 3       |   3    |           0           |
 
 ## Advanced Functions/Procedures:
-
-- [ ] toBinary(num);
+## toBinary(num);
 
 | Example | Inputs |    Output(s)     |
 | ------- | :----: | :--------------: |
@@ -5986,8 +5766,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   5    |       101        |
 | 2       |  \-5   |       011        |
 | 3       |  \-8   |       0010       |
-
-- [ ] isNarcissistic(num);
+## isNarcissistic(num);
 
 | Example | Inputs |       Output(s)        |
 | ------- | :----: | :--------------------: |
@@ -5995,8 +5774,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |  \-5   |           0            |
 | 2       |   15   |           0            |
 | 3       |  153   |           1            |
-
-- [ ] sqrtApprox(num,approx);
+## sqrtApprox(num,approx);
 
 | Example |        Inputs        |         Output(s)          |
 | ------- | :------------------: | :------------------------: |
@@ -6004,8 +5782,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |          5           |          2.236068          |
 | 2       |          7           |          2.645751          |
 | 3       |          2           |          1.414214          |
-
-- [ ] power(base,exp);
+## power(base,exp);
 
 | Example | Inputs |     |     Output(s)      |
 | ------- | :----: | :-: | :----------------: |
@@ -6013,8 +5790,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   5    |  2  |         25         |
 | 2       |   76   |  3  |      438,976       |
 | 3       |   3    |  8  |        6561        |
-
-- [ ] isHappy(num);
+## isHappy(num);
 
 | Example | Inputs |    Output(s)    |
 | ------- | :----: | :-------------: |
@@ -6022,8 +5798,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   7    |        1        |
 | 2       |   19   |        1        |
 | 3       |   17   |        0        |
-
-- [ ] isAbundant(num);
+## isAbundant(num);
 
 | Example | Inputs |     Output(s)      |
 | ------- | :----: | :----------------: |
@@ -6031,8 +5806,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   12   |         1          |
 | 2       |   30   |         1          |
 | 3       |   8    |         0          |
-
-- [ ] isDeficient(num);
+## isDeficient(num);
 
 | Example | Inputs |      Output(s)      |
 | ------- | :----: | :-----------------: |
@@ -6040,8 +5814,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   15   |          1          |
 | 2       |   22   |          1          |
 | 3       |   30   |          0          |
-
-- [ ] sumEvenFibonacci(num);
+## sumEvenFibonacci(num);
 
 | Example | Inputs |        Output(s)         |
 | ------- | :----: | :----------------------: |
@@ -6049,8 +5822,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   3    |            44            |
 | 2       |   7    |          14328           |
 | 3       |   5    |           798            |
-
-- [ ] isHarshad(num);
+## isHarshad(num);
 
 | Example | Inputs |     Output(s)     |
 | ------- | :----: | :---------------: |
@@ -6058,8 +5830,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   18   |         1         |
 | 2       |   10   |         1         |
 | 3       |   15   |         0         |
-
-- [ ] catalanNumber(num);
+## catalanNumber(num);
 
 | Example | Inputs |       Output(s)       |
 | ------- | :----: | :-------------------: |
@@ -6067,8 +5838,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   5    |          42           |
 | 2       |   6    |          132          |
 | 3       |   3    |           5           |
-
-- [ ] pascalPyramid(row);
+## pascalPyramid(row);
 
 | Example | Inputs |       Output(s)       |
 | ------- | :----: | :-------------------: |
@@ -6076,8 +5846,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   1    |           1           |
 | 2       |   2    |         1 11          |
 | 3       |   3    |       1 11 121        |
-
-- [ ] pascalTriangle(row);
+## pascalTriangle(row);
 
 | Example | Inputs |       Output(s)        |
 | ------- | :----: | :--------------------: |
@@ -6085,8 +5854,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   1    |           1            |
 | 2       |   2    |          1 11          |
 | 3       |   3    |        1 11 121        |
-
-- [ ] passcalTriangleRow(row);
+## passcalTriangleRow(row);
 
 | Example | Inputs |          Output(s)          |
 | ------- | :----: | :-------------------------: |
@@ -6094,8 +5862,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   1    |       Row\[1\]:\[1\]        |
 | 2       |   2    |      Row\[2\]:\[1,1\]       |
 | 3       |   3    |     Row\[3\]:\[1,2,1\]      |
-
-- [ ] nCk(num,k);
+## nCk(num,k);
 
 | Example | Inputs |     |   Output(s)    |
 | ------- | :----: | :-: | :------------: |
@@ -6103,8 +5870,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   4    |  3  |       4        |
 | 2       |   7    |  0  |       1        |
 | 3       |   2    |  1  |       2        |
-
-- [ ] bellNumber(num);
+## bellNumber(num);
 
 | Example | Inputs |     Output(s)      |
 | ------- | :----: | :----------------: |
@@ -6112,8 +5878,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   5    |         52         |
 | 2       |   16   |  678,570,752,000   |
 | 3       |   10   |      115,975       |
-
-- [ ] isKaprekar(num);
+## isKaprekar(num);
 
 | Example | Inputs |     Output(s)      |
 | ------- | :----: | :----------------: |
@@ -6121,8 +5886,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   45   |         1          |
 | 2       |   9    |         1          |
 | 3       |   1    |         0          |
-
-- [ ] divideNumDigits(\*num,num_digits,\*num1);
+## divideNumDigits(\*num,num_digits,\*num1);
 
 | Ex  | Inputs |            |      | Output(s) |            |
 | --- | :----: | :--------: | :--: | :-------: | :--------: |
@@ -6130,8 +5894,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1   |  135   |     3      |  35  |     1     |     35     |
 | 2   |   16   |     2      |  6   |     1     |     6      |
 | 3   |  1964  |     4      |  64  |    19     |     64     |
-
-- [ ] isSmith(num);
+## isSmith(num);
 
 | Example | Inputs |    Output(s)    |
 | ------- | :----: | :-------------: |
@@ -6139,8 +5902,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   94   |        1        |
 | 2       |   85   |        1        |
 | 3       |   5    |        0        |
-
-- [ ] primeFactorsSum(num);
+## primeFactorsSum(num);
 
 | Example | Inputs |        Output(s)        |
 | ------- | :----: | :---------------------: |
@@ -6148,8 +5910,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |   10   |           25            |
 | 2       |   85   |           67            |
 | 3       |   5    |            5            |
-
-- [ ] sumOfPrimes(num);
+## sumOfPrimes(num);
 
 | Example | Inputs |      Output(s)      |
 | ------- | :----: | :-----------------: |
@@ -6161,8 +5922,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 # 2._Strings_
 
 ## Basic Functions:
-
-- [ ] stringLength(var str);
+## stringLength(var str);
 
 | Example | Inputs  |         Output(s)         |
 | ------- | :-----: | :-----------------------: |
@@ -6170,8 +5930,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |  “Mcy”  |             3             |
 | 2       | “Hello” |             5             |
 | 3       |  “gg”   |             2             |
-
-- [ ] stringLengthWithSpace(var str);
+## stringLengthWithSpace(var str);
 
 | Example | Inputs  |             Output(s)              |
 | ------- | :-----: | :--------------------------------: |
@@ -6179,8 +5938,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       | “Mcy t” |                 5                  |
 | 2       | “Hello” |                 5                  |
 | 3       |  “g g”  |                 3                  |
-
-- [ ] removeWhiteSpaceLength(var str,length);
+## removeWhiteSpaceLength(var str,length);
 
 | Example | Inputs  |                 Output(s)                 |
 | ------- | :-----: | :---------------------------------------: |
@@ -6188,8 +5946,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       | “Mcy t” |                     4                     |
 | 2       | “Hello” |                     5                     |
 | 3       |  “g g”  |                     2                     |
-
-- [ ] stringCopy(var str,var dst);
+## stringCopy(var str,var dst);
 
 | Example | Inputs  |     |            Output(s)            |
 | ------- | :-----: | :-: | :-----------------------------: |
@@ -6197,8 +5954,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       | “Mcy t” |  /  |             “Mcy t”             |
 | 2       | “Hello” |  /  |             “Hello”             |
 | 3       |  “g g”  |  /  |              “g g”              |
-
-- [ ] stringConcat(var str,var dst);
+## stringConcat(var str,var dst);
 
 | Example | Inputs  |         |             Output(s)             |
 | ------- | :-----: | :-----: | :-------------------------------: |
@@ -6206,8 +5962,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |  “Mcy”  |   “b”   |              “b Mcy”              |
 | 2       | “Hello” | “world” |           “world Hello”           |
 | 3       |  “gg”   |  “bro”  |             “bro gg”              |
-
-- [ ] stringCompare(var str1,var str2);
+## stringCompare(var str1,var str2);
 
 | Example | Inputs  |         |              Output(s)               |
 | ------- | :-----: | :-----: | :----------------------------------: |
@@ -6215,8 +5970,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |  “Mcy”  |   “b”   |                  21                  |
 | 2       | “Hello” | “Hello” |                  0                   |
 | 3       |  “gg”   |  “bro”  |                  5                   |
-
-- [ ] stringCompareInsensitive(var str1,var str2);
+## stringCompareInsensitive(var str1,var str2);
 
 | Example | Inputs  |         |                    Output(s)                    |
 | ------- | :-----: | :-----: | :---------------------------------------------: |
@@ -6224,8 +5978,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |  “Mcy”  |   “b”   |                       21                        |
 | 2       | “Hello” | “hello” |                        0                        |
 | 3       |  “gg”   |  “bro”  |                        5                        |
-
-- [ ] isEmpty(var str);
+## isEmpty(var str);
 
 | Example | Inputs  |      Output(s)       |
 | ------- | :-----: | :------------------: |
@@ -6233,8 +5986,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       | “Mcy t” |          0           |
 | 2       | “Hello” |          0           |
 | 3       |   “”    |          1           |
-
-- [ ] reverseString(var str);
+## reverseString(var str);
 
 | Example | Inputs  |         Output(s)          |
 | ------- | :-----: | :------------------------: |
@@ -6242,8 +5994,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |  “Mcy”  |           “ycM”            |
 | 2       | “Hello” |          “olleh”           |
 | 3       |  “bt”   |            “tb”            |
-
-- [ ] toUpperCase(var str);
+## toUpperCase(var str);
 
 | Example | Inputs  |        Output(s)         |
 | ------- | :-----: | :----------------------: |
@@ -6251,8 +6002,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 1       |  “Mcy”  |          “MCY”           |
 | 2       | “Hello” |         “HELLO”          |
 | 3       |  “tb”   |           “TB”           |
-
-- [ ] toLowerCase(var str);
+## toLowerCase(var str);
 
 | Example | Inputs  |        Output(s)         |
 | ------- | :-----: | :----------------------: |
