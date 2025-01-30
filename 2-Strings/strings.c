@@ -733,11 +733,11 @@ void caesarCipher(char *text, int shift){
     {
         if (text[i] >= 'a' && text[i] <= 'z')
         {
-            text[i] = text[i] + shift;
-            if (text[i] > 'z') text[i] = text[i] - 26;
-            else if (text[i] < 'a') text[i] = text[i] + 26;
+            text[i] = text[i] + shift;//*shifts the char by shift number
+            if (text[i] > 'z') text[i] = text[i] - 26;//*in case the char paced the z char means we are dealing with symbols so we get him back in the track so he will be in between the a and z
+            else if (text[i] < 'a') text[i] = text[i] + 26;//*same case in reverse
         }
-        
+        //*capital letter cases are the same as the above
         else if (text[i] >= 'A' && text[i] <= 'Z')
         {
             text[i] = text[i] + shift;
@@ -748,8 +748,55 @@ void caesarCipher(char *text, int shift){
     }
     
 }
+void caesarCipherDecryption(char *text, int shift){
+    int len=stringLengthWithSpace(text);
+    for (int i = 0; i < len; i++)
+    {
+        if (text[i] >= 'a' && text[i] <= 'z')
+        {
+            text[i] = text[i] - shift;//*we remove the shift to make the char in it's relevant position i mean the real pos in alphabet
+            if (text[i] > 'z') text[i] = text[i] - 26;//*same case treated as above in case we pace z we increment by the number of chars known in english i could used modulu % but leave it as it's this looks better for me
+            else if (text[i] < 'a') text[i] = text[i] + 26;
+        }
+        //?same approach
+        else if (text[i] >= 'A' && text[i] <= 'Z')
+        {
+            text[i] = text[i] - shift;
+            if (text[i] > 'Z') text[i] = text[i] - 26;
+            else if (text[i] < 'A')  text[i] = text[i] + 26;
+        }
 
+    }
+    
+}
 void substitutionCipher(char *text, const char *key){
+
+   int len=stringLengthWithSpace(text);//*to iterate over every char
+   int lenKey=stringLengthWithSpace(key);//*used to generate copies of lower case and upper case of the key string
+  //*lower case key
+   char lowerKey[lenKey];
+   stringCopy(key,lowerKey);
+   toLowerCase(lowerKey);
+   //*uper case key
+   char upperKey[lenKey];
+   stringCopy(key,upperKey);
+   toUpperCase(upperKey);
+
+    for (int i = 0; i < len; i++)
+    {
+        if (text[i]>='A'&& text[i]<='Z')
+        {
+            text[i]=upperKey[text[i]-'A'];//*formula given by the internet and it works
+            //*whan we subtract 'a' from any char we find it's pos
+        }
+        if (text[i]>='a'&& text[i]<='z')
+        {
+            text[i]=lowerKey[text[i]-'a'];//*case of lower case e call the lowerkey string
+        }
+    }
+    
+}
+void substitutionCipherDecryption(char *text, const char *key){
 
    int len=stringLengthWithSpace(text);
    int lenKey=stringLengthWithSpace(key);
@@ -759,25 +806,38 @@ void substitutionCipher(char *text, const char *key){
    char upperKey[lenKey];
    stringCopy(key,upperKey);
    toUpperCase(upperKey);
+   //*all above are covered in the  above function
+   int low[lenKey];
+   int high[lenKey];
+   //*are generated because the function i need to call works with array of integers not arr of chars
+   for (int i = 0; i < lenKey; i++){
+        low[i]=lowerKey[i];//*filling the int values according to assci table
+        high[i]=upperKey[i];
+   }
+   
     for (int i = 0; i < len; i++)
     {
         if (text[i]>='A'&& text[i]<='Z')
         {
-            text[i]=upperKey[text[i]-'A'];
+            int index=findElementPos(high,lenKey,text[i]);
+            text[i]=index+'A';//*from 'a' char + the index of the encrypted char we find our chosen char according to the key or i may say chosen star lol.... 
         }
         if (text[i]>='a'&& text[i]<='z')
         {
-            text[i]=lowerKey[text[i]-'a'];
+            int index=findElementPos(low,lenKey,text[i]);
+            text[i]=index+'a';
         }
     }
+  
     
 }
 void xorCipher(char *text, char key) {
-    int len = stringLengthWithSpace(text);
+    int len = stringLengthWithSpace(text);//*to know where to stop
     
     for (int i = 0; i < len; i++) {
-        text[i] = (text[i] ^ key);  
-        text[i] = (text[i] % 95) + 32;  
+        text[i] = (text[i] ^ key);  //*the xor operation 
+        //? i learned that ^ represents xor operation in the first i crated an xor function but evantually i found that it's already there
+        text[i] = (text[i] % 95) + 32;  //* to ensure that the char is in the range of the printable chars
     }
 }
 
@@ -788,17 +848,19 @@ void vigenereCipher(char *text, const char *key, int encrypt){
     stringCopy(key,keyCopy);
     int keyLen=stringLength(keyCopy);
     int keyIndex=0;
-    
+    //*encryption case
     if (encrypt==1)
     {
         for (int i = 0; i < len; i++)
         {
             if (text[i]>='a' && text[i]<='z' )
             {
-                keyIndex=i%keyLen;
-                text[i]=(text[i] - 'a' + key[keyIndex] - 'a') % 26 + 'a';
-                keyIndex++;
+                keyIndex=i%keyLen;//*in case keylen was shorter so it repeats from the beginning
+                text[i]=(text[i] - 'a' + key[keyIndex] - 'a') % 26 + 'a';//*the formula depending on the concept of the cipher
+                keyIndex++;//*to move to the next char in the key
+                //*the concept is you get the pos the char in the alphabet and add the pos of the key char in the alphabet and get the mod 26 to get the new char pos then add it to 'a' to move by that pos
             }
+            //*upper case case
             if (text[i]>='A' && text[i]<='Z' )
             {
                 keyIndex=i%keyLen;
@@ -809,12 +871,13 @@ void vigenereCipher(char *text, const char *key, int encrypt){
         
     }else if (encrypt==0)
     {
+        //*decryption case
         for (int i = 0; i < len; i++)
         {
             if (text[i]>='a' && text[i]<='z' )
             {
                 keyIndex=i%keyLen;
-                text[i]=(text[i] - 'a' - (key[keyIndex] - 'a') + 26) % 26 + 'a';
+                text[i]=(text[i] - 'a' - (key[keyIndex] - 'a') + 26) % 26 + 'a';//*same talk as above but we subtract the key char pos from the char pos to get the original char pos
                 keyIndex++;
             }
             if (text[i]>='A' && text[i]<='Z' )
@@ -825,7 +888,7 @@ void vigenereCipher(char *text, const char *key, int encrypt){
             }
         }
     }else{
-        printf("Invalid encryption flag!");
+        printf("Invalid encryption flag!");//* if someone try to out smart and enter invalid integer like 5 in the future i will teach them a lesson just wait
     }
     
     
@@ -836,7 +899,7 @@ void atbashCipher(char *text){
     {
         if (text[i]>='a' && text[i]<='z' )
         {
-            text[i]='z'-(text[i]-'a');
+            text[i]='z'-(text[i]-'a');//*i don't creat ciphers i creat code that automate ciphers so i took the law from internet
         }
         if (text[i]>='A' && text[i]<='Z' )
         {
@@ -845,7 +908,10 @@ void atbashCipher(char *text){
     }
     
 }
-
+void atbashCipherDecryption(char *text){
+    atbashCipher(text);//*it's like the xor cipher it can encrypt and decrypt text
+    
+}
 void railFenceCipher(const char *text, char *result, int depth) {
     char textCopy[2025];
     stringCopy(text,textCopy);
@@ -853,7 +919,7 @@ void railFenceCipher(const char *text, char *result, int depth) {
     char matrix[depth][cols];
     for (int i = 0; i < depth; i++) {
         for (int j = 0; j < cols; j++) {
-            matrix[i][j] = '\0';  
+            matrix[i][j] = '\0';  //*make sure to fill it with null terminators because in the zig zag pattern we will ignore chars that doesn't get filled
         }
     }
 
@@ -862,11 +928,11 @@ void railFenceCipher(const char *text, char *result, int depth) {
         while (i < depth && j < cols) {
             matrix[i][j] = text[j];
             i++;
-            j++;
+            j++;//*the zig zag pattern  start from the first row and goes down then up then down and so on
         }
-        i--;
+        i--;//*to make sure the i is equal to the last row
         while (i > 0 && j < cols) {
-            i--;
+            i--;//*to don't overwrite the last row
             matrix[i][j] = text[j];
             j++;
         }
@@ -878,10 +944,52 @@ void railFenceCipher(const char *text, char *result, int depth) {
             if (matrix[row][col] != '\0') {
                 result[track] = matrix[row][col];
                 track++;
-            }
+            }//*filing the result with the chars in the matrix starting from the first row and going on 
+            //*see the condition of the matrix to ignore empty space when filling first i didn't notice that and it went crazy but after some debuging i found it  
         }
     }
-    result[track] = '\0';
+    result[track] = '\0';//*null terminate the result
+}
+
+void railFenceCipherDecryption(const char *text, char *result, int depth) {
+    char textCopy[2025];
+    stringCopy(text,textCopy);
+    int len = stringLengthWithSpace(textCopy);
+    int cols=ceil(len/(double)depth);//*i had to use it because the division of integers is always an integer so i had to cast it to double in order to ceil the result and the law logically should work i tried it in cases but for now i didn't found a counter example
+    char matrix[depth][cols];
+    
+    int track = 0;
+    for (int row = 0; row < depth; row++) {
+        for (int col = 0; col < cols; col++) {
+           if (text[track] != '\0')
+           {
+                matrix[row][col] = text[track];//*fill the matrix with the encrypted text with a way that we can decrypt it in the reverse manner of what we did above
+                
+            }
+            track++;
+
+            
+        }
+    }
+    
+    int i = 0, j = 0,track2=0;
+    while (j < cols) {
+        while (i < depth&& j < cols) {
+            result[track2] = matrix[i][j];//*start from first row till the end of the rows following the zig zag pattern
+            i++;
+            track2++;//*to track the end of the string result
+        }
+        i--;//*to get back to our interval
+        j++;//*go to the next column
+        while (i > 0 && j < cols) {
+            i--;
+            result[track2] = matrix[i][j];
+            track2++;
+        }
+        j++;
+    }
+    result[track2] = '\0';
+
 }
 
 

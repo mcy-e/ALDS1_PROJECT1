@@ -9,16 +9,16 @@ int main(){
     //& Testing Basic String Functions 
     /*
     char dst[1024] = "hello world";
-    printf("String Length: %d\n", stringLength(dst));
+    printf("string Length: %d\n", stringLength(dst));
     
     char copy[1024];
     stringCopy(dst, copy);
-    printf("Copied String: %s\n", copy);
+    printf("copied string: %s\n", copy);
     
     stringConcat(copy, " test");
-    printf("Concatenated String: %s\n", copy);
+    printf("concatenated string: %s\n", copy);
     
-    printf("String Compare: %d\n", stringCompare("hello", "world"));
+    printf("string compare: %d\n", stringCompare("hello", "world"));
     
     printf("Is Empty: %d\n", isEmpty(dst));
     printf("Is Literally Empty: %d\n", isEmptyLiterally(""));
@@ -94,40 +94,48 @@ int main(){
     int token_count = 0;
     splitString(str, delimiter, tokens, &token_count);
     for (int i = 0; i < token_count; i++) {
-        printf("Token %d: %s\n", i+1, tokens[i]);
+        printf("token %d: %s\n", i+1, tokens[i]);
     }
     */
 
     //& Testing Cipher Functions
-    /*
+   /* 
     char cipher_test[100] = "Hello World";
-    
+  
     caesarCipher(cipher_test, 3);
-    printf("Caesar Cipher: %s\n", cipher_test);
-    
-    strcpy(cipher_test, "Hello World");
+    printf("caesar Cipher: %s\n", cipher_test);
+    caesarCipherDecryption(cipher_test, 3); 
+    printf("caesar Cipher decryption: %s\n", cipher_test);
+
+    strcpy(cipher_test, "Dsvvb Kbnvw");
     substitutionCipher(cipher_test, "QAZWSXEDCRFVTGBYHNUJMIKOLP");
-    printf("Substitution Cipher: %s\n", cipher_test);
-    
+    printf("substitution Cipher: %s\n", cipher_test);
+    substitutionCipherDecryption(cipher_test, "QAZWSXEDCRFVTGBYHNUJMIKOLP");
+    printf("substitution Cipher decryption: %s\n", cipher_test);
+
     strcpy(cipher_test, "Hello World");
     xorCipher(cipher_test, 'k');
     printf("XOR Cipher: %s\n", cipher_test);
     
     strcpy(cipher_test, "Hello World");
     vigenereCipher(cipher_test, "key", 1);
-    printf("Vigenere Encrypt: %s\n", cipher_test);
+    printf("vigenere encryption: %s\n", cipher_test);
     
     vigenereCipher(cipher_test, "key", 0);
-    printf("Vigenere Decrypt: %s\n", cipher_test);
-    
+    printf("vigenere decryption: %s\n", cipher_test);
+   
     strcpy(cipher_test, "Hello World");
     atbashCipher(cipher_test);
-    printf("Atbash Cipher: %s\n", cipher_test);
+    printf("atbash Cipher: %s\n", cipher_test);
+    atbashCipherDecryption(cipher_test);
+    printf("atbash Cipher decryption: %s\n", cipher_test);
+  
     
     char rail_result[100];
-    railFenceCipher(cipher_test, rail_result, 3);
-    printf("Rail Fence Cipher: %s\n", rail_result);
-    */
-
+    railFenceCipher("hello", rail_result, 3);
+    railFenceCipherDecryption("hoell", rail_result, 3);
+    printf("rail Fence Cipher: %s\n", rail_result);
+    printf("rail Fence Cipher Decryption: %s\n", rail_result);
+*/
     return 0;
 }

@@ -233,15 +233,15 @@ int secondLargest(int arr[], int size){
 }
 
 int findElementPos(int arr[], int size,int element){
-    int pos=0;
+    
     for (int i = 0; i < size; i++)
     {
         
         if (arr[i]==element) 
         {
-            return pos;//*it's like linear search but with a different name
+            return i;//*it's like linear search but with a different name
         }
-        pos++;
+        
     }
     return -1;//*found nothing alike
     

@@ -76,17 +76,22 @@ void splitString(char* str, char delimiter, char tokens[][100], int* tokenCount)
 
 void caesarCipher(char *text, int shift);
 
+void caesarCipherDecryption(char *text, int shift);
+
 void substitutionCipher(char *text, const char *key);
 
+void substitutionCipherDecryption(char *text, const char *key);
+
 void xorCipher(char *text, char key);
-
-
 
 void vigenereCipher(char *text, const char *key, int encrypt);
 
 void atbashCipher(char *text);
 
+void atbashCipherDecryption(char *text);
+
 void railFenceCipher(const char *text, char *result, int depth);
 
+void railFenceCipherDecryption(const char *text, char *result, int depth);
 
 #endif
