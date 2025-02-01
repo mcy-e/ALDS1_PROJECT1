@@ -6031,7 +6031,6 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 | 2       | “HELLO” |         “hello”          |
 | 3       |  “TB”   |           “tb”           |
 
-# Strings.c Function Documentation
 
 ## Intermediate Functions
 
