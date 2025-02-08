@@ -345,7 +345,7 @@ void luDecomposition(int size, double matrix[size][size], double lower[size][siz
 
       
     }
-    printf("\nUper matrix:\n");//*we print
+    printf("\nUpper matrix:\n");//*we print
     printMatrix(size, size, upper);
     printf("\nLower matrix:\n");
     printMatrix(size, size, lower);
@@ -458,10 +458,12 @@ void reverseRows(int size, double matrix[size][size]){
     }
 }
 
+
 void findEigenvalues(int size, double matrix[size][size],double eigenvalues[size]){
     
     //ToDO i will solve it using QR algorithm or any other fast and efficient algorithm for now i use this unless method until i get the time
-    double identity[size][size];
+    //?GUESS WHAT?...
+   /*double identity[size][size];
     int track=0;
     initializeMatrix(size,size,identity,0);
     for (int i = 0; i < size; i++)
@@ -484,11 +486,51 @@ void findEigenvalues(int size, double matrix[size][size],double eigenvalues[size
         }
         
     }
+    */
+   bool stop=false;
+   double upper[size][size];
+   double Q[size][size];
+   double checker=1e-6;//* instead off 10^-6 
+   while (!stop)
+   {
+     upperTriangle(size,matrix,upper);//*get the upper triangle matrix
+     gram_schmidt(size,matrix,Q);//*get the ortho something  matrix (i dont' know how to say it)
+     multiplyMatrices(size,size,upper,size,size,Q,matrix);//*multiply the upper triangle by the ortho something matrix and assign to our matrix so we will update the value of our matrix 
+
+        for (int i = 0; i < size; i++) 
+            for (int j = 0; j < size; j++)
+                if (i!=j && matrix[i][j]<checker) stop=true;//*stop the loop  //*check if the matrix is diagonal
+            
+                
+    }
+
+    for (int i = 0; i < size; i++) eigenvalues[i]=matrix[i][i];//*get the eigen values
     
-
-
 }
+void upperTriangle(int size, double matrix[size][size], double upper[size][size]){
+    double lower[size][size];
+    initializeMatrix(size, size, upper, 0);
+    initializeMatrix(size, size, lower, 0);
 
+    for (int i = 0; i < size; i++) {
+        lower[i][i] = 1;
+    }//*identity matrix
+
+   
+    
+    for (int k = 0; k < size; k++) {
+        for (int j = k; j < size; j++) {
+            double sum = 0;
+            for (int p = 0; p < k; p++) {
+                sum += lower[k][p] * upper[p][j];//*following the formula
+            }
+            upper[k][j] = matrix[k][j] - sum;//*following the formula
+        }
+        
+        
+    } //*we get the upper diagonal matrix
+    
+}
 void findEigenvalues2x2(double matrix[2][2], double eigenvalues[2]) {
     //*a simpler approach using 2 by 2 matrice
     double trace = matrix[0][0] + matrix[1][1];//*trcing the matrix i can call the function but why save some time
@@ -502,6 +544,70 @@ void findEigenvalues2x2(double matrix[2][2], double eigenvalues[2]) {
 
     eigenvalues[0] = (trace + sqrt(discriminant)) / 2;//*else we apply the formula and solve for lambda a and 2
     eigenvalues[1] = (trace - sqrt(discriminant)) / 2;
+}
+
+
+
+double dotProduct(double vector1[], double vector2[], int size) {
+    double dot = 0;
+    for (int i = 0; i < size; i++) {
+        dot += vector1[i] * vector2[i];//*compute dot product of two vectors that's the law
+    }
+    return dot;
+}
+
+
+
+void normalizeVector(double vector[], int size) {
+    double norm = 0;
+    for (int i = 0; i < size; i++) {
+        norm += vector[i] * vector[i];//*compute the norm of the vector according to the law
+    }
+    norm = sqrt(norm);
+
+    for (int i = 0; i < size; i++) {
+        vector[i] /= norm;//*normalizing every element in the vector
+    }
+}
+
+
+void subtractProjection(double vector1[], double vector2[], int size) {
+    double scale = dotProduct(vector1, vector2, size);
+    for (int i = 0; i < size; i++) {
+        vector1[i] -= scale * vector2[i];
+    }
+}
+
+void getColumn(int size,double Q[size][size], int col, double colVector[size]) {
+    for (int i = 0; i < size; i++) {
+        colVector[i] = Q[i][col];  //*get the column of the matrix
+    }
+}
+
+void gramSchmidt(int size ,double mat[size][size], double Q[size][size]) {
+   initializeMatrix(size,size,Q,0);
+    for (int j = 0; j < size; j++) {
+
+        double vector[size];
+        for (int i = 0; i < size; i++) {
+            vector[i] = mat[i][j];//*copy column j of mat to a vector
+        }
+
+        
+        for (int k = 0; k < j; k++) {
+            double colVector[size];
+            getColumn(size,Q, k, colVector);//*get the column of the Q matrix
+            subtractProjection(vector, colVector, size);//*subtract projections onto previous orthogonal vectors
+        }
+
+        
+        normalizeVector(vector, size);//*normalize vector :)
+
+       
+        for (int i = 0; i < size; i++) {
+            Q[i][j] = vector[i]; //*paste to the Q matrix
+        }
+    }
 }
 
 

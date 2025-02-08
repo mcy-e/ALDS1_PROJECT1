@@ -66,4 +66,16 @@ void reverseRows(int size, double matrix[size][size]);
 
 void findEigenvalues(int size, double matrix[size][size],double eigenvalues[size]);
 
+void findEigenvalues2x2(double matrix[2][2], double eigenvalues[2]);
+
+double dotProduct(double vector1[], double vector2[], int size);
+
+void normalizeVector(double vector[], int size);
+
+void subtractProjection(double vector1[], double vector2[], int size);
+
+void getColumn(int size,double Q[size][size], int col, double colVector[size]);
+
+void gramSchmidt(int size ,double mat[size][size], double Q[size][size]);
+
 #endif 
