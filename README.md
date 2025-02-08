@@ -692,6 +692,8 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: string of type list of chars ,result string of type list of chars ,integer depth
 - output: applies Rail Fence cipher to the string and stores the result in the result string
 
+>ALL CIPHER PROCEDURES HAS THERE DECRYPTION PROCEDURES 
+
 ## 3. _Arrays_
 
 #### **_Basic Functions_**
@@ -3748,6 +3750,8 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 **Potential Errors**  
 \- Assumes the string is null-terminated.
 
+>ALL CIPHER PROCEDURES HAS THERE DECRYPTION PROCEDURES 
+
 ## 3. _Arrays_
 
 ### **_Basic Functions_**
@@ -6569,7 +6573,6 @@ To find the intersection of two arrays, i.e., the common elements between them.
 | 2       | “HELLO” |         “hello”          |
 | 3       |  “TB”   |           “tb”           |
 
-# Strings.c Function Documentation
 
 ## Intermediate Functions
 
