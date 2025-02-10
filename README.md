@@ -1,50 +1,50 @@
-# _ALDS END SEMESTER PROJECT_
+# 🚀_ALDS END SEMESTER PROJECT_
 
 ARTICLE TYPE: DOCUMENTATION
 
 ![Nscs](Nscs.png)
 
-PREPARED BY: REFFAS CHOUAIB
+PREPARED BY: REFFAS CHOUAIB 🇩🇿
 
-Feb.4, 2025
+Feb.11, 2025
 
-# _Table Of Contents_
+# 📑 _Table Of Contents_
 
-1. [Go to Introduction](#1-introduction)
-
-……………………………………………………………………………………
-
-2. [Go to Project Overview](#2-project-overview)
+1. 👉 [Go to Introduction](#1-introduction)
 
 ……………………………………………………………………………………
 
-3. [Go to Analysis](#3-analysis)
+2. 👉 [Go to Project Overview](#2-project-overview)
 
 ……………………………………………………………………………………
 
-4. [Go to Tutorial](#4-tutorial)
+3. 👉 [Go to Analysis](#3-analysis)
 
 ……………………………………………………………………………………
 
-5. [Go to Implementation](#5-implementation)
+4. 👉 [Go to Tutorial](#4-tutorial)
 
 ……………………………………………………………………………………
 
-6. [Go to ExampleOfUsage](#6-exampleofusage)
+5. 👉 [Go to Implementation](#5-implementation)
 
 ……………………………………………………………………………………
 
-7. [Go to Code Snippets](#7-code-snippets)
+6. 👉 [Go to ExampleOfUsage](#6-exampleofusage)
 
 ……………………………………………………………………………………
 
-8. [Go to Conclusion](#8-conclusion)
+7. 👉 [Go to Code Snippets](#7-code-snippets)
 
-# 1. _Introduction_
+……………………………………………………………………………………
+
+8. 👉 [Go to Conclusion](#8-conclusion)
+
+# 1. ✅ _Introduction_
 
 Algorithm isn’t just about thinking; it may also encounter some smart acts because yes, you can work hard and achieve your goal. However, you get tired every time you try hard and to avoid this you need to apply the DRY process “Don’t Repeat Yourself”. In which you work smart but not hard and you know when you write your first programme you will get happy but after that you will face some problems and challenges our digital world isn’t that easy it's like a forest where the weak gets destroyed .So for my fellow programmes especially the new one’s I facilitated the work for you and I created a library in C language that has 4 sub-libraires (numbers,arrays,matrices and strings) in which you have different operations in those fields and that’s going to make programming easier than before.Yeah this library helps you in your projects like you need some operations or checks to perform an action and in order to don’t repeat yourself and recreate a function from the scratch that does the needed operation I gave you the keys to the treasure so you don’t need to rage quit if you didn’t find the solution or consume more time finding the module structure instead of working on the main project it’s like customizing a car too look good and high class instead of working to improve its functionality. But don’t forget you need to be a good programmer, and you need to know the structure of those functions to understand when you call it what happens inside it. Thus, I wrote this documentation for me first and for you to help me and you understand those functions and procedures. This counts as an experience for me and the first gate into the world of projects. I hope I didn’t take your time and let’s start our Adventure\!
 
-# 2. _Project Overview_
+# 2. 👀 _Project Overview_
 
 Our project is a workspace that contains the main folder called “ALDS1_Project1” which then contains some branches starting with:
 
@@ -70,7 +70,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 ![Structure](Structure.png)
 
-# 3. _Analysis_
+# 3. 🔢 _Analysis_
 
 - ### **In this section, we will talk about the function and the procedures like what we should input to them what they do and what they should output however we won’t complicate things or move into details for more details go to** “Implementation”.**Let’s start:**
 
@@ -1202,7 +1202,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: matrix of type 2D array of doubles (2x2), eigenvalues of type array of doubles
 - output: computes the eigenvalues of a 2x2 matrix and stores them in the eigenvalues array
 
-# 4. _Tutorial_
+# 4. 🎥 _Tutorial_
 
 - ### **In this section, we will learn many things like how to clone the repository and how to set up the workspace and more things will be listed below let’s get into it:**
 
@@ -1303,7 +1303,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 - **Compilation Errors**:
   - Check for typos in your code or missing library functions.
 
-# 5. _Implementation_
+# 5. ✍️ _Implementation_
 
 ## 1. _Numbers_
 
@@ -6064,7 +6064,7 @@ To find the intersection of two arrays, i.e., the common elements between them.
 
 ---
 
-# 6. _ExampleOfUsage_
+# 6. ◻️ _ExampleOfUsage_
 
 ## 1. _Numbers_
 
@@ -7709,7 +7709,7 @@ Sorts an array using the Selection Sort algorithm.
 | 1       |       [[1,1],[1,0]]       |  2   |     Orthonormal matrix     |
 | 2       | [[1,2,3],[4,5,6],[7,8,9]] |  3   |     Orthonormal matrix     |
 
-# 7. _Code Snippets_
+# 7. 📋 _Code Snippets_
 
 # Numbers Library Code Snippets
 
@@ -10283,6 +10283,6 @@ void gramSchmidt(int size, double mat[size][size], double Q[size][size]) {
 }
 ```
 
-# 8. _Conclusion_
+# 8. 🏁 _Conclusion_
 
 - if you find yourself here i hope you have read it all i hope you enjoyed this adventure as we may call ,i learned time management and modularity before when i used python i didn’t use modularity that often yeah i used it but the idea of creating a library that contains all of useful functions didn’t come in mind and to be honest it’s a nice miniproject experience i also enjoyed (not really) the environment of C yeah it’s good but not easy like when i start comparing i get mad because when first learned python sorting an array didn’t need you to creat a sorting function for it you just needed to call `sort()` maethode which is built in by the way but rather than making programing easy it also made it hard the roasoning start decreasing and people even me when i first start with it i didn’t ask myself why and how i just did what every body does but today i learned to ask thank you for your time ihope you had an experience with me and will meet agian.
