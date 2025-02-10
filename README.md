@@ -1,3 +1,5 @@
+<span style="font-family: 'Consolas', monospace;">
+
 # 🚀_ALDS END SEMESTER PROJECT_
 
 ARTICLE TYPE: DOCUMENTATION
@@ -10286,3 +10288,6 @@ void gramSchmidt(int size, double mat[size][size], double Q[size][size]) {
 # 8. 🏁 _Conclusion_
 
 - if you find yourself here i hope you have read it all i hope you enjoyed this adventure as we may call ,i learned time management and modularity before when i used python i didn’t use modularity that often yeah i used it but the idea of creating a library that contains all of useful functions didn’t come in mind and to be honest it’s a nice miniproject experience i also enjoyed (not really) the environment of C yeah it’s good but not easy like when i start comparing i get mad because when first learned python sorting an array didn’t need you to creat a sorting function for it you just needed to call `sort()` maethode which is built in by the way but rather than making programing easy it also made it hard the roasoning start decreasing and people even me when i first start with it i didn’t ask myself why and how i just did what every body does but today i learned to ask thank you for your time ihope you had an experience with me and will meet agian.
+
+
+</span>
