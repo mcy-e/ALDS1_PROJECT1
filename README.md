@@ -1,4 +1,4 @@
-<span style="font-family: 'Consolas', monospace;">
+
 # 🚀_ALDS END SEMESTER PROJECT_
 
 ARTICLE TYPE: DOCUMENTATION
@@ -10290,4 +10290,3 @@ void gramSchmidt(int size, double mat[size][size], double Q[size][size]) {
 
 >❗ if there is any problem contact me via: reffaschouaib@gmail.com
 
-</span>
