@@ -2,7 +2,7 @@
 
 ARTICLE TYPE: DOCUMENTATION
 
-![Nscs](Nscs.png)
+![Nscs](Assets/Nscs.png)
 
 PREPARED BY: REFFAS CHOUAIB
 
@@ -68,7 +68,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 10. WE can give its structure as shown below :
 
-![Structure](Structure.png)
+![Structure](Assets/Structure.png)
 
 # 3. _Analysis_
 
@@ -1209,10 +1209,10 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - ## **_Cloning the Repository_**
 
 1. Clone the repository to your local machine. Open your terminal and run the following command:
-   ![git](gitclone.png)
+   ![git](Assets/gitclone.png)
 2. After cloning, navigate to the project folder:
 
-![cd](cd.png)
+![cd](Assets/cd.png)
 
 - ### **_Devices Used_**
 
@@ -1230,24 +1230,24 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
    - Go to File \> Add Folder to Workspace and select the project folder.
    - Save the workspace (File \> Save Workspace As...).
 4. Create a new .c file and include the library at the top:
-   ![includemain](includemain.png)
+   ![includemain](Assets/includemain.png)
 
 5. Write your test code. Example:
-   ![main](main.png)
+   ![main](Assets/main.png)
 6. Use VS Code tasks or terminal to compile and run your code. Example:
-   ![gcc](gcc.png)
+   ![gcc](Assets/gcc.png)
 
 - ### **_For macOS and Linux_**
 
 1. Open the terminal and navigate to the project folder where the repository was cloned.
 
 Create a new test file using any text editor (e.g., nano, vim, or gedit). For example, using nano:
-![nano](nano.png) 2. Include the library in your test file by adding the following line at the top:
-![includemain](includemain.png) 3. Write your test code. Example:
-[main](main.png) 4. Save the file and compile it using the GCC compiler:
-![gcc](gcc.png) 5. Run your program:
+![nano](Assets/nano.png) 2. Include the library in your test file by adding the following line at the top:
+![includemain](Assets/includemain.png) 3. Write your test code. Example:
+[main](Assets/main.png) 4. Save the file and compile it using the GCC compiler:
+![gcc](Assets/gcc.png) 5. Run your program:
 
-![mytest](mytest.png)
+![mytest](Assets/mytest.png)
 
 - #### **_General Editors (e.g., Sublime Text, Atom)_**
 
@@ -1260,9 +1260,9 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 
 1. Open the provided test file (test_numbers.c) in your text editor.
 2. Uncomment the lines corresponding to the functions you want to test. For example:
-   ![testfunc](testfunc.png)
+   ![testfunc](Assets/testfunc.png)
 3. Compile and run the file:
-   ![gcc]("gcc.png")
+   ![gcc]("Assets/gcc.png")
 
 - ### **Using the Makefile for Easy Builds and Tests**
 
@@ -1271,12 +1271,12 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 - #### **Basic Commands**
 
   - Build the project:
-    ![make](make.png)
+    ![make](Assets/make.png)
 
   - Run the tests:
-    ![testprog]("test prog.png")
+    ![testprog](Assets/testprog.png)
   - Clean up build artefacts:
-    ![makeclean]("make clean.png")
+    ![makeclean](Assets/makeclean.png)
 
 - ### **_VS Code Integration_**
 
