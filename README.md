@@ -10,7 +10,7 @@ Feb.11, 2025
 
 # 📑 _Table Of Contents_
 
-1. 👉 [Go to Introduction](#1-✅introduction)
+1. 👉 [Go to Introduction](#1-introduction)
 
 ……………………………………………………………………………………
 
