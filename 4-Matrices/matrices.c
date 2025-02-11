@@ -262,14 +262,14 @@ void matrixPower(int size, double matrix[size][size], int power, double result[s
         return;//*to force the procedure to stop and don't take in mind the below operations
     }
 
-    int temp[size][size];
-    
+    double temp[size][size];
+    double tempResult[size][size];
     matrixPower(size, matrix, power / 2, temp);//*the recursive call  the function will call itself recursively until pow is 1 so it passes to next step 
-    multiplyMatrices(size, size, temp, size, size, temp, result);//*then multiply the resulted by itself and copy it to result
+    multiplyMatrices(size, size, temp, size, size, temp, tempResult);//*then multiply the resulted by itself and copy it to result
 
-    if (power % 2 != 0) {
-        multiplyMatrices(size, size, result, size, size, matrix, result);//*in case of odd power we remuliply the matrix by the result
-    }
+    if (power % 2 != 0) multiplyMatrices(size, size, tempResult, size, size, matrix, result);//*in case of odd power we remuliply the matrix by the result
+    if (power%2==0)  copyMatrix(size,size,tempResult,result);//*else
+    
 }
 
 

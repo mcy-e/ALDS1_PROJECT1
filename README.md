@@ -10056,13 +10056,13 @@ void matrixPower(int size, double matrix[size][size], int power, double result[s
         return;
     }
 
-    int temp[size][size];
+    double temp[size][size];
+    double tempResult[size][size];
     matrixPower(size, matrix, power / 2, temp);
-    multiplyMatrices(size, size, temp, size, size, temp, result);
+    multiplyMatrices(size, size, temp, size, size, temp, tempResult);
 
-    if (power % 2 != 0) {
-        multiplyMatrices(size, size, result, size, size, matrix, result);
-    }
+    if (power % 2 != 0) multiplyMatrices(size, size, tempResult, size, size, matrix, result);
+    if (power % 2 == 0) copyMatrix(size, size, tempResult,result);
 }
 ```
 
