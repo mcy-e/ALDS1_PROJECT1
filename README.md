@@ -8778,15 +8778,24 @@ int findSubstringInsensitive(const char* str, const char* sub){
 ```c
 void removeWhiteSpace(char* str){
     int len = stringLengthWithSpace(str);
-    for (int i = 0; i < len; i++)
+    int i = 0;
+    while (i < len)
     {
+        bool shifted=false;
         if (str[i]==' ')
-        {   for (int j = i; j <= len; j++)
+        {   for (int j = i; j < len-1; j++)
             {
                 str[j] = str[j+1];
             }
+            shifted=true;
+            len--;
         }
+        i++
+        if(shifted) i--;
     }
+    str[len]='\0';
+
+    
 }
 ```
 
