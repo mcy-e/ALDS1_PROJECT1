@@ -34,9 +34,9 @@ int main(){
     */
 
     //& Testing Intermediate String Functions
-    
+    /*
     char test[1024] = "hello  world";
-    /*printf("Is Palindrome: %d\n", isPalindromeString(test));
+    printf("Is Palindrome: %d\n", isPalindromeString(test));
     
     int vowels = 0, consonants = 0;
     countVowelsConsonants(test, &vowels, &consonants);
@@ -44,10 +44,10 @@ int main(){
     
     printf("Substring Position: %d\n", findSubstring("hello world", "world"));
     printf("Case Insensitive Substring: %d\n", findSubstringInsensitive("Hello World", "world"));
-    */
+    
     removeWhiteSpace(test);
     printf("Removed Whitespace: %s\n", test);
-    /*
+    
     printf("Is Anagram: %d\n", isAnagram("listen", "silent"));
     
     charFrequency(test);
