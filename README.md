@@ -1,4 +1,4 @@
-# 🚀_ALDS END SEMESTER PROJECT_
+# 🚀*ALDS END SEMESTER PROJECT*
 
 ARTICLE TYPE: DOCUMENTATION
 
@@ -1230,7 +1230,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
    - Go to File \> Add Folder to Workspace and select the project folder.
    - Save the workspace (File \> Save Workspace As...).
 4. Create a new .c file and include the library at the top:
-   ![includemain](Assets/includemain.png)
+   ![includemain](Assets/inlcudemain.png)
 
 5. Write your test code. Example:
    ![main](Assets/main.png)
@@ -1243,7 +1243,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 
 Create a new test file using any text editor (e.g., nano, vim, or gedit). For example, using nano:
 ![nano](Assets/nano.png) 2. Include the library in your test file by adding the following line at the top:
-![includemain](Assets/includemain.png) 3. Write your test code. Example:
+![includemain](Assets/inlcudemain.png) 3. Write your test code. Example:
 [main](Assets/main.png) 4. Save the file and compile it using the GCC compiler:
 ![gcc](Assets/gcc.png) 5. Run your program:
 
@@ -1262,7 +1262,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 2. Uncomment the lines corresponding to the functions you want to test. For example:
    ![testfunc](Assets/testfunc.png)
 3. Compile and run the file:
-   ![gcc]("Assets/gcc.png")
+   ![gcc](Assets/gcc.png)
 
 - ### **Using the Makefile for Easy Builds and Tests**
 
@@ -3750,7 +3750,7 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 **Potential Errors**  
 \- Assumes the string is null-terminated.
 
->ALL CIPHER PROCEDURES HAS THERE DECRYPTION PROCEDURES
+> ALL CIPHER PROCEDURES HAS THERE DECRYPTION PROCEDURES
 
 ## 3. _Arrays_
 
@@ -8795,7 +8795,7 @@ void removeWhiteSpace(char* str){
     }
     str[len]='\0';
 
-    
+
 }
 ```
 
@@ -10296,5 +10296,4 @@ void gramSchmidt(int size, double mat[size][size], double Q[size][size]) {
 
 - if you find yourself here, i hope you have read it all I hope you enjoyed this adventure as we may call,i learned time management and modularity before when I used python I didn’t use modularity that often yeah, i used it but the idea of creating a library that contains all of the useful functions didn’t come in mind and to be honest it’s a nice miniproject experience i also enjoyed (not really) the environment of C yeah it’s good but not easy like when i start comparing i get mad because when first learned python sorting an array didn’t need you to creat a sorting function for it you just needed to call `sort()` maethode which is built in by the way but rather than making programing easy it also made it hard the reasoning start decreasing and people even me when i first start with it i didn’t ask myself why and how i just did what every body does but today i learned to ask, thank you for your time ihope you had an experience with me and will meet again.
 
->❗ if there is any problem contact me via: reffaschouaib@gmail.com
-
+> ❗ if there is any problem contact me via: reffaschouaib@gmail.com
