@@ -35,8 +35,8 @@ int main(){
 
     //& Testing Intermediate String Functions
     
-    char test[1024] = "hellowwworggld";
-    /*printf("Is Palindrome: %d\n", isPalindromeString(test));
+    /*char test[1024] = "hellowwworggld";
+    printf("Is Palindrome: %d\n", isPalindromeString(test));
     
     int vowels = 0, consonants = 0;
     countVowelsConsonants(test, &vowels, &consonants);
@@ -54,7 +54,7 @@ int main(){
     
     printf("Word Count: %d\n", countWords("hello world test batata"));
     
-   */ removeDuplicates(test);
+    removeDuplicates(test);
     printf("Removed Duplicates: %s\n", test);
 
 
