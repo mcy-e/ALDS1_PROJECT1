@@ -374,48 +374,44 @@ int countWords(char* str){
     return count;
 }
 
-void removeDuplicates(char* str){
-    int len =stringLength(str);
-    char arr[30];//*to store the repeated chars
-    int check;//*used for chrcking
-    int new_len=0;//*to reduce the length of the string because we're going to remove duplicates
-    for (int i = 0; i < len; i++)
-    {
-        for (int k = 0; k < len; k++)
-        {
-            if(arr[k]==str[i]) {check = 1;
-            break;}
+void removeDuplicates(char* str) {
+    int len = stringLength(str);
+    char arr[30]; //* to store the repeated chars
+    int check; //* used for checking
+    int new_len = 0; //* to reduce the length of the string because we're going to remove duplicates
 
-        }//*chacks for previous chars if we used them
-        if(check==1){
-            continue;
-            new_len++;//*remove to the next iteration
-        
-        }else{
-            for (int j = i+1; j < len; j++)
-            {
-                if (str[j]==str[i])
-                {
-                    for (int l = j; l < len-1; l++)
-                    {
-                        str[l]=str[l+1];//*it finded a duplicate char so it's going to override it by the next chars
-                    }
-                    
-                }
-                
+    for (int i = 0; i < len; i++) {
+        check = 0;  //* Reset check for each character
+
+        for (int k = 0; k < new_len; k++) {  
+            if (arr[k] == str[i]) {
+                check = 1;
+                break;
             }
-            new_len++;//*the new lentgh of the new string
+        } //* checks for previous chars if we used them
 
+        if (check == 1) {
+            continue; //* move to the next iteration
+        } else {
+            for (int j = i + 1; j < len; j++) {
+                if (str[j] == str[i]) {
+                    for (int l = j; l < len - 1; l++) {
+                        str[l] = str[l + 1]; //* it found a duplicate char so it's going to override it by the next chars
+                    }
+                    len--; //* reduce length as we removed a character
+                    j--; //* stay at the same index after shifting
+                }
+            }
+            new_len++; //* the new length of the new string
         }
-        
-        arr[i]=str[i];//*used for checking
+
+        arr[new_len - 1] = str[i]; //* used for checking
     }
-    
- str[new_len]='\0';//*the delimiter because the last char will be repeated untill the lentgh so we delete thos lentgh and put a new lenght as the effective length
 
-
-
+    str[new_len] = '\0'; //* the delimiter because the last char will be
+     //*repeated until the length so we delete those and put a new length as the effective length
 }
+
 
 //!Advanced functions
 void compressString(char* str, char* result)
