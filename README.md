@@ -2214,7 +2214,7 @@ Create a new test file using any text editor (e.g., nano, vim, or gedit). For ex
 ### Primitive Actions
 
 1. If num is 0 or 1, return 1\.
-2. Otherwise, calculate the nth Catalan number using (2n)\! / ((n+1)\! \* n\!) (recursive formula).![][image2]
+2. Otherwise, calculate the nth Catalan number using (2n)\! / ((n+1)\! \* n\!) (recursive formula).
 3. Return the result.
 
 ---

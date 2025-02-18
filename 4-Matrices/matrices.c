@@ -345,9 +345,9 @@ void luDecomposition(int size, double matrix[size][size], double lower[size][siz
 
       
     }
-    printf("\nUpper matrix:\n");//*we print
+    printf("\n upper matrix: \n");//*we print
     printMatrix(size, size, upper);
-    printf("\nLower matrix:\n");
+    printf("\n lower matrix: \n");
     printMatrix(size, size, lower);
 }
 
