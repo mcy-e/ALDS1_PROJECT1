@@ -6,7 +6,7 @@ ARTICLE TYPE: DOCUMENTATION
 
 PREPARED BY: REFFAS CHOUAIB 🇩🇿
 
-Feb.11, 2025
+Feb.18, 2025
 
 # 📑 _Table Of Contents_
 
@@ -692,7 +692,7 @@ Our project is a workspace that contains the main folder called “ALDS1_Project
 - inputs: string of type list of chars ,result string of type list of chars ,integer depth
 - output: applies Rail Fence cipher to the string and stores the result in the result string
 
-> ❗ ALL CIPHER PROCEDURES HAS THERE DECRYPTION PROCEDURES
+>❗ ALL CIPHER PROCEDURES HAS THERE DECRYPTION PROCEDURES
 
 ## 3. _Arrays_
 
@@ -3750,7 +3750,11 @@ To encrypt or decrypt a string using the Rail Fence cipher.
 **Potential Errors**  
 \- Assumes the string is null-terminated.
 
+<<<<<<< HEAD
 > ALL CIPHER PROCEDURES HAS THERE DECRYPTION PROCEDURES
+=======
+>❗ ALL CIPHER PROCEDURES HAS THERE DECRYPTION PROCEDURES
+>>>>>>> 03c358088fde718df1aff3a37cbe7e60d4af4c54
 
 ## 3. _Arrays_
 
@@ -6863,6 +6867,8 @@ Encrypts or decrypts a string using the Rail Fence cipher.
 | 1       | `"hello", 2` | `"hloel"` |
 | 2       | `"world", 3` | `"wrodl"` |
 
+>❗ ALL CIPHER PROCEDURES HAS THERE DECRYPTION PROCEDURES
+
 # 3. _Arrays_
 
 ## Basic Functions
@@ -9409,6 +9415,8 @@ void railFenceCipher(const char *text, char *result, int depth) {
     result[track] = '\0';
 }
 ```
+
+>❗ ALL CIPHER PROCEDURES HAS THERE DECRYPTION PROCEDURES
 
 # Array Library Code Snippets
 
